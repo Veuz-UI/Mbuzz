@@ -116,7 +116,7 @@ header.fixed-to-top .main-header {
 
 .nav-desc-menu {
   border: 1px solid #0db4f93d;
-  padding: 12px 4px;
+  padding: 12px 22px;
   border-radius: 50px;
 }
 
@@ -2640,6 +2640,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   padding: 20px;
   border-radius: 28px;
   /* height: 360px; */
+  height: 100%;
   color: #fff;
   overflow: hidden;
   box-shadow: inset 0 -122px 57px -40px #1b3777, inset 0 -41px 33px -12px rgba(13, 180, 249, 0.5), inset 0 -29px 20px -11px rgba(255, 255, 255, 0.64), inset 0 -37px 15px -1px rgba(13, 180, 249, 0.15), inset 0 -1px 13px 0 rgba(13, 180, 249, 0.2);
