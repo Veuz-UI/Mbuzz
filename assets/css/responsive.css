@@ -74,6 +74,10 @@
 		font-size: 16px;
 	}	
 
+	.faq-header h3, .client-header h2 {
+		font-size: 35px;
+	}
+
 }
 
 @media (max-width: 1000px) {

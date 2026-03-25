@@ -485,8 +485,9 @@ window.addEventListener("scroll", () => {
 /* ------------- Section Nav Active ------------- */
 
 
-/* ------------- inner pages prof-services  ------------- */
+//// inner pages ////
 
+// prof-services
 var owl = $('.prof-services-slider').owlCarousel({
       loop:true,
       margin:10,
@@ -515,7 +516,7 @@ $('.core-prev').click(function() {
     owl.trigger('prev.owl.carousel');
 });
 
-/* ------------- inner pages prof-services  ------------- */
+
 
 
 
