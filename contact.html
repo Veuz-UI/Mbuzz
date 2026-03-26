@@ -46,7 +46,7 @@
               <ul class="d-flex">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle active">All</a>
+                  <a href="#" class="dropdown-toggle">All</a>
                   <ul class="dropdown-menu">
                     <li class="submenu">
                       <a href="#" class="submenu-toggle">AI Services</a>
@@ -88,7 +88,7 @@
                   </ul>
                 </li>
                 <li><a href="#">Media</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
               </ul>
             </div>
             <div class="wrap desc-btn">
@@ -113,7 +113,7 @@
                   </div>
                   <!-- DROPDOWN -->
                   <div class="menu__item dropdown">
-                    <a href="#" class="menu__item-link dropdown-toggle active">All</a>
+                    <a href="#" class="menu__item-link dropdown-toggle">All</a>
                     <div class="dropdown-menu">
                       <div class="submenu">
                         <a href="#" class="submenu-toggle">AI Services</a>
@@ -162,7 +162,7 @@
                     <a href="#" class="menu__item-link">Media</a>
                   </div>
                   <div class="menu__item">
-                    <a href="contact.html" class="menu__item-link">Contact Us</a>
+                    <a href="contact.html" class="menu__item-link active">Contact Us</a>
                   </div>
                 </nav>
                 <div class="wrap mob-btn">
@@ -215,169 +215,111 @@
             <nav class="breadcrumb">
               <a href="#">Home</a>
               <span class="sep">-</span>
-              <a href="#">AI</a>
-              <span class="sep">-</span>
-              <span class="current">AI Factory </span>
+              <span class="current">Contact Us</span>
             </nav>
-            <h1>AI Factory </h1>
-          </div>
-          <div class="banner-sub-img">
-            <img src="assets/img/ai-factory.png" alt="">
+            <h1>Contact Us</h1>
           </div>
         </div>
     </div>
   </section>
 
-  <!-- ── STICKY SUB-NAV ── -->
-  <div class="inner-subnav-wrap">
-    <div class="width-container">
-      <nav class="inner-subnav">
-        <ul class="inner-subnav-links">
-          <li><a href="#overview" class="active">Overview</a></li>
-          <li><a href="#">In-depth Overview</a></li>
-          <li><a href="#">AI Factories</a></li>
-          <li><a href="#">Know How</a></li>
-          <li><a href="#">Real-World Impact</a></li>
-          <li><a href="#">Deployment</a></li>
-          <li><a href="#">Know More</a></li>
-        </ul>
-      </nav>
+  <!-- contact -->
+  <section class="section-padding pb-0 contact-sec">
+  <div class="width-container">
+    
+    <div class="contact-sec-in">
+      <div class="row">
+      
+      <div class="col-md-12 col-lg-8">
+        <div class="left-contact">
+          <form id="contactForm" novalidate>
+            <div class="form-group double">
+                <div class="floating-label">
+                  <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                </div>
+                <div class="floating-label">
+                  <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                </div>
+            </div>
+            <div class="form-group double">
+              <div class="form-group floating-label">
+                <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter email address" required>
+              </div>
+              <div class="form-group floating-label">
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter mobile number" required>
+              </div>
+            </div>
+            <div class="form-group floating-label">
+              <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="main-btn-out mt-3 text-end">
+              <a href="#" class="main-btn">Send Message <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4">
+        <div class="contact-col right-contact">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p><a href="mailto:info@mbuzztech.com">info@mbuzztech.com</a></p>
+            </div>
+            <div class="contact-item mb-4">
+              <i class="fa-solid fa-phone"></i>
+              <p><a href="tel:+966530378192">+966 53 037 8192</a>,
+                <a href="tel:+97143304125">+971 4 330 4125</a></p>
+            </div>
+
+            <h4>Address</h4>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                Head Quarters<br>
+                Building CS-01, Al-Raidah Digital City, Riyadh, KSA<br>
+                Strategic Office #313, Al Nasr Plaza, Dubai
+              </p>
+            </div>
+          </div>
+      </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- ai-overview -->
-  <section class="section-padding my-4 ai-overview" id="overview">
-    <div class="width-container">
-      <div class="ai-overview-in">
-        <div class="ai-tag">Accelerated by NVIDIA: Enterprise AI at Scale</div>
-        <h2 class="heading text-white mb-3">Transform AI Data Centers into Intelligent AI Factories</h2>
-        <p class="description mb-3">
-          NVIDIA accelerated computing platforms unify GPUs, CPUs, networking, and enterprise software into a powerful 
-          foundation for AI innovation. With NVIDIA AI Enterprise and NVIDIA Mission Control with Run: ai orchestration, 
-          organizations gain the agility, resiliency, and efficiency required to scale AI into production—performing 
-          exponentially more work in less time with lower energy consumption.
-        </p>
-        <p class="description mb-3">
-          AI Factory is a purpose-built computing platform designed to transform raw data into intelligence — measured by 
-          token throughput — powering decisions, automation, and enterprise AI solutions. Built on NVIDIA accelerated 
-          computing platforms and orchestrated by Mission Control with Run: ai, AI Factories simplify hardware, networking, 
-          and enterprise-grade software into a scalable, resilient, and energy-efficient foundation for AI.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- ai-enterprises -->
-  <section class="section-padding ai-enterprises">
-    <div class="width-container">
-      <div class="">
-        <div class="ai-tag">In-depth Overview</div>
-        <h3 class="heading mb-3">The Value of NVIDIA AI Enterprise</h3>
-      </div>
-
-      <div class="in">
-        <div class="row">
-
-          <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-            <div class="enterprises-card card-blue">
-              <div class="enterprises-icon">
-                <img src="assets/img/ai-enterprises1.webp" class="img-fluid" alt="" />
-              </div>
-              <span class="enterprises-num">01</span>
-              <div class="enterprises-cont">
-                <h3>Enterprise-Ready AI Stack</h3>
-                <p>Secure, optimized, and fully supported frameworks, SDKs, and pretrained models tuned for NVIDIA
-                  accelerated computing.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-            <div class="enterprises-card card-red">
-              <div class="enterprises-icon">
-                <img src="assets/img/ai-enterprises2.webp" class="img-fluid" alt="" />
-              </div>
-              <span class="enterprises-num">02</span>
-              <div class="enterprises-cont">
-                <h3>Consistent Across Environments</h3>
-                <p>Secure, optimized, and fully supported frameworks, SDKs, and pretrained models tuned for NVIDIA
-                  accelerated computing.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-            <div class="enterprises-card card-meroon">
-              <div class="enterprises-icon">
-                <img src="assets/img/ai-enterprises3.webp" class="img-fluid" alt="" />
-              </div>
-              <span class="enterprises-num">03</span>
-              <div class="enterprises-cont">
-                <h3>Predictable ROI</h3>
-                <p>Secure, optimized, and fully supported frameworks, SDKs, and pretrained models tuned for NVIDIA
-                  accelerated computing.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-3 mt-4">
-            <div class="enterprises-card card-green">
-              <div class="enterprises-icon">
-                <img src="assets/img/ai-enterprises4.webp" class="img-fluid" alt="" />
-              </div>
-              <span class="enterprises-num">04</span>
-              <div class="enterprises-cont">
-                <h3>Accelerated Time-to-Token</h3>
-                <p>Secure, optimized, and fully supported frameworks, SDKs, and pretrained models tuned for NVIDIA
-                  accelerated computing.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ai-journey -->
-  <section class="section-padding ai-journey" id="partnership">
-    <div class="ai-journey-wrapper">
+  <!-- MAP -->
+    <section class="section-padding pb-0 contact-sec">
       <div class="width-container">
-        <div class="ai-journey-card">
-          <div class="ai-tag mb-3">AI Partnership</div>
-          <h3 class="heading mb-4">Committed to Your
-            AI Journey</h3>
-          <p class="description mb-0">
-            MBUZZ goes beyond project delivery. We build long-term partnerships
-            that help organizations continuously evolve their AI capabilities,
-            ensuring solutions remain relevant, secure, and impactful as
-            technologies and business needs change.
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7421584.5461251885!2d45.63750672835937!3d24.73303927896028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f033afbde08d1%3A0x15aa08bf1cbec9ec!2sServcorp%20Olaya%20Towers%20-%20Coworking%2C%20Offices%2C%20Virtual%20Offices%20%26%20Meeting%20Rooms!5e0!3m2!1sen!2sin!4v1774506659135!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- CTA -->
+  <section class="section-padding pb-3 cta">
+    <div class="width-container">
+      <div class="core-card card-blue" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+        <div class="core-card-in">
+          <h3>Ready to Advance Your AI Capabilities?</h3>
+          <p>
+            Let’s discuss how AI can be applied to your organization’s needs.
           </p>
+          <div class="main-btn-out mt-5 text-center">
+            <a href="#" class="main-btn">Discover more <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- footer -->
   <footer class="section-padding pb-3 main-footer">

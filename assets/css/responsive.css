@@ -114,6 +114,10 @@
 		border-bottom: 1px solid #3a3a3a;
     }
 
+	.menu a.active{
+		color: #0DB4F9;
+	}
+
 	.right-nav-top {
 		padding: 10px 0 10px 15px;
 	}
