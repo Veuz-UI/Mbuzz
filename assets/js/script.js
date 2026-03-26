@@ -517,10 +517,60 @@ $('.core-prev').click(function() {
 });
 
 
+/* ------------- NVIDIA ad Section ------------- */
+
+const hero = document.getElementById('hero');
+
+hero.addEventListener('mousemove', (e) => {
+  const rect = hero.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const moveX = (x / rect.width - 0.5) * 10;
+  const moveY = (y / rect.height - 0.5) * 10;
+
+  hero.style.transform = `rotateX(${-moveY}deg) rotateY(${moveX}deg)`;
+});
+
+hero.addEventListener('mouseleave', () => {
+  hero.style.transform = 'rotateX(0) rotateY(0)';
+});
 
 
 
+/* ------------- NVIDIA ad Section ------------- */
 
 
+/* --------- AI Faq ----------- */
+document.addEventListener("DOMContentLoaded", function () {
 
+  const headers = document.querySelectorAll('.ai-factory-faq-header');
+
+  headers.forEach(header => {
+    header.addEventListener('click', function () {
+
+      const item = this.closest('.ai-factory-faq-item');
+
+      // close others
+      document.querySelectorAll('.ai-factory-faq-item').forEach(i => {
+        if (i !== item) {
+          i.classList.remove('active');
+          const icon = i.querySelector('.ai-factory-faq-icon');
+          if (icon) icon.textContent = '+';
+        }
+      });
+
+      // toggle current
+      item.classList.toggle('active');
+
+      const icon = item.querySelector('.ai-factory-faq-icon');
+      if (icon) {
+        icon.textContent = item.classList.contains('active') ? '−' : '+';
+      }
+
+    });
+  });
+
+});
+/* --------- AI Faq ----------- */
 

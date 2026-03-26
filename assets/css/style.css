@@ -532,8 +532,10 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
 
 /* slide icon */
 .bottom-sliding {
-  position: relative;
-  bottom: -20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bottom-sliding::after {
@@ -1673,20 +1675,20 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
       rgba(5, 10, 24, 0) 100%);
 }
 
-.core-card-in {
+.cta .core-card-in {
   position: relative;
   z-index: 6;
   text-align: center;
 }
 
-.core-card h3 {
+.cta .core-card h3 {
   font-size: 36px;
   font-weight: 400;
   color: #fff;
   margin-bottom: 15px;
 }
 
-.core-card p {
+.cta .core-card p {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.70;
@@ -1699,7 +1701,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
     padding: 30px 20px;
   }
 
-  .core-card h3 {
+  .cta .core-card h3 {
     font-size: 25px;
   }
 }
@@ -3385,4 +3387,484 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
     border-radius: 15px;
   }
 }
-/* --------- END contact page ----------- */
+
+/* .core-card:hover .card-icon img {
+    transform: scale(1.05);
+}
+.core-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+.card-blue::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(180, 30, 120, 0.30) 0%,
+        rgba(100, 10, 80,  0.60) 100%
+    );
+}
+.card-blue:hover::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(180, 30, 120, 0.55) 0%,
+        rgba(100, 10, 80,  0.85) 100%
+    );
+}
+.card-red::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 20, 60, 0.20) 0%,
+        rgba(0, 10, 40, 0.60) 100%
+    );
+}
+.card-red:hover::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 20, 60, 0.45) 0%,
+        rgba(0, 10, 40, 0.85) 100%
+    );
+}
+.card-meroon::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 10, 30, 0.15) 0%,
+        rgba(5,  5,  20, 0.60) 100%
+    );
+}
+.card-meroon:hover::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 10, 30, 0.40) 0%,
+        rgba(5,  5,  20, 0.85) 100%
+    );
+}
+.card-green::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 10, 30, 0.15) 0%,
+        rgba(5,  5,  20, 0.60) 100%
+    );
+}
+.card-green:hover::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 10, 30, 0.40) 0%,
+        rgba(5,  5,  20, 0.85) 100%
+    );
+}
+.core-card .card-num {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    z-index: 2;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.80);
+    letter-spacing: 0.04em;
+}
+.core-card .card-body-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 20px 20px 24px;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+}
+.core-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    transition: margin-bottom 0.4s ease;
+}
+.core-card p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.60;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: max-height 0.4s ease,
+                opacity    0.4s ease,
+                transform  0.4s ease;
+}
+.core-card:hover p {
+    max-height: 120px;
+    opacity: 1;
+    transform: translateY(0);
+} */
+/* --------- END prof-services ----------- */
+
+
+
+/* --------- Benefits of an AI Factory ----------- */
+.ai-infra .ai-card {
+  backdrop-filter: blur(70px);
+  box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
+  background: linear-gradient(90deg, rgb(4 7 17) 0%, rgb(255 255 255 / 5%) 100%);
+  border-radius: 18px;
+  padding: 35px 25px;
+  min-height: 300px;
+  transition: all 0.4s ease;
+  border: 1px solid rgb(2 84 113 / 36%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+.ai-infra .ai-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border: 1px solid rgba(0, 200, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.2);
+}
+.ai-infra .icon-wrapper img{
+  width: 60px;
+  margin-bottom: 10px;
+}
+.ai-infra .ai-card h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.ai-infra .ai-card p {
+  font-size: 13px;
+  opacity: 0.7;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.ai-infra .video-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgb(2 84 113 / 36%);
+}
+.ai-infra .video-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ai-infra .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ai-infra .play-btn i, .play-btn svg{
+  font-size: 20px;
+  color: white !important;
+}
+.ai-infra .play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.ai-infra .video-caption {
+  backdrop-filter: blur(70px);
+  box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
+  background: linear-gradient(90deg, rgb(4 7 17) 0%, rgb(255 255 255 / 5%) 100%);
+  border-radius: 18px;
+  color: #fff;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+@media (max-width: 600px) {
+  .ai-infra .ai-card {
+    min-height: auto;
+  }
+}
+
+/* --------- Benefits of an AI Factory ----------- */
+
+
+
+
+/* --------- NVIDIA ad ----------- */
+
+.ai-hero-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nvidia-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.75);
+}
+
+.ai-hero-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
+  z-index: 1;
+}
+
+.ai-hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: .5px;
+  background: linear-gradient(120deg, #00ff88, #00cfff, #7b2ff7, #00ff88);
+  background-size: 300% 300%;
+  animation: borderMove 6s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  pointer-events: none;
+  z-index: 3;
+}
+
+
+.ai-hero-content {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  max-width: 520px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(10, 15, 37, 0.55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.1);
+  z-index: 2;
+  transition: transform 0.3s ease;
+  color: var(--white);
+}
+
+.ai-hero-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,255,200,0.15);
+  opacity: 0.6;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%,100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
+.ai-hero-content h2 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.ai-hero-content p {
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+.ai-hero-wrapper:hover .ai-hero-content {
+  transform: translateY(-6px) scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .ai-hero-content {
+    position: static;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 0px;
+  }
+
+  .ai-hero-content h2{
+    font-size: 17px;
+  }
+  .ai-hero-content p{
+    margin: 0px;
+  }
+}
+
+/* --------- NVIDIA ad ----------- */
+
+
+
+/* --------- deploy ai factory ----------- */
+.ai-deployment .ai-deployment-type {
+  padding: 24px 50px;
+  position: relative;
+  color: #fff;
+  border-right: 1px solid var(--primary-color);
+}
+.ai-deployment .ai-deployment-item:last-child .ai-deployment-type {
+  border-right: 0;
+}
+
+.ai-deployment .ai-deployment-type h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  transition: .5s;
+}
+.ai-deployment .ai-deployment-type p {
+  font-size: 13px;
+  opacity: 0.7;
+  line-height: 1.5;
+  transition: .5s;
+}
+.ai-deployment .ai-deployment-type:hover {
+  background: rgba(0, 200, 255, 0.05);
+}
+.ai-deployment .ai-deployment-type:hover  p{
+  opacity: 1;
+  transition: .5s;
+}
+.ai-deployment .ai-deployment-type:hover h3{
+  color: var(--primary-color);
+  transition: .5s;
+}
+
+@media (max-width: 768px) {
+  .ai-deployment .ai-deployment-type {
+    padding: 15px;
+    border-right: 0;
+    border-bottom: 1px solid var(--primary-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-deployment .ai-deployment-type {
+    padding: 10px;
+  }
+}
+
+/* --------- deploy ai factory ----------- */
+
+
+/* --------- AI Factory FAQ ----------- */
+
+/* .ai-factory-faq-container {
+  padding: 40px;
+  padding-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+} */
+
+.ai-factory-faq-item {
+  position: relative;
+  padding: 18px 0;
+}
+
+/* gradient border */
+.ai-factory-faq-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 200, 255, 0),
+    rgba(0, 200, 255, 0.8),
+    rgba(0, 200, 255, 0)
+  );
+}
+
+.ai-factory-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.ai-factory-faq-num {
+  min-width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #0a1f33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.ai-factory-faq-header h3 {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.ai-factory-faq-icon {
+  font-size: 25px;
+  transition: transform 0.3s ease;
+  color: var(--white);
+}
+
+.ai-factory-faq-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  padding-left: 61px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ai-factory-faq-item.active .ai-factory-faq-body {
+  max-height: 200px;
+  opacity: 0.8;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.ai-factory-faq-item.active .ai-factory-faq-icon {
+  transform: rotate(180deg);
+}
+
+.ai-factory-faq-header:hover h3 {
+  color: #00cfff;
+}
+
+@media (max-width: 900px) {
+  .ai-factory-faq-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 10px;
+  }
+  .ai-factory-faq-header h3{
+    font-size: 15px;
+  }
+}
+
+/* --------- AI Factory FAQ ----------- */
