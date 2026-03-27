@@ -186,6 +186,35 @@ $('.client-list1').owlCarousel({
   }
 });
 
+$('.client-list1-ar').owlCarousel({
+  loop: true,
+  nav: false,
+  dots: false,
+  rtl:true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplaySpeed: 2000,
+  smartSpeed: 2000,
+  responsive: {
+
+    0: {
+      items: 1
+    },
+    375: {
+      items: 2
+    },
+    768: {
+      items: 4
+    },
+    1000: {
+      items: 5
+    },
+    1200: {
+      items: 6
+    }
+  }
+});
+
 // client-list2
 $('.client-list2').owlCarousel({
   loop: true,
@@ -297,6 +326,32 @@ $('.core-prev').click(function() {
     owl.trigger('prev.owl.carousel');
 });
 
+var owl = $('.core-offer-slider-ar').owlCarousel({
+      loop:true,
+      margin:10,
+      rtl:true,
+      autoplay:true,
+      nav:false,
+      dots:false,
+      responsive:{
+          0:{
+              items:1.5
+          },
+          650:{
+              items:2.5
+          },
+          
+          1000:{
+              items:3.5
+          }
+      }
+});
+$('.core-next').click(function() {
+    owl.trigger('next.owl.carousel');
+});
+$('.core-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+});
 
 
 
@@ -320,6 +375,35 @@ const tabBtns = document.querySelectorAll('.tab-btn');
 $('.case-study-slider').owlCarousel({
   loop: true,
   nav: false,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplaySpeed: 2000,
+  smartSpeed: 2000,
+  margin:20,
+  responsive: {
+    0: {
+      items: 1
+    },
+    500: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    1000: {
+      items: 4
+    },
+    1200: {
+      items: 4
+    }
+  }
+});
+
+$('.case-study-slider-ar').owlCarousel({
+  loop: true,
+  nav: false,
+  rtl:true,
   dots: false,
   autoplay: true,
   autoplayTimeout: 2000,
@@ -374,12 +458,70 @@ $('.projects-slider').owlCarousel({
   }
 });
 
+$('.projects-slider-ar').owlCarousel({
+  loop: true,
+  nav: false,
+  rtl:true,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplaySpeed: 2000,
+  smartSpeed: 2000,
+  margin:20,
+  responsive: {
+    0: {
+      items: 1
+    },
+    400: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    1000: {
+      items: 4
+    },
+    1200: {
+      items: 4
+    }
+  }
+});
+
 
 // news-events-slider
 $('.news-events-slider').owlCarousel({
   loop: true,
   nav: false,
   dots: false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  autoplaySpeed: 2000,
+  smartSpeed: 2000,
+  margin:20,
+  responsive: {
+    0: {
+      items: 1
+    },
+    375: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    1000: {
+      items: 2
+    },
+    1200: {
+      items: 2
+    }
+  }
+});
+
+$('.news-events-slider-ar').owlCarousel({
+  loop: true,
+  nav: false,
+  dots: false,
+  rtl:true,
   autoplay: true,
   autoplayTimeout: 2000,
   autoplaySpeed: 2000,
@@ -506,6 +648,63 @@ var owl = $('.prof-services-slider').owlCarousel({
           },
           1000:{
               items:4
+          }
+      }
+});
+$('.core-next').click(function() {
+    owl.trigger('next.owl.carousel');
+});
+$('.core-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+});
+
+var owl = $('.prof-services-slider-ar').owlCarousel({
+      loop:true,
+      margin:10,
+      autoplay:true,
+      nav:false,
+      rtl: true,
+      dots:false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          800:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+});
+$('.core-next').click(function() {
+    owl.trigger('next.owl.carousel');
+});
+$('.core-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+});
+
+
+// ai real world impact slider
+var owl = $('.ai-real-world-impact-slider').owlCarousel({
+      loop:true,
+      margin:20,
+      autoplay:true,
+      nav:false,
+      dots:false,
+      responsive:{
+          0:{
+              items:1.5
+          },
+          650:{
+              items:2.5
+          },
+          
+          1000:{
+              items:3.5
           }
       }
 });

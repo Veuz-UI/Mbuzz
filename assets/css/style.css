@@ -58,6 +58,7 @@ a {
   width: 100%;
   z-index: 9;
   position: fixed;
+  top: 15px;
 }
 
 .main-header-in {
@@ -66,7 +67,7 @@ a {
   align-items: center;
   position: relative;
   width: 96%;
-  padding: 15px 0;
+  padding: 10px 0;
   margin: 0 auto;
   transition: all ease-in-out 0.5s;
 }
@@ -86,6 +87,7 @@ header.fixed-to-top .main-header {
   background: var(--gradient);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 8;
+  top:0;
 }
 
 /*logo*/
@@ -102,7 +104,7 @@ header.fixed-to-top .main-header {
 .right-nav-top {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 35px;
 }
 
 .right-nav-top .mob-btn {
@@ -114,20 +116,32 @@ header.fixed-to-top .main-header {
   display: none;
 }
 
-.nav-desc-menu {
+/* .nav-desc-menu {
   border: 1px solid #0db4f93d;
-  padding: 12px 22px;
+  padding: 15px 22px;
   border-radius: 50px;
-}
+} */
 
 .nav-desc-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-right: 10px;
-  /* display: flex; */
-  gap: 40px;
+  display: flex;
+  gap: 6px;
+  border: 1px solid #0db4f93d;
+  padding: 5px;
+  border-radius: 50px;
 }
+
+.nav-desc-menu ul li{
+    list-style: none;
+    padding: 10px 25px;
+    border-radius: 40px;
+    color: #cfd8dc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 
 .nav-desc-menu ul li a {
   font-size: 15px;
@@ -136,24 +150,18 @@ header.fixed-to-top .main-header {
   cursor: pointer;
 }
 
-.nav-desc-menu ul li a:hover {
-  color: var(--primary-color);
-}
-
-.nav-desc-menu ul li a.active {
+.nav-desc-menu ul .nav-menu-item.active {
   color: var(--white);
   background: var(--gradient);
-  padding: 10px 25px;
-  border-radius: 50px;
+  transform: scale(1.02);
 }
 
-header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
+header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   background: #ffffff40;
-  /* color: var(--secondary-color); */
 }
 
 .lang-switch {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   cursor: pointer;
@@ -162,7 +170,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
 /* parent dropdown */
 .right-nav-top .dropdown-menu {
   position: absolute;
-  top: 185%;
+  top: 125%;
   left: 0;
   background: var(--black);
   border: 1px solid var(--secondary-color);
@@ -199,7 +207,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   content: "";
   position: absolute;
   left: 0;
-  top: 14px;
+  top: 17px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -235,7 +243,6 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
 }
 
 .right-nav-top .submenu-toggle::after {
@@ -257,6 +264,21 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
 }
 
 /* navbar */
+
+@media (max-width: 1500px) {
+  .right-nav-top {
+    gap: 25px;
+  }
+  .nav-desc-menu ul li {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-desc-menu ul li {
+        padding: 10px 10px;
+    }
+}
 
 
 /* ------------------------------
@@ -347,7 +369,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   font-weight: 400;
   border: none;
   border-radius: 50px;
-  padding: 10px 25px;
+  padding: 14px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid var(--primary-color);
@@ -1178,10 +1200,8 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   padding-right: 11%;
 }
 
-.core-offering .core-header h2 {
-  color: var(--primary-color);
-  font-size: 28px;
-  margin-bottom: 0;
+.core-header-in{
+  max-width: 50%;
 }
 
 .core-offering .core-nav button {
@@ -1201,9 +1221,30 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   color: #fff;
 }
 
+@media (max-width: 1600px) {
+  .core-offering .core-offering-in {
+    padding-left: 3%;
+  }
+}
+
 @media (max-width: 992px) {
   .core-offering .core-offering-in {
-    padding-left: 35px;
+    padding-left: 25px;
+  }
+  .core-header-in {
+    max-width: 100%;
+  }
+  .core-offering .core-header {
+    display: block;
+  }
+  .core-offering .core-card h3 {
+    font-size: 20px;
+  }
+  .core-offering .core-header h2 {
+    margin-bottom: 10px;
+  }
+  .core-offering .core-nav button {
+    margin-left: 0;
   }
 }
 
@@ -1211,24 +1252,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   .core-offering .core-offering-in {
     padding-left: 15px;
   }
-
-  .core-offering .core-header {
-    display: block;
-  }
-
-  .core-offering .core-card h3 {
-    font-size: 20px;
-  }
-
-  .core-offering .core-header h2 {
-    margin-bottom: 10px;
-  }
-
-  .core-offering .core-nav button {
-    margin-left: 0;
-  }
 }
-
 /* --------- END core offering slider ----------- */
 
 /* --------- clients ----------- */
@@ -3588,7 +3612,8 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   padding: 16px;
   border-radius: 14px;
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: 300;
   border: 1px solid rgba(255,255,255,0.05);
 }
 
@@ -3604,57 +3629,50 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
 
 
 /* --------- NVIDIA ad ----------- */
-
 .ai-hero-wrapper {
   position: relative;
-  border-radius: 24px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease;
-}
 
+}
 .nvidia-bg-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   filter: brightness(0.75);
+  border-radius: 24px;
+  border: 1px solid #0db4f957;
 }
-
-.ai-hero-wrapper::after {
+/* .ai-hero-wrapper::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(to right, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
   z-index: 1;
 }
-
 .ai-hero-wrapper::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 24px;
   padding: .5px;
-  background: linear-gradient(120deg, #00ff88, #00cfff, #7b2ff7, #00ff88);
   background-size: 300% 300%;
   animation: borderMove 6s linear infinite;
-
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
-
   pointer-events: none;
   z-index: 3;
-}
-
-
+} */
 .ai-hero-content {
   position: absolute;
   top: 60px;
   left: 60px;
-  max-width: 520px;
+  max-width: 50%;
   padding: 28px;
   border-radius: 20px;
   background: rgba(10, 15, 37, 0.55);
@@ -3664,7 +3682,6 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   transition: transform 0.3s ease;
   color: var(--white);
 }
-
 .ai-hero-content::after {
   content: "";
   position: absolute;
@@ -3674,45 +3691,130 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
   opacity: 0.6;
   animation: pulseGlow 3s ease-in-out infinite;
 }
-
 @keyframes pulseGlow {
   0%,100% { opacity: 0.4; }
   50% { opacity: 0.9; }
 }
-
-.ai-hero-content h2 {
-  font-size: 26px;
-  line-height: 1.4;
-  margin-bottom: 16px;
-}
-
-.ai-hero-content p {
-  font-size: 14px;
-  opacity: 0.75;
-  line-height: 1.6;
-}
-
 .ai-hero-wrapper:hover .ai-hero-content {
   transform: translateY(-6px) scale(1.02);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+  .nvidia-bg-img{
+    border-radius: 15px 15px 0 0;
+  }
   .ai-hero-content {
-    position: static;
-    margin: 0px;
-    padding: 10px;
-    border-radius: 0px;
-  }
+      position: static;
+      margin: 0px;
+      padding: 25px;
+      border-radius: 0px 0 15px 15px;
+      max-width: 100%;
+    }
+}
 
-  .ai-hero-content h2{
-    font-size: 17px;
-  }
-  .ai-hero-content p{
-    margin: 0px;
+/* --------- END NVIDIA ad ----------- */
+
+/* ------- core offering slider ------------- */
+.ai-real-world-impact{
+  background-color: var(--white);
+}
+.ai-real-world-impact .core-offering-in {
+  padding-left: 11%;
+}
+.ai-real-world-impact .core-card {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+
+.ai-real-world-impact .card-icon {
+  margin-bottom: 25px;
+}
+
+.ai-real-world-impact .card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  max-height: 600px;
+}
+
+.ai-real-world-impact .core-card h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.ai-real-world-impact .core-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--black);
+  text-align: justify;
+}
+
+.ai-real-world-impact .core-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-right: 11%;
+}
+
+.ai-real-world-impact .core-nav button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ai-real-world-impact .core-nav button:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .ai-real-world-impact .core-offering-in {
+    padding-left: 3%;
   }
 }
 
-/* --------- NVIDIA ad ----------- */
+@media (max-width: 992px) {
+  .ai-real-world-impact .core-offering-in {
+    padding-left: 25px;
+  }
+  .ai-real-world-impact .core-header {
+    display: block;
+  }
+  .ai-real-world-impact .core-card h3 {
+    font-size: 20px;
+  }
+  .ai-real-world-impact .core-nav button {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-real-world-impact .core-offering-in {
+    padding-left: 15px;
+  }
+}
+
+/* --------- END core offering slider ----------- */
+
+
+
+
+
+
+
 
 
 
@@ -3866,5 +3968,4 @@ header.fixed-to-top .main-header .nav-desc-menu ul li a.active {
     font-size: 15px;
   }
 }
-
 /* --------- AI Factory FAQ ----------- */
