@@ -196,7 +196,6 @@ $('.client-list1-ar').owlCarousel({
   autoplaySpeed: 2000,
   smartSpeed: 2000,
   responsive: {
-
     0: {
       items: 1
     },
@@ -243,6 +242,35 @@ $('.client-list2').owlCarousel({
     }
   }
 });
+
+$('.client-list2-ar').owlCarousel({
+  loop: true,
+  nav: false,
+  dots: false,
+  autoplay: true,
+  rtl: true,
+  autoplayTimeout: 2000,
+  autoplaySpeed: 2000,
+  smartSpeed: 2000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    375: {
+      items: 2
+    },
+    768: {
+      items: 4
+    },
+    1000: {
+      items: 5
+    },
+    1200: {
+      items: 6
+    }
+  }
+});
+
 
 /* <!-- ==================== Reveal type ==================== --> */
 gsap.registerPlugin(ScrollTrigger);

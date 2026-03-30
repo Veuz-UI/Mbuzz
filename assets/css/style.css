@@ -161,7 +161,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
 }
 
 .lang-switch {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
   cursor: pointer;
@@ -180,6 +180,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  display: block;
 }
 
 .right-nav-top .dropdown.active .dropdown-menu {
@@ -235,6 +236,10 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   visibility: visible;
   transform: translateX(0);
 }
+
+/* .dropdown-menu .submenu .submenu-menu {
+  display: block;
+} */
 
 .right-nav-top .dropdown-menu a,
 .right-nav-top .submenu-menu a {
@@ -347,7 +352,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   font-weight: 400;
   border: none;
   border-radius: 100px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   cursor: pointer;
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
   transition: all 0.3s ease;
@@ -359,6 +364,11 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   color: var(--white);
   background-position: right;
   box-shadow: 0 12px 30px rgba(39, 39, 39, 0.35);
+}
+
+.main-btn svg, 
+.main-btn i{
+  padding-left: 10px;
 }
 
 /* login */
@@ -442,6 +452,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   position: absolute;
   top: 50%;
   left: 50%;
+  right: auto;
   bottom: initial;
   transform: translate(-50%, -50%);
   width: 43%;
@@ -898,10 +909,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -8px;
-  margin-top: -12px;
-  height: 0;
-  width: 0;
+  transform: translate(-50%, -50%);
 }
 #scroll:hover {
   background-color: var(--black);
@@ -1359,7 +1367,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
 }
 
 .all-works .tab-btn.active {
-  background: linear-gradient(135deg, #1a8fff 0%, #0d63c9 100%);
+  background: var(--gradient);
   color: #fff;
   box-shadow: 0 4px 20px rgba(13, 99, 201, 0.40);
 }
@@ -3969,3 +3977,93 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
   }
 }
 /* --------- AI Factory FAQ ----------- */
+
+
+
+
+/* -----------------------------------------
+                AR start here
+------------------------------------------*/
+html[dir="rtl"] .banner_slider .carousel-control-prev, 
+html[dir="rtl"] .banner_slider .carousel-control-next{
+  rotate: 180deg;
+}
+
+html[dir="rtl"] .innovation-content {
+  padding-left: initial;
+    padding-right: 25px;
+}
+
+html[dir="rtl"] .core-offering .core-nav button {
+    rotate: 180deg;
+}
+
+html[dir="rtl"] .core-offering .core-offering-in {
+  padding-left: initial;
+    padding-right: 11%;
+}
+
+html[dir="rtl"] .core-offering .core-header {
+  padding-right: initial;
+    padding-left: 11%;
+}
+
+html[dir="rtl"] .right-nav-top .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+html[dir="rtl"] .right-nav-top .submenu-menu {
+  left: auto;
+  right: 110%;
+}
+html[dir="rtl"] .right-nav-top .dropdown-menu li::before {
+    left: auto;
+    right: 0;
+}
+html[dir="rtl"] .right-nav-top .dropdown-menu li {
+    text-align: right;
+}
+
+
+@media (max-width: 1600px) {
+  html[dir="rtl"] .core-offering .core-offering-in {
+    padding-right: 3%;
+    padding-left: initial;
+  }
+}
+
+@media (max-width: 992px) {
+  html[dir="rtl"] .core-offering .core-offering-in {
+    padding-right: 25px;
+    padding-left: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  html[dir="rtl"] .core-offering .core-offering-in {
+    padding-right: 15px;
+    padding-left: initial;
+  }
+}
+
+html[dir="rtl"] #scroll{
+  right: initial;
+  left: 20px;
+}
+
+html[dir="rtl"] .main-btn svg, 
+html[dir="rtl"] .main-btn i{
+  /* padding-left: initial;
+  padding-right: 10px; */
+  rotate: 180deg;
+}
+
+.news-events .card-content{
+  padding-left: initial;
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+   .news-events .card-content {
+        padding-right: initial;
+    }
+}
