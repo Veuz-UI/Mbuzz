@@ -150,13 +150,13 @@ header.fixed-to-top .main-header {
   cursor: pointer;
 }
 
-.nav-desc-menu ul .nav-menu-item.active {
+.nav-desc-menu ul .nav-menu-item.active-menu {
   color: var(--white);
   background: var(--gradient);
   transform: scale(1.02);
 }
 
-header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active {
+header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   background: #ffffff40;
 }
 

@@ -579,32 +579,32 @@ $('.news-events-slider-ar').owlCarousel({
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    STICKY SUBNAV ACTIVE STATE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-document.addEventListener('DOMContentLoaded', function () {
-  (function() {
-    const links    = document.querySelectorAll('.subnav-links a');
-    const sections = document.querySelectorAll('.content-section');
+// document.addEventListener('DOMContentLoaded', function () {
+//   (function() {
+//     const links    = document.querySelectorAll('.subnav-links a');
+//     const sections = document.querySelectorAll('.content-section');
   
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          links.forEach(l => l.classList.remove('active'));
-          const active = document.querySelector(`.subnav-links a[href="#${entry.target.id}"]`);
-          if (active) active.classList.add('active');
-        }
-      });
-    }, { threshold: 0.4 });
+//     const observer = new IntersectionObserver(entries => {
+//       entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//           links.forEach(l => l.classList.remove('active'));
+//           const active = document.querySelector(`.subnav-links a[href="#${entry.target.id}"]`);
+//           if (active) active.classList.add('active');
+//         }
+//       });
+//     }, { threshold: 0.4 });
   
-    sections.forEach(s => observer.observe(s));
+//     sections.forEach(s => observer.observe(s));
   
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-  })();
-});
+//     links.forEach(link => {
+//       link.addEventListener('click', e => {
+//         e.preventDefault();
+//         const target = document.querySelector(link.getAttribute('href'));
+//         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//       });
+//     });
+//   })();
+// });
 
 
 /* ------------- AI Infrastructure ------------- */
