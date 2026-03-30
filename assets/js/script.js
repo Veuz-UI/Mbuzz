@@ -723,7 +723,7 @@ $('.news-events-slider-ar').owlCarousel({
 
 /* ------------- AI Infrastructure ------------- */
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
   function activate(el) {
     if (el.classList.contains('active')) return;
     document.querySelectorAll('.infrastructure-wrapper__panel').forEach(p => p.classList.remove('active'));
@@ -736,7 +736,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 50);
     }
   }
-});
+// });
 
 /* ------------- AI Infrastructure ------------- */
 
