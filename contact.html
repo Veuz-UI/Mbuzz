@@ -19,6 +19,7 @@
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -87,7 +88,7 @@
                   </ul>
                 </li>
                 <li class="nav-menu-item"><a href="#">Media</a></li>
-                <li class="nav-menu-item"><a href="contact.html">Contact Us</a></li>
+                <li class="nav-menu-item active-menu"><a href="contact.html">Contact Us</a></li>
               </ul>
             </div>
             <div class="wrap desc-btn">
@@ -204,7 +205,6 @@
   </header>
 
 
-
   <!-- ── HERO ── -->
   <section class="inner-banner">
     <div class="width-container">
@@ -213,324 +213,94 @@
             <nav class="breadcrumb">
               <a href="#">Home</a>
               <span class="sep">-</span>
-              <a href="#">AI</a>
-              <span class="sep">-</span>
-              <span class="current">AI Consulting</span>
+              <span class="current">Contact Us</span>
             </nav>
-            <h1>AI Consulting</h1>
-          </div>
-          <div class="banner-sub-img">
-            <img src="assets/img/ai-consulting-banner.webp" alt="">
+            <h1>Contact Us</h1>
           </div>
         </div>
     </div>
   </section>
 
-  <!-- ── STICKY SUB-NAV ── -->
-  <div class="inner-subnav-wrap">
-    <div class="width-container">
-      <nav class="inner-subnav">
-        <ul class="inner-subnav-links">
-          <li><a href="#overview" class="active">Overview</a></li>
-          <li><a href="#approach">Our Approach</a></li>
-          <li><a href="#consulting">Consulting Services</a></li>
-          <li><a href="#execution">Execution</a></li>
-          <li><a href="#why">Why MBUZZ</a></li>
-          <li><a href="#professional">Professional Services</a></li>
-          <li><a href="#partnership">AI Partnership</a></li>
-        </ul>
-      </nav>
+  <!-- contact -->
+  <section class="section-padding pb-0 contact-sec">
+  <div class="width-container">
+    
+    <div class="contact-sec-in">
+      <div class="row">
+      
+      <div class="col-md-12 col-lg-8">
+        <div class="left-contact">
+          <form id="contactForm" novalidate>
+            <div class="form-group double">
+                <div class="floating-label">
+                  <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                </div>
+                <div class="floating-label">
+                  <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                </div>
+            </div>
+            <div class="form-group double">
+              <div class="form-group floating-label">
+                <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter email address" required>
+              </div>
+              <div class="form-group floating-label">
+                <label for="phone">Mobile Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter mobile number" required>
+              </div>
+            </div>
+            <div class="form-group floating-label">
+              <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="main-btn-out mt-3 text-end">
+              <a href="#" class="main-btn">Send Message <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4">
+        <div class="contact-col right-contact">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p><a href="mailto:info@mbuzztech.com">info@mbuzztech.com</a></p>
+            </div>
+            <div class="contact-item mb-4">
+              <i class="fa-solid fa-phone"></i>
+              <p><a href="tel:+966530378192">+966 53 037 8192</a>,
+                <a href="tel:+97143304125">+971 4 330 4125</a></p>
+            </div>
+
+            <h4>Address</h4>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                Head Quarters<br>
+                Building CS-01, Al-Raidah Digital City, Riyadh, KSA<br>
+                Strategic Office #313, Al Nasr Plaza, Dubai
+              </p>
+            </div>
+          </div>
+      </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- ai-overview -->
-  <section class="section-padding my-4 ai-overview" id="overview">
-    <div class="width-container">
-      <div class="ai-overview-in">
-        <div class="ai-tag">Overview</div>
-        <h2 class="heading text-white mb-3">AI in Action. Built With You.</h2>
-        <p class="description mb-3">
-          We provide end-to-end Artificial Intelligence consulting to help organizations define strategy, identify
-          high-impact
-          use cases, and turn AI ambition into real, measurable outcomes. Our approach focuses on practical adoption,
-          ensuring
-          AI initiatives are aligned with business objectives, operational realities, and long-term scalability.
-        </p>
-        <p class="description mb-0">
-          By combining deep technical expertise with strong business understanding, supported by a powerhouse of over
-          40+ specialized AI Advisors
-          by NVIDIA, we bring unmatched localized expertise to every consultation, ensuring your strategy is backed by
-          one of the largest
-          pools of AI talent in the region.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- ai-approach -->
-  <section class="section-padding ai-approach" id="approach">
-    <div class="width-container">
-      <div class="ai-approach-in" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-6">
-            <div class="left-ai-approach">
-              <div class="ai-tag">Our Approach</div>
-              <h3 class="heading text-dark">What AI Consulting Means <br> at MBUZZ </h3>
-              <p class="description text-dark">
-                AI consulting at MBUZZ goes beyond experimentation. We guide
-                organizations through every stage of their AI journey, ensuring
-                solutions are feasible, secure, and ready for real-world use.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-ai-approach">
-              <img src="assets/img/ai-consulting-approach.webp" alt="AI Brain">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ai-consulting -->
-  <section class="section-padding pb-0 ai-consulting" id="consulting">
-    <div class="width-container">
-      <div class="section-header text-center">
-        <div class="ai-tag">Consulting Services</div>
-        <h2 class="heading mb-4 text-white">Turning AI Potential into Performance</h2>
-      </div>
-      <div class="ai-consulting-list mt-5">
-        <div class="row justify-content-center">
-          <div class="col-sm-6 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-            <div class="ai-consulting-list-item">
-              <div class="icon"><img src="assets/img/ai-icons/01.png" class="img-fluid" alt=""></div>
-              <h4>AI Strategy & Readiness Assessment</h4>
-              <p>We assess data readiness and governance, then design right-sized, cost-optimized AI infrastructure.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <div class="ai-consulting-list-item">
-              <div class="icon"><img src="assets/img/ai-icons/02.png" class="img-fluid" alt=""></div>
-              <h4>Use Case Identification & Prioritization</h4>
-              <p>Identifying AI opportunities with clear business value, measurable ROI, and alignment to strategic
-                goals.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <div class="ai-consulting-list-item">
-              <div class="icon"><img src="assets/img/ai-icons/03.png" class="img-fluid" alt=""></div>
-              <h4>Solution Design & Architecture</h4>
-              <p>Designing AI models, data pipelines, platforms, and system architectures tailored to enterprise
-                requirements.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-            <div class="ai-consulting-list-item">
-              <div class="icon"><img src="assets/img/ai-icons/04.png" class="img-fluid" alt=""></div>
-              <h4>Implementation & Integration</h4>
-              <p>Supporting deployment and integration of AI solutions into existing systems, workflows, and operations.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-            <div class="ai-consulting-list-item">
-              <div class="icon"><img src="assets/img/ai-icons/05.png" class="img-fluid" alt=""></div>
-              <h4>Operationalization & Scaling</h4>
-              <p>Ensuring AI solutions are production-ready, scalable, and sustainable over time.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- execution-ai -->
-  <section class="section-padding execution-ai" id="execution">
-    <div class="width-container">
-      <div class="execution-ai-in">
-        <div class="execution-ai-card">
-          <div class="ai-tag">Execution</div>
-          <h3 class="heading text-white">Bringing Strategy to Reality</h3>
-          <p class="description mb-0">
-            MBUZZ is the trusted AI architect for the Kingdom. As an NVIDIA Elite Partner, we uniquely bridge the gap
-            between AI strategy and execution. When required, we translate consulting outcomes into fully realized AI
-            environments, leveraging complete AI factory capabilities from high-performance compute and specialized
-            networking to Sovereign AI software. This allows enterprises and academic institutions to accelerate
-            innovation, maintain full data control, and support national digital transformation initiatives.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- faq -->
-  <section class="section-padding faq-sec-outer" id="why">
-    <div class="width-container">
-      <div class="row">
-
-        <div class="col-lg-6 col-xl-7 left-faq">
-          <div class="faq-header">
-            <div class="ai-tag">Why <span>MBUZZ</span></div>
-            <h3 class="reveal-type" data-bg-color="#b5b5b5" data-fg-color="#000">
-              Trusted AI Consulting That Delivers</h3>
-            <!-- <p>Trusted in more than 10 countries and 2 hundred customers.</p> -->
-          </div>
-          <div class="accordion" id="eventxproAccordion">
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  <span class="accrd-head">End-to-End Accountability</span>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="accrd-head">Business-Driven Consulting</span>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <span class="accrd-head">Sovereign AI Expertise</span>
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <span class="accrd-head">Execution-Ready Strategy</span>
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-xl-5 right-faq">
-          <div class="right-faq-img">
-            <img src="assets/img/faq.webp" class="img-fluid" alt="">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- prof-services -->
-  <section class="section-padding prof-services" id="professional">
-    <div class="width-container">
-      <div class="core-header">
-        <h3>From Advisory to Operations</h3>
-        <div class="core-nav">
-          <button class="core-prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <button class="core-next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-      </div>
-      <div class="owlslider owl-carousel owl-theme prof-services-slider">
-        <div target="1" class="item">
-          <div class="core-card card-blue">
-            <div class="card-icon">
-              <img src="assets/img/services/s1.webp" class="" alt="">
-            </div>
-            <h3>AI & Emerging
-              Tech</h3>
-            <p>
-              AI, computer vision, and advanced analytics that convert data
-              into actionable intelligence across industries.
-            </p>
-          </div>
-        </div>
-        <div target="2" class="item">
-          <div class="core-card card-red">
-            <div class="card-icon">
-              <img src="assets/img/services/s2.webp" class="" alt="">
-            </div>
-            <h3>Telecom &
-              Connectivity</h3>
-            <p>
-              Carrier-grade telecom, optical, wireless, and edge infrastructure designed for
-              ultra-reliable connectivity and scalable performance.
-            </p>
-          </div>
-        </div>
-        <div target="3" class="item">
-          <div class="core-card card-meroon">
-            <div class="card-icon">
-              <img src="assets/img/services/s3.webp" class="" alt="">
-            </div>
-            <h3>Smart & Connected
-              Solutions</h3>
-            <p>
-              IoT-driven, ELV, and smart city solutions that connect physical
-              environments and enable intelligent, data-led operations.
-            </p>
-          </div>
-        </div>
-        <div target="4" class="item">
-          <div class="core-card card-green">
-            <div class="card-icon">
-              <img src="assets/img/services/s4.webp" class="" alt="">
-            </div>
-            <h3>Managed Services &
-              Operations </h3>
-            <p>
-              Proactive monitoring, management, and optimization services that ensure
-              reliability, performance, and operational continuity.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ai-journey -->
-  <section class="section-padding ai-journey" id="partnership">
-    <div class="ai-journey-wrapper">
+  <!-- MAP -->
+    <section class="section-padding pb-0 contact-sec">
       <div class="width-container">
-        <div class="ai-journey-card">
-          <div class="ai-tag mb-3">AI Partnership</div>
-          <h3 class="heading mb-4">Committed to Your
-            AI Journey</h3>
-          <p class="description mb-0">
-            MBUZZ goes beyond project delivery. We build long-term partnerships
-            that help organizations continuously evolve their AI capabilities,
-            ensuring solutions remain relevant, secure, and impactful as
-            technologies and business needs change.
-          </p>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7421584.5461251885!2d45.63750672835937!3d24.73303927896028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f033afbde08d1%3A0x15aa08bf1cbec9ec!2sServcorp%20Olaya%20Towers%20-%20Coworking%2C%20Offices%2C%20Virtual%20Offices%20%26%20Meeting%20Rooms!5e0!3m2!1sen!2sin!4v1774506659135!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
 
   <!-- CTA -->
   <section class="section-padding pb-3 cta">
@@ -670,5 +440,12 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
 
 </body>
+
+
+
+
+<script id="scrollspy">
+
+</script>
 
 </html>
