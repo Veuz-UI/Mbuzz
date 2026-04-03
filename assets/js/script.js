@@ -1,31 +1,33 @@
 //// loader
-function hideLoader() {
-    const l = document.getElementById('loader');
-    l.classList.add('hide');
-    setTimeout(() => {
-      l.style.display = 'none';
-      document.getElementById('page').classList.add('show');
-    }, 500);
-  }
+// function hideLoader() {
+//     const l = document.getElementById('loader');
+//     l.classList.add('hide');
+//     setTimeout(() => {
+//       l.style.display = 'none';
+//       document.getElementById('page').classList.add('show');
+//     }, 500);
+//   }
  
-  // arcs finish at ~2.05+0.42 = 2.47s, add buffer
-  setTimeout(hideLoader, 3000);
- 
-  function replayLoader() {
-    const l = document.getElementById('loader');
-    l.style.cssText = 'display:flex; opacity:1; transform:none;';
-    l.classList.remove('hide');
-    document.getElementById('page').classList.remove('show');
- 
-    // l.querySelectorAll('.g-text, .g-dot, .g-card, .g-arc1, .g-arc2, .g-arc3, .g-arc4, .bar-wrap, .bar-fill')
-    //   .forEach(el => {
-    //     el.style.animation = 'none';
-    //     el.offsetHeight; // reflow
-    //     el.style.animation = '';
-    //   });
- 
-    setTimeout(hideLoader, 3000);
-  }
+  var letters  = "MBUZZ";
+  var textEl   = document.getElementById("loaderText");
+  var barEl    = document.getElementById("loaderBar");
+  var loader   = document.getElementById("loader");
+
+  // // Build chars with stagger
+  // letters.split("").forEach(function(ch, i) {
+  //   var span = document.createElement("span");
+  //   span.className   = "char";
+  //   span.textContent = ch;
+  //   span.style.animationDelay = (0.3 + i * 0.13) + "s";
+  //   textEl.appendChild(span);
+  // });
+
+  // Hide after all chars animate + buffer
+  // var hideAfter = 300 + (letters.length * 130) + 800;
+  var hideAfter = 100 + (letters.length * 40) + 100;
+  setTimeout(function() {
+    loader.classList.add("hide");
+  }, hideAfter);
 /// END pre loader
 
 
@@ -250,32 +252,38 @@ $(document).ready(function(){
 
   // tab button amooth moving
   document.addEventListener('DOMContentLoaded', function () {
-    function moveIndicator(activeBtn) {
-        const indicator = document.querySelector('.tab-indicator');
-        const tabs      = document.querySelector('.all-works .tabs');
 
-        const tabsRect  = tabs.getBoundingClientRect();
-        const btnRect   = activeBtn.getBoundingClientRect();
+  function moveIndicator(activeBtn) {
+    const indicator = document.querySelector('.tab-indicator');
+    const tabs = document.querySelector('.all-works .tabs');
 
-        indicator.style.width     = btnRect.width + 'px';
-        indicator.style.transform = 'translateX(' + (btnRect.left - tabsRect.left) + 'px)';
-      }
+    if (!indicator || !tabs || !activeBtn) return;
 
-      // Init on load
-      document.addEventListener('DOMContentLoaded', function () {
-        const activeBtn = document.querySelector('.all-works .tab-btn.active');
-        if (activeBtn) moveIndicator(activeBtn);
-      });
+    const tabsRect = tabs.getBoundingClientRect();
+    const btnRect = activeBtn.getBoundingClientRect();
 
-      // On click
-      document.querySelectorAll('.all-works .tab-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          document.querySelectorAll('.all-works .tab-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          moveIndicator(btn);
-        });
-      });
+    indicator.style.width = btnRect.width + 'px';
+    indicator.style.transform =
+      'translateX(' + (btnRect.left - tabsRect.left) + 'px)';
+  }
+
+  // ✅ Init on load (ONLY ONCE)
+  const activeBtn = document.querySelector('.all-works .tab-btn.active');
+  if (activeBtn) moveIndicator(activeBtn);
+
+  // ✅ On click
+  document.querySelectorAll('.all-works .tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document
+        .querySelectorAll('.all-works .tab-btn')
+        .forEach(b => b.classList.remove('active'));
+
+      btn.classList.add('active');
+      moveIndicator(btn);
+    });
   });
+
+});
 
 
 // client-list1
@@ -285,7 +293,7 @@ $('.client-list1').owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 2000,
-  autoplaySpeed: 2000,
+  // autoplaySpeed: 2000,
   smartSpeed: 2000,
   responsive: {
 
@@ -293,9 +301,9 @@ $('.client-list1').owlCarousel({
       items: 1
     },
     375: {
-      items: 2
+      items: 3
     },
-    768: {
+    600: {
       items: 4
     },
     1000: {
@@ -314,16 +322,16 @@ $('.client-list1-ar').owlCarousel({
   rtl:true,
   autoplay: true,
   autoplayTimeout: 2000,
-  autoplaySpeed: 2000,
+  // autoplaySpeed: 2000,
   smartSpeed: 2000,
   responsive: {
     0: {
       items: 1
     },
     375: {
-      items: 2
+      items: 3
     },
-    768: {
+    600: {
       items: 4
     },
     1000: {
@@ -343,16 +351,16 @@ $('.client-list2').owlCarousel({
   autoplay: true,
   rtl: true,
   autoplayTimeout: 2000,
-  autoplaySpeed: 2000,
+  // autoplaySpeed: 2000,
   smartSpeed: 2000,
   responsive: {
     0: {
       items: 1
     },
     375: {
-      items: 2
+      items: 3
     },
-    768: {
+    600: {
       items: 4
     },
     1000: {
@@ -371,16 +379,16 @@ $('.client-list2-ar').owlCarousel({
   autoplay: true,
   rtl: true,
   autoplayTimeout: 2000,
-  autoplaySpeed: 2000,
+  // autoplaySpeed: 2000,
   smartSpeed: 2000,
   responsive: {
     0: {
       items: 1
     },
     375: {
-      items: 2
+      items: 3
     },
-    768: {
+    600: {
       items: 4
     },
     1000: {
@@ -521,7 +529,7 @@ $('.case-study-slider').owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 3000,
+  // autoplaySpeed: 3000,
   smartSpeed: 3000,
   margin:20,
   responsive: {
@@ -550,7 +558,7 @@ $('.case-study-slider-ar').owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 3000,
+  // autoplaySpeed: 3000,
   smartSpeed: 3000,
   margin:20,
   responsive: {
@@ -579,7 +587,7 @@ $('.projects-slider').owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 3000,
+  // autoplaySpeed: 3000,
   smartSpeed: 3000,
   margin:20,
   responsive: {
@@ -608,7 +616,7 @@ $('.projects-slider-ar').owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 3000,
+  // autoplaySpeed: 3000,
   smartSpeed: 3000,
   margin:20,
   responsive: {
@@ -637,7 +645,7 @@ $('.news-events-slider').owlCarousel({
   dots: false,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 3000,
+  // autoplaySpeed: 3000,
   smartSpeed: 3000,
   margin:20,
   responsive: {
@@ -666,7 +674,7 @@ $('.news-events-slider-ar').owlCarousel({
   rtl:true,
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplaySpeed: 3000,
+  // autoplaySpeed: 3000,
   smartSpeed: 3000,
   margin:20,
   responsive: {
@@ -687,6 +695,7 @@ $('.news-events-slider-ar').owlCarousel({
     }
   }
 });
+
 
 
 ////// inner pages start here //////
@@ -810,6 +819,7 @@ $(document).ready(function(){
     loop: true,
     margin: 10,
     autoplay: true,
+    rtl:true,
     nav: false,
     dots: false,
     responsive:{

@@ -23,9 +23,16 @@
 <body>
 
   <!-- loader -->
-  <!-- <div class="loader" id="loader">
+  <!-- <div class="loader" id="loader"> -->
+
+    <div id="loader">
+      <div class="loader-inner">
+        <img class="loader-icon" src="assets/img/favicon.png" alt="icon"/>
+        <div class="loader-text" id="loaderText"></div>
+      </div>
+    </div>
     
-  </div> -->
+  <!-- </div> -->
   <!-- loader -->
 
 <header>
@@ -65,7 +72,37 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-menu-item"><a href="#">Solutions</a></li>
+
+                  <li class="dropdown nav-menu-item">
+                    <a href="#" class="dropdown-toggle">Solutions</a>
+                    <ul class="dropdown-menu">
+                      <li class="submenu">
+                        <a href="#" class="submenu-toggle">Telecom & EDGE</a>
+                        <ul class="submenu-menu">
+                          <li><a href="#">In-Building Systems</a></li>
+                          <li><a href="#">EDGE Computing</a></li>
+                          <li><a href="wireless-solutions.html">Wireless Solutions</a></li>
+                        </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#" class="submenu-toggle">Smart Solutions</a>
+                        <ul class="submenu-menu">
+                          <li><a href="#">IoT</a></li>
+                          <li><a href="#">Smart Cities</a></li>
+                          <li><a href="#">ELV</a></li>
+                        </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#" class="submenu-toggle">IT solutions</a>
+                        <ul class="submenu-menu">
+                          <li><a href="#">Cybersecurity</a></li>
+                          <li><a href="#">Network Visibility & Monitoring</a></li>
+                          <li><a href="#">Storage</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
                   <li class="nav-menu-item"><a href="#">Services</a></li>
                   <li class="dropdown nav-menu-item">
                     <a href="#" class="dropdown-toggle">Company</a>
@@ -103,7 +140,6 @@
                 <a href="" class="menu-toggle two"><span></span></a>
               </div>
               <div class="nav-container">
-
                 <nav class="menu">
                   <div class="menu__item">
                     <a href="index.html" class="menu__item-link active">Home</a>
@@ -221,7 +257,7 @@
               Backed by global
               partners and a future-first mindset, we're here to help you lead what's next.
             </p>
-            <div class="main-btn-out text-center">
+            <div class="main-btn-out">
               <a href="features.html" class="main-btn">Discover more <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
@@ -239,7 +275,7 @@
               Backed by global
               partners and a future-first mindset, we're here to help you lead what's next.
             </p>
-            <div class="main-btn-out text-center">
+            <div class="main-btn-out">
               <a href="features.html" class="main-btn">Discover more <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
@@ -247,9 +283,8 @@
       </div>
 
       <!-- Footer section under carousel -->
-       <div class="width-container">
-      <div class="carousel-footer">
-        
+      <!-- <div class="width-container">
+        <div class="carousel-footer">
           <div class="carousel-left">
             <div class="carousel-left-item">
               <img src="assets/img/slider1.webp" class="img-fluid" alt="">
@@ -257,16 +292,13 @@
             <div>
               <span class="next-label">Next Slider</span>
               <h6>AI in Action, With You</h6>
-              <!-- Indicators -->
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button> -->
               </div>
             </div>
           </div>
           <div id="slide-icon" class="bottom-sliding">
-            <!-- <h1>Scroll Down Button #7</h1> -->
             <a href="#stats-section"><span></span><span></span><span></span></a>
           </div>
           <div class="carousel-right">
@@ -282,7 +314,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -291,7 +323,8 @@
 <section class="section-padding pb-0 stats-section" id="stats-section">
   <div class="width-container">
     <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+         <!-- data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" -->
         <div class="stat-card">
           <div class="stat-top">
             <p>Trusted by clients<br>around the globe</p>
@@ -305,7 +338,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
         <div class="stat-card">
           <div class="stat-top">
             <p>Skilled professionals<br>driving innovation</p>
@@ -319,7 +352,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
         <div class="stat-card">
           <div class="stat-top">
             <p>Collaborating with<br>global tech leaders</p>
@@ -333,7 +366,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
         <div class="stat-card">
           <div class="stat-top">
             <p>Empowering organizations<br>across industries</p>
@@ -383,7 +416,7 @@
 
 <section class="section-padding pb-0 innovation-section">
   <div class="width-container">
-  <div class="innovation-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+  <div class="innovation-box">
     <div class="row justify-content-center align-items-center">
       <div class="col-md-6">
         <div class="innovation-img">
@@ -470,7 +503,8 @@
 
 <!-- clients -->
 <section class="section-padding cleint-main">
-  <div class="width-container" data-aos="zoom-in" data-aos-duration="3000">
+  <div class="width-container">
+     <!-- data-aos="zoom-in" data-aos-duration="3000" -->
     <h6 class="heading text-center">Our Partners</h6>
 
     <div class="client-container">
@@ -763,7 +797,7 @@
 <!-- CTA -->
 <section class="section-padding pb-3 cta">
   <div class="width-container">
-    <div class="core-card card-blue" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+    <div class="core-card card-blue">
       <div class="core-card-in">
         <h3>Ready to Advance Your AI Capabilities?</h3>
         <p>

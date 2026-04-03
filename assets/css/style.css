@@ -46,6 +46,78 @@ a {
   transition: opacity 0.7s ease, transform 0.6s ease;
 } */
 
+#loader {
+      position: fixed;
+      inset: 0;
+      background: #060810;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    #loader.hide { opacity: 0; visibility: hidden; }
+
+    .loader-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Rotating icon */
+    .loader-icon {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      flex-shrink: 0;
+      animation: spin 1.2s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* MBUZZ text characters */
+    .loader-text {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .loader-text .char {
+      font-size: 65px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(30px) rotate(6deg);
+      animation: charDrop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      line-height: 1;
+    }
+
+    @keyframes charDrop {
+      to {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .loader-inner {
+        gap: 10px;
+      }
+      .loader-icon {
+        width: 40px;
+        height: 40px;
+      }
+      .loader-text .char {
+        font-size: 30px;
+      }
+    }
+
 /* ------------ END loader --------------- */
 
 .width-container {
@@ -395,7 +467,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 .login-btn:hover {
   background: var(--primary-color);
   border-color: transparent;
-  box-shadow: 0 5px 20px rgba(255, 215, 75, 0.51);
+  box-shadow: 0 5px 20px rgba(1, 73, 116, 0.51);
 }
 
 .login-btn img {
@@ -458,22 +530,12 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 .banner_slider .carousel-caption {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 11%;
   right: auto;
   bottom: initial;
-  transform: translate(-50%, -50%);
-  width: 43%;
-  padding: 60px;
-  text-align: center;
-  color: #fff;
-  border: 1px solid #0db4f963;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(3px);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 0%, rgba(9, 66, 126, 0.21) 100%);
+  transform: translate(0, -50%);
+  text-align: left;
+  max-width: 40%;
 }
 
 .banner_slider .carousel-caption h5 {
@@ -485,11 +547,11 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 
 /* slider heading */
-.carousel-caption .text {
+/* .carousel-caption .text {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* or flex-start if left-aligned */
-}
+  justify-content: center;
+} */
 .carousel-caption .text .char {
   display: inline-block;
   white-space: pre;
@@ -790,7 +852,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 
 @media (max-width:600px) {
   .banner_slider .carousel-caption {
-    padding: 15px;
+    padding: 30px 15px;
   }
 
   .banner_slider .carousel-caption h5 {
@@ -921,7 +983,9 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 
 @media (max-width:576px) {
   .footer-contact .contact-item {
-    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
   }
   .footer-col {
     text-align: center;
@@ -980,6 +1044,10 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   overflow: hidden;
   height: 100%;
 }
+.stats-section .stat-card:hover{
+  border: 1px solid var(--primary-color);
+}
+
 .stats-section .stat-top {
   display: flex;
   justify-content: space-between;
@@ -1043,6 +1111,9 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   background: linear-gradient(120deg, #1E1E2D, #10101F);
   border: 1px solid rgba(13, 180, 249, 0.35);
 }
+.innovation-box:hover{
+  border-color: var(--primary-color);
+}
 
 .innovation-img img {
   width: 100%;
@@ -1056,6 +1127,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 @media (max-width: 768px) {
   .innovation-box {
     padding: 30px;
+    border-radius: 30px;
   }
 
   .innovation-content {
@@ -1285,6 +1357,9 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   .core-offering .core-offering-in {
     padding-left: 15px;
   }
+  .core-offering .core-card {
+    padding: 15px;
+  }
 }
 /* --------- END core offering slider ----------- */
 
@@ -1352,6 +1427,12 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 .owl-stage-outer,
 .owl-item {
   display: flex !important;
+}
+
+@media (max-width: 768px) {
+  .client-container:before, .client-container:after {
+    width: 50px;
+  }
 }
 
 /* -------- END clients ---------- */
@@ -1818,7 +1899,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
     width: 250px;
     filter: blur(106.5px);
     background: #0DB4F9;
-    z-index: 0;
+    z-index: 1;
     border-radius: 100%;
 }
 
@@ -1887,11 +1968,14 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   width: 400px;
 }
 
-/* @media (max-width: 2000px) {
-  .banner-sub-img img{
-    right: 0;
-  }
-} */
+html[dir="rtl"] .inner-banner::before {
+  left: initial;
+  right: -80px;
+}
+html[dir="rtl"] .banner-sub-img img {
+  right: initial;
+    left: 0;
+}
 
 @media (max-width: 1300px) {
   .inner-banner::before {
@@ -2248,7 +2332,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 
 .faq-header {
-  text-align: left;
+  /* text-align: left; */
   margin-bottom: 3rem;
 }
 
@@ -3052,7 +3136,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 .ai-enterprises .enterprises-card {
   position: relative;
-  border-radius: 40px;
+  border-radius: 30px;
   overflow: hidden;
   height: 380px;
   cursor: pointer;
@@ -3893,33 +3977,36 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 /* --------- END core offering slider ----------- */
 
 
-
-
-
-
-
-
-
-
 /* --------- deploy ai factory ----------- */
 .ai-deployment .ai-deployment-type {
   padding: 24px 50px;
   position: relative;
   color: #fff;
   border-right: 1px solid var(--primary-color);
+  height: 100%;
 }
 .ai-deployment .ai-deployment-item:last-child .ai-deployment-type {
   border-right: 0;
 }
+.ai-deployment .ai-deployment-item:nth-child(3) .ai-deployment-type {
+  border-right: 0;
+}
+
+.ai-deployment .ai-deployment-item{
+  margin-top: 35px;
+}
 
 .ai-deployment .ai-deployment-type h3 {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
   margin-bottom: 8px;
   transition: .5s;
 }
 .ai-deployment .ai-deployment-type p {
-  font-size: 13px;
+  font-size: 14px;
   opacity: 0.7;
+  font-weight: 400;
   line-height: 1.5;
   transition: .5s;
 }
@@ -4059,6 +4146,12 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 /* -----------------------------------------
                 AR start here
 ------------------------------------------*/
+html[dir="rtl"] .banner_slider .carousel-caption {
+  left: auto;
+  right: 11%;
+  transform: translate(0, -50%);
+  text-align: right;
+}
 html[dir="rtl"] .banner_slider .carousel-control-prev, 
 html[dir="rtl"] .banner_slider .carousel-control-next{
   rotate: 180deg;
@@ -4155,4 +4248,32 @@ html[dir="rtl"] .dropdown-toggle::after {
 
 html[dir="rtl"] .news-events .read-more svg{
   rotate: 180deg;
+}
+
+/* -- ai consulting ar -- */
+html[dir="rtl"] .ai-journey-wrapper{
+      background-position: left;
+}
+
+html[dir="rtl"] .left-faq .accordion-button::after{
+  margin-left: initial;
+      margin-right: auto;
+}
+
+html[dir="rtl"] .core-nav{
+  display: flex;
+}
+html[dir="rtl"] .core-next{
+  order: -1;
+}
+
+
+/* -- hpc infra page -- */
+html[dir="rtl"] .infrastructure-wrapper__panel-label{
+  padding-bottom: initial;
+  padding-top: 30px;
+}
+html[dir="rtl"] .inner-banner::after {
+  background-image: url(../img/inner-section-banner-ar.png);
+  background-position: left;
 }
