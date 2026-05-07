@@ -461,7 +461,7 @@ $(document).ready(function(){
   var owl = $('.core-offer-slider');
   owl.owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
     autoplay: true,
     nav: false,
     dots: false,
@@ -483,7 +483,7 @@ $(document).ready(function(){
   var owl = $('.core-offer-slider-ar');
   owl.owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
     autoplay: true,
     rtl:true,
     nav: false,
@@ -530,7 +530,7 @@ $('.case-study-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   // autoplaySpeed: 3000,
-  smartSpeed: 3000,
+  smartSpeed: 1000,
   margin:20,
   responsive: {
     0: {
@@ -559,7 +559,7 @@ $('.case-study-slider-ar').owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   // autoplaySpeed: 3000,
-  smartSpeed: 3000,
+  smartSpeed: 1000,
   margin:20,
   responsive: {
     0: {
@@ -588,7 +588,7 @@ $('.projects-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   // autoplaySpeed: 3000,
-  smartSpeed: 3000,
+  smartSpeed: 1000,
   margin:20,
   responsive: {
     0: {
@@ -601,10 +601,10 @@ $('.projects-slider').owlCarousel({
       items: 3
     },
     1000: {
-      items: 4
+      items: 3
     },
     1200: {
-      items: 4
+      items: 3
     }
   }
 });
@@ -617,7 +617,7 @@ $('.projects-slider-ar').owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   // autoplaySpeed: 3000,
-  smartSpeed: 3000,
+  smartSpeed: 1000,
   margin:20,
   responsive: {
     0: {
@@ -630,10 +630,10 @@ $('.projects-slider-ar').owlCarousel({
       items: 3
     },
     1000: {
-      items: 4
+      items: 3
     },
     1200: {
-      items: 4
+      items: 3
     }
   }
 });
@@ -646,7 +646,7 @@ $('.news-events-slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   // autoplaySpeed: 3000,
-  smartSpeed: 3000,
+  smartSpeed: 1000,
   margin:20,
   responsive: {
     0: {
@@ -675,7 +675,7 @@ $('.news-events-slider-ar').owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   // autoplaySpeed: 3000,
-  smartSpeed: 3000,
+  smartSpeed: 1000,
   margin:20,
   responsive: {
     0: {
