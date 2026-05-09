@@ -466,7 +466,8 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     responsive: {
-      0: { items: 1.5 },
+      0: { items: 1 },
+      400: { items: 1.5 },
       650: { items: 2.5 },
       1000: { items: 3.5 }
     }
@@ -489,7 +490,8 @@ $(document).ready(function(){
     nav: false,
     dots: false,
     responsive: {
-      0: { items: 1.5 },
+      0: { items: 1 },
+      400: { items: 1.5 },
       650: { items: 2.5 },
       1000: { items: 3.5 }
     }
@@ -536,17 +538,20 @@ $('.case-study-slider').owlCarousel({
     0: {
       items: 1
     },
-    500: {
-      items: 2
+    400: {
+      items: 1.5
     },
-    768: {
-      items: 3
+    600: {
+      items: 2.5
+    },
+    800: {
+      items: 3.5
     },
     1000: {
-      items: 4
+      items: 3.5
     },
     1200: {
-      items: 4
+      items: 4.5
     }
   }
 });
@@ -565,17 +570,20 @@ $('.case-study-slider-ar').owlCarousel({
     0: {
       items: 1
     },
-    500: {
-      items: 2
+    400: {
+      items: 1.5
     },
-    768: {
-      items: 3
+    600: {
+      items: 2.5
+    },
+    800: {
+      items: 3.5
     },
     1000: {
-      items: 4
+      items: 3.5
     },
     1200: {
-      items: 4
+      items: 4.5
     }
   }
 });
@@ -594,14 +602,11 @@ $('.projects-slider').owlCarousel({
     0: {
       items: 1
     },
-    400: {
+    700: {
       items: 2
     },
-    768: {
-      items: 3
-    },
     1000: {
-      items: 3
+      items: 2
     },
     1200: {
       items: 3
@@ -623,14 +628,11 @@ $('.projects-slider-ar').owlCarousel({
     0: {
       items: 1
     },
-    400: {
+    700: {
       items: 2
     },
-    768: {
-      items: 3
-    },
     1000: {
-      items: 3
+      items: 2
     },
     1200: {
       items: 3
@@ -640,7 +642,7 @@ $('.projects-slider-ar').owlCarousel({
 
 // news-events-slider
 $('.news-events-slider').owlCarousel({
-  loop: true,
+  loop: false,
   nav: false,
   dots: false,
   autoplay: true,
