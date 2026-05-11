@@ -64,6 +64,10 @@
 	.section-padding {
 		padding: 40px 0px;
 	}
+	.main-heading {
+		font-size: 35px;
+		line-height: 40px;
+	}
 	/* END common section */
 
 	.inner-subnav-wrap {
@@ -348,6 +352,10 @@
     	font-size: 25px;
 		line-height: 30px;
 	}
+
+	.main-heading {
+        font-size: 30px;
+    }
 
 	/* .right-nav-top .desc-btn{
 		display: none;

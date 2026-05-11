@@ -402,41 +402,41 @@ $('.client-list2-ar').owlCarousel({
 
 
 /* <!-- ==================== Reveal type ==================== --> */
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const splitTypes = document.querySelectorAll('.reveal-type');
+// const splitTypes = document.querySelectorAll('.reveal-type');
 
-splitTypes.forEach((char, i) => {
-    const bg = char.dataset.bgColor;
-    const fg = char.dataset.fgColor;
+// splitTypes.forEach((char, i) => {
+//     const bg = char.dataset.bgColor;
+//     const fg = char.dataset.fgColor;
 
-    // Split into words first to prevent breakage
-    const text = new SplitType(char, {
-        types: 'words, chars' // First split into words, then into characters
-    });
+//     // Split into words first to prevent breakage
+//     const text = new SplitType(char, {
+//         types: 'words, chars' // First split into words, then into characters
+//     });
 
-    // Ensure words stay together by using `white-space: nowrap`
-    gsap.set(text.words, {
-        display: 'inline-block',
-        whiteSpace: 'nowrap'
-    });
+//     // Ensure words stay together by using `white-space: nowrap`
+//     gsap.set(text.words, {
+//         display: 'inline-block',
+//         whiteSpace: 'nowrap'
+//     });
 
-    gsap.fromTo(text.chars, {
-        color: bg,
-    }, {
-        color: fg,
-        duration: 0.3,
-        stagger: 0.02,
-        scrollTrigger: {
-            trigger: char,
-            start: 'top 90%',
-            end: 'bottom 40%',
-            scrub: true,
-            markers: false,
-            toggleActions: 'play play reverse reverse'
-        }
-    });
-});
+//     gsap.fromTo(text.chars, {
+//         color: bg,
+//     }, {
+//         color: fg,
+//         duration: 0.3,
+//         stagger: 0.02,
+//         scrollTrigger: {
+//             trigger: char,
+//             start: 'top 90%',
+//             end: 'bottom 40%',
+//             scrub: true,
+//             markers: false,
+//             toggleActions: 'play play reverse reverse'
+//         }
+//     });
+// });
 
 /* <!-- ==================== Reveal type ==================== --> */
 

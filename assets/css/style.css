@@ -411,6 +411,12 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   color: #515151;
 }
 
+.main-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
 
 .heading {
   font-size: 35px;
@@ -2119,7 +2125,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 
 .inner-banner h1 {
-  font-size: clamp(32px, 5vw, 52px);
+  font-size: clamp(32px, 5vw, 40px);
   font-weight: 300;
   color: #fff;
   letter-spacing: -0.5px;
@@ -2182,7 +2188,7 @@ html[dir="rtl"] .banner-sub-img img {
 
 @media (max-width: 600px) {
   .inner-banner {
-    min-height: 200px;
+    min-height: 300px;
     padding: 48px 20px 0;
   }
   .banner-sub-img img {
@@ -2277,7 +2283,7 @@ html[dir="rtl"] .banner-sub-img img {
   }
   .inner-subnav-links li a {
     font-size: 14px;
-    padding: 22px 10px;
+    /* padding: 22px 10px; */
   }
 }
 
@@ -2348,12 +2354,42 @@ html[dir="rtl"] .banner-sub-img img {
   margin-top: 80px;
 }
 
+.computer-overview{
+  display: flex;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: 50px auto 0 auto;
+  gap: 35px;
+}
+.computer-overview-item {
+    max-width: 350px;
+}
+.computer-overview-item h6{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .ai-overview-in {
     width: 100%;
   }
 }
 
+@media (max-width: 600px) {
+  .computer-overview{
+    display: block;
+    max-width: 100%;
+  }
+  .computer-overview-item{
+    max-width: 100%;
+  }
+  .computer-overview-item h6 {
+    font-size: 18px;
+  }
+}
 /* ------------ ai-approach ----------*/
 .ai-approach {
   background-color: var(--white);
@@ -2514,15 +2550,11 @@ html[dir="rtl"] .banner-sub-img img {
 }
 
 .faq-header {
-  /* text-align: left; */
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .faq-header h3 {
-  font-size: 40px;
-  font-weight: 400;
   color: var(--black-color);
-  margin-bottom: 15px;
 }
 
 .faq-header p {
@@ -2537,7 +2569,6 @@ html[dir="rtl"] .banner-sub-img img {
 }
 
 .accordion {
-  /* padding: 0 20px; */
   border-radius: 20px;
   background-color: var(--black-color);
 }
@@ -2552,7 +2583,7 @@ html[dir="rtl"] .banner-sub-img img {
 }
 
 .left-faq .accordion-button.collapsed {
-  padding: 1rem 1rem 1rem;
+  padding: 2rem 1rem 2rem;
 }
 
 .left-faq .accordion-button {
@@ -2574,7 +2605,7 @@ html[dir="rtl"] .banner-sub-img img {
 }
 
 .accordion-button {
-  color: var(--primary-color) !important;
+  color: var(--black) !important;
 }
 
 .left-faq .accordion-button:focus {
@@ -2592,7 +2623,7 @@ html[dir="rtl"] .banner-sub-img img {
 
 .left-faq .accordion-button::after {
   content: '+';
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
   display: flex;
   align-items: center;
@@ -2606,11 +2637,11 @@ html[dir="rtl"] .banner-sub-img img {
 }
 
 .left-faq .accordion-body {
+  font-size: 16px;
+  line-height: 25px;
   padding: 0 1rem 1rem;
   background: transparent;
   color: #464646;
-  line-height: 30px;
-  font-size: 1rem;
 }
 
 .accrd-head {
@@ -2629,9 +2660,36 @@ html[dir="rtl"] .banner-sub-img img {
   border-radius: 25px;
 }
 
+.faq-dark-sec-outer .accordion-item {
+  background: transparent;
+  border: 1px solid #0db4f94f !important;
+}
+
+.faq-dark-sec-outer .accordion-button.collapsed{
+  color: var(--primary-color) !important;
+}
+
+.faq-dark-sec-outer .left-faq .accordion-body {
+    color: #a4a4a4;
+}
+
+
+
+.real-engineer-item {
+  padding: 30px 20px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #F9FCFE 0%, #E5F7FF 100%);
+}
+.real-engineer-item h6{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
 @media (max-width: 1200px) {
   .left-faq {
-    padding-right: initial;
+    padding-right: 15px;
   }
   .right-faq-img {
     max-height: initial;
@@ -3232,7 +3290,6 @@ html[dir="rtl"] .banner-sub-img img {
 }
 .prof-services .core-header h3 {
   color: var(--white);
-  font-size: 28px;
   margin-bottom: 0;
 }
 .prof-services .core-nav button {
@@ -3571,6 +3628,13 @@ html[dir="rtl"] .banner-sub-img img {
   color: var(--primary-color);
   font-size: 28px;
   margin-bottom: 0;
+}
+
+.intelligent-ai .core-card h3 {
+  font-size: 20px;
+}
+.intelligent-ai .core-card{
+  padding: 20px 20px 40px 20px;
 }
 /* --------- END prof-services ----------- */
 
@@ -4023,7 +4087,7 @@ html[dir="rtl"] .banner-sub-img img {
 }
 
 .ai-real-world-impact .core-card h3 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--black);
   margin-bottom: 20px;
@@ -4061,6 +4125,10 @@ html[dir="rtl"] .banner-sub-img img {
   color: #fff;
 }
 
+.ai-real-world-impact .item{
+  width: 100%;
+}
+
 @media (max-width: 1600px) {
   .ai-real-world-impact .core-offering-in {
     padding-left: 3%;
@@ -4093,7 +4161,7 @@ html[dir="rtl"] .banner-sub-img img {
 
 /* --------- deploy ai factory ----------- */
 .ai-deployment .ai-deployment-type {
-  padding: 24px 50px;
+  padding: 25px 30px;
   position: relative;
   color: #fff;
   border-right: 1px solid #0db4f94f;
@@ -4102,12 +4170,13 @@ html[dir="rtl"] .banner-sub-img img {
 .ai-deployment .ai-deployment-item:last-child .ai-deployment-type {
   border-right: 0;
 }
-.ai-deployment .ai-deployment-item:nth-child(3) .ai-deployment-type,
+
+/* .ai-deployment .ai-deployment-item:nth-child(3) .ai-deployment-type,
 .ai-deployment .ai-deployment-item:nth-child(6) .ai-deployment-type,
 .ai-deployment .ai-deployment-item:nth-child(9) .ai-deployment-type,
 .ai-deployment .ai-deployment-item:nth-child(12) .ai-deployment-type {
   border-right: 0;
-}
+} */
 
 .ai-deployment .ai-deployment-item{
   margin-top: 35px;
@@ -4122,10 +4191,11 @@ html[dir="rtl"] .banner-sub-img img {
 }
 .ai-deployment .ai-deployment-type p {
   font-size: 14px;
-  opacity: 0.7;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
   transition: .5s;
+  opacity: 0.7;
 }
 .ai-deployment .ai-deployment-type:hover {
   background: rgba(0, 200, 255, 0.05);
@@ -4139,11 +4209,37 @@ html[dir="rtl"] .banner-sub-img img {
   transition: .5s;
 }
 
+/* ai labs */
+.ai-labs-deployment .ai-deployment-type{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ai-labs-deployment .ai-deployment-type-num {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 14px;
+  background: var(--gradient);
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.nvidia-logo-2 img{
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   .ai-deployment .ai-deployment-type {
     padding: 15px;
     border-right: 0;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid #0db4f94f;
+  }
+  .ai-deployment .ai-deployment-item {
+    margin-top: 0px;
   }
 }
 
@@ -4151,21 +4247,16 @@ html[dir="rtl"] .banner-sub-img img {
   .ai-deployment .ai-deployment-type {
     padding: 10px;
   }
+
+  .nvidia-logo-2 img {
+    max-width: 80px;
+  }
 }
 
 /* --------- deploy ai factory ----------- */
 
 
 /* --------- AI Factory FAQ ----------- */
-
-/* .ai-factory-faq-container {
-  padding: 40px;
-  padding-top: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-} */
-
 .ai-factory-faq-item {
   position: relative;
   padding: 18px 0;
@@ -4257,6 +4348,184 @@ html[dir="rtl"] .banner-sub-img img {
 }
 /* --------- AI Factory FAQ ----------- */
 
+
+/* --------- AI Labs ----------- */
+.ai-partnership .ai-partnership-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+.ai-partnership .tab-btn {
+  font-size: 20px;
+  font-weight: 300;
+  border: none;
+  color: rgba(255, 255, 255, 0.45);
+  padding: 0 20px 15px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  /* white-space: nowrap; */
+  transition: 0.3s ease;
+}
+
+.ai-partnership .tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0%;
+  height: 2px;
+  background: #00A3FF;
+  transition: 0.3s ease;
+}
+
+.ai-partnership .tab-btn.active {
+  color: #fff;
+}
+
+.ai-partnership .tab-btn.active::after {
+  width: 100%;
+}
+
+.ai-partnership .tab-content {
+  display: none;
+}
+
+.ai-partnership .tab-content.active {
+  display: block;
+}
+
+.ai-partnership .content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.ai-partnership .image-box {
+  width: 300px;
+  min-width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.ai-partnership .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ai-partnership .content-text {
+  max-width: 550px;
+}
+
+.ai-partnership .content-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+@media(max-width:1200px){
+  .ai-partnership .tab-btn {
+    font-size: 16px;
+  }
+  .ai-partnership .content-text p {
+    font-size: 16px;
+  }
+}
+
+@media(max-width:768px) {
+  .ai-partnership .ai-partnership-tabs {
+    gap: 20px;
+    max-width: 750px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+  .ai-partnership .ai-partnership-tabs::-webkit-scrollbar{
+      display: none;
+  }
+  .ai-partnership .content-wrapper {
+    flex-direction: column;
+  }
+  .ai-partnership .image-box {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+
+/* nvidia ai stack section */
+.nvidia-stack-section .nvidia-stack-card {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 90px 40px;
+  background-image: url(../img/nvidia-stack-bg.webp);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nvidia-stack-section .nvidia-stack-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(180deg,
+      #00A3FF,
+      #00FF99);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.nvidia-stack-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center,
+      rgba(0, 163, 255, 0.12),
+      transparent 70%);
+}
+.nvidia-stack-section .stack-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.nvidia-stack-section .partner-logo {
+  width: 220px;
+  height: 72px;
+  margin: 0 auto 35px;
+  display: flex;
+  overflow: hidden;
+}
+.nvidia-stack-section .logo-left img {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media(max-width:768px) {
+  .nvidia-stack-section .nvidia-stack-card {
+    padding: 50px 25px;
+    border-radius: 24px;
+  }
+  .nvidia-stack-section .partner-logo {
+    width: 180px;
+    height: 60px;
+  }
+}
+/* --------- END AI Labs ----------- */
 
 
 
@@ -4400,6 +4669,11 @@ html[dir="rtl"] .newsletter-box button:hover svg {
 /* -- ai consulting ar -- */
 html[dir="rtl"] .ai-journey-wrapper{
       background-position: left;
+}
+
+html[dir="rtl"] .accrd-head {
+    padding-right: initial;
+    padding-left: 25px;
 }
 
 html[dir="rtl"] .left-faq .accordion-button::after{
