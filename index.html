@@ -128,7 +128,9 @@
             </div>
             <div class="wrap desc-btn">
               <a class="lang-switch" href="index-ar.html">
-                عربى
+              <span class="arb">  عربى </span>
+              <span class="devider"> | </span> 
+              <span class="eng">ENG</span>
               </a>
             </div>
             <div class="wrap desc-btn">
@@ -351,7 +353,7 @@
 <section class="section-padding pb-0 stats-section" id="stats-section">
   <div class="width-container">
     <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4">
          <!-- data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" -->
         <div class="stat-card">
           <div class="stat-top">
@@ -361,12 +363,12 @@
             </div>
           </div>
           <div class="stat-bottom">
-            <h3>40+</h3>
+            <h3 class="counter" data-number="20" data-speed="40"></h3><span class="plus">+</span>
             <span>Countries</span>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4">
         <div class="stat-card">
           <div class="stat-top">
             <p>Skilled professionals<br>driving innovation</p>
@@ -375,12 +377,12 @@
             </div>
           </div>
           <div class="stat-bottom">
-            <h3>500+</h3>
+            <h3 class="counter" data-number="500" data-speed="1"></h3><span class="plus">+</span>
             <span>Experts</span>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4">
         <div class="stat-card">
           <div class="stat-top">
             <p>Collaborating with<br>global tech leaders</p>
@@ -389,12 +391,12 @@
             </div>
           </div>
           <div class="stat-bottom">
-            <h3>50+</h3>
+            <h3 class="counter" data-number="50" data-speed="20"></h3><span class="plus">+</span>
             <span>Strategic Partners</span>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4">
         <div class="stat-card">
           <div class="stat-top">
             <p>Empowering organizations<br>across industries</p>
@@ -403,7 +405,7 @@
             </div>
           </div>
           <div class="stat-bottom">
-            <h3>250+</h3>
+            <h3 class="counter" data-number="250" data-speed="2"></h3><span class="plus">+</span>
             <span>Clients</span>
           </div>
         </div>
@@ -416,9 +418,9 @@
 <section class="section-padding pb-0 ai-about">
   <div class="width-container">
     <div class="row justify-content-center align-items-center">
-      <div class="col-md-6 mb-4">
+      <div class="col-lg-6 mb-4">
         <div class="ai-left">
-          <h3 class="heading mb-3">AI in Action, With You</h3>
+          <h3 class="heading mb-4">AI in Action, With You</h3>
           <p class="description mb-0">
             We fuse AI, innovation, and infrastructure to build smarter futures for businesses,
             industries, and cities. From powering connectivity to enabling secure, scalable systems,
@@ -430,7 +432,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 mb-4">
+      <div class="col-lg-6 mb-4">
         <div class="ai-right">
           <div class="logo-card">
             <img src="assets/img/about.png" class="img-fluid" alt="">
@@ -448,7 +450,7 @@
     <div class="row justify-content-end align-items-center h-100">
       <div class="col-md-6">
         <div class="innovation-content">
-          <h3 class="heading">Driving Global Innovation</h3>
+          <h3 class="heading mb-4">Driving Global Innovation</h3>
           <p class="description">
             Technology is reshaping how the world connects, operates, and grows.
             Through advanced solutions and forward-thinking strategies, we help
@@ -563,7 +565,7 @@
 <section class="section-padding cleint-main">
   <div class="width-container">
      <!-- data-aos="zoom-in" data-aos-duration="3000" -->
-    <h6 class="heading text-center">Our Partners</h6>
+    <h4 class="heading text-center">Our Partners</h4>
 
     <div class="client-container">
       <div class="owl-carousel bs-slider client-list1">
@@ -621,7 +623,7 @@
 
 <section class="section-padding pb-0 all-works">
  <div class="width-container">
-    <h3 class="heading text-center mb-4">Our Works</h3>
+    <h3 class="heading text-center mb-5">Our Works</h3>
  
   <!-- Tabs -->
   <div class="tabs-wrap">
@@ -1237,6 +1239,25 @@
   </script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+
+  <!-- counter -->
+   <script>
+      function startCounting() {
+          let counter = document.querySelectorAll(".counter");
+          counter.forEach((item) => {
+              let count = 0;
+              let stop = setInterval(() => {
+                  count++;
+                  item.innerHTML = count;
+                  if (count >= item.dataset.number) {
+                      clearInterval(stop);
+                  }
+              }, item.dataset.speed);
+          });
+      }
+
+      window.onload = startCounting;
+  </script>
 
 
 </body>
