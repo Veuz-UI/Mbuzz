@@ -72,7 +72,7 @@
 
 	.inner-subnav-wrap {
 		position: sticky;
-		top: 63px;
+		top: 60px;
 		z-index: 7;
 	}
 
@@ -140,6 +140,16 @@
 
 	a.menu-toggle span:after {
 		bottom: -8px;
+	}
+
+
+	.fixed-to-top a.menu-toggle span {
+		background-color: #fff;
+	}
+
+	.fixed-to-top a.menu-toggle span:before,
+	.fixed-to-top a.menu-toggle span:after {
+		background-color: #fff;
 	}
 
 	/* ACTIVE STATE */

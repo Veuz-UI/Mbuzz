@@ -296,15 +296,11 @@ $('.client-list1').owlCarousel({
   // autoplaySpeed: 2000,
   smartSpeed: 2000,
   responsive: {
-
     0: {
-      items: 1
-    },
-    375: {
       items: 3
     },
     600: {
-      items: 4
+      items: 3
     },
     1000: {
       items: 5
@@ -326,13 +322,10 @@ $('.client-list1-ar').owlCarousel({
   smartSpeed: 2000,
   responsive: {
     0: {
-      items: 1
-    },
-    375: {
       items: 3
     },
     600: {
-      items: 4
+      items: 3
     },
     1000: {
       items: 5
@@ -377,7 +370,7 @@ $('.client-list2-ar').owlCarousel({
   nav: false,
   dots: false,
   autoplay: true,
-  rtl: true,
+  rtl: false,
   autoplayTimeout: 2000,
   // autoplaySpeed: 2000,
   smartSpeed: 2000,
@@ -536,10 +529,7 @@ $('.case-study-slider').owlCarousel({
   margin:20,
   responsive: {
     0: {
-      items: 1
-    },
-    400: {
-      items: 1.5
+      items: 1.2
     },
     600: {
       items: 2.5
@@ -568,10 +558,7 @@ $('.case-study-slider-ar').owlCarousel({
   margin:20,
   responsive: {
     0: {
-      items: 1
-    },
-    400: {
-      items: 1.5
+      items: 1.2
     },
     600: {
       items: 2.5
@@ -600,9 +587,9 @@ $('.projects-slider').owlCarousel({
   margin:20,
   responsive: {
     0: {
-      items: 1
+      items: 1.1
     },
-    700: {
+    600: {
       items: 2
     },
     1000: {
@@ -626,9 +613,9 @@ $('.projects-slider-ar').owlCarousel({
   margin:20,
   responsive: {
     0: {
-      items: 1
+      items: 1.1
     },
-    700: {
+    600: {
       items: 2
     },
     1000: {
@@ -642,7 +629,7 @@ $('.projects-slider-ar').owlCarousel({
 
 // news-events-slider
 $('.news-events-slider').owlCarousel({
-  loop: false,
+  loop: true,
   nav: false,
   dots: false,
   autoplay: true,
@@ -652,19 +639,19 @@ $('.news-events-slider').owlCarousel({
   margin:20,
   responsive: {
     0: {
-      items: 1
+      items: 1.2
     },
-    375: {
-      items: 1
+    600: {
+      items: 1.2
     },
     768: {
-      items: 2
+      items: 2.1
     },
     1000: {
-      items: 2
+      items: 2.1
     },
     1200: {
-      items: 2
+      items: 2.2
     }
   }
 });
