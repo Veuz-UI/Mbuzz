@@ -131,7 +131,7 @@ a {
   width: 100%;
   z-index: 9;
   position: fixed;
-  top: 25px;
+  top: 35px;
 }
 
 .main-header-in {
@@ -157,7 +157,7 @@ a {
 
 header.fixed-to-top .main-header {
   position: fixed;
-  background: var(--gradient);
+  background: #000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 8;
   top:0;
@@ -242,7 +242,7 @@ header.fixed-to-top .main-header {
 }
 
 header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
-  background: #ffffff40;
+  background: var(--gradient);
 }
 
 .lang-switch {
@@ -854,10 +854,11 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 .footer-col ul li a {
   font-size: 16px;
-  font-weight: 300;
-  color: #afafaf;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
   text-decoration: none;
+  font-family: "Manrope", sans-serif;
 }
 .footer-col ul li a:hover {
   color: var(--primary-color);
@@ -875,15 +876,19 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   margin-top: 4px;
 }
 .footer-contact p {
-  font-size: 14px;
-  color: #afafaf;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin-bottom: 0;
+  font-family: "Manrope", sans-serif;
 }
 .footer-contact p a {
-  font-size: 14px;
-  color: #afafaf;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
   word-break: break-all;
+  font-family: "Manrope", sans-serif;
 }
 .footer-contact p a:hover {
   color: var(--primary-color);
@@ -904,6 +909,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   font-weight: 300;
   color: #b8b8b8;
   margin-top: 15px;
+  font-family: "Manrope", sans-serif;
 }
 .newsletter-box{
     position: relative;
@@ -968,18 +974,20 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 .copy-right-item ul li a {
   font-size: 14px;
-  font-weight: 300;
-  color: #afafaf;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
 }
 .copy-right-item ul li a:hover {
   color: var(--primary-color);
 }
 .copy-right-item p {
   font-size: 14px;
-  font-weight: 300;
-  color: #afafaf;
+  font-weight: 400;
+  color: #fff;
   text-align: center;
   margin-bottom: 0;
+  font-family: "Manrope", sans-serif;
 }
 .footer-icons {
   text-align: end;
@@ -987,7 +995,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 
   svg {
     font-size: 20px;
-    color: #afafaf;
+    color: #fff;
     margin-left: 10px;
   }
 
