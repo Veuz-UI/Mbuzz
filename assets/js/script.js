@@ -458,6 +458,9 @@ $(document).ready(function(){
     autoplay: true,
     nav: false,
     dots: false,
+    autoplayTimeout: 3000,
+    // autoplaySpeed: 2000,
+    smartSpeed: 2000,
     responsive: {
       0: { items: 1 },
       400: { items: 1.5 },
@@ -482,6 +485,9 @@ $(document).ready(function(){
     rtl:true,
     nav: false,
     dots: false,
+    autoplayTimeout: 3000,
+    // autoplaySpeed: 2000,
+    smartSpeed: 2000,
     responsive: {
       0: { items: 1 },
       400: { items: 1.5 },

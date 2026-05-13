@@ -9,13 +9,28 @@
 }
 
 @media (max-width: 1500px) {
-	
+	.right-nav-top {
+		gap: 25px;
+	}
+	.nav-desc-menu ul li {
+		padding: 10px 15px;
+	}
 }
 
 @media (max-width: 1400px) {
 }
 
 @media (max-width: 1300px) {
+	.header-img {
+		width: 130px;
+	}
+	.nav-desc-menu ul li {
+        padding: 10px 10px;
+    }
+	.nav-desc-menu ul .nav-menu-item.active-menu {
+		padding: 10px 15px;
+	}
+
 	.faq-header h3 {
   		font-size: 50px;
 	}
@@ -35,6 +50,10 @@
 	.header-img {
 		width: 120px;
 	}
+
+	.nav-desc-menu ul li {
+        padding: 10px 6px;
+    }
 	
 	.nav-desc-menu ul li a {
   		font-size: 14px;
@@ -44,7 +63,7 @@
     }
 	 
 	.login-btn {
-  		padding: 8px 10px;
+  		padding: 18px 10px;
 		font-size: 14px;
 	}	
 
@@ -68,7 +87,15 @@
 		font-size: 35px;
 		line-height: 40px;
 	}
+
+	#scroll {
+		bottom: 100px;
+	}
 	/* END common section */
+
+	.login-btn {
+        padding: 10px 10px;
+	}
 
 	.inner-subnav-wrap {
 		position: sticky;
@@ -311,7 +338,12 @@
 	}
 
 
+	/* footer */
+	.main-footer{
+		padding-top: 150px;
+	}
 	
+
 
 }
 
@@ -340,6 +372,10 @@
 }
 
 @media (max-width: 600px) {
+	#scroll {
+        bottom: 150px;
+    }
+
 	a.menu-toggle {
         width: 25px;
 	}
@@ -355,7 +391,7 @@
 		transition: color 0.3s ease, transform 0.3s ease;
 	}
 	.header-img {
-		width: 100px;
+		width: 130px;
 	}
 
 	.heading {
@@ -404,6 +440,20 @@
 }
 
 @media (max-width: 576px) {
+	.desc-header{
+		display: none;
+	}
+	.mob-header{
+		display: block;
+		top: 10px;
+	}
+	a.menu-toggle.active {
+        position: absolute;
+        right: 10px;
+    }
+	.wrap.mob-btn{
+		padding: 10px 6vw;
+	}
 	.footer-nav{
 		margin-top: 20px;
 	}
