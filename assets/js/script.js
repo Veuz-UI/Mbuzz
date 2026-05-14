@@ -781,7 +781,7 @@ $(document).ready(function(){
   var owl = $('.prof-services-slider');
   owl.owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 20,
     autoplay: true,
     nav: false,
     dots: false,
@@ -868,8 +868,16 @@ $('.core-prev').click(function() {
     owl.trigger('prev.owl.carousel');
 });
 
+// innaer page overview nav
+$('.subnav-toggle').click(function () {
+    $('.subnav-dropdown').toggleClass('active');
+});
+$('.inner-subnav-links li a').click(function(){
+    $('.subnav-dropdown').removeClass('active');
+});
 
-/* ------------- NVIDIA ad Section ------------- */
+
+//  NVIDIA ad Section --//
 
 const hero = document.getElementById('hero');
 
@@ -887,10 +895,7 @@ hero.addEventListener('mousemove', (e) => {
 hero.addEventListener('mouseleave', () => {
   hero.style.transform = 'rotateX(0) rotateY(0)';
 });
-
-
-
-/* ------------- NVIDIA ad Section ------------- */
+// NVIDIA ad Section //
 
 
 // AI Faq //
