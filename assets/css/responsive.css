@@ -373,7 +373,7 @@
 
 @media (max-width: 600px) {
 	#scroll {
-        bottom: 150px;
+        bottom: 80px;
     }
 
 	a.menu-toggle {
@@ -381,9 +381,11 @@
 	}
 	a.menu-toggle span {
         width: 25px;
+		background-color: #fff;
 	}
 	a.menu-toggle span:before, a.menu-toggle span:after {
         width: 15px;
+		background-color: #fff;
 	}
 
 	.mob-btn a {
@@ -394,8 +396,29 @@
 		width: 130px;
 	}
 
+	.lang-switch {
+		font-size: 13px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+	}
+	.lang-switch .arb,
+	.lang-switch .eng{
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+		background-color: #212020;
+	}
+	.lang-switch .devider{
+		color: #605e5e;
+	}
+
 	.heading {
-    	font-size: 25px;
+    	font-size: 28px;
 		line-height: 30px;
 	}
 
@@ -425,8 +448,8 @@
 	}
 
 	.description {
-		font-size: 16px;
-		line-height: 22px;
+		font-size: 14px;
+		line-height: 25px;
 	}
 
 	.right-faq .accordion-button {
@@ -437,15 +460,21 @@
 		padding: 0 0 15px 0;
 	}
 
-}
 
-@media (max-width: 576px) {
+
+
+
 	.desc-header{
 		display: none;
 	}
 	.mob-header{
 		display: block;
 		top: 10px;
+		border-radius: 50px;
+		background: linear-gradient(90deg, #131c21, #111111, #121313);
+	}
+	header.fixed-to-top .main-header{
+		border-radius: 0;
 	}
 	a.menu-toggle.active {
         position: absolute;
@@ -457,5 +486,13 @@
 	.footer-nav{
 		margin-top: 20px;
 	}
+
+}
+
+@media (max-width: 576px) {
+	#scroll {
+		right: 10px;
+        bottom: 15px;
+    }
 
 }
