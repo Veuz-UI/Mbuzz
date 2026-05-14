@@ -22,6 +22,30 @@ body {
   /* cursor: none; */
   background-color: #040711;
 }
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 174, 255, 0.199) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Fixed Right Glow */
+body::after{
+    content: "";
+    position: fixed;
+    top: 30%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 174, 255, 0.199) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
 
 /* header {
 	overflow: hidden;
@@ -577,7 +601,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 
 .carousel-caption-in{
-  max-width: 40%;
+  max-width: 60%;
 }
 
 .banner_slider .carousel-caption h5 {
@@ -789,32 +813,6 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 /* ------------------------------
 			END Banner 
 ------------------------------ */
-
-
-body::before{
-    content: "";
-    position: fixed;
-    top: 0;
-    left: -15%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgb(0 174 255 / 17%) 0%, transparent 70%);
-    z-index: -1;
-    pointer-events: none;
-}
-
-/* Fixed Right Glow */
-body::after{
-    content: "";
-    position: fixed;
-    top: 30%;
-    right: -15%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgb(0 174 255 / 17%) 0%, transparent 70%);
-    z-index: -1;
-    pointer-events: none;
-}
 
 
 /*------------------ footer ---------------*/
@@ -4696,10 +4694,17 @@ html[dir="rtl"] .right-nav-top .dropdown-menu li {
 html[dir="rtl"] .banner_slider .carousel-caption {
   text-align: right;
 }
+html[dir="rtl"] .banner_slider .carousel-caption h5{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
 /* html[dir="rtl"] .banner_slider .carousel-control-prev, 
 html[dir="rtl"] .banner_slider .carousel-control-next{
   rotate: 180deg;
 } */
+
+html[dir="rtl"] .heading{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
 
 html[dir="rtl"] .innovation-box{
   background-position: right;
@@ -4733,39 +4738,24 @@ html[dir="rtl"] .main-btn i{
   rotate: 180deg;
 }
 
-@media (max-width: 1600px) {
-  /* html[dir="rtl"] .core-offering .core-offering-in {
-    padding-right: 3%;
-    padding-left: initial;
-  } */
-  /* html[dir="rtl"] .core-offering .core-header{
-    padding-right: initial;
-    padding-left: 3%;
-  } */
+html[dir="rtl"] .core-offering .core-offering-in {
+  width: calc(100% - ((100% - min(1500px, 93%)) / 2));
+  margin-right: auto;
+  margin-left: 0;
 }
-
-/* @media (max-width: 992px) {
-  html[dir="rtl"] .core-offering .core-offering-in {
-    padding-right: 25px;
-    padding-left: initial;
-  }
-} */
-
-/* @media (max-width: 600px) {
-  html[dir="rtl"] .core-offering .core-offering-in {
-    padding-right: 15px;
-    padding-left: initial;
-  }
-} */
 
 html[dir="rtl"] .news-events .card-content{
   padding-left: initial;
   padding-right: 20px;
 }
 @media (max-width: 600px) {
-   html[dir="rtl"] .news-events .card-content {
-        padding-right: initial;
-    }
+  html[dir="rtl"] .news-events .card-content {
+    padding-right: initial;
+  }
+  html[dir="rtl"] a.menu-toggle.active {
+    right: auto;
+    left: 10px;
+  }
 }
 
 html[dir="rtl"] .news-events .read-more svg{
