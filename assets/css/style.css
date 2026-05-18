@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* cursor: none; */
   background-color: #040711;
 }
@@ -86,12 +86,12 @@ a {
     }
     #loader.hide { opacity: 0; visibility: hidden; }
 
-    .loader-inner {
+    /* .loader-inner {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 20px;
-    }
+    } */
 
     /* Rotating icon */
     .loader-icon {
@@ -107,7 +107,7 @@ a {
     }
 
     /* MBUZZ text characters */
-    .loader-text {
+    /* .loader-text {
       display: flex;
       align-items: center;
       gap: 2px;
@@ -130,19 +130,19 @@ a {
         opacity: 1;
         transform: translateY(0) rotate(0deg);
       }
-    }
+    } */
 
     @media (max-width: 768px) {
-      .loader-inner {
+      /* .loader-inner {
         gap: 10px;
-      }
+      } */
       .loader-icon {
         width: 40px;
         height: 40px;
       }
-      .loader-text .char {
+      /* .loader-text .char {
         font-size: 30px;
-      }
+      } */
     }
 
 /* ------------ END loader --------------- */
@@ -996,6 +996,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 }
 .newsletter-box button svg {
   font-size: 16px;
+  transition: 0.3s;
 }
 .newsletter-box button:hover svg {
   transform: rotate(-40deg);
