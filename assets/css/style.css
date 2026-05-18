@@ -563,6 +563,12 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   display: flex !important;
 }
 
+@media (max-width: 992px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
 /* ------------------------------
 		END common area 
  ------------------------------ */
@@ -1140,9 +1146,9 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   .footer-brand img{
     max-width: 170px;
   }
-  .footer-col {
+  /* .footer-col {
     text-align: center;
-  }
+  } */
   .footer-col h4{
     margin-bottom: 10px;
   }
@@ -1178,9 +1184,9 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
         font-size: 16px;
   }
 
-  .footer-col{
+  /* .footer-col{
     text-align: left;
-  }
+  } */
   .footer-brand{
     text-align: center;
   }
@@ -2279,15 +2285,6 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   object-fit: cover;
 }
 
-html[dir="rtl"] .inner-banner::before {
-  left: initial;
-  right: -80px;
-}
-html[dir="rtl"] .banner-sub-img img {
-  right: initial;
-    left: 0;
-}
-
 @media (max-width: 1300px) {
   .inner-banner::before {
     height: 150px;
@@ -2305,6 +2302,12 @@ html[dir="rtl"] .banner-sub-img img {
   }
   .banner-sub-img img{
     width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inner-banner h1 {
+    font-size: 35px;
   }
 }
 
@@ -2562,6 +2565,9 @@ html[dir="rtl"] .banner-sub-img img {
   .nvidia-card img{
     margin-top: 40px;
   }
+  .nvidia-card img{
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2648,6 +2654,7 @@ html[dir="rtl"] .banner-sub-img img {
   font-weight: 400;
   color: #b6b6b6;
   line-height: 1.6;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -3144,9 +3151,6 @@ html[dir="rtl"] .banner-sub-img img {
   pointer-events: none;
 }
 
-
-
-
 .infrastructure-wrapper__panel--2::after {
   background: linear-gradient(90deg, transparent, #ff5533, transparent);
 }
@@ -3174,8 +3178,6 @@ html[dir="rtl"] .banner-sub-img img {
   pointer-events: none;
 }
 
-
-
 .infrastructure-wrapper__panel--3::after {
   background: linear-gradient(90deg, transparent, #9955ff, transparent);
 }
@@ -3202,8 +3204,6 @@ html[dir="rtl"] .banner-sub-img img {
   background: radial-gradient(ellipse, rgba(50, 80, 220, 0.25) 0%, transparent 70%);
   pointer-events: none;
 }
-
-
 
 .infrastructure-wrapper__panel--4::after {
   background: linear-gradient(90deg, transparent, #4466ff, transparent);
@@ -4889,13 +4889,48 @@ html[dir="rtl"] .left-faq .accordion-button::after{
 html[dir="rtl"] .inner-subnav-links li a::after{
   transform-origin: right;
 }
+html[dir="rtl"] .inner-banner .breadcrumb a, 
+html[dir="rtl"] .inner-banner .breadcrumb span{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .ai-tag{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .inner-banner h1{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .inner-subnav-links li a{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .ai-consulting-list-item h4{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .prof-services .core-card h3{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .cta .core-card h3{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+html[dir="rtl"] .accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+}
+/*inner banner arabic*/
+html[dir="rtl"] .inner-banner::before {
+  left: initial;
+  right: -80px;
+}
+html[dir="rtl"] .banner-sub-img img {
+  right: initial;
+    left: 0;
+}
+
 
 /* -- hpc infra page -- */
 html[dir="rtl"] .infrastructure-wrapper__panel-label{
-  padding-bottom: initial;
-  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-top: initial;
 }
-/* html[dir="rtl"] .inner-banner::after {
-  background-image: url(../img/inner-section-banner-ar.png);
-  background-position: left;
-} */
+html[dir="rtl"] .infrastructure-wrapper__panel-label {
+    align-items: end;
+}
