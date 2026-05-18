@@ -850,7 +850,7 @@ var owl = $('.ai-real-world-impact-slider').owlCarousel({
       dots:false,
       responsive:{
           0:{
-              items:1.5
+              items:1.2
           },
           650:{
               items:2.5
@@ -868,7 +868,36 @@ $('.core-prev').click(function() {
     owl.trigger('prev.owl.carousel');
 });
 
-// innaer page overview nav
+
+var owl = $('.ai-real-world-impact-slider-ar').owlCarousel({
+      loop:true,
+      margin:20,
+      autoplay:true,
+      rtl:true,
+      nav:false,
+      dots:false,
+      responsive:{
+          0:{
+              items:1.2
+          },
+          650:{
+              items:2.5
+          },
+          
+          1000:{
+              items:3.5
+          }
+      }
+});
+$('.core-next').click(function() {
+    owl.trigger('next.owl.carousel');
+});
+$('.core-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+});
+
+
+// inner page overview nav
 $('.subnav-toggle').click(function () {
     $('.subnav-dropdown').toggleClass('active');
 });
