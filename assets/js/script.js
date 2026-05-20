@@ -1,64 +1,19 @@
 //// loader
-// function hideLoader() {
-//     const l = document.getElementById('loader');
-//     l.classList.add('hide');
-//     setTimeout(() => {
-//       l.style.display = 'none';
-//       document.getElementById('page').classList.add('show');
-//     }, 500);
-//   }
- 
-  var letters  = "MBUZZ";
-  var textEl   = document.getElementById("loaderText");
-  var barEl    = document.getElementById("loaderBar");
-  var loader   = document.getElementById("loader");
-
-  // // Build chars with stagger
-  // letters.split("").forEach(function(ch, i) {
-  //   var span = document.createElement("span");
-  //   span.className   = "char";
-  //   span.textContent = ch;
-  //   span.style.animationDelay = (0.3 + i * 0.13) + "s";
-  //   textEl.appendChild(span);
-  // });
-
-  // Hide after all chars animate + buffer
-  // var hideAfter = 300 + (letters.length * 130) + 800;
-  var hideAfter = 100 + (letters.length * 40) + 100;
-  setTimeout(function() {
-    loader.classList.add("hide");
-  }, hideAfter);
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    // Small smooth delay
+    setTimeout(() => {
+        loader.classList.add("hide");
+        // Remove from DOM after animation
+        setTimeout(() => {
+            loader.remove();
+        }, 600);
+    }, 500);
+});
 /// END pre loader
 
 
-// // nav scroll
-// $(document).ready(function(){
-//   var docEl = $(document),
-//       headerEl = $('header'),
-//       headerWrapEl = $('.main-header-in'),
-//       navEl = $('nav'),
-//       linkScroll = $('.scroll');
-
-//   docEl.on('scroll', function(){
-//     if ( docEl.scrollTop() > 60 ){
-//       headerEl.addClass('fixed-to-top');
-//       headerWrapEl.addClass('fixed-to-top');
-//       navEl.addClass('fixed-to-top');
-//     }
-//     else {
-//       headerEl.removeClass('fixed-to-top');
-//       headerWrapEl.removeClass('fixed-to-top');
-//       navEl.removeClass('fixed-to-top');
-//     }
-//   });
-
-//   linkScroll.click(function(e){
-//       e.preventDefault();
-//       $('body, html').animate({
-//          scrollTop: $(this.hash).offset().top
-//       }, 500);
-//    });
-// });
+//// nav scroll
 $(document).ready(function () {
   var docEl      = $(document),
       headerEl   = $('header'),
@@ -160,96 +115,6 @@ $(".menu-toggle").click(function () {
 });
 
 
-// // slider heading animation
-// $(document).ready(function(){ 
-//   function splitText(el) {
-//     const raw = el.textContent;
-//     el.textContent = '';
-//     return raw.split('').map(function(ch) {
-//     const s = document.createElement('span');
-//     s.className = 'char';
-//     s.textContent = ch;
-//     el.appendChild(s);
-//     return s;
-//     });
-//     }
-
-//     function slideRight(el) {
-//     const chars = splitText(el);
-//     chars.forEach(function(ch, i) {
-//     // const delay = (chars.length - 1 - i) * 40;
-//     const delay = i * 40;
-//     ch.style.cssText = 'opacity:0; transform:translateX(-36px); transition:none';
-//     setTimeout(function() {
-//     ch.style.transition = 'opacity 0.5s ease ' + delay + 'ms, transform 0.5s cubic-bezier(0.22,1,0.36,1) ' + delay +
-//     'ms';
-//     ch.style.opacity = '1';
-//     ch.style.transform = 'translateX(0)';
-//     }, 20);
-//     });
-//     }
-
-//     // Run on page load for the first active slide
-//     document.addEventListener('DOMContentLoaded', function() {
-//     const firstText = document.querySelector('.carousel-item.active .text');
-//     if (firstText) slideRight(firstText);
-//     });
-
-//     // Run on every carousel slide change
-//     document.getElementById('carouselExampleIndicators').addEventListener('slid.bs.carousel', function(e) {
-//     const activeText = e.relatedTarget.querySelector('.text');
-//     if (activeText) slideRight(activeText);
-//   });
-// });
-
-$(document).ready(function(){
-
-  function splitText(el) {
-    const raw = el.textContent;
-    el.textContent = '';
-    return raw.split('').map(function(ch) {
-      const s = document.createElement('span');
-      s.className = 'char';
-      s.textContent = ch;
-      el.appendChild(s);
-      return s;
-    });
-  }
-
-  function slideRight(el) {
-
-    var isRTL = $('html').attr('dir') === 'rtl';
-
-    const chars = splitText(el);
-
-    chars.forEach(function(ch, i) {
-
-      const delay = i * 40;
-      const startX = isRTL ? 36 : -36;
-
-      ch.style.cssText = 'opacity:0; transform:translateX(' + startX + 'px); transition:none';
-
-      setTimeout(function() {
-        ch.style.transition = 'opacity 0.5s ease ' + delay + 'ms, transform 0.5s cubic-bezier(0.22,1,0.36,1) ' + delay + 'ms';
-        ch.style.opacity = '1';
-        ch.style.transform = 'translateX(0)';
-      }, 20);
-
-    });
-  }
-
-  // first load
-  const firstText = document.querySelector('.carousel-item.active .text');
-  if (firstText) slideRight(firstText);
-
-  // on slide change
-  $('#carouselExampleIndicators').on('slid.bs.carousel', function(e){
-    const activeText = e.relatedTarget.querySelector('.text');
-    if (activeText) slideRight(activeText);
-  });
-
-});
-
   // tab button amooth moving
   document.addEventListener('DOMContentLoaded', function () {
 
@@ -282,156 +147,201 @@ $(document).ready(function(){
       moveIndicator(btn);
     });
   });
-
 });
 
 
-// client-list1
-$('.client-list1').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 2000,
-  // autoplaySpeed: 2000,
-  smartSpeed: 2000,
-  responsive: {
-    0: {
-      items: 3
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 5
-    },
-    1200: {
-      items: 6
-    }
-  }
-});
-
-$('.client-list1-ar').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  rtl:true,
-  autoplay: true,
-  autoplayTimeout: 2000,
-  // autoplaySpeed: 2000,
-  smartSpeed: 2000,
-  responsive: {
-    0: {
-      items: 3
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 5
-    },
-    1200: {
-      items: 6
-    }
-  }
-});
-
-// client-list2
-$('.client-list2').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  rtl: true,
-  autoplayTimeout: 2000,
-  // autoplaySpeed: 2000,
-  smartSpeed: 2000,
-  responsive: {
-    0: {
-      items: 1
-    },
-    375: {
-      items: 3
-    },
-    600: {
-      items: 4
-    },
-    1000: {
-      items: 5
-    },
-    1200: {
-      items: 6
-    }
-  }
-});
-
-$('.client-list2-ar').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  rtl: false,
-  autoplayTimeout: 2000,
-  // autoplaySpeed: 2000,
-  smartSpeed: 2000,
-  responsive: {
-    0: {
-      items: 1
-    },
-    375: {
-      items: 3
-    },
-    600: {
-      items: 4
-    },
-    1000: {
-      items: 5
-    },
-    1200: {
-      items: 6
-    }
-  }
-});
-
-
-/* <!-- ==================== Reveal type ==================== --> */
-// gsap.registerPlugin(ScrollTrigger);
-
-// const splitTypes = document.querySelectorAll('.reveal-type');
-
-// splitTypes.forEach((char, i) => {
-//     const bg = char.dataset.bgColor;
-//     const fg = char.dataset.fgColor;
-
-//     // Split into words first to prevent breakage
-//     const text = new SplitType(char, {
-//         types: 'words, chars' // First split into words, then into characters
-//     });
-
-//     // Ensure words stay together by using `white-space: nowrap`
-//     gsap.set(text.words, {
-//         display: 'inline-block',
-//         whiteSpace: 'nowrap'
-//     });
-
-//     gsap.fromTo(text.chars, {
-//         color: bg,
-//     }, {
-//         color: fg,
-//         duration: 0.3,
-//         stagger: 0.02,
-//         scrollTrigger: {
-//             trigger: char,
-//             start: 'top 90%',
-//             end: 'bottom 40%',
-//             scrub: true,
-//             markers: false,
-//             toggleActions: 'play play reverse reverse'
-//         }
-//     });
+// // client-list1
+// $('.client-list1').owlCarousel({
+//   loop: true,
+//   nav: false,
+//   dots: false,
+//   autoplay: true,
+//   autoplayTimeout: 2000,
+//   smartSpeed: 2000,
+//   responsive: {
+//     0: {
+//       items: 3
+//     },
+//     600: {
+//       items: 3
+//     },
+//     1000: {
+//       items: 5
+//     },
+//     1200: {
+//       items: 6
+//     }
+//   }
 // });
 
-/* <!-- ==================== Reveal type ==================== --> */
+// $('.client-list1-ar').owlCarousel({
+//   loop: true,
+//   nav: false,
+//   dots: false,
+//   rtl:true,
+//   autoplay: true,
+//   autoplayTimeout: 2000,
+//   smartSpeed: 2000,
+//   responsive: {
+//     0: {
+//       items: 3
+//     },
+//     600: {
+//       items: 3
+//     },
+//     1000: {
+//       items: 5
+//     },
+//     1200: {
+//       items: 6
+//     }
+//   }
+// });
+
+// // client-list2
+// $('.client-list2').owlCarousel({
+//   loop: true,
+//   nav: false,
+//   dots: false,
+//   autoplay: true,
+//   rtl: true,
+//   autoplayTimeout: 2000,
+//   smartSpeed: 2000,
+//   responsive: {
+//     0: {
+//       items: 1
+//     },
+//     375: {
+//       items: 3
+//     },
+//     600: {
+//       items: 4
+//     },
+//     1000: {
+//       items: 5
+//     },
+//     1200: {
+//       items: 6
+//     }
+//   }
+// });
+
+// $('.client-list2-ar').owlCarousel({
+//   loop: true,
+//   nav: false,
+//   dots: false,
+//   autoplay: true,
+//   rtl: false,
+//   autoplayTimeout: 2000,
+//   smartSpeed: 2000,
+//   responsive: {
+//     0: {
+//       items: 1
+//     },
+//     375: {
+//       items: 3
+//     },
+//     600: {
+//       items: 4
+//     },
+//     1000: {
+//       items: 5
+//     },
+//     1200: {
+//       items: 6
+//     }
+//   }
+// });
+
+
+$(document).ready(function () {
+
+    // CLIENT LIST 1 ENGLISH
+    $('.client-list1').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 2000,
+
+        responsive: {
+            0: { items: 3 },
+            600: { items: 3 },
+            1000: { items: 5 },
+            1200: { items: 6 }
+        }
+    });
+
+    // CLIENT LIST 1 ARABIC
+    $('.client-list1-ar').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        rtl: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 2000,
+
+        responsive: {
+            0: { items: 3 },
+            600: { items: 3 },
+            1000: { items: 5 },
+            1200: { items: 6 }
+        }
+    });
+
+    // CLIENT LIST 2 ENGLISH
+    $('.client-list2').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        rtl: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 2000,
+
+        responsive: {
+            0: { items: 1 },
+            375: { items: 3 },
+            600: { items: 4 },
+            1000: { items: 5 },
+            1200: { items: 6 }
+        }
+    });
+
+    // CLIENT LIST 2 ARABIC
+    $('.client-list2-ar').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        rtl: false,
+        autoplayTimeout: 2000,
+        smartSpeed: 2000,
+
+        responsive: {
+            0: { items: 1 },
+            375: { items: 3 },
+            600: { items: 4 },
+            1000: { items: 5 },
+            1200: { items: 6 }
+        }
+    });
+
+    // IMPORTANT FIX
+    setTimeout(function () {
+
+        $('.client-list1').trigger('refresh.owl.carousel');
+        $('.client-list1-ar').trigger('refresh.owl.carousel');
+
+        $('.client-list2').trigger('refresh.owl.carousel');
+        $('.client-list2-ar').trigger('refresh.owl.carousel');
+
+    }, 300);
+
+});
+
 
 // return scroll
 $(document).ready(function(){ 
@@ -449,281 +359,238 @@ $(document).ready(function(){
 });
 
 
-// core offering slider
-$(document).ready(function(){
-  var owl = $('.core-offer-slider');
-  owl.owlCarousel({
-    loop: true,
-    margin: 20,
-    autoplay: true,
-    nav: false,
-    dots: false,
-    autoplayTimeout: 3000,
-    // autoplaySpeed: 2000,
-    smartSpeed: 2000,
-    responsive: {
-      0: { items: 1 },
-      400: { items: 1.5 },
-      650: { items: 2.5 },
-      1000: { items: 3.5 }
-    }
-  });
-  $('.core-next').click(function() {
-    owl.trigger('next.owl.carousel');
-  });
-  $('.core-prev').click(function() {
-    owl.trigger('prev.owl.carousel');
-  });
-});
-
-$(document).ready(function(){
-  var owl = $('.core-offer-slider-ar');
-  owl.owlCarousel({
-    loop: true,
-    margin: 20,
-    autoplay: true,
-    rtl:true,
-    nav: false,
-    dots: false,
-    autoplayTimeout: 3000,
-    // autoplaySpeed: 2000,
-    smartSpeed: 2000,
-    responsive: {
-      0: { items: 1 },
-      400: { items: 1.5 },
-      650: { items: 2.5 },
-      1000: { items: 3.5 }
-    }
-  });
-  $('.core-next').click(function() {
-    owl.trigger('next.owl.carousel');
-  });
-  $('.core-prev').click(function() {
-    owl.trigger('prev.owl.carousel');
-  });
-});
 
 
+$(document).ready(function () {
 
-//case-study-tab
-document.addEventListener('DOMContentLoaded', function () {
-  const tabBtns = document.querySelectorAll('.tab-btn');
-    const panels  = document.querySelectorAll('.tab-panel');
-  
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = btn.dataset.tab;
-  
-        tabBtns.forEach(b => b.classList.remove('active'));
-        panels.forEach(p => p.classList.remove('active'));
-  
-        btn.classList.add('active');
-        document.getElementById(target).classList.add('active');
-      });
-  });
-});  
+    // ENGLISH
+    $('.core-offer-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        rtl: false,
+        nav: false,
+        dots: false,
+        autoplayTimeout: 3000,
+        smartSpeed: 2000,
 
-// case-study-slider
-$('.case-study-slider').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  // autoplaySpeed: 3000,
-  smartSpeed: 1000,
-  margin:20,
-  responsive: {
-    0: {
-      items: 1.2
-    },
-    600: {
-      items: 2.5
-    },
-    800: {
-      items: 3.5
-    },
-    1000: {
-      items: 3.5
-    },
-    1200: {
-      items: 4.5
-    }
-  }
-});
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1.5 },
+            650: { items: 2.5 },
+            1000: { items: 3.5 }
+        }
+    });
 
-$('.case-study-slider-ar').owlCarousel({
-  loop: true,
-  nav: false,
-  rtl:true,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  // autoplaySpeed: 3000,
-  smartSpeed: 1000,
-  margin:20,
-  responsive: {
-    0: {
-      items: 1.2
-    },
-    600: {
-      items: 2.5
-    },
-    800: {
-      items: 3.5
-    },
-    1000: {
-      items: 3.5
-    },
-    1200: {
-      items: 4.5
-    }
-  }
-});
+    // ARABIC
+    $('.core-offer-slider-ar').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        rtl: true,
+        nav: false,
+        dots: false,
+        autoplayTimeout: 3000,
+        smartSpeed: 2000,
 
-// projects-slider
-$('.projects-slider').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  // autoplaySpeed: 3000,
-  smartSpeed: 1000,
-  margin:20,
-  responsive: {
-    0: {
-      items: 1.1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    },
-    1200: {
-      items: 3
-    }
-  }
-});
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1.5 },
+            650: { items: 2.5 },
+            1000: { items: 3.5 }
+        }
+    });
 
-$('.projects-slider-ar').owlCarousel({
-  loop: true,
-  nav: false,
-  rtl:true,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  // autoplaySpeed: 3000,
-  smartSpeed: 1000,
-  margin:20,
-  responsive: {
-    0: {
-      items: 1.1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    },
-    1200: {
-      items: 3
-    }
-  }
-});
+    // REFRESH FIX
+    setTimeout(function () {
 
-// news-events-slider
-$('.news-events-slider').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  // autoplaySpeed: 3000,
-  smartSpeed: 1000,
-  margin:20,
-  responsive: {
-    0: {
-      items: 1.2
-    },
-    600: {
-      items: 1.2
-    },
-    768: {
-      items: 2.1
-    },
-    1000: {
-      items: 2.1
-    },
-    1200: {
-      items: 2.2
-    }
-  }
-});
+        $('.core-offer-slider').trigger('refresh.owl.carousel');
+        $('.core-offer-slider-ar').trigger('refresh.owl.carousel');
 
-$('.news-events-slider-ar').owlCarousel({
-  loop: true,
-  nav: false,
-  dots: false,
-  rtl:true,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  // autoplaySpeed: 3000,
-  smartSpeed: 1000,
-  margin:20,
-  responsive: {
-    0: {
-      items: 1
-    },
-    375: {
-      items: 1
-    },
-    768: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    },
-    1200: {
-      items: 2
-    }
-  }
+    }, 200);
+
 });
 
 
+$(document).ready(function () {
 
-////// inner pages start here //////
-/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   STICKY SUBNAV ACTIVE STATE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-// document.addEventListener('DOMContentLoaded', function () {
-//   (function() {
-//     const links    = document.querySelectorAll('.subnav-links a');
-//     const sections = document.querySelectorAll('.content-section');
-  
-//     const observer = new IntersectionObserver(entries => {
-//       entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//           links.forEach(l => l.classList.remove('active'));
-//           const active = document.querySelector(`.subnav-links a[href="#${entry.target.id}"]`);
-//           if (active) active.classList.add('active');
-//         }
-//       });
-//     }, { threshold: 0.4 });
-  
-//     sections.forEach(s => observer.observe(s));
-  
-//     links.forEach(link => {
-//       link.addEventListener('click', e => {
-//         e.preventDefault();
-//         const target = document.querySelector(link.getAttribute('href'));
-//         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//       });
-//     });
-//   })();
-// });
+    // =========================
+    // CORE OFFER SLIDER
+    // =========================
 
+    $('.core-offer-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        rtl: false,
+        nav: false,
+        dots: false,
+        autoplayTimeout: 3000,
+        smartSpeed: 2000,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1.5 },
+            650: { items: 2.5 },
+            1000: { items: 3.5 }
+        }
+    });
+
+    $('.core-offer-slider-ar').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        rtl: true,
+        nav: false,
+        dots: false,
+        autoplayTimeout: 3000,
+        smartSpeed: 2000,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1.5 },
+            650: { items: 2.5 },
+            1000: { items: 3.5 }
+        }
+    });
+
+
+    // =========================
+    // NEWS EVENTS
+    // =========================
+
+    $('.news-events-slider').owlCarousel({
+        loop: true,
+        rtl: false,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
+        margin: 20,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            768: { items: 2.1 },
+            1000: { items: 2.1 },
+            1200: { items: 2.2 }
+        }
+    });
+
+    $('.news-events-slider-ar').owlCarousel({
+        loop: true,
+        rtl: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
+        margin: 20,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            768: { items: 2.1 },
+            1000: { items: 2.1 },
+            1200: { items: 2.2 }
+        }
+    });
+
+
+    // =========================
+    // CASE STUDY
+    // =========================
+
+    $('.case-study-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        smartSpeed: 700,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1200: { items: 4 }
+        }
+    });
+
+    $('.case-study-slider-ar').owlCarousel({
+        loop: true,
+        rtl: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        smartSpeed: 700,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1200: { items: 4 }
+        }
+    });
+
+
+    // =========================
+    // PROJECTS
+    // =========================
+
+    $('.projects-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        smartSpeed: 700,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1200: { items: 4 }
+        }
+    });
+
+    $('.projects-slider-ar').owlCarousel({
+        loop: true,
+        rtl: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 2 },
+            1200: { items: 3 }
+        }
+    });
+
+
+    // =========================
+    // TABS
+    // =========================
+
+    $('.tab-btn').click(function () {
+
+        let tabId = $(this).data('tab');
+
+        $('.tab-btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tab-panel').removeClass('active');
+        $('#' + tabId).addClass('active');
+
+        setTimeout(function () {
+
+            $('.case-study-slider').trigger('refresh.owl.carousel');
+            $('.case-study-slider-ar').trigger('refresh.owl.carousel');
+
+            $('.projects-slider').trigger('refresh.owl.carousel');
+            $('.projects-slider-ar').trigger('refresh.owl.carousel');
+
+        }, 100);
+
+    });
+
+});
 
 /* ------------- AI Infrastructure ------------- */
 
@@ -741,8 +608,6 @@ $('.news-events-slider-ar').owlCarousel({
     }
   }
 // });
-
-/* ------------- AI Infrastructure ------------- */
 
 /* ------------- Section Nav Active ------------- */
 
