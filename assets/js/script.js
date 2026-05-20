@@ -116,7 +116,39 @@ $(".menu-toggle").click(function () {
 
 
   // tab button amooth moving
-  document.addEventListener('DOMContentLoaded', function () {
+//   document.addEventListener('DOMContentLoaded', function () {
+
+//   function moveIndicator(activeBtn) {
+//     const indicator = document.querySelector('.tab-indicator');
+//     const tabs = document.querySelector('.all-works .tabs');
+
+//     if (!indicator || !tabs || !activeBtn) return;
+
+//     const tabsRect = tabs.getBoundingClientRect();
+//     const btnRect = activeBtn.getBoundingClientRect();
+
+//     indicator.style.width = btnRect.width + 'px';
+//     indicator.style.transform =
+//       'translateX(' + (btnRect.left - tabsRect.left) + 'px)';
+//   }
+
+//   // ✅ Init on load (ONLY ONCE)
+//   const activeBtn = document.querySelector('.all-works .tab-btn.active');
+//   if (activeBtn) moveIndicator(activeBtn);
+
+//   // ✅ On click
+//   document.querySelectorAll('.all-works .tab-btn').forEach(function (btn) {
+//     btn.addEventListener('click', function () {
+//       document
+//         .querySelectorAll('.all-works .tab-btn')
+//         .forEach(b => b.classList.remove('active'));
+
+//       btn.classList.add('active');
+//       moveIndicator(btn);
+//     });
+//   });
+// });
+document.addEventListener('DOMContentLoaded', function () {
 
   function moveIndicator(activeBtn) {
     const indicator = document.querySelector('.tab-indicator');
@@ -128,25 +160,44 @@ $(".menu-toggle").click(function () {
     const btnRect = activeBtn.getBoundingClientRect();
 
     indicator.style.width = btnRect.width + 'px';
+
     indicator.style.transform =
       'translateX(' + (btnRect.left - tabsRect.left) + 'px)';
   }
 
-  // ✅ Init on load (ONLY ONCE)
+  // INIT
   const activeBtn = document.querySelector('.all-works .tab-btn.active');
-  if (activeBtn) moveIndicator(activeBtn);
 
-  // ✅ On click
+  if (activeBtn) {
+    moveIndicator(activeBtn);
+  }
+
+  // CLICK
   document.querySelectorAll('.all-works .tab-btn').forEach(function (btn) {
+
     btn.addEventListener('click', function () {
+
       document
         .querySelectorAll('.all-works .tab-btn')
         .forEach(b => b.classList.remove('active'));
 
       btn.classList.add('active');
+
       moveIndicator(btn);
     });
+
   });
+
+  // ✅ RESPONSIVE FIX
+  window.addEventListener('resize', function () {
+
+    const activeBtn =
+      document.querySelector('.all-works .tab-btn.active');
+
+    moveIndicator(activeBtn);
+
+  });
+
 });
 
 
