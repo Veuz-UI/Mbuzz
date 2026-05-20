@@ -150,110 +150,6 @@ $(".menu-toggle").click(function () {
 });
 
 
-// // client-list1
-// $('.client-list1').owlCarousel({
-//   loop: true,
-//   nav: false,
-//   dots: false,
-//   autoplay: true,
-//   autoplayTimeout: 2000,
-//   smartSpeed: 2000,
-//   responsive: {
-//     0: {
-//       items: 3
-//     },
-//     600: {
-//       items: 3
-//     },
-//     1000: {
-//       items: 5
-//     },
-//     1200: {
-//       items: 6
-//     }
-//   }
-// });
-
-// $('.client-list1-ar').owlCarousel({
-//   loop: true,
-//   nav: false,
-//   dots: false,
-//   rtl:true,
-//   autoplay: true,
-//   autoplayTimeout: 2000,
-//   smartSpeed: 2000,
-//   responsive: {
-//     0: {
-//       items: 3
-//     },
-//     600: {
-//       items: 3
-//     },
-//     1000: {
-//       items: 5
-//     },
-//     1200: {
-//       items: 6
-//     }
-//   }
-// });
-
-// // client-list2
-// $('.client-list2').owlCarousel({
-//   loop: true,
-//   nav: false,
-//   dots: false,
-//   autoplay: true,
-//   rtl: true,
-//   autoplayTimeout: 2000,
-//   smartSpeed: 2000,
-//   responsive: {
-//     0: {
-//       items: 1
-//     },
-//     375: {
-//       items: 3
-//     },
-//     600: {
-//       items: 4
-//     },
-//     1000: {
-//       items: 5
-//     },
-//     1200: {
-//       items: 6
-//     }
-//   }
-// });
-
-// $('.client-list2-ar').owlCarousel({
-//   loop: true,
-//   nav: false,
-//   dots: false,
-//   autoplay: true,
-//   rtl: false,
-//   autoplayTimeout: 2000,
-//   smartSpeed: 2000,
-//   responsive: {
-//     0: {
-//       items: 1
-//     },
-//     375: {
-//       items: 3
-//     },
-//     600: {
-//       items: 4
-//     },
-//     1000: {
-//       items: 5
-//     },
-//     1200: {
-//       items: 6
-//     }
-//   }
-// });
-
-
 $(document).ready(function () {
 
     // CLIENT LIST 1 ENGLISH
@@ -266,8 +162,9 @@ $(document).ready(function () {
         smartSpeed: 2000,
 
         responsive: {
-            0: { items: 3 },
-            600: { items: 3 },
+            0: { items: 2 },
+            375: { items: 3 },
+            600: { items: 4 },
             1000: { items: 5 },
             1200: { items: 6 }
         }
@@ -284,8 +181,9 @@ $(document).ready(function () {
         smartSpeed: 2000,
 
         responsive: {
-            0: { items: 3 },
-            600: { items: 3 },
+            0: { items: 2 },
+            375: { items: 3 },
+            600: { items: 4 },
             1000: { items: 5 },
             1200: { items: 6 }
         }
@@ -302,7 +200,7 @@ $(document).ready(function () {
         smartSpeed: 2000,
 
         responsive: {
-            0: { items: 1 },
+            0: { items: 2 },
             375: { items: 3 },
             600: { items: 4 },
             1000: { items: 5 },
@@ -321,7 +219,7 @@ $(document).ready(function () {
         smartSpeed: 2000,
 
         responsive: {
-            0: { items: 1 },
+            0: { items: 2 },
             375: { items: 3 },
             600: { items: 4 },
             1000: { items: 5 },
@@ -377,8 +275,10 @@ $(document).ready(function () {
         responsive: {
             0: { items: 1 },
             600: { items: 1.5 },
-            650: { items: 2.5 },
-            1000: { items: 3.5 }
+            900: { items: 2 },
+            1200: { items: 2.5 },
+            1400: { items: 3 },
+            1600: { items: 3.5 }
         }
     });
 
@@ -396,8 +296,10 @@ $(document).ready(function () {
         responsive: {
             0: { items: 1 },
             600: { items: 1.5 },
-            650: { items: 2.5 },
-            1000: { items: 3.5 }
+            900: { items: 2 },
+            1200: { items: 2.5 },
+            1400: { items: 3 },
+            1600: { items: 3.5 }
         }
     });
 
@@ -418,39 +320,43 @@ $(document).ready(function () {
     // CORE OFFER SLIDER
     // =========================
 
-    $('.core-offer-slider').owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        rtl: false,
-        nav: false,
-        dots: false,
-        autoplayTimeout: 3000,
-        smartSpeed: 2000,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 1.5 },
-            650: { items: 2.5 },
-            1000: { items: 3.5 }
-        }
-    });
+    // $('.core-offer-slider').owlCarousel({
+    //     loop: true,
+    //     margin: 20,
+    //     autoplay: true,
+    //     rtl: false,
+    //     nav: false,
+    //     dots: false,
+    //     autoplayTimeout: 3000,
+    //     smartSpeed: 2000,
+    //     responsive: {
+    //         0: { items: 1 },
+    //         600: { items: 1.5 },
+    //         900: { items: 2 },
+    //         1200: { items: 2.5 },
+    //         1400: { items: 3 },
+    //         1600: { items: 3.5 }
+    //     }
+    // });
 
-    $('.core-offer-slider-ar').owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        rtl: true,
-        nav: false,
-        dots: false,
-        autoplayTimeout: 3000,
-        smartSpeed: 2000,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 1.5 },
-            650: { items: 2.5 },
-            1000: { items: 3.5 }
-        }
-    });
+    // $('.core-offer-slider-ar').owlCarousel({
+    //     loop: true,
+    //     margin: 20,
+    //     autoplay: true,
+    //     rtl: true,
+    //     nav: false,
+    //     dots: false,
+    //     autoplayTimeout: 3000,
+    //     smartSpeed: 2000,
+    //     responsive: {
+    //         0: { items: 1 },
+    //         600: { items: 1.5 },
+    //         900: { items: 2 },
+    //         1200: { items: 2.5 },
+    //         1400: { items: 3 },
+    //         1600: { items: 3.5 }
+    //     }
+    // });
 
 
     // =========================
@@ -469,9 +375,9 @@ $(document).ready(function () {
         responsive: {
             0: { items: 1 },
             600: { items: 1 },
-            768: { items: 2.1 },
-            1000: { items: 2.1 },
-            1200: { items: 2.2 }
+            768: { items: 1.2 },
+            1000: { items: 2 },
+            1400: { items: 2.2 }
         }
     });
 
@@ -487,9 +393,9 @@ $(document).ready(function () {
         responsive: {
             0: { items: 1 },
             600: { items: 1 },
-            768: { items: 2.1 },
-            1000: { items: 2.1 },
-            1200: { items: 2.2 }
+            768: { items: 1.2 },
+            1000: { items: 2 },
+            1400: { items: 2.2 }
         }
     });
 
@@ -507,8 +413,10 @@ $(document).ready(function () {
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
-            768: { items: 2 },
-            1200: { items: 4 }
+            600: { items: 2 },
+            768: { items: 2.5 },
+            1000: { items: 3.2 },
+            1400: { items: 4.2 }
         }
     });
 
@@ -522,8 +430,10 @@ $(document).ready(function () {
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
-            768: { items: 2 },
-            1200: { items: 4 }
+            600: { items: 2 },
+            768: { items: 2.5 },
+            1000: { items: 3.2 },
+            1400: { items: 4.2 }
         }
     });
 
@@ -541,8 +451,10 @@ $(document).ready(function () {
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
-            768: { items: 2 },
-            1200: { items: 4 }
+            700: { items: 1.5 },
+            900: { items: 2 },
+            1200: { items: 2.5 },
+            1400: { items: 3 }
         }
     });
 
@@ -557,9 +469,10 @@ $(document).ready(function () {
         smartSpeed: 1000,
         responsive: {
             0: { items: 1 },
-            600: { items: 2 },
-            1000: { items: 2 },
-            1200: { items: 3 }
+            700: { items: 1.5 },
+            900: { items: 2 },
+            1200: { items: 2.5 },
+            1400: { items: 3 }
         }
     });
 
