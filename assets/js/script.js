@@ -354,6 +354,26 @@ $(document).ready(function () {
         }
     });
 
+    // NEXT BUTTON
+    $('.core-next').click(function () {
+        $('.core-offer-slider').trigger('next.owl.carousel');
+    });
+
+    // PREV BUTTON
+    $('.core-prev').click(function () {
+        $('.core-offer-slider').trigger('prev.owl.carousel');
+    });
+
+    // ARABIC NEXT
+    $('.core-next-ar').click(function () {
+        $('.core-offer-slider-ar').trigger('next.owl.carousel');
+    });
+
+    // ARABIC PREV
+    $('.core-prev-ar').click(function () {
+        $('.core-offer-slider-ar').trigger('prev.owl.carousel');
+    });
+
     // REFRESH FIX
     setTimeout(function () {
 

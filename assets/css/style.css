@@ -1462,7 +1462,7 @@ section{
 .core-offering .core-card {
   padding: 60px 50px;
   border-radius: 40px;
-  min-height: 450px;
+  min-height: 425px;
   height: 100%;
   color: #fff;
   background-blend-mode: normal;
@@ -1501,7 +1501,7 @@ section{
 .core-offering .core-card h3 {
   font-size: 30px;
   font-weight: 400;
-  line-height: 40px;
+  /* line-height: 40px; */
   font-weight: 400;
   margin-bottom: 20px;
 }
