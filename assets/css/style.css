@@ -608,7 +608,7 @@ section{
 
 .banner_slider .carousel-caption h5 {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 200;
   /* line-height: normal; */
   color: var(--white-color);
   margin-bottom: 25px;
@@ -622,8 +622,8 @@ section{
 }
 
 .banner_slider .carousel-caption p {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 200;
   line-height: 30px;
   color: #d8d8d8;
   margin-bottom: 30px;
@@ -646,7 +646,7 @@ section{
 } */
 
 .carousel-inner::after {
-  background: rgba(0, 0, 0, 0.63);
+  background: rgb(0 0 0 / 25%);
   top: 0px;
   left: 0px;
   position: absolute;
@@ -861,24 +861,24 @@ section{
 }
 
 .footer-brand img {
-  max-width: 235px;
+  max-width: 170px;
   margin-bottom: 15px;
 }
 .footer-brand-name {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
   font-family: "Noto Kufi Arabic", sans-serif;
   margin-bottom: 10px;
 }
 .footer-brand p {
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 300;
   color: #fff;
 }
 .footer-col h4 {
-  font-size: 23px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   color: #FFFFFF;
   margin-bottom: 15px;
   word-break: break-all;
@@ -898,7 +898,7 @@ section{
   transform: translateX(3px);
 }
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
@@ -921,7 +921,7 @@ section{
   margin-top: 4px;
 }
 .footer-contact p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
@@ -929,7 +929,7 @@ section{
   font-family: "Manrope", sans-serif;
 }
 .footer-contact p a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   word-break: break-all;
@@ -943,7 +943,7 @@ section{
   margin-top: 100px;
 }
 .footer-subcribe h4 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 15px;
@@ -1035,7 +1035,7 @@ section{
   color: var(--primary-color);
 } */
 .copy-right-item p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 25px;
   color: #fff;
@@ -1405,7 +1405,7 @@ section{
   background: linear-gradient(123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 51%) 100%);
 }
 .innovation-img img{
-  max-height: 510px;
+  max-height: 450px;
 }
 
 @media (max-width: 992px) {
