@@ -342,6 +342,16 @@
 	.main-footer{
 		padding-top: 150px;
 	}
+
+	html[dir="rtl"] .menu .submenu-menu{
+		padding-left: initial;
+        padding-right: 15px;
+	}
+	html[dir="rtl"] .menu .dropdown-menu{
+		padding-left: initial;
+        padding-right: 10px;
+		text-align: justify;
+	}
 	
 
 
