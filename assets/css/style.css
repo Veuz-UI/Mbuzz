@@ -402,7 +402,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 		 common area 
  ------------------------------ */
 .section-padding {
-  padding: 160px 0px;
+  padding: 100px 0px;
 }
 
 section{
@@ -463,7 +463,7 @@ section{
 }
 
 .description {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.8;
@@ -608,7 +608,7 @@ section{
 
 .banner_slider .carousel-caption h5 {
   font-size: 50px;
-  font-weight: 200;
+  font-weight: 400;
   /* line-height: normal; */
   color: var(--white-color);
   margin-bottom: 25px;
@@ -623,7 +623,7 @@ section{
 
 .banner_slider .carousel-caption p {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 30px;
   color: #d8d8d8;
   margin-bottom: 30px;
@@ -922,7 +922,7 @@ section{
 }
 .footer-contact p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 200;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin-bottom: 0;
@@ -930,14 +930,14 @@ section{
 }
 .footer-contact p a {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 200;
   color: rgba(255, 255, 255, 0.8);
   word-break: break-all;
   font-family: "Manrope", sans-serif;
 }
-.footer-contact p a:hover {
+/* .footer-contact p a:hover {
   color: var(--primary-color);
-}
+} */
 
 .footer-subcribe{
   margin-top: 100px;
@@ -1053,9 +1053,9 @@ section{
   color: #fff;
   font-family: "Manrope", sans-serif;
 }
-.copy-right-item p a:hover{
+/* .copy-right-item p a:hover{
   color: var(--primary-color);
-}
+} */
 .footer-icons {
   text-align: end;
   width: 100%;
@@ -1374,8 +1374,12 @@ section{
 /* END list */
 
 /* ai-about */
+.ai-left p{
+  text-align: justify;
+}
 .ai-about .logo-card {
   padding: 0 60px;
+  text-align: center;
 }
 .ai-about .logo-card img{
   animation: rotateImage 15s linear infinite;
@@ -1385,6 +1389,9 @@ section{
 @media (max-width: 600px) {
   .ai-about .logo-card {
     padding: 0;
+  }
+  .ai-about .logo-card img{
+    height: 350px;
   }
 }
 
@@ -1402,10 +1409,10 @@ section{
 }
 .innovation-box:hover{
   border-color: var(--primary-color);
-  background: linear-gradient(123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 51%) 100%);
+  /* background: linear-gradient(123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 51%) 100%); */
 }
 .innovation-img img{
-  max-height: 450px;
+  max-height: 420px;
 }
 
 @media (max-width: 992px) {
@@ -1701,9 +1708,9 @@ section{
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 20px;
+  padding: 6px 15px;
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   cursor: pointer;
   border: none;
@@ -1757,8 +1764,8 @@ section{
   padding-top: 15px;
 }
 .case-study-in .cs-card {
-  padding: 15px;
-  background: #0c0f1a;
+  padding: 13px;
+  background: #000;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.07);
@@ -1771,8 +1778,8 @@ section{
 
 .case-study-in .cs-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(77, 184, 255, 0.25);
-  background-color: #0db4f952;
+  border-color: var(--primary-color);
+  /* background-color: #0db4f952; */
 }
 
 .case-study-in .cs-card-img {
@@ -1784,8 +1791,8 @@ section{
 
 .case-study-in .cs-card-img img {
   width: 100%;
-  min-height: 185px;
-  max-height: 185px;
+  min-height: 175px;
+  max-height: 175px;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
@@ -1797,32 +1804,32 @@ section{
 }
 
 .case-study-in .cs-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 12px;
-  line-height: 1.5;
+  margin-bottom: 5px;
+  line-height: 1.3;
 }
 
 .case-study-in .card-date {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 10px;
+  color: rgb(219 214 214 / 50%);
+  margin-bottom: 5px;
   letter-spacing: 0.01em;
 }
 
 .case-study-in .cs-desc {
   font-size: 14px;
   font-weight: 200;
-  color: rgb(255 255 255 / 65%);
+  color: rgb(222 222 222);
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .case-study-in .cs-read {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
   color: #4db8ff;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1857,12 +1864,12 @@ section{
 }
 .project-work .proj-card-out {
   position: relative;
-  min-height: 530px;
-  max-height: 530px;
+  min-height: 450px;
+  max-height: 450px;
   height: 100%;
   overflow: hidden;
 }
-.project-work .proj-card-out::after {
+/* .project-work .proj-card-out::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1878,7 +1885,7 @@ section{
 }
 .project-work .item:hover .proj-card-out::after {
   opacity: 1;
-}
+} */
 
 .project-work .proj-card {
   position: relative;
@@ -1920,9 +1927,9 @@ section{
 }
 
 .project-work p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
   margin: 0;
 }
 
@@ -2031,7 +2038,8 @@ section{
 .news-events .card-img-wrap {
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 250px;
+  /* max-height: 250px; */
   border-radius: 15px;
 }
 
@@ -2059,10 +2067,10 @@ section{
 
 .news-events .card-title {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   line-height: 1.35;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   letter-spacing: -0.2px;
 }
 
@@ -2070,7 +2078,7 @@ section{
   font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.40);
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   letter-spacing: 0.01em;
 }
 
@@ -2079,7 +2087,7 @@ section{
   font-weight: 300;
   line-height: 1.5;
   color: rgb(255 255 255 / 80%);
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .news-events .read-more {
@@ -2161,7 +2169,7 @@ section{
 }
 
 .cta .core-card h3 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 15px;
@@ -2169,10 +2177,10 @@ section{
 }
 
 .cta .core-card p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #c7c7c7;
   margin-bottom: 24px;
 }
 
@@ -4730,11 +4738,11 @@ html[dir="rtl"] .stats-section .stat-card:hover{
   );
 }
 
-html[dir="rtl"] .innovation-box:hover {
+/* html[dir="rtl"] .innovation-box:hover {
   background: linear-gradient(-123deg,
       rgb(255 255 255 / 0%) 0%,
       rgb(13 163 231 / 51%) 100%);
-}
+} */
 
 html[dir="rtl"] .innovation-box {
     background: linear-gradient(
