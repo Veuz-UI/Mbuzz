@@ -487,7 +487,7 @@ $(document).ready(function () {
             600: { items: 2 },
             768: { items: 2.5 },
             1000: { items: 3.2 },
-            1400: { items: 4.2 }
+            1400: { items: 4 }
         }
     });
 
@@ -639,12 +639,18 @@ $(document).ready(function(){
               items:1
           },
           600:{
-              items:2
+              items:1.5
           },
           800:{
-              items:3
+              items:2
           },
           1000:{
+              items:3
+          },
+          1200:{
+              items:3.5
+          },
+          1400:{
               items:4
           }
       }
