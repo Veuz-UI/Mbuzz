@@ -449,7 +449,7 @@ section{
   font-size: 40px;
   font-weight: 400;
   /* line-height: 46px; */
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: #0DB4F9;
   font-family: "Manrope", sans-serif;
 
@@ -464,7 +464,7 @@ section{
 
 .description {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.8;
 }
@@ -609,19 +609,13 @@ section{
 .banner_slider .carousel-caption h5 {
   font-size: 50px;
   font-weight: 400;
-  line-height: normal;
+  /* line-height: normal; */
   color: var(--white-color);
   margin-bottom: 25px;
   font-family: "Manrope", sans-serif;
   text-transform: capitalize;
 }
 
-/* slider heading */
-/* .carousel-caption .text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 .carousel-caption .text .char {
   display: inline-block;
   white-space: pre;
@@ -2209,34 +2203,11 @@ section{
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .inner-banner {
   position: relative;
-  min-height: 400px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-.inner-banner::before {
-    content: '';
-    position: absolute;
-    top: -110px;
-    left: -80px;
-    height: 250px;
-    width: 350px;
-    filter: blur(106.5px);
-    background: #0db4f96b;
-    z-index: 1;
-    border-radius: 100%;
-}
-
-/* .inner-banner::after {
-  background-image: url(../img/inner-section-banner.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  position: absolute;
-  content: "";
-  inset: 0;
-} */
 
 .inner-banner .banner-text {
   position: relative;
@@ -2278,7 +2249,7 @@ section{
 }
 
 .inner-banner h1 {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 300;
   color: #fff;
   letter-spacing: -0.5px;
@@ -2286,32 +2257,23 @@ section{
   font-family: "Manrope", sans-serif;
 }
 
-.banner-inner-wrapper{
-  padding-top: 50px;
+.banner-inner-wrapper {
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #0db4f930;
 }
 
 .banner-sub-img img{
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  z-index: 7;
-  /* width: 35%; */
-  height: 100%;
-  object-fit: cover;
+  height: 300px;
 }
 
 @media (max-width: 1300px) {
-  .inner-banner::before {
-    height: 150px;
-    width: 150px;
-  }
+
 }
 
 @media (max-width: 1200px) {
-  .inner-banner::before {
-    height: 100px;
-    width: 100px;
-  }
   .inner-banner {
     min-height: 300px;
   }
@@ -2431,10 +2393,6 @@ section{
 }
 
 @media (max-width: 1200px) {
-  .inner-banner::before {
-    height: 100px;
-    width: 100px;
-  }
   .inner-subnav-links li a {
     font-size: 14px;
     padding-right: 15px;
@@ -2541,11 +2499,11 @@ section{
 .ai-tag {
   font-size: 16px;
   display: inline-block;
-  padding: 6px 14px;
+  padding: 10px 30px;
   background: rgba(13, 180, 249, 0.1);
   color: #0DB4F9;
-  border-radius: 20px;
-  margin-bottom: 25px;
+  border-radius: 100px;
+  margin-bottom: 30px;
   font-family: "Manrope", sans-serif;
 }
 
@@ -2553,7 +2511,7 @@ section{
   margin-top: 160px;
 }
 .nvidia-card img{
-  max-width: 320px;
+  max-width: 250px;
   border-radius: 15px;
   border: 2px solid #fff;
 }
@@ -2614,6 +2572,13 @@ section{
   backdrop-filter: blur(70px);
   box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
   background: linear-gradient(123deg, rgba(206, 241, 255, 0.5) 0%, #ECEEF5 100%);
+}
+.ai-approach-in:hover{
+  background: linear-gradient(-123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 23%) 100%);
+}
+
+.ai-approach-in .heading{
+  color: #000 !important;
 }
 
 .right-ai-approach img {
@@ -4862,6 +4827,11 @@ html[dir="rtl"] .stats-section .stat-card::before {
     );
 }
 
+html[dir="rtl"] .stats-section .stat-bottom .plus{
+  margin-right: initial;
+  margin-left: 10px;
+}
+
 /* footer */
 html[dir="rtl"] .footer-col ul li:hover {
     transform: translateX(-3px);
@@ -4924,10 +4894,6 @@ html[dir="rtl"] .accordion-button::after {
     margin-right: auto;
 }
 /*inner banner arabic*/
-html[dir="rtl"] .inner-banner::before {
-  left: initial;
-  right: -80px;
-}
 html[dir="rtl"] .banner-sub-img img {
   right: initial;
     left: 0;
