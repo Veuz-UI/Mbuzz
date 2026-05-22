@@ -1814,7 +1814,7 @@ section{
 .case-study-in .cs-card-img img {
   width: 100%;
   min-height: 175px;
-  max-height: 175px;
+  /* max-height: 175px; */
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
@@ -1846,11 +1846,11 @@ section{
   font-weight: 200;
   color: rgb(222 222 222);
   line-height: 1.6;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .case-study-in .cs-read {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: #4db8ff;
   letter-spacing: 0.04em;
