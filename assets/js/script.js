@@ -328,7 +328,7 @@ $(document).ready(function () {
             600: { items: 1.5 },
             900: { items: 2.5 },
             1200: { items: 3 },
-            1400: { items: 3.2 },
+            1400: { items: 3.5 },
             1600: { items: 3.9 }
         }
     });
