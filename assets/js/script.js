@@ -448,7 +448,7 @@ $(document).ready(function () {
             600: { items: 1 },
             768: { items: 1.2 },
             1000: { items: 2 },
-            1400: { items: 2.2 }
+            1400: { items: 2 }
         }
     });
 
@@ -466,7 +466,7 @@ $(document).ready(function () {
             600: { items: 1 },
             768: { items: 1.2 },
             1000: { items: 2 },
-            1400: { items: 2.2 }
+            1400: { items: 2 }
         }
     });
 
