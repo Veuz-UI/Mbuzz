@@ -211,7 +211,6 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 2000,
         smartSpeed: 2000,
-
         responsive: {
             0: { items: 2 },
             375: { items: 3 },
@@ -230,7 +229,6 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 2000,
         smartSpeed: 2000,
-
         responsive: {
             0: { items: 2 },
             375: { items: 3 },
@@ -249,7 +247,6 @@ $(document).ready(function () {
         rtl: true,
         autoplayTimeout: 2000,
         smartSpeed: 2000,
-
         responsive: {
             0: { items: 2 },
             375: { items: 3 },
@@ -268,7 +265,6 @@ $(document).ready(function () {
         rtl: false,
         autoplayTimeout: 2000,
         smartSpeed: 2000,
-
         responsive: {
             0: { items: 2 },
             375: { items: 3 },
@@ -315,8 +311,8 @@ $(document).ready(function () {
     // ENGLISH
     $('.core-offer-slider').owlCarousel({
         loop: true,
-        margin: 20,
-        autoplay: false,
+        margin: 15,
+        autoplay: true,
         rtl: false,
         nav: false,
         dots: false,
@@ -336,7 +332,7 @@ $(document).ready(function () {
     // ARABIC
     $('.core-offer-slider-ar').owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 15,
         autoplay: true,
         rtl: true,
         nav: false,
@@ -480,7 +476,7 @@ $(document).ready(function () {
         margin: 15,
         nav: false,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
@@ -516,7 +512,7 @@ $(document).ready(function () {
 
     $('.projects-slider').owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 15,
         nav: false,
         dots: false,
         autoplay: true,
@@ -533,7 +529,7 @@ $(document).ready(function () {
     $('.projects-slider-ar').owlCarousel({
         loop: true,
         rtl: true,
-        margin: 20,
+        margin: 15,
         nav: false,
         dots: false,
         autoplay: true,
@@ -631,7 +627,7 @@ $(document).ready(function(){
   var owl = $('.prof-services-slider');
   owl.owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 15,
     autoplay: true,
     nav: false,
     dots: false,
@@ -668,7 +664,7 @@ $(document).ready(function(){
   var owl = $('.prof-services-slider-ar');
   owl.owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 15,
     autoplay: true,
     rtl:true,
     nav: false,
@@ -700,7 +696,7 @@ $(document).ready(function(){
 // ai real world impact slider
 var owl = $('.ai-real-world-impact-slider').owlCarousel({
       loop:true,
-      margin:20,
+      margin:15,
       autoplay:true,
       nav:false,
       dots:false,
@@ -727,7 +723,7 @@ $('.core-prev').click(function() {
 
 var owl = $('.ai-real-world-impact-slider-ar').owlCarousel({
       loop:true,
-      margin:20,
+      margin:15,
       autoplay:true,
       rtl:true,
       nav:false,
