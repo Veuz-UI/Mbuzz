@@ -477,7 +477,7 @@ $(document).ready(function () {
 
     $('.case-study-slider').owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 15,
         nav: false,
         dots: false,
         autoplay: false,
@@ -495,7 +495,7 @@ $(document).ready(function () {
     $('.case-study-slider-ar').owlCarousel({
         loop: true,
         rtl: true,
-        margin: 20,
+        margin: 15,
         nav: false,
         dots: false,
         autoplay: true,

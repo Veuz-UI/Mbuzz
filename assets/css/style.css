@@ -1272,6 +1272,13 @@ section{
 /* END return scroll */
 
 /* list */
+.stats-section .col-sm-6{
+  padding-right: 3px;
+}
+.stats-section .col-sm-6:last-child{
+  padding-right: 15px;
+}
+
 .stats-section .stat-card {
   padding: 25px;
   border-radius: 35px;
