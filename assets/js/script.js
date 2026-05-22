@@ -316,7 +316,7 @@ $(document).ready(function () {
     $('.core-offer-slider').owlCarousel({
         loop: true,
         margin: 20,
-        autoplay: true,
+        autoplay: false,
         rtl: false,
         nav: false,
         dots: false,
@@ -326,10 +326,10 @@ $(document).ready(function () {
         responsive: {
             0: { items: 1 },
             600: { items: 1.5 },
-            900: { items: 2 },
-            1200: { items: 2.5 },
-            1400: { items: 3 },
-            1600: { items: 3.5 }
+            900: { items: 2.5 },
+            1200: { items: 3 },
+            1400: { items: 3.2 },
+            1600: { items: 3.9 }
         }
     });
 
@@ -349,7 +349,7 @@ $(document).ready(function () {
             600: { items: 1.5 },
             900: { items: 2 },
             1200: { items: 2.5 },
-            1400: { items: 3 },
+            1400: { items: 3.2 },
             1600: { items: 3.5 }
         }
     });
