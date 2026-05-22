@@ -465,7 +465,7 @@ section{
   font-size: 14px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 /* main btn */
@@ -587,7 +587,7 @@ section{
 
 .banner_slider .carousel-outr .carousel-item {
   height: 100vh;
-  min-height: 800px;
+  min-height: 1025px;
 }
 
 .banner_slider .carousel-caption {
@@ -606,11 +606,11 @@ section{
 }
 
 .banner_slider .carousel-caption h5 {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 46px;
+  font-weight: 300;
   /* line-height: normal; */
   color: var(--white-color);
-  margin-bottom: 25px;
+  margin-bottom: 38px;
   font-family: "Manrope", sans-serif;
   text-transform: capitalize;
 }
@@ -621,7 +621,7 @@ section{
 }
 
 .banner_slider .carousel-caption p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   color: #d8d8d8;
@@ -683,7 +683,7 @@ section{
   bottom: 0;
   left: 0;
   z-index: 2;
-  margin-bottom: 3.5rem;
+  margin-bottom: 7.5rem;
   justify-content: center;
 }
 
@@ -1388,8 +1388,7 @@ section{
   color: rgb(199 196 196 / 80%);
 }
 .ai-about .logo-card {
-  /* padding: 0 60px; */
-  text-align: center;
+  padding-left: 58px;
 }
 .ai-about .logo-card img{
   animation: rotateImage 15s linear infinite;
