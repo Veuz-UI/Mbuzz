@@ -358,9 +358,12 @@
 }
 
 @media (max-width: 768px) {
+	.mob-btn{
+		margin-top: 15px;
+	}
 	.login-btn {
     	font-size: 13px;
-		padding: 4px 8px;
+		padding: 8px 20px;
 	}
 	.login-btn img {
 		width: 22px;
@@ -382,6 +385,11 @@
 }
 
 @media (max-width: 600px) {
+	/* common section */
+	.section-padding {
+		padding: 50px 0px;
+	}
+
 	#scroll {
         bottom: 80px;
     }
@@ -443,6 +451,10 @@
 		display: block;
 		padding: 16px 6vw;
 	}
+
+	.menu{
+		margin-top: 20%;
+	}
 	
 	.menu a {
         font-size: 16px;
@@ -470,10 +482,6 @@
 	.right-faq .accordion-body{
 		padding: 0 0 15px 0;
 	}
-
-
-
-
 
 	.desc-header{
 		display: none;

@@ -318,10 +318,11 @@ $(document).ready(function () {
         dots: false,
         autoplayTimeout: 3000,
         smartSpeed: 2000,
-
         responsive: {
             0: { items: 1 },
+            450: { items: 1.3 },
             600: { items: 1.5 },
+            700: { items: 2 },
             900: { items: 2.5 },
             1200: { items: 3 },
             1400: { items: 3.5 },
@@ -339,14 +340,15 @@ $(document).ready(function () {
         dots: false,
         autoplayTimeout: 3000,
         smartSpeed: 2000,
-
         responsive: {
             0: { items: 1 },
+            450: { items: 1.3 },
             600: { items: 1.5 },
-            900: { items: 2 },
-            1200: { items: 2.5 },
-            1400: { items: 3.2 },
-            1600: { items: 3.5 }
+            700: { items: 2 },
+            900: { items: 2.5 },
+            1200: { items: 3 },
+            1400: { items: 3.5 },
+            1600: { items: 3.9 }
         }
     });
 
@@ -384,49 +386,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     // =========================
-    // CORE OFFER SLIDER
-    // =========================
-
-    // $('.core-offer-slider').owlCarousel({
-    //     loop: true,
-    //     margin: 20,
-    //     autoplay: true,
-    //     rtl: false,
-    //     nav: false,
-    //     dots: false,
-    //     autoplayTimeout: 3000,
-    //     smartSpeed: 2000,
-    //     responsive: {
-    //         0: { items: 1 },
-    //         600: { items: 1.5 },
-    //         900: { items: 2 },
-    //         1200: { items: 2.5 },
-    //         1400: { items: 3 },
-    //         1600: { items: 3.5 }
-    //     }
-    // });
-
-    // $('.core-offer-slider-ar').owlCarousel({
-    //     loop: true,
-    //     margin: 20,
-    //     autoplay: true,
-    //     rtl: true,
-    //     nav: false,
-    //     dots: false,
-    //     autoplayTimeout: 3000,
-    //     smartSpeed: 2000,
-    //     responsive: {
-    //         0: { items: 1 },
-    //         600: { items: 1.5 },
-    //         900: { items: 2 },
-    //         1200: { items: 2.5 },
-    //         1400: { items: 3 },
-    //         1600: { items: 3.5 }
-    //     }
-    // });
-
-
-    // =========================
     // NEWS EVENTS
     // =========================
 
@@ -438,12 +397,14 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         smartSpeed: 1000,
-        margin: 20,
+        margin: 15,
         responsive: {
             0: { items: 1 },
+            500: { items: 1.5 },
             600: { items: 1 },
             768: { items: 1.2 },
-            1000: { items: 2 },
+            900: { items: 1.5 },
+            1100: { items: 2 },
             1400: { items: 2.2 }
         }
     });
@@ -456,12 +417,14 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         smartSpeed: 1000,
-        margin: 20,
+        margin: 15,
         responsive: {
             0: { items: 1 },
+            500: { items: 1.5 },
             600: { items: 1 },
             768: { items: 1.2 },
-            1000: { items: 2 },
+            900: { items: 1.5 },
+            1100: { items: 2 },
             1400: { items: 2.2 }
         }
     });
@@ -480,10 +443,11 @@ $(document).ready(function () {
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
+            450: { items: 1.5 },
             600: { items: 2 },
             768: { items: 2.5 },
-            1000: { items: 3 },
-            // 1200: { items: 3.5 },
+            900: { items: 3 },
+            1000: { items: 3.5 },
             1400: { items: 4 }
         }
     });
@@ -498,10 +462,12 @@ $(document).ready(function () {
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
+            450: { items: 1.5 },
             600: { items: 2 },
             768: { items: 2.5 },
-            1000: { items: 3.2 },
-            1400: { items: 4.2 }
+            900: { items: 3 },
+            1000: { items: 3.5 },
+            1400: { items: 4 }
         }
     });
 
@@ -519,8 +485,10 @@ $(document).ready(function () {
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
+            500: { items: 1.2 },
             700: { items: 1.5 },
-            900: { items: 2 },
+            800: { items: 2 },
+            950: { items: 2.3 },
             1200: { items: 2.5 },
             1400: { items: 3 }
         }
@@ -537,8 +505,10 @@ $(document).ready(function () {
         smartSpeed: 1000,
         responsive: {
             0: { items: 1 },
+            500: { items: 1.2 },
             700: { items: 1.5 },
-            900: { items: 2 },
+            800: { items: 2 },
+            950: { items: 2.3 },
             1200: { items: 2.5 },
             1400: { items: 3 }
         }
