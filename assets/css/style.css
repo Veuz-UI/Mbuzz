@@ -2723,11 +2723,11 @@ section{
 
 /* ------------ ai-consulting ----------*/
 .ai-consulting-list-in {
-  padding: 10px;
+  margin-bottom: 35px;
 }
 .ai-consulting-list-item {
   position: relative;
-  padding: 50px 50px;
+  padding: 39px 57px;
   border-radius: 30px;
   color: #fff;
   text-align: center;
@@ -2759,8 +2759,8 @@ section{
 }
 
 .ai-consulting-list-item .icon {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   margin: 0 auto 12px;
 }
 
@@ -2785,10 +2785,10 @@ section{
 }
 
 .ai-consulting-list-item h4 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
   line-height: 22px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-family: "Manrope", sans-serif;
 }
 .ai-consulting-list-item:hover h4{
@@ -2799,7 +2799,7 @@ section{
   font-size: 13px;
   font-weight: 400;
   color: #b6b6b6;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 0;
 }
 
@@ -2852,13 +2852,19 @@ section{
 
 .execution-ai-card {
   position: relative;
-  max-width: 730px;
-  padding: 25px;
+  max-width: 750px;
+  padding: 22px 22px 20px;
   border-radius: 30px;
   background: linear-gradient(0deg, rgb(0 0 0 / 64%) 0%, rgb(0 0 0 / 61%) 100%);
   backdrop-filter: blur(2px);
   border: 1px solid rgb(13 180 249 / 25%);
   color: #fff;
+}
+.ai-tag {
+    background: rgba(13 180 249 / 7%);
+}
+.execution-ai-card .description{
+  text-align: justify;
 }
 
 @media (max-width: 992px) {

@@ -627,7 +627,7 @@ $(document).ready(function(){
               items:3.5
           },
           1300:{
-              items:3.5
+              items:4
           },
           1500:{
               items:4
@@ -677,7 +677,7 @@ $(document).ready(function(){
               items:3.5
           },
           1300:{
-              items:3.5
+              items:4
           },
           1500:{
               items:4
