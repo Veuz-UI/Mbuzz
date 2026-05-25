@@ -1313,16 +1313,16 @@ section{
 
 
 .stats-section .stat-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 35px;
-    padding: 1px;
-    background: linear-gradient(269deg, #215670, #0db2f900);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 35px;
+  padding: 1px;
+  background: linear-gradient(269deg, #215670, #0db2f900);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .stats-section .stat-card:hover{
@@ -2340,7 +2340,7 @@ section{
 
 .inner-banner .breadcrumb a,
 .inner-banner .breadcrumb span{
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Manrope", sans-serif;
 }
 
@@ -2364,7 +2364,7 @@ section{
 }
 
 .inner-banner h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
   color: #fff;
   letter-spacing: -0.5px;
@@ -2460,7 +2460,7 @@ section{
 .inner-subnav-links li a {
   display: block;
   padding: 25px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: white;
   text-decoration: none;
@@ -2614,7 +2614,7 @@ section{
 }
 
 .ai-tag {
-  font-size: 16px;
+  font-size: 13px;
   display: inline-block;
   padding: 10px 30px;
   background: rgba(13, 180, 249, 0.1);
@@ -2625,7 +2625,7 @@ section{
 }
 
 .nvidia-card img{
-  margin-top: 160px;
+  margin-top: 100px;
 }
 .nvidia-card img{
   max-width: 250px;
@@ -2694,8 +2694,13 @@ section{
   background: linear-gradient(-123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 23%) 100%);
 }
 
+.left-ai-approach{
+  padding-right: 15px;
+}
+
 .ai-approach-in .heading{
   color: #000 !important;
+  font-weight: 400;
 }
 
 .right-ai-approach img {
@@ -2713,10 +2718,12 @@ section{
 }
 
 /* ------------ ai-consulting ----------*/
+.ai-consulting-list-in {
+  padding: 10px;
+}
 .ai-consulting-list-item {
   position: relative;
-  padding: 40px;
-  border: 1px solid #0db4f91f;
+  padding: 50px 50px;
   border-radius: 30px;
   color: #fff;
   text-align: center;
@@ -2727,18 +2734,30 @@ section{
   transition: 0.4s ease;
   height: 100%;
 }
+.ai-consulting-list-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(269deg, #215670, #0db2f900);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
 
 .ai-consulting-list-item:hover {
   transform: translateY(-10px);
   border-color: var(--primary-color);
   border: 1px solid var(--primary-color);
-    background: linear-gradient(123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 23%) 100%);
+  background: linear-gradient(123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 23%) 100%);
 }
 
 .ai-consulting-list-item .icon {
   width: 50px;
   height: 50px;
-  margin: 0 auto 25px;
+  margin: 0 auto 12px;
 }
 
 .ai-consulting-list-item .icon svg{
@@ -2762,9 +2781,10 @@ section{
 }
 
 .ai-consulting-list-item h4 {
-  font-size: 21px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 12px;
   font-family: "Manrope", sans-serif;
 }
 .ai-consulting-list-item:hover h4{
@@ -2772,17 +2792,22 @@ section{
 }
 
 .ai-consulting-list-item p {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   color: #b6b6b6;
   line-height: 1.6;
   margin-bottom: 0;
 }
 
+@media (max-width: 1500px) {
+  .ai-consulting-list-item {
+    padding: 30px 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .ai-consulting-list-item {
-    padding: 15px;
-    border-radius: 15px;
+    padding: 20px 15px;
   }
 }
 
@@ -2791,7 +2816,8 @@ section{
 .execution-ai-in {
   padding: 60px;
   border-radius: 40px;
-  min-height: 80vh;
+  min-height: 700px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border: 1px solid #0db4f945;
@@ -2822,8 +2848,8 @@ section{
 
 .execution-ai-card {
   position: relative;
-  max-width: 63%;
-  padding: 30px;
+  max-width: 730px;
+  padding: 25px;
   border-radius: 30px;
   background: linear-gradient(0deg, rgb(0 0 0 / 64%) 0%, rgb(0 0 0 / 61%) 100%);
   backdrop-filter: blur(2px);
@@ -2876,14 +2902,14 @@ section{
 }
 
 .accordion {
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: var(--black-color);
 }
 
 .accordion-item {
   border: none;
   margin-bottom: 1rem;
-  border-radius: 20px !important;
+  border-radius: 15px !important;
   overflow: hidden;
   border-bottom: 1px solid #e3e3e329 !important;
   background: linear-gradient(90deg, #F9FCFE 0%, #E5F7FF 100%);
@@ -2901,7 +2927,7 @@ section{
   align-items: initial;
 }
 .left-faq .accordion-button .accrd-head{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   color: #081226;
 }
@@ -2916,7 +2942,7 @@ section{
 
 .left-faq .accordion-button::after {
   content: '+';
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 200;
   background: none;
   border: none;
@@ -2937,7 +2963,7 @@ section{
 }
 
 .left-faq .accordion-body {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 25px;
   padding: 0 2rem 2rem;
   background: transparent;
@@ -2947,7 +2973,10 @@ section{
 .accrd-head {
   padding-right: 25px;
 }
-
+.right-faq-img {
+  width: 100%;
+  height: 100%;
+}
 .right-faq-img img {
   width: 100%;
   height: 100%;
@@ -3419,8 +3448,8 @@ section{
 
 /* ------- prof-services ------------- */
 .prof-services .core-card {
-    padding: 23px 23px 30px;
-    border-radius: 36px;
+    padding: 20px 20px 30px;
+    border-radius: 30px;
     min-height: 350px;
     height: 100%;
     color: #fff;
@@ -3435,10 +3464,6 @@ section{
   box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff82, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -2.2px #0d86f957;
 }
 
-.prof-services .core-card * {
-  position: relative;
-  z-index: 2;
-}
 .prof-services .card-icon {
   margin-bottom: 15px;
   color: #fff;
@@ -3446,24 +3471,25 @@ section{
 
 .prof-services .card-icon img {
   width: 100%;
-  min-height: 215px;
-  max-height: 300px;
+  min-height: 190px;
+  max-height: 190px;
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
 }
 .prof-services .core-card h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-family: "Manrope", sans-serif;
 }
 .prof-services .core-card p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
 }
 .prof-services .core-header {
   display: flex;
@@ -3519,7 +3545,7 @@ section{
 }
 .ai-journey-card {
   backdrop-filter: blur(13.899999618530273px);
-  background: rgb(0 0 0 / 40%);
+  background: rgb(0 0 0 / 46%);
   padding: 40px 50px;
   border-radius: 30px;
   border: 1px solid #0db4f92e;
@@ -3534,17 +3560,24 @@ section{
   text-align: end;
 }
 .ai-journey-card-img img{
-  width: 100%;
-  height: 600px;
+  height: 500px;
   object-fit: contain;
   filter: brightness(1.2) contrast(1.2);
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 992px) {
+  .ai-journey-wrapper {
+    background: radial-gradient(ellipse 80% 80% at 100% 50%, rgb(11 112 175 / 0%) 0%, transparent 60%), radial-gradient(ellipse 38% 80% at 45% 15%, rgb(4 103 180 / 55%) 0%, transparent 60%), radial-gradient(ellipse 50% 70% at 40% 80%, rgb(34 197 94 / 0%) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 90% 90%, rgb(5 25 44 / 0%) 0%, transparent 60%);
+  }
+  .ai-journey-card-img {
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
+  .ai-journey-card {
+    padding: 30px 20px;
+  }
   .ai-journey-card-img img {
     height: 350px;
   }

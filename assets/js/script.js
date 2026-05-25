@@ -605,11 +605,20 @@ $(document).ready(function(){
           0:{
               items:1
           },
+          420:{
+              items:1.3
+          },
           600:{
               items:1.5
           },
-          800:{
+          700:{
               items:2
+          },
+          800:{
+              items:2.2
+          },
+          900:{
+              items:2.5
           },
           1000:{
               items:3
@@ -617,7 +626,10 @@ $(document).ready(function(){
           1200:{
               items:3.5
           },
-          1400:{
+          1300:{
+              items:3.5
+          },
+          1500:{
               items:4
           }
       }
@@ -643,13 +655,31 @@ $(document).ready(function(){
           0:{
               items:1
           },
+          420:{
+              items:1.3
+          },
           600:{
+              items:1.5
+          },
+          700:{
               items:2
           },
           800:{
-              items:3
+              items:2.2
+          },
+          900:{
+              items:2.5
           },
           1000:{
+              items:3
+          },
+          1200:{
+              items:3.5
+          },
+          1300:{
+              items:3.5
+          },
+          1500:{
               items:4
           }
       }
