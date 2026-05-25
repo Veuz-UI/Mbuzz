@@ -2701,6 +2701,10 @@ section{
 .ai-approach-in .heading{
   color: #000 !important;
   font-weight: 400;
+  padding-right: 160px;
+}
+.ai-approach-in .description{
+  padding-right: 45px;
 }
 
 .right-ai-approach img {
@@ -2800,9 +2804,9 @@ section{
 }
 
 @media (max-width: 1500px) {
-  .ai-consulting-list-item {
+  /* .ai-consulting-list-item {
     padding: 30px 50px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
