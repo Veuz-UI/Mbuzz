@@ -567,7 +567,7 @@ section{
 
 @media (max-width: 600px) {
   .heading {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -2548,8 +2548,8 @@ section{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 16px;
+      font-weight: 400;
       cursor: pointer;
   }
 
@@ -2667,6 +2667,10 @@ section{
 }
 
 @media (max-width: 600px) {
+  .ai-tag{
+    padding: 7px 10px;
+    margin-bottom: 10px;
+  }
   .computer-overview{
     display: block;
     max-width: 100%;
@@ -2676,6 +2680,11 @@ section{
   }
   .computer-overview-item h6 {
     font-size: 18px;
+  }
+  .nvidia-card img {
+    max-width: 150px;
+    border-radius: 7px;
+    border: 1px solid #fff;
   }
 }
 /* ------------ ai-approach ----------*/
@@ -2714,6 +2723,24 @@ section{
   border-radius: 30px;
 }
 
+@media (max-width: 1400px) {
+  .ai-approach-in .heading {
+    padding-right: 100px;
+  }
+  .ai-approach-in .description {
+    padding-right: initial;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ai-approach-in .heading {
+    padding-right: initial;
+  }
+  .left-ai-approach {
+    padding-right: initial;
+  }
+}
+
 @media (max-width: 768px) {
   .ai-approach-in {
     border-radius: 15px;
@@ -2723,7 +2750,7 @@ section{
 
 /* ------------ ai-consulting ----------*/
 .ai-consulting-list-in {
-  margin-bottom: 35px;
+  padding: 0 15px 30px;
 }
 .ai-consulting-list-item {
   position: relative;
@@ -2831,25 +2858,6 @@ section{
 }
 
 /* Background layer */
-.execution-ai-in::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('../img/ai-med.webp') no-repeat center/cover;
-  z-index: -1;
-  transform: scale(1);
-  animation: zoomBg 10s ease-in-out infinite alternate;
-  filter: brightness(1.2) contrast(1.2);
-}
-@keyframes zoomBg {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.15);
-  }
-}
-
 .execution-ai-card {
   position: relative;
   max-width: 750px;
@@ -2860,7 +2868,15 @@ section{
   border: 1px solid rgb(13 180 249 / 25%);
   color: #fff;
 }
-.ai-tag {
+.execution-ai-in video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.execution-ai-card .ai-tag {
     background: rgba(13 180 249 / 7%);
 }
 .execution-ai-card .description{
@@ -2878,7 +2894,6 @@ section{
 @media (max-width: 600px) {
   .execution-ai-in {
     padding: 0px;
-    border-radius: 15px;
     border: 0;
     min-height: auto;
   }
@@ -2973,7 +2988,8 @@ section{
 }
 
 .left-faq .accordion-body {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 200;
   line-height: 25px;
   padding: 0 2rem 2rem;
   background: transparent;
@@ -2985,7 +3001,6 @@ section{
 }
 .right-faq-img {
   width: 100%;
-  height: 100%;
 }
 .right-faq-img img {
   width: 100%;
@@ -3503,6 +3518,7 @@ section{
 }
 .prof-services .core-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
@@ -3529,16 +3545,20 @@ section{
 
 @media (max-width: 600px) {
   .prof-services .core-header {
-    display: block;
-  }
-  .prof-services .core-card h3 {
-    font-size: 20px;
-  }
-  .prof-services .core-header h3{
     margin-bottom: 10px;
   }
-  .prof-services .core-nav button{
+  .prof-services .core-card h3 {
+    font-size: 18px;
+  }
+  .prof-services .core-header h3 {
+    margin-bottom: 10px;
+  }
+  .prof-services .core-nav button {
     margin-left: 0;
+  }
+  .prof-services .core-nav button {
+    width: 35px;
+    height: 35px;
   }
 }
 /* --------- END prof-services ----------- */
@@ -3556,10 +3576,11 @@ section{
 .ai-journey-card {
   backdrop-filter: blur(13.899999618530273px);
   background: rgb(0 0 0 / 46%);
-  padding: 40px 50px;
+  padding: 31px 50px;
   border-radius: 30px;
   border: 1px solid #0db4f92e;
   transition: all 0.3s ease;
+  margin-right: 30px;
 }
 .ai-journey-card:hover{
   border-color: var(--primary-color);
@@ -3576,7 +3597,22 @@ section{
 }
 
 .ai-journey-card .heading{
-  padding-right: 135px;
+  padding-right: 240px;
+}
+
+@media (max-width: 1350px) {
+  .ai-journey-card .heading{
+    padding-right: 170px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ai-journey-card{
+    margin-right: initial;
+  }
+  .ai-journey-card .heading{
+    padding-right: initial;
+  }
 }
 
 @media (max-width: 992px) {
@@ -5147,6 +5183,20 @@ html[dir="rtl"] .right-ai-approach img{
 }
 html[dir="rtl"] .right-faq-img img{
   transform: scaleX(-1);
+}
+
+
+html[dir="rtl"] .ai-approach-in .heading {
+  padding-right: initial;
+  padding-left: 160px;
+}
+html[dir="rtl"] .ai-approach-in .description {
+  padding-right: initial;
+  padding-left: 45px;
+}
+html[dir="rtl"] .ai-journey-card .heading{
+  padding-right: initial;
+  padding-left: initial;
 }
 
 
