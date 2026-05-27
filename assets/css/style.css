@@ -1478,8 +1478,11 @@ section{
     margin-top: 20px;
   }
   .ai-about .logo-card img{
-    height: 300px;
+    height: 200px;
     object-fit: contain;
+  }
+  .ai-left p{
+    text-align: initial;
   }
 }
 
@@ -1527,7 +1530,7 @@ section{
     text-align: center;
   }
   .innovation-img img {
-    max-height: 250px;
+    max-height: 200px;
   }
 }
 
@@ -2516,14 +2519,14 @@ section{
   }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .inner-subnav-links {
     max-width: 900px;
     overflow: scroll;
   }
-}
+} */
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
   .subnav-desc{
     display: none;
   }
@@ -2888,6 +2891,11 @@ section{
     position: relative;
     max-width: 100%;
     padding: 30px 20px;
+    border: 1px solid rgb(0 0 0);
+    background: linear-gradient(0deg, rgb(0 0 0 / 87%) 0%, rgb(0 0 0 / 87%) 100%);
+  }
+  .execution-ai-card .description{
+    text-align: initial;
   }
 }
 
@@ -2999,9 +3007,7 @@ section{
 .accrd-head {
   padding-right: 25px;
 }
-.right-faq-img {
-  width: 100%;
-}
+
 .right-faq-img img {
   width: 100%;
   height: 100%;
@@ -3022,8 +3028,6 @@ section{
     color: #a4a4a4;
 }
 
-
-
 .real-engineer-item {
   padding: 30px 20px;
   margin-bottom: 1rem;
@@ -3040,6 +3044,23 @@ section{
   .left-faq {
     padding-right: 15px;
   }
+}
+
+@media (max-width: 992px) {
+  .right-faq-img{
+    text-align: center;
+  }
+  .right-faq-img img{
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+    .right-faq-img img {
+      height: 350px;
+      border-radius: 20px;
+    }
 }
 
 /* ------------- END faq ------------- */
