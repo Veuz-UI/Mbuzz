@@ -402,7 +402,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
 		 common area 
  ------------------------------ */
 .section-padding {
-  padding: 100px 0px;
+  padding: 120px 0px;
 }
 
 section{
@@ -3089,7 +3089,8 @@ section{
   flex-direction: row;
   justify-content: center;
   /* width: 960px; */
-  height: 650px;
+  min-height: 600px;
+  height: 100%;
   gap: 6px;
   padding: 20px;
   margin: auto;
@@ -3162,7 +3163,7 @@ section{
 
 /* image side */
 .infrastructure-wrapper__panel-img {
-  flex: 0 0 45%;
+  flex: 0 0 58%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3217,16 +3218,16 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 24px 35px 35px 35px;
+  padding: 24px 40px 50px 40px;
   overflow-y: auto;
 }
 
 .infrastructure-wrapper__panel-title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.07em;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   line-height: 1.35;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -3238,6 +3239,7 @@ section{
   line-height: 1.75;
   color: rgb(255, 255, 255);
   font-weight: 300;
+  margin-bottom: 0;
 }
 
 .infrastructure-wrapper__panel-list {
@@ -3371,9 +3373,16 @@ section{
   background: linear-gradient(90deg, transparent, #4466ff, transparent);
 }
 
-/* ════════════════════════════════════════
-     MOBILE — vertical accordion stack
-  ════════════════════════════════════════ */
+@media (max-width: 1350px) {
+  .infrastructure-wrapper__panel-img {
+    flex: 0 0 50%;
+  }
+  .infrastructure-wrapper-main {
+    padding: 40px;
+  }
+}
+
+
 @media (max-width: 700px) {
   .infrastructure-wrapper-main{
     padding: 10px;
@@ -3480,8 +3489,8 @@ section{
   .infrastructure-wrapper__panel-title {
     font-size: 13px;
     margin-bottom: 8px;
-      writing-mode: horizontal-tb; /* default */
-  transform: none;             /* reset rotation */
+    writing-mode: horizontal-tb; /* default */
+    transform: none;             /* reset rotation */
   }
 
   .infrastructure-wrapper__panel-body {
