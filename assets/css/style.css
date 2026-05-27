@@ -3092,7 +3092,7 @@ section{
   min-height: 600px;
   height: 100%;
   gap: 6px;
-  padding: 20px;
+  /* padding: 20px; */
   margin: auto;
 }
 
@@ -3383,7 +3383,7 @@ section{
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
   .infrastructure-wrapper-main{
     padding: 10px;
   }
@@ -3464,7 +3464,7 @@ section{
   .infrastructure-wrapper__panel-img {
     flex: none;
     width: 100%;
-    height: 180px;
+    height: 500px;
   }
 
   .infrastructure-wrapper__img-placeholder {
@@ -3489,8 +3489,8 @@ section{
   .infrastructure-wrapper__panel-title {
     font-size: 13px;
     margin-bottom: 8px;
-    writing-mode: horizontal-tb; /* default */
-    transform: none;             /* reset rotation */
+    writing-mode: horizontal-tb; 
+    transform: none;             
   }
 
   .infrastructure-wrapper__panel-body {
@@ -3498,11 +3498,20 @@ section{
     line-height: 1.7;
   }
 
-
   /* bottom glow bar stays */
   .infrastructure-wrapper__panel::after {
     border-radius: 0 0 10px 10px;
   }
+
+  .infrastructure-wrapper__img-placeholder img{
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 600px) {
+    .infrastructure-wrapper__panel-img {
+        height: 300px;
+    }
 }
 
 /* ------------- AI Infrastructure ------------- */
