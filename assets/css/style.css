@@ -1516,6 +1516,13 @@ section{
     padding: 30px;
     border-radius: 30px;
   }
+  .innovation-img{
+    text-align: center;
+  }
+  .ai-about .logo-card img,
+  .innovation-img img {
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
