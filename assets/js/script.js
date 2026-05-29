@@ -695,23 +695,31 @@ $(document).ready(function(){
 
 // ai real world impact slider
 var owl = $('.ai-real-world-impact-slider').owlCarousel({
-      loop:true,
-      margin:15,
-      autoplay:true,
-      nav:false,
-      dots:false,
-      responsive:{
-          0:{
-              items:1.2
-          },
-          650:{
-              items:2.5
-          },
-          
-          1000:{
-              items:3.5
-          }
-      }
+    loop: true,
+    margin: 20,
+    autoplay: false,
+    nav: false,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1.2
+        },
+        500: {
+            items: 2
+        },
+        800: {
+            items: 2.5
+        },
+        1200: {
+            items: 3
+        },
+        1400: {
+            items: 3.5
+        },
+        1500: {
+            items: 4
+        }
+    }
 });
 $('.core-next').click(function() {
     owl.trigger('next.owl.carousel');

@@ -24,11 +24,14 @@
 
 <body>
 
+  <div class="bg bg-mesh"></div>
+  
   <!-- loader -->
-  <!-- <div class="loader" id="loader">
-    
-  </div> -->
-  <!-- loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img class="loader-icon" src="assets/img/favicon.png" alt="Loading">
+    </div>
+  </div>
 
   <header>
     <!-- nav header -->
@@ -341,9 +344,9 @@
             <span class="sep">-</span>
             <a href="#">AI</a>
             <span class="sep">-</span>
-            <span class="current">AI Factory </span>
+            <span class="current">AI Factory</span>
           </nav>
-          <h1>AI Factory </h1>
+          <h1>AI Factory</h1>
         </div>
         <div class="banner-sub-img">
           <img src="assets/img/ai-consulting-banner.webp" alt="">
@@ -393,7 +396,7 @@
     <div class="width-container">
       <div class="ai-overview-in">
         <div class="ai-tag">Accelerated by NVIDIA: Enterprise AI at Scale</div>
-        <h2 class="heading text-white mb-4">Transform AI Data Centers into <br> Intelligent AI Factories</h2>
+        <h2 class="heading text-white">Transform AI Data Centers into <br> Intelligent AI Factories</h2>
         <p class="description mb-3">
           NVIDIA accelerated computing platforms unify GPUs, CPUs, networking, and enterprise software into a powerful
           foundation for AI innovation. With NVIDIA AI Enterprise and NVIDIA Mission Control with Run: ai orchestration,
@@ -417,7 +420,7 @@
     <div class="width-container">
       <div class="">
         <div class="ai-tag">In-depth Overview</div>
-        <h3 class="heading text-dark mb-3">The Value of NVIDIA AI Enterprise</h3>
+        <h3 class="heading text-dark">The Value of NVIDIA AI Enterprise</h3>
       </div>
 
       <div class="ai-enterprises-in">
@@ -488,18 +491,21 @@
 
   <!-- ai-factories -->
   <section class="section-padding ai-factory" id="ai-factories">
-    <div class="ai-journey-wrapper ai-factory-journey">
+    <div class="ai-factory-journey">
       <div class="width-container">
-        <div class="ai-journey-card">
-          <div class="ai-tag mb-3">AI Factories</div>
-          <h3 class="heading mb-4">Redefining Data Centers and Enabling the Next Era of AI</h3>
-          <p class="description mb-0">
-            MBUZZ, in partnership with NVIDIA, is redefining data centers into AI factories — purpose-built 
-            to power the reasoning era, delivering the scale and intelligence every enterprise will soon depend on.
-          </p>
-          <div class="main-btn-out mt-4">
+        <div class="ai-journey-card-in">
+          <div class="ai-factory-journey-card">
+            <div class="ai-tag mb-3">AI Factories</div>
+            <h3 class="heading mb-4">Redefining Data Centers and Enabling the Next Era of AI</h3>
+            <p class="description mb-0">
+              MBUZZ, in partnership with NVIDIA, is redefining data centers into AI factories — purpose-built
+              to power the reasoning era, delivering the scale and intelligence every enterprise will soon depend
+              on.
+            </p>
+            <div class="main-btn-out mt-4">
               <a href="#" class="main-btn">Get in touch <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -510,7 +516,7 @@
     <div class="width-container">
       <div class="text-center mb-5">
         <div class="ai-tag">Know How</div>
-        <h2 class="heading text-white mb-3">Benefits of an AI Factory?</h2>
+        <h2 class="heading text-white">Benefits of an AI Factory?</h2>
       </div>
       <div class="ai-infra-in">
         <div class="row">
@@ -519,7 +525,13 @@
               <div class="col-sm-6 col-md-6 col-lg-6 mb-4">
                 <div class="ai-card">
                   <div class="icon-wrapper">
-                    <img src="assets/img/instant-agility.png" alt="">
+                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.6641 26.668L36.6641 16.668" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M49.9974 9.9987H43.3307V3.33203L36.6641 9.9987V16.6654H43.3307L49.9974 9.9987Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M26.6641 36.668C32.1869 36.668 36.6641 32.1908 36.6641 26.668C36.6641 21.1451 32.1869 16.668 26.6641 16.668C21.1412 16.668 16.6641 21.1451 16.6641 26.668C16.6641 32.1908 21.1412 36.668 26.6641 36.668Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M45 15C47.1667 18.3333 48.3333 22.3333 48.3333 26.6667C48.3333 38.6667 38.6667 48.3333 26.6667 48.3333C14.6667 48.3333 5 38.6667 5 26.6667C5 14.6667 14.6667 5 26.6667 5C31 5 35 6.16667 38.3333 8.33333" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <!-- <img src="assets/img/instant-agility.png" alt=""> -->
                   </div>
                   <h3>Instant Agility</h3>
                   <p>Rapid scaling and workload flexibility for mission-critical AI.</p>
@@ -529,7 +541,12 @@
               <div class="col-sm-6 col-md-6 col-lg-6 mb-4">
                 <div class="ai-card">
                   <div class="icon-wrapper">
-                    <img src="assets/img/hyperscale-grade.png" alt="">
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.125 13.0625L11.875 8.3125M49.875 13.0625L45.125 8.3125M21.375 29.6875L26.125 34.4375L35.625 24.9375M47.5 29.6875C47.5 40.181 38.9935 48.6875 28.5 48.6875C18.0066 48.6875 9.5 40.181 9.5 29.6875C9.5 19.1941 18.0066 10.6875 28.5 10.6875C38.9935 10.6875 47.5 19.1941 47.5 29.6875Z"
+                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <!-- <img src="assets/img/hyperscale-grade.png" alt=""> -->
                   </div>
                   <h3>Hyperscale-Grade Efficiency</h3>
                   <p>24/7 intelligent operations that automate tasks and fill skill gaps.</p>
@@ -539,7 +556,12 @@
               <div class="col-sm-6 col-md-6 col-lg-6 mb-4">
                 <div class="ai-card">
                   <div class="icon-wrapper">
-                    <img src="assets/img/gold-standard.png" alt="">
+                    <svg width="50" height="68" viewBox="0 0 50 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.06141 38.1029H15.3614V62.1029C15.3614 67.7029 18.3946 68.8362 22.0946 64.6362L47.328 35.9696C50.428 32.4696 49.128 29.5696 44.428 29.5696H34.128V5.56958C34.128 -0.0304197 31.0946 -1.16375 27.3946 3.03625L2.16141 31.7029C-0.905259 35.2362 0.394741 38.1029 5.06141 38.1029Z"
+                        stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <!-- <img src="assets/img/gold-standard.png" alt=""> -->
                   </div>
                   <h3>Gold-Standard Resiliency</h3>
                   <p>Proactive monitoring and 10× faster recovery for AI workloads.</p>
@@ -549,7 +571,14 @@
               <div class="col-sm-6 col-md-6 col-lg-6 mb-4">
                 <div class="ai-card">
                   <div class="icon-wrapper">
-                    <img src="assets/img/accelerated-experimentation.png" alt="">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18.974 49.026C16.0021 46.0541 13.9783 42.2677 13.1583 38.1457C12.3384 34.0235 12.7592 29.7509 14.3676 25.868C15.9759 21.9851 18.6996 18.6663 22.1941 16.3313C25.6887 13.9963 29.797 12.75 34 12.75C38.203 12.75 42.3113 13.9963 45.8059 16.3313C49.3003 18.6663 52.024 21.9851 53.6325 25.868C55.2409 29.7509 55.6617 34.0235 54.8417 38.1457C54.0218 42.2677 51.9979 46.0541 49.026 49.026"
+                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M34 33.9987L45.3333 28.332" stroke="white" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    <!-- <img src="assets/img/accelerated-experimentation.png" alt=""> -->
                   </div>
                   <h3>Accelerated AI Experimentation</h3>
                   <p>Increased throughput and GPU utilization empower developers to innovate faster.</p>
@@ -561,7 +590,7 @@
         <!-- RIGHT VIDEO PANEL -->
         <div class="col-md-12 col-lg-6">
             <div class="ai-video">
-              <div class="video-box mb-4">
+              <div class="video-box">
                 <img src="assets/img/ai-video-img.png" alt="AI Video">
                 <div class="play-btn">
                   <i class="fa-solid fa-play"></i>
@@ -603,8 +632,8 @@
         <div class="core-header">
           <div class="core-header-in">
             <div class="ai-tag">Real-World Impact</div>
-            <h2 class="heading text-dark mb-4">Industry Use Cases for AI Factories</h2>
-            <p class="description text-dark mb-3">
+            <h2 class="heading text-dark">Industry Use Cases for AI Factories</h2>
+            <p class="description text-dark">
               The versatility of AI factories means they can be leveraged across nearly any industry for AI-driven innovation and efficiency. 
               Some standout examples are added below
             </p>
@@ -675,8 +704,8 @@
     <div class="width-container">
       <div class="text-center mb-5">
         <div class="ai-tag">Deployment</div>
-        <h2 class="heading text-white mb-4">Where to Deploy AI Factories?</h2>
-        <p class="description mb-3">
+        <h2 class="heading text-white">Where to Deploy AI Factories?</h2>
+        <p class="description">
           AI factories provide flexible deployment options, allowing organizations to leverage AI where <br> it delivers
           the greatest impact. They can be deployed across multiple environments. Let's <br> explore what these are
         </p>
@@ -711,7 +740,7 @@
     <div class="width-container">
       <div class="ai-factory-faq-head mb-5">
         <div class="ai-tag">Know More </div>
-        <h2 class="heading text-white mb-4">Frequently Asked Questions </h2>
+        <h2 class="heading text-white">Frequently Asked Questions </h2>
         <p class="description mb-0">
           The versatility of AI factories means they can be leveraged across nearly any industry for AI-driven
           innovation and efficiency. Some standout examples include AI initiatives in the public sector, automotive,
