@@ -697,7 +697,7 @@ $(document).ready(function(){
 var owl = $('.ai-real-world-impact-slider').owlCarousel({
     loop: true,
     margin: 20,
-    autoplay: false,
+    autoplay: true,
     nav: false,
     dots: false,
     responsive: {
@@ -766,6 +766,62 @@ $('.inner-subnav-links li a').click(function(){
 });
 
 
+
+
+
+
+
+
+$(document).ready(function(){
+  var owl = $('.inbuild-pr-slider');
+  owl.owlCarousel({
+    loop: false,
+    margin: 15,
+    autoplay: false,
+    nav: false,
+    dots: false,
+    responsive:{
+          0:{
+              items:1
+          },
+          420:{
+              items:1.3
+          },
+          600:{
+              items:1.5
+          },
+          700:{
+              items:2
+          },
+          800:{
+              items:2.2
+          },
+          900:{
+              items:2.5
+          },
+          1000:{
+              items:3
+          },
+          1200:{
+              items:3.5
+          },
+          1300:{
+              items:4
+          },
+          1500:{
+              items:4
+          }
+      }
+  });
+  $('.core-next').click(function() {
+    owl.trigger('next.owl.carousel');
+  });
+  $('.core-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+  });
+});
+
+
 //  NVIDIA ad Section --//
 
 const hero = document.getElementById('hero');
@@ -824,7 +880,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
-
+// document.addEventListener("DOMContentLoaded", function () {
+function setStep(i) {
+    document.querySelectorAll('.step-row').forEach((r, idx) => {
+      r.classList.remove('active', 'done');
+      if (idx === i) r.classList.add('active');
+      else if (idx < i) r.classList.add('done');
+    });
+    document.querySelectorAll('.lc-slide').forEach((s, idx) => s.classList.toggle('active', idx === i));
+    document.querySelectorAll('.cap-slide').forEach((c, idx) => c.classList.toggle('active', idx === i));
+  }
+// });
