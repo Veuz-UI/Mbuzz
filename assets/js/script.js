@@ -767,11 +767,6 @@ $('.inner-subnav-links li a').click(function(){
 
 
 
-
-
-
-
-
 $(document).ready(function(){
   var owl = $('.inbuild-pr-slider');
   owl.owlCarousel({
@@ -820,6 +815,25 @@ $(document).ready(function(){
     owl.trigger('prev.owl.carousel');
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+      tab.classList.add("active");
+      document
+        .getElementById(tab.dataset.tab)
+        .classList.add("active");
+    });
+  });
+});
+
 
 
 //  NVIDIA ad Section --//
@@ -877,9 +891,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // END AI Faq //
 
 
-
-
-
 // document.addEventListener("DOMContentLoaded", function () {
 function setStep(i) {
     document.querySelectorAll('.step-row').forEach((r, idx) => {
@@ -891,3 +902,5 @@ function setStep(i) {
     document.querySelectorAll('.cap-slide').forEach((c, idx) => c.classList.toggle('active', idx === i));
   }
 // });
+
+

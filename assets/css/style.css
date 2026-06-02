@@ -3070,6 +3070,34 @@ section{
 /* ------------- END faq ------------- */
 
 
+
+/* ------------- faq third ------------- */
+.faq-third-outer .faq-third-item {
+    padding: 30px 20px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #090B14;
+    background: linear-gradient(90deg, #090B14 0%, #090B14 100%);
+}
+.faq-third-outer .faq-third-item:hover {
+  border: 1px solid #0db4f95e;
+}
+.faq-third-outer .faq-third-item h6 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+}
+.faq-third-outer .faq-third-item h6 span{
+  margin-right: 10px;
+}
+
+/* ------------- END faq third ------------- */
+
+
+
+
+
 /* ------------- AI Infrastructure ------------- */
 
 .infrastructure-wrapper-main{
@@ -3549,14 +3577,14 @@ section{
   border-radius: 30px;
 }
 .prof-services .core-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
-  margin-bottom: 12px;
+  line-height: 1.5;
+  margin-bottom: 8px;
   font-family: "Manrope", sans-serif;
 }
 .prof-services .core-card p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
@@ -3569,10 +3597,10 @@ section{
   align-items: center;
   margin-bottom: 40px;
 }
-.prof-services .core-header h3 {
+/* .prof-services .core-header h3 {
   color: var(--white);
   margin-bottom: 0;
-}
+} */
 .prof-services .core-nav button {
   width: 45px;
   height: 45px;
@@ -3686,11 +3714,15 @@ section{
 .ai-enterprises {
   background-color: white;
 }
+.enterprises-card-out{
+  margin-top: 30px;
+}
 .ai-enterprises .enterprises-card {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   height: 320px;
+  margin: 0 3px;
   cursor: pointer;
 }
 .enterprises-card .enterprises-icon {
@@ -3715,37 +3747,13 @@ section{
   border-radius: 20px;
   transition: background 0.4s ease;
 }
-/* .enterprises-card.card-blue::before {
-  background: linear-gradient(to bottom, rgba(0, 15, 40, 0.45) 0%, rgba(0, 8, 30, 0.90) 100%);
-}
-.enterprises-card.card-blue:hover::before {
-  background: linear-gradient(to bottom, rgba(0, 15, 40, 0.45) 0%, rgba(0, 8, 30, 0.90) 100%);
-} */
-/* .enterprises-card.card-red::before {
-  background: linear-gradient(to bottom, rgba(0, 15, 40, 0.15) 0%, rgba(0, 8, 30, 0.55) 100%);
-}
-.enterprises-card.card-red:hover::before {
-  background: linear-gradient(to bottom, rgba(0, 15, 40, 0.45) 0%, rgba(0, 8, 30, 0.90) 100%);
-}
-.enterprises-card.card-meroon::before {
-  background: linear-gradient(to bottom, rgba(5, 5, 20, 0.10) 0%, rgba(5, 5, 20, 0.55) 100%);
-}
-.enterprises-card.card-meroon:hover::before {
-  background: linear-gradient(to bottom, rgba(5, 5, 20, 0.40) 0%, rgba(5, 5, 20, 0.90) 100%);
-}
-.enterprises-card.card-green::before {
-  background: linear-gradient(to bottom, rgba(5, 5, 20, 0.10) 0%, rgba(5, 5, 20, 0.55) 100%);
-}
-.enterprises-card.card-green:hover::before {
-  background: linear-gradient(to bottom, rgba(5, 5, 20, 0.40) 0%, rgba(5, 5, 20, 0.90) 100%);
-} */
 .enterprises-card .enterprises-num {
   position: absolute;
   top: 16px;
   left: 18px;
   z-index: 2;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.06em;
 }
@@ -3791,7 +3799,7 @@ section{
 
 @media (max-width: 1500px) {
   .ai-enterprises .enterprises-card {
-    height: 265px;
+    height: 300px;
   }
   .enterprises-card h3 {
     font-size: 20px;
@@ -3971,6 +3979,10 @@ section{
   min-height: 200px;
   max-height: 200px;
 }
+.edge-card-icon img{
+  min-height: 250px !important;
+  max-height: 250px !important;
+}
 .applied-ai .core-card h3 {
   font-size: 20px;
   font-weight: 400;
@@ -4000,6 +4012,13 @@ section{
 }
 .intelligent-ai .core-card{
   padding: 20px 20px 40px 20px;
+}
+
+@media (max-width: 600px) {
+  .edge-card-icon img{
+    min-height: 250px !important;
+    max-height: 250px !important;
+  }
 }
 /* --------- END prof-services ----------- */
 
@@ -4529,7 +4548,7 @@ section{
 }
 
 .ai-real-world-impact .core-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--black);
   margin-bottom: 10px;
@@ -4537,7 +4556,7 @@ section{
 }
 
 .ai-real-world-impact .core-card p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.6;
   color: var(--black);
@@ -4575,7 +4594,7 @@ section{
 
 @media (max-width: 992px) {
   .ai-real-world-impact .core-card h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .ai-real-world-impact .core-nav button {
     margin-left: 0;
@@ -4613,11 +4632,13 @@ section{
   color: #fff;
   border-right: 3px solid #0db4f94f;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.ai-deployment-item:first-child .ai-deployment-type{
+/* .ai-deployment-item:first-child .ai-deployment-type{
   padding-left: 0;
-}
+} */
 
 /* .ai-deployment .ai-deployment-item:nth-child(3) .ai-deployment-type,
 .ai-deployment .ai-deployment-item:nth-child(6) .ai-deployment-type,
@@ -4637,8 +4658,8 @@ section{
 .ai-deployment .ai-deployment-type h3 {
   font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
-  margin-bottom: 12px;
+  line-height: 1.5;
+  margin-bottom: 0;
   transition: .5s;
   font-family: "Manrope", sans-serif;
 }
@@ -4820,13 +4841,15 @@ section{
 /* --------- AI Labs ----------- */
 .ai-partnership .ai-partnership-tabs {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 30px;
   gap: 50px;
 }
 
 .ai-partnership .tab-btn {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   border: none;
   color: rgba(255, 255, 255, 0.45);
@@ -4836,6 +4859,8 @@ section{
   position: relative;
   /* white-space: nowrap; */
   transition: 0.3s ease;
+  min-width: 25%;
+  font-family: "Manrope", sans-serif;
 }
 
 .ai-partnership .tab-btn::after {
@@ -4868,7 +4893,7 @@ section{
 .ai-partnership .content-wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  gap: 50px;
 }
 
 .ai-partnership .image-box {
@@ -4891,6 +4916,7 @@ section{
 
 .ai-partnership .content-text p {
   font-size: 18px;
+  font-weight: 300;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
   margin: 0;
@@ -4919,9 +4945,10 @@ section{
   }
   .ai-partnership .content-wrapper {
     flex-direction: column;
+    gap: 20px;
   }
   .ai-partnership .image-box {
-    width: 100%;
+    width: fit-content;
     height: 220px;
   }
 }
@@ -5276,9 +5303,13 @@ section{
 }
 /* --------- END In building systems ----------- */
 
-
-
-
+/* --------- Wireless Approach ----------- */
+.wireless-approach .left-ai-approach .heading{
+  padding-right: 0 !important;
+}
+.wireless-solutions-built .core-card{
+  padding-bottom: 60px;
+}
 
 
 

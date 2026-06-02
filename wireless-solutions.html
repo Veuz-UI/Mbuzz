@@ -23,58 +23,61 @@
 
 <body>
 
+  <div class="bg bg-mesh"></div>
+
   <!-- loader -->
-  <!-- <div class="loader" id="loader">
-    
-  </div> -->
-  <!-- loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img class="loader-icon" src="assets/img/favicon.png" alt="Loading">
+    </div>
+  </div>
 
   <header>
     <!-- nav header -->
-    <div class="main-header">
+    <div class="main-header desc-header">
       <div class="width-container">
         <div class="main-header-in">
           <!-- header logo-->
           <div class="header-img">
             <a href="index.html"><img src="assets/img/logo.webp" alt=""></a>
           </div>
-
+          
           <div class="right-nav-top">
             <!-- header nav icons -->
             <div class="nav-desc-menu">
-              <ul>
-                <li class="nav-menu-item"><a href="index.html">Home</a></li>
-                <li class="dropdown nav-menu-item">
-                  <a href="#" class="dropdown-toggle">Al</a>
-                  <ul class="dropdown-menu">
-                    <li class="submenu">
-                      <a href="#" class="submenu-toggle">AI Services</a>
-                      <ul class="submenu-menu">
-                        <li><a href="ai-consulting.html">AI Consulting</a></li>
-                        <li><a href="HPC-infrastructure.html">AI & HPC infrastructure</a></li>
-                        <li><a href="#">AI Labs</a></li>
-                        <li><a href="ai-factory.html">AI Factory</a></li>
-                      </ul>
-                    </li>
-                    <li class="submenu">
-                      <a href="#" class="submenu-toggle">AI Solutions</a>
+                <ul>
+                  <li class="nav-menu-item"><a href="index.html">Home</a></li>
+                  <li class="dropdown nav-menu-item">
+                    <a href="#" class="dropdown-toggle">Al</a>
+                    <ul class="dropdown-menu">
+                      <li class="submenu">
+                        <a href="#" class="submenu-toggle">AI Services</a>
+                        <ul class="submenu-menu">
+                          <li><a href="ai-consulting.html">AI Consulting</a></li>
+                          <li><a href="HPC-infrastructure.html">AI & HPC infrastructure</a></li>
+                          <li><a href="#">AI Labs</a></li>
+                          <li><a href="ai-factory.html">AI Factory</a></li>
+                        </ul>
+                      </li>
+                      <li class="submenu">
+                        <a href="#" class="submenu-toggle">AI Solutions</a>
 
-                      <ul class="submenu-menu">
-                        <li><a href="sovereign-ai.html">Sovereign Ai</a></li>
-                        <li><a href="#">Computer Vision</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                
-                <li class="dropdown nav-menu-item active-menu">
+                        <ul class="submenu-menu">
+                          <li><a href="sovereign-ai.html">Sovereign Ai</a></li>
+                          <li><a href="#">Computer Vision</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown nav-menu-item active-menu">
                     <a href="#" class="dropdown-toggle">Solutions</a>
                     <ul class="dropdown-menu">
                       <li class="submenu">
                         <a href="#" class="submenu-toggle">Telecom & EDGE</a>
                         <ul class="submenu-menu">
-                          <li><a href="#">In-Building Systems</a></li>
-                          <li><a href="#">EDGE Computing</a></li>
+                          <li><a href="in-building-system.html">In-Building Systems</a></li>
+                          <li><a href="edge-computing.html">EDGE Computing</a></li>
                           <li><a href="wireless-solutions.html">Wireless Solutions</a></li>
                         </ul>
                       </li>
@@ -83,7 +86,7 @@
                         <ul class="submenu-menu">
                           <li><a href="#">IoT</a></li>
                           <li><a href="smart-cities.html">Smart Cities</a></li>
-                          <li><a href="elv.html">ELV</a></li>
+                          <li><a href="#">ELV</a></li>
                         </ul>
                       </li>
                       <li class="submenu">
@@ -96,33 +99,35 @@
                       </li>
                     </ul>
                   </li>
-                
-                <li class="nav-menu-item"><a href="#">Services</a></li>
-                <li class="dropdown nav-menu-item">
-                  <a href="#" class="dropdown-toggle">Company</a>
-                  <ul class="dropdown-menu">
-                    <li class="submenu">
-                      <a href="#">About Us</a>
-                    </li>
-                    <li class="submenu">
-                      <a href="#">Careers</a>
-                    </li>
-                    <li class="submenu">
-                      <a href="#" class="submenu-toggle">Our Impact</a>
-                      <ul class="submenu-menu">
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Projects</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-menu-item"><a href="#">Media</a></li>
-                <li class="nav-menu-item"><a href="contact.html">Contact Us</a></li>
-              </ul>
+
+                  <li class="nav-menu-item"><a href="#">Services</a></li>
+                  <li class="dropdown nav-menu-item">
+                    <a href="#" class="dropdown-toggle">Company</a>
+                    <!-- <ul class="dropdown-menu">
+                      <li class="submenu">
+                        <a href="#">About Us</a>
+                      </li>
+                      <li class="submenu">
+                        <a href="#">Careers</a>
+                      </li>
+                      <li class="submenu">
+                        <a href="#" class="submenu-toggle">Our Impact</a>
+                        <ul class="submenu-menu">
+                          <li><a href="#">Case Studies</a></li>
+                          <li><a href="#">Projects</a></li>
+                        </ul>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-menu-item"><a href="#">Media</a></li>
+                  <li class="nav-menu-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
             <div class="wrap desc-btn">
               <a class="lang-switch" href="ai-consulting-ar.html">
-                عربى
+              <span class="arb"> عربى </span>
+              <span class="devider"> | </span> 
+              <span class="eng active">EN</span>
               </a>
             </div>
             <div class="wrap desc-btn">
@@ -134,14 +139,13 @@
                 <a href="" class="menu-toggle two"><span></span></a>
               </div>
               <div class="nav-container">
-
                 <nav class="menu">
                   <div class="menu__item">
                     <a href="index.html" class="menu__item-link">Home</a>
                   </div>
                   <!-- DROPDOWN -->
                   <div class="menu__item dropdown">
-                    <a href="#" class="menu__item-link dropdown-toggle">Al</a>
+                    <a href="#" class="menu__item-link dropdown-toggle active">Al</a>
                     <div class="dropdown-menu">
                       <div class="submenu">
                         <a href="#" class="submenu-toggle">AI Services</a>
@@ -161,8 +165,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="menu__item">
-                    <a href="#" class="menu__item-link">Solutions</a>
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle">Solutions</a>
+                    <div class="dropdown-menu">
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Telecom & EDGE</a>
+                        <div class="submenu-menu">
+                          <a href="in-building-system.html">In-Building Systems</a>
+                          <a href="edge-computing.html">EDGE Computing</a>
+                          <a href="wireless-solutions.html">Wireless Solutions</a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Smart Solutions</a>
+                        <div class="submenu-menu">
+                          <a href="#">IoT</a>
+                          <a href="smart-cities.html">Smart Cities</a>
+                          <a href="#">ELV</a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">IT solutions</a>
+                        <div class="submenu-menu">
+                          <a href="#">Cybersecurity</a>
+                          <a href="#">Network Visibility & Monitoring</a>
+                          <a href="#">Storage</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="menu__item">
                     <a href="#" class="menu__item-link">Services</a>
@@ -196,42 +226,134 @@
                 <div class="wrap mob-btn">
                   <a class="login-btn" href="#"> MBUZZ LABS </a>
                 </div>
-                <!-- <div class="socials">
-                  <div class="social-links">
-                      <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2"/>
-                          <rect x="2" y="9" width="4" height="12" stroke-width="2"/>
-                          <circle cx="4" cy="4" r="2" stroke-width="2"/>
-                        </svg>
-                      </a>
-                      <a href="#" target="_blank" class="social-link" aria-label="X">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.2l8.1-9.2L1 2h7l4.9 6.5L18.9 2z"/>
-                        </svg>
-                      </a>
-                      <a href="#" target="_blank" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/>
-                          <circle cx="12" cy="12" r="4" stroke-width="2"/>
-                          <circle cx="17.5" cy="6.5" r="1.5" stroke-width="2"/>
-                        </svg>
-                      </a>
-                      <a href="#" target="_blank" class="social-link" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </a>
-                    </div>
-                </div> -->
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
-  </header>
+  </div>
+
+  <!-- nav header -->
+    <div class="main-header mob-header">
+      <div class="width-container">
+        <div class="main-header-in">
+
+          <div class="menu-outr">
+              <div class="middle">
+                <a href="" class="menu-toggle two"><span></span></a>
+              </div>
+              <div class="nav-container">
+                <nav class="menu">
+                  <div class="menu__item">
+                    <a href="index.html" class="menu__item-link">Home</a>
+                  </div>
+                  <!-- DROPDOWN -->
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle active">Al</a>
+                    <div class="dropdown-menu">
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">AI Services</a>
+                        <div class="submenu-menu">
+                          <a href="ai-consulting.html">AI Consulting</a>
+                          <a href="HPC-infrastructure.html">AI & HPC infrastructure</a>
+                          <a href="#">AI Labs</a>
+                          <a href="ai-factory.html">AI Factory</a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">AI Solutions</a>
+                        <div class="submenu-menu">
+                          <a href="sovereign-ai.html">Sovereign Ai</a>
+                          <a href="#">Computer Vision</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle">Solutions</a>
+                    <div class="dropdown-menu">
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Telecom & EDGE</a>
+                        <div class="submenu-menu">
+                          <a href="in-building-system.html">In-Building Systems</a>
+                          <a href="edge-computing.html">EDGE Computing</a>
+                          <a href="wireless-solutions.html">Wireless Solutions</a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Smart Solutions</a>
+                        <div class="submenu-menu">
+                          <a href="#">IoT</a>
+                          <a href="smart-cities.html">Smart Cities</a>
+                          <a href="#">ELV</a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">IT solutions</a>
+                        <div class="submenu-menu">
+                          <a href="#">Cybersecurity</a>
+                          <a href="#">Network Visibility & Monitoring</a>
+                          <a href="#">Storage</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Services</a>
+                  </div>
+                  <!-- DROPDOWN -->
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle">Company</a>
+                    <div class="dropdown-menu">
+                      <div>
+                        <a href="#" class="menu__item-link">About Us</a>
+                      </div>
+                      <div>
+                        <a href="#" class="menu__item-link">Careers</a>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Our Impact</a>
+                        <div class="submenu-menu">
+                          <a href="#">Case Studies</a>
+                          <a href="#">Projects</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Media</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="contact.html" class="menu__item-link">Contact Us</a>
+                  </div>
+                </nav>
+                <div class="wrap mob-btn">
+                  <a class="login-btn" href="#"> MBUZZ LABS </a>
+                </div>
+              </div>
+          </div>
+
+          <!-- header logo-->
+          <div class="header-img">
+            <a href="index.html"><img src="assets/img/logo.webp" alt=""></a>
+          </div>
+          
+          <div class="right-nav-top">
+            <div class="wrap desc-btn">
+              <a class="lang-switch" href="ai-consulting-ar.html">
+              <span class="arb"> ع </span>
+              <span class="devider"> | </span> 
+              <span class="eng active">E</span>
+              </a>
+            </div>
+            <!-- <div class="wrap desc-btn">
+              <a class="login-btn" href="#"> MBUZZ LABS </a>
+            </div> -->
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
 
 
 
@@ -261,17 +383,36 @@
   <!-- ── STICKY SUB-NAV ── -->
   <div class="inner-subnav-wrap">
     <div class="width-container">
-      <nav class="inner-subnav">
-        <ul class="inner-subnav-links">
-          <li><a href="#overview" class="active">Overview</a></li>
-          <li><a href="#approach">Our Approach</a></li>
-          <li><a href="#expertise">Expertise </a></li>
-          <li><a href="#solutions">Solutions </a></li>
-          <li><a href="#usecases">Use Cases </a></li>
-          <li><a href="#whymbuzz">Why MBUZZ? </a></li>
-        </ul>
-      </nav>
+      <div class="subnav-desc">
+        <nav class="inner-subnav">
+          <ul class="inner-subnav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#expertise">Expertise </a></li>
+            <li><a href="#solutions">Solutions </a></li>
+            <li><a href="#usecases">Use Cases </a></li>
+            <li><a href="#whymbuzz">Why MBUZZ? </a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+
+    <div class="subnav-mob">
+        <div class="subnav-dropdown">
+          <button class="subnav-toggle">
+            Overview
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul class="inner-subnav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#expertise">Expertise </a></li>
+            <li><a href="#solutions">Solutions </a></li>
+            <li><a href="#usecases">Use Cases </a></li>
+            <li><a href="#whymbuzz">Why MBUZZ? </a></li>
+          </ul>
+        </div>
+      </div>
   </div>
 
   <!-- ai-overview -->
@@ -294,9 +435,9 @@
   </section>
 
   <!-- ai-approach -->
-  <section class="section-padding ai-approach" id="approach">
+  <section class="section-padding ai-approach wireless-approach" id="approach">
     <div class="width-container">
-      <div class="ai-approach-in" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+      <div class="ai-approach-in">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6">
             <div class="left-ai-approach">
@@ -306,14 +447,14 @@
                 MBUZZ works as an independent integrator, selecting the right technologies, vendors, and designs to match your exact requirements. 
                 From the initial field survey to final optimization, we design and deliver wireless networks that are reliable, secure, and cost-effective. 
               </p>
-              <p class="description text-dark">
+              <p class="description mb-0 text-dark">
                 Whether your challenge is distance, terrain, speed, or time-to-deploy, we have the experience to solve it. 
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="right-ai-approach">
-              <img src="assets/img/wireless-approach.webp" class="img-fluid" alt="">
+              <img src="assets/img/wireless-purpose.webp" class="img-fluid" alt="">
             </div>
           </div>
         </div>
@@ -322,12 +463,12 @@
   </section>
 
   <!-- ai-deployment -->
-  <section class="section-padding pb-0 ai-deployment" id="deployment">
+  <section class="section-padding pb-0 ai-deployment" id="expertise">
     <div class="width-container">
-      <div class="text-center mb-3">
+      <div class="text-center mb-5">
         <div class="ai-tag">Expertise</div>
         <h2 class="heading text-white mb-3">Your Network, Supported at Every Stage </h2>
-        <p class="description mb-3">
+        <p class="description">
           You get one partner, one solution, and complete accountability. 
         </p>
       </div>
@@ -370,12 +511,12 @@
   </section>
 
   <!-- prof-services -->
-  <section class="section-padding prof-services" id="professional">
+  <section class="section-padding prof-services wireless-solutions-built" id="solutions">
     <div class="width-container">
       <div class="core-header">
         <div class="core-header-in">
           <div class="ai-tag">Solutions</div>
-          <h3>Built to Connect. Designed to Scale </h3>
+          <h3 class="heading mb-0 text-white">Built to Connect. Designed to Scale </h3>
         </div>
           <div class="core-nav">
             <button class="core-prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -384,9 +525,9 @@
       </div>
       <div class="owlslider owl-carousel owl-theme prof-services-slider">
         <div target="1" class="item">
-          <div class="core-card card-blue">
+          <div class="core-card">
             <div class="card-icon">
-              <img src="assets/img/services/s1.webp" class="" alt="">
+              <img src="assets/img/services/wireless-solution-built-01.webp" class="" alt="">
             </div>
             <h3>Point-to-Point (PTP) Microwave </h3>
             <p>
@@ -397,9 +538,9 @@
           </div>
         </div>
         <div target="2" class="item">
-          <div class="core-card card-red">
+          <div class="core-card">
             <div class="card-icon">
-              <img src="assets/img/services/s2.webp" class="" alt="">
+              <img src="assets/img/services/wireless-solution-built-02.webp" class="" alt="">
             </div>
             <h3>Point-to-Multipoint (PMP) Microwave </h3>
             <p>
@@ -410,9 +551,9 @@
           </div>
         </div>
         <div target="3" class="item">
-          <div class="core-card card-meroon">
+          <div class="core-card">
             <div class="card-icon">
-              <img src="assets/img/services/s3.webp" class="" alt="">
+              <img src="assets/img/services/wireless-solution-built-03.webp" class="" alt="">
             </div>
             <h3>Carrier-Grade Wi-Fi </h3>
             <p>
@@ -422,9 +563,9 @@
           </div>
         </div>
         <div target="4" class="item">
-          <div class="core-card card-green">
+          <div class="core-card">
             <div class="card-icon">
-              <img src="assets/img/services/s4.webp" class="" alt="">
+              <img src="assets/img/services/wireless-solution-built-04.webp" class="" alt="">
             </div>
             <h3>IoT & Industrial IoT Connectivity </h3>
             <p>
@@ -438,83 +579,101 @@
     </div>
   </section>
 
-  
+  <!-- ai real world impact -->
+  <section class="section-padding ai-real-world-impact" id="usecases">
+    <div class="core-offering-header">
+      <div class="width-container">
+        <div class="core-header">
+          <div class="core-header-in">
+            <div class="ai-tag">Use Cases</div>
+            <h2 class="heading mb-0 text-dark">Our Wireless Solutions Support</h2>
+          </div>
+          <div class="core-nav">
+            <button class="core-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="core-next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="core-offering-in">
+      <div class="owlslider owl-carousel owl-theme ai-real-world-impact-slider">
+        <div target="1" class="item">
+          <div class="core-card card-blue">
+            <div class="card-icon">
+              <img src="assets/img/services/wireless-support-01.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Automated Meter Reading (AMR)</h3>
+          </div>
+        </div>
+        <div target="2" class="item">
+          <div class="core-card card-red">
+            <div class="card-icon">
+              <img src="assets/img/services/wireless-support-02.webp" class="img-fluid" alt="">
+            </div>
+            <h3>M2M connectivity</h3>
+          </div>
+        </div>
+        <div target="3" class="item">
+          <div class="core-card card-meroon">
+            <div class="card-icon">
+              <img src="assets/img/services/wireless-support-03.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Leased-line replacement</h3>
+          </div>
+        </div>
+        <div target="4" class="item">
+          <div class="core-card card-green">
+            <div class="card-icon">
+              <img src="assets/img/services/wireless-support-04.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Remote and offshore communications</h3>
+          </div>
+        </div>
+        <div target="5" class="item">
+          <div class="core-card card-green">
+            <div class="card-icon">
+              <img src="assets/img/services/wireless-support-05.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Smart Grid and AMI backhaul</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- faq -->
-  <section class="section-padding faq-sec-outer" id="why">
+  <section class="section-padding pb-0 faq-third-outer" id="whymbuzz">
     <div class="width-container">
       <div class="row">
 
         <div class="col-lg-6 col-xl-7 left-faq">
           <div class="faq-header">
             <div class="ai-tag">Why <span>MBUZZ</span></div>
-            <h3 class="reveal-type" data-bg-color="#b5b5b5" data-fg-color="#000">
-              Trusted AI Consulting That Delivers</h3>
-            <!-- <p>Trusted in more than 10 countries and 2 hundred customers.</p> -->
+            <h3 class="heading text-white">Engineered for Real-World Intelligence</h3>
           </div>
-          <div class="accordion" id="eventxproAccordion">
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  <span class="accrd-head">End-to-End Accountability</span>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
-            </div>
 
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="accrd-head">Business-Driven Consulting</span>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
+          <div class="faq-third-item-out">
+            <div class="faq-third-item">
+              <h6><span>01</span> Proven experience with large-scale wireless projects </h6>
             </div>
-
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <span class="accrd-head">Sovereign AI Expertise</span>
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
+            <div class="faq-third-item">
+              <h6><span>02</span> Vendor-independent, customer-first approach </h6>
             </div>
-
-            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  <span class="accrd-head">Execution-Ready Strategy</span>
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#eventxproAccordion">
-                <div class="accordion-body">
-                  From advisory and design to deployment and optimization
-                </div>
-              </div>
+            <div class="faq-third-item">
+              <h6><span>03</span> Carrier-grade performance and security </h6>
             </div>
-
+            <div class="faq-third-item">
+              <h6><span>04</span> Faster deployment and lower total cost </h6>
+            </div>
+            <div class="faq-third-item">
+              <h6><span>05</span> One partner from design to operation  </h6>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-6 col-xl-5 right-faq">
           <div class="right-faq-img">
-            <img src="assets/img/faq.webp" class="img-fluid" alt="">
+            <img src="assets/img/wireless-solution-cta.webp" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -522,103 +681,18 @@
     </div>
   </section>
 
-  <!-- prof-services -->
-  <section class="section-padding prof-services" id="professional">
-    <div class="width-container">
-      <div class="core-header">
-        <h3>From Advisory to Operations</h3>
-        <div class="core-nav">
-          <button class="core-prev"><i class="fa-solid fa-chevron-left"></i></button>
-          <button class="core-next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-      </div>
-      <div class="owlslider owl-carousel owl-theme prof-services-slider">
-        <div target="1" class="item">
-          <div class="core-card card-blue">
-            <div class="card-icon">
-              <img src="assets/img/services/s1.webp" class="" alt="">
-            </div>
-            <h3>AI & Emerging
-              Tech</h3>
-            <p>
-              AI, computer vision, and advanced analytics that convert data
-              into actionable intelligence across industries.
-            </p>
-          </div>
-        </div>
-        <div target="2" class="item">
-          <div class="core-card card-red">
-            <div class="card-icon">
-              <img src="assets/img/services/s2.webp" class="" alt="">
-            </div>
-            <h3>Telecom &
-              Connectivity</h3>
-            <p>
-              Carrier-grade telecom, optical, wireless, and edge infrastructure designed for
-              ultra-reliable connectivity and scalable performance.
-            </p>
-          </div>
-        </div>
-        <div target="3" class="item">
-          <div class="core-card card-meroon">
-            <div class="card-icon">
-              <img src="assets/img/services/s3.webp" class="" alt="">
-            </div>
-            <h3>Smart & Connected
-              Solutions</h3>
-            <p>
-              IoT-driven, ELV, and smart city solutions that connect physical
-              environments and enable intelligent, data-led operations.
-            </p>
-          </div>
-        </div>
-        <div target="4" class="item">
-          <div class="core-card card-green">
-            <div class="card-icon">
-              <img src="assets/img/services/s4.webp" class="" alt="">
-            </div>
-            <h3>Managed Services &
-              Operations </h3>
-            <p>
-              Proactive monitoring, management, and optimization services that ensure
-              reliability, performance, and operational continuity.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ai-journey -->
-  <section class="section-padding ai-journey" id="partnership">
-    <div class="ai-journey-wrapper">
-      <div class="width-container">
-        <div class="ai-journey-card">
-          <div class="ai-tag mb-3">AI Partnership</div>
-          <h3 class="heading mb-4">Committed to Your
-            AI Journey</h3>
-          <p class="description mb-0">
-            MBUZZ goes beyond project delivery. We build long-term partnerships
-            that help organizations continuously evolve their AI capabilities,
-            ensuring solutions remain relevant, secure, and impactful as
-            technologies and business needs change.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- CTA -->
   <section class="section-padding pb-3 cta">
     <div class="width-container">
       <div class="core-card card-blue" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
         <div class="core-card-in">
-          <h3>Ready to Advance Your AI Capabilities?</h3>
+          <h3>Looking for solutions to your wireless network? </h3>
           <p>
-            Let’s discuss how AI can be applied to your organization’s needs.
+            Build wireless networks that power reliable, secure, real-world operations. 
           </p>
           <div class="main-btn-out mt-5 text-center">
-            <a href="#" class="main-btn">Discover more <i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" class="main-btn">Get in Touch <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
       </div>
@@ -626,103 +700,226 @@
   </section>
 
   <!-- footer -->
-  <footer class="section-padding pb-3 main-footer">
-    <div class="width-container">
-      <div class="row">
-
-        <div class="col-sm-4 col-md-3 col-lg-3">
-          <div class="footer-col footer-brand">
-            <img src="assets/img/logo.webp" class="img-fluid" alt="">
-            <p>Driving Global Innovation</p>
-          </div>
-        </div>
-
-        <div class="col-sm-4 col-md-3 col-lg-3">
-          <div class="footer-col">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">About Company</a></li>
-              <li><a href="#">Press Release</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-sm-4 col-md-3 col-lg-3">
-          <div class="footer-col">
-            <h4>Publications</h4>
-            <ul>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="footer-col footer-contact">
-            <h4>Contact</h4>
-            <div class="contact-item">
-              <i class="fa-solid fa-location-dot"></i>
+<footer class="section-padding pb-0 main-footer">
+  <div class="colored-bg"></div>
+  <div class="width-container">
+    <div class="main-footer-in">
+      <div class="row justify-content-between">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+          <div class="left-footer">
+            <div class="footer-col footer-brand">
+              <img src="assets/img/logo.webp" class="img-fluid" alt="">
+              <div class="footer-brand-name"> قيادة الابتكار العالمي </div>
+              <p>Driving Global Innovation</p>
+            </div>
+            <div class="footer-subcribe">
+              <h4>Subscribe to our newsletter</h4>
+              <div class="newsletter-box">
+                <input type="email" placeholder="Your Email Address">
+                <button type="submit">
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </button>
+              </div>
               <p>
-                Head Quarters<br>
-                Building CS-01, Al-Raidah Digital City, Riyadh, KSA<br>
-                Strategic Office #313, Al Nasr Plaza, Dubai
+                Your email address will remain confidential and will only be used to deliver our newsletter.
               </p>
             </div>
-            <div class="contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <p><a href="mailto:info@mbuzztech.com">info@mbuzztech.com</a></p>
-            </div>
-            <div class="contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <p><a href="tel:+966530378192">+966 53 037 8192</a>,
-                <a href="tel:+97143304125">+971 4 330 4125</a></p>
-            </div>
           </div>
         </div>
+        <div class="col-md-8 col-lg-8 col-xl-7">
 
+          <div class="ft-rght-sec ft-rght-desc">
+            <div class="row justify-content-end">
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-col">
+                  <h4>Explore</h4>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-col">
+                  <h4>Publications</h4>
+                  <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5">
+                <div class="footer-col footer-contact">
+                  <h4>Get in touch</h4>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
+                      <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
+                  </div>
+
+                  <h4 class="mb-2">Headquarters</h4>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                      Building CS-01, Al-Raidah <br>
+                      Digital City, Riyadh, KSA
+                    </p>
+                  </div>
+
+                  <h4 class="mb-2">Strategic Offices</h4>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                      Office A, 13th Floor, Al-Barghash <br> Tower, Prince Turkey Street, <br> Al-Kurnaish, Al Khobar, Saudi Arabia
+                    </p>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                      #313, Al Nazr Plaza, Dubai <br>
+                      United Arab Emirates
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ft-rght-sec ft-rght-mob">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="footer-col">
+                      <h4>Explore</h4>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <div class="footer-col">
+                      <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact us</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="footer-col">
+                      <h4>Publications</h4>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="footer-col">
+                      <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="footer-col footer-contact">
+                      <h4>Get in touch</h4>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="footer-col footer-contact">
+                      <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
+                          <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
+                      </div>
+                      <h4 class="mb-2">Headquarters</h4>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                          Building CS-01, Al-Raidah <br>
+                          Digital City, Riyadh, KSA
+                        </p>
+                      </div>
+                      <h4 class="mb-2">Strategic Offices</h4>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                          Office A, 13th Floor, Al-Barghash Tower, Prince Turkey Street,Al-Kurnaish, Al Khobar, Saudi Arabia
+                        </p>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                          #313, Al Nazr Plaza, Dubai <br>
+                          United Arab Emirates
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-  </footer>
-  <!-- footer end -->
-
+  </div>
+  
   <!-- copywrite start -->
-  <div class="copyrite">
-    <div class="width-container">
-      <div class="copyrite-in">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="copy-right-item">
-              <ul>
-                <li><a href="#" target="_blank">Privacy Policy</a></li>
-                <li><a href="#" target="_blank">Terms of Service</a></li>
-              </ul>
+    <div class="copyrite">
+      <div class="width-container">
+        <div class="copyrite-in">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-sm-9 col-md-9">
+              <div class="copy-right-item">
+                <p>© Copyright 2026, MBUZZ Technologies</p>
+                <p>
+                  <span><a href="#" target="_blank">Privacy Policy</a></span>
+                  <span><a href="#" target="_blank">Terms of Service</a></span>
+                  <span><a href="#" target="_blank">Brand Guidelines</a></span>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-5">
-            <div class="copy-right-item">
-              <p>© Copyright 2026, MBUZZ Technologies</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="copy-right-item">
-              <div class="footer-icons">
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="col-sm-3 col-md-3">
+              <div class="copy-right-item">
+                <div class="footer-icons">
+                  <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- copywrite end -->
-
+    <!-- copywrite end -->
+</footer>
+<!-- footer end -->
 
   <div class="r-scroll">
     <a href="#" id="scroll" style="display: none;"><span><i class="fa-solid fa-arrow-up"></i></span></a>
