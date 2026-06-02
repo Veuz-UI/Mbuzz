@@ -3220,7 +3220,7 @@ section{
 }
 
 .infrastructure-wrapper__panel-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.07em;
   color: #fff;
@@ -3234,9 +3234,10 @@ section{
 .infrastructure-wrapper__panel-body {
   font-size: 13px;
   line-height: 1.5;
-  color: rgb(255, 255, 255);
+  color: rgb(231, 231, 231);
   font-weight: 300;
   margin-bottom: 0;
+  margin-right: 45px;
 }
 
 .infrastructure-wrapper__panel-list {
