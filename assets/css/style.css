@@ -4742,6 +4742,51 @@ section{
 /* --------- deploy ai factory ----------- */
 
 
+/* --------- ELV ----------- */
+.elv-service-card-item{
+  margin-bottom: 25px;
+}
+.elv-service-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    background: #f5f5f7;
+    border: 1px solid #cfe7ff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    width: 95%;
+    margin: 0 auto;
+}
+.elv-service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.elv-service-icon {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--gradient);
+}
+.elv-service-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+.elv-service-content h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #1d2433;
+}
+/* --------- END ELV ----------- */
+
+
 /* --------- AI Factory FAQ ----------- */
 .ai-factory-faq-item {
   position: relative;
@@ -5543,6 +5588,16 @@ html[dir="rtl"] .stats-section .stat-card:hover{
     rgb(255 255 255 / 0%) 0%,
     rgb(13 163 231 / 23%) 100%
   );
+}
+
+html[dir="rtl"] .submenu-menu svg{
+  rotate: 180deg;
+}
+html[dir="rtl"] .home-menu a::before {
+  background: linear-gradient(269deg, #215670, #0db2f900);
+}
+html[dir="rtl"] .home-menu a {
+  background: linear-gradient(90deg, rgba(13, 180, 249, 0.33) 0%, rgba(9, 66, 126, 0.33) 100%);
 }
 
 /* html[dir="rtl"] .innovation-box:hover {
