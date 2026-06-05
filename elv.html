@@ -23,11 +23,14 @@
 
 <body>
 
+  <div class="bg bg-mesh"></div>
+
   <!-- loader -->
-  <!-- <div class="loader" id="loader">
-    
-  </div> -->
-  <!-- loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img class="loader-icon" src="assets/img/favicon.png" alt="Loading">
+    </div>
+  </div>
 
   <header>
     <!-- nav header -->
@@ -261,13 +264,27 @@
   <!-- ── STICKY SUB-NAV ── -->
   <div class="inner-subnav-wrap">
     <div class="width-container">
-      <nav class="inner-subnav">
-        <ul class="inner-subnav-links">
-          <li><a href="#overview" class="active">Overview</a></li>
-          <li><a href="#services">Services</a></li>
-        </ul>
-      </nav>
+      <div class="subnav-desc">
+        <nav class="inner-subnav">
+          <ul class="inner-subnav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <div class="subnav-mob">
+        <div class="subnav-dropdown">
+          <button class="subnav-toggle">
+            Overview
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul class="inner-subnav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+      </div>
   </div>
 
   <!-- ai-overview -->
@@ -708,6 +725,7 @@
                         <ul>
                           <li><a href="#">About Us</a></li>
                           <li><a href="#">Careers</a></li>
+                          <li><a href="#">Projects</a></li>
                           <li><a href="#">Contact us</a></li>
                         </ul>
                       </div>

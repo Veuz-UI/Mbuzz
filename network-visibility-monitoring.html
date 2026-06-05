@@ -23,11 +23,14 @@
 
 <body>
 
+  <div class="bg bg-mesh"></div>
+
   <!-- loader -->
-  <!-- <div class="loader" id="loader">
-    
-  </div> -->
-  <!-- loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img class="loader-icon" src="assets/img/favicon.png" alt="Loading">
+    </div>
+  </div>
 
   <header>
     <!-- nav header -->
@@ -261,14 +264,29 @@
   <!-- ── STICKY SUB-NAV ── -->
   <div class="inner-subnav-wrap">
     <div class="width-container">
-      <nav class="inner-subnav">
-        <ul class="inner-subnav-links">
-          <li><a href="#overview" class="active">Overview</a></li>
-          <li><a href="#challenge">The Challenge</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-        </ul>
-      </nav>
+      <div class="subnav-desc">
+        <nav class="inner-subnav">
+          <ul class="inner-subnav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#challenge">The Challenge</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <div class="subnav-mob">
+        <div class="subnav-dropdown">
+          <button class="subnav-toggle">
+            Overview
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul class="inner-subnav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#challenge">The Challenge</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+          </ul>
+        </div>
+      </div>
   </div>
 
   <!-- ai-overview -->
@@ -276,8 +294,8 @@
     <div class="width-container">
       <div class="ai-overview-in">
         <div class="ai-tag">Overview</div>
-        <h2 class="heading text-white mb-4">MBUZZ cuts through the complexity </h2>
-        <p class="description mb-3">
+        <h2 class="heading text-white">MBUZZ cuts through the complexity </h2>
+        <p class="description mb-0">
           MBUZZ delivers a comprehensive suite of network visibility, analytics and optimization solutions designed to provide clear, 
           actionable insights across your entire network ecosystem. We go beyond basic traffic aggregation and forwarding by 
           transforming raw network data into meaningful intelligence that drives performance, security and compliance.    
@@ -287,9 +305,9 @@
   </section>
 
   <!-- ai-approach -->
-  <section class="section-padding ai-approach" id="approach">
+  <section class="section-padding ai-approach network-challange" id="challenge">
     <div class="width-container">
-      <div class="ai-approach-in" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+      <div class="ai-approach-in">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-6">
             <div class="left-ai-approach">
@@ -301,17 +319,72 @@
                 multiple tools, such as APM and NPM platforms, SIEMs, and firewalls depend on consistent, high-quality 
                 network data to operate effectively. 
               </p>
-              <p class="description text-dark">
+              <p class="description text-dark mb-0">
                 Managing this growing complexity, supporting security teams with accurate insights and meeting evolving regulatory requirements can be challenging. 
               </p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="right-ai-approach">
-              <img src="assets/img/challanges.webp" class="img-fluid" alt="">
+              <img src="assets/img/network-about.webp" class="img-fluid" alt="">
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ai-consulting -->
+  <section class="section-padding pb-0 ai-consulting" id="solutions">
+    <div class="width-container">
+      <div class="section-header text-center">
+        <div class="ai-tag">Solutions</div>
+        <h2 class="heading text-white">No More Dead Zones</h2>
+      </div>
+      <div class="ai-consulting-list">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-6 col-lg-4 mt-4">
+            <div class="ai-consulting-list-item">
+              <div class="icon">
+                01
+              </div>
+              <p>
+                <span>End-to-end visibility</span> across on-premises, private cloud, public cloud and hybrid environments 
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 mt-4">
+            <div class="ai-consulting-list-item">
+              <div class="icon">
+                02
+              </div>
+              <p>
+                <span>Layer 7 application awareness</span> to accurately identify applications and understand user and application behavior  
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 mt-4">
+            <div class="ai-consulting-list-item">
+              <div class="icon">
+                03
+              </div>
+              <p>
+                <span>Rich application and protocol metadata</span> to enable deeper analytics, enhance monitoring and security tools  
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-5 pb-0 edge-computing-arch">
+    <div class="width-container">
+      <div class="edge-computing-arch-in">
+        <img src="assets/img/strategic-network-monitoring.webp" class="img-fluid" alt="">
       </div>
     </div>
   </section>
@@ -323,9 +396,9 @@
         <div class="core-card-in">
           <h3>Need Clarity Across Your Network?</h3>
           <p>
-            Let’s unify visibility, analytics, and control across your entire ecosystem. 
+            Let’s unify visibility, analytics, and control across your entire ecosystem.  
           </p>
-          <div class="main-btn-out mt-5 text-center">
+          <div class="main-btn-out mt-3 text-center">
             <a href="#" class="main-btn">Get in Touch <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
@@ -334,102 +407,234 @@
   </section>
 
   <!-- footer -->
-  <footer class="section-padding pb-3 main-footer">
+  <footer class="section-padding pb-0 main-footer">
+    <div class="colored-bg"></div>
     <div class="width-container">
-      <div class="row">
-
-        <div class="col-sm-4 col-md-3 col-lg-3">
-          <div class="footer-col footer-brand">
-            <img src="assets/img/logo.webp" class="img-fluid" alt="">
-            <p>Driving Global Innovation</p>
-          </div>
-        </div>
-
-        <div class="col-sm-4 col-md-3 col-lg-3">
-          <div class="footer-col">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">About Company</a></li>
-              <li><a href="#">Press Release</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-sm-4 col-md-3 col-lg-3">
-          <div class="footer-col">
-            <h4>Publications</h4>
-            <ul>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="footer-col footer-contact">
-            <h4>Contact</h4>
-            <div class="contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>
-                Head Quarters<br>
-                Building CS-01, Al-Raidah Digital City, Riyadh, KSA<br>
-                Strategic Office #313, Al Nasr Plaza, Dubai
-              </p>
-            </div>
-            <div class="contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <p><a href="mailto:info@mbuzztech.com">info@mbuzztech.com</a></p>
-            </div>
-            <div class="contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <p><a href="tel:+966530378192">+966 53 037 8192</a>,
-                <a href="tel:+97143304125">+971 4 330 4125</a></p>
+      <div class="main-footer-in">
+        <div class="row justify-content-between">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="left-footer">
+              <div class="footer-col footer-brand">
+                <img src="assets/img/logo.webp" class="img-fluid" alt="">
+                <div class="footer-brand-name"> قيادة الابتكار العالمي </div>
+                <p>Driving Global Innovation</p>
+              </div>
+              <div class="footer-subcribe">
+                <h4>Subscribe to our newsletter</h4>
+                <div class="newsletter-box">
+                  <input type="email" placeholder="Your Email Address">
+                  <button type="submit">
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                  </button>
+                </div>
+                <p>
+                  Your email address will remain confidential and will only be used to deliver our newsletter.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="col-md-8 col-lg-8 col-xl-7">
 
+            <div class="ft-rght-sec ft-rght-desc">
+              <div class="row justify-content-end">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                  <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Projects</a></li>
+                      <li><a href="#">Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                  <div class="footer-col">
+                    <h4>Publications</h4>
+                    <ul>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Case Studies</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5">
+                  <div class="footer-col footer-contact">
+                    <h4>Get in touch</h4>
+                    <div class="contact-item">
+                      <i class="fa-solid fa-envelope"></i>
+                      <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
+                    </div>
+                    <div class="contact-item">
+                      <i class="fa-solid fa-phone"></i>
+                      <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
+                        <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
+                    </div>
+
+                    <h4 class="mb-2">Headquarters</h4>
+                    <div class="contact-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>
+                        Building CS-01, Al-Raidah <br>
+                        Digital City, Riyadh, KSA
+                      </p>
+                    </div>
+
+                    <h4 class="mb-2">Strategic Offices</h4>
+                    <div class="contact-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>
+                        Office A, 13th Floor, Al-Barghash <br> Tower, Prince Turkey Street, <br> Al-Kurnaish, Al Khobar,
+                        Saudi Arabia
+                      </p>
+                    </div>
+                    <div class="contact-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>
+                        #313, Al Nazr Plaza, Dubai <br>
+                        United Arab Emirates
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- mobile footer -->
+            <div class="ft-rght-sec ft-rght-mob">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div class="footer-col">
+                        <h4>Explore</h4>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="footer-col">
+                        <ul>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">Projects</a></li>
+                          <li><a href="#">Contact us</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="footer-col">
+                        <h4>Publications</h4>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="footer-col">
+                        <ul>
+                          <li><a href="#">News</a></li>
+                          <li><a href="#">Case Studies</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="footer-col footer-contact">
+                        <h4>Get in touch</h4>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="footer-col footer-contact">
+                        <div class="contact-item">
+                          <i class="fa-solid fa-envelope"></i>
+                          <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
+                        </div>
+                        <div class="contact-item">
+                          <i class="fa-solid fa-phone"></i>
+                          <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
+                            <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
+                        </div>
+                        <h4 class="mb-2">Headquarters</h4>
+                        <div class="contact-item">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>
+                            Building CS-01, Al-Raidah <br>
+                            Digital City, Riyadh, KSA
+                          </p>
+                        </div>
+                        <h4 class="mb-2">Strategic Offices</h4>
+                        <div class="contact-item">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>
+                            Office A, 13th Floor, Al-Barghash Tower, Prince Turkey Street,Al-Kurnaish, Al Khobar, Saudi
+                            Arabia
+                          </p>
+                        </div>
+                        <div class="contact-item">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <p>
+                            #313, Al Nazr Plaza, Dubai <br>
+                            United Arab Emirates
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-  <!-- footer end -->
 
-  <!-- copywrite start -->
-  <div class="copyrite">
-    <div class="width-container">
-      <div class="copyrite-in">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="copy-right-item">
-              <ul>
-                <li><a href="#" target="_blank">Privacy Policy</a></li>
-                <li><a href="#" target="_blank">Terms of Service</a></li>
-              </ul>
+    <!-- copywrite start -->
+    <div class="copyrite">
+      <div class="width-container">
+        <div class="copyrite-in">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-sm-9 col-md-9">
+              <div class="copy-right-item">
+                <p>© Copyright 2026, MBUZZ Technologies</p>
+                <p>
+                  <span><a href="#" target="_blank">Privacy Policy</a></span>
+                  <span><a href="#" target="_blank">Terms of Service</a></span>
+                  <span><a href="#" target="_blank">Brand Guidelines</a></span>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-5">
-            <div class="copy-right-item">
-              <p>© Copyright 2026, MBUZZ Technologies</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="copy-right-item">
-              <div class="footer-icons">
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="col-sm-3 col-md-3">
+              <div class="copy-right-item">
+                <div class="footer-icons">
+                  <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- copywrite end -->
+    <!-- copywrite end -->
+  </footer>
+  <!-- footer end -->
 
 
   <div class="r-scroll">
