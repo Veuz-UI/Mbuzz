@@ -5847,6 +5847,7 @@ section {
     background:var(--gradient);
     flex-shrink:0;
     margin-top:8px;
+    border: 0;
 }
 .service-workforce .service-item h5{
     color:#fff;
