@@ -870,6 +870,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll(".tab-btn");
+    const cards = document.querySelectorAll(".case-study-in-item");
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(btn => btn.classList.remove("active"));
+            tab.classList.add("active");
+            const category = tab.dataset.tab;
+            cards.forEach(card => {
+
+                if (category === "all") {
+                    card.style.display = "block";
+                } else {
+                    card.style.display =
+                        card.classList.contains(category) ?
+                        "block" :
+                        "none";
+                }
+            });
+        });
+    });
+});
+
+
+
 //  NVIDIA ad Section --//
 
 const hero = document.getElementById('hero');
@@ -936,5 +961,8 @@ function setStep(i) {
     document.querySelectorAll('.cap-slide').forEach((c, idx) => c.classList.toggle('active', idx === i));
   }
 // });
+
+
+
 
 

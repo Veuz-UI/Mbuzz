@@ -34,7 +34,7 @@
 
   <header>
     <!-- nav header -->
-    <div class="main-header">
+    <div class="main-header desc-header">
       <div class="width-container">
         <div class="main-header-in">
           <!-- header logo-->
@@ -43,7 +43,7 @@
           </div>
 
           <div class="right-nav-top">
-            <!-- header nav icons -->
+            <!-- desktop menu start here -->
             <div class="nav-desc-menu">
               <ul>
                 <li class="nav-menu-item"><a href="index.html">Home</a></li>
@@ -69,69 +69,77 @@
                     </li>
                   </ul>
                 </li>
-                
+
                 <li class="dropdown nav-menu-item active-menu">
-                    <a href="#" class="dropdown-toggle">Solutions</a>
-                    <ul class="dropdown-menu">
-                      <li class="submenu">
-                        <a href="#" class="submenu-toggle">Telecom & EDGE</a>
-                        <ul class="submenu-menu">
-                          <li><a href="#">In-Building Systems</a></li>
-                          <li><a href="#">EDGE Computing</a></li>
-                          <li><a href="wireless-solutions.html">Wireless Solutions</a></li>
-                        </ul>
-                      </li>
-                      <li class="submenu">
-                        <a href="#" class="submenu-toggle">Smart Solutions</a>
-                        <ul class="submenu-menu">
-                          <li><a href="#">IoT</a></li>
-                          <li><a href="#">Smart Cities</a></li>
-                          <li><a href="elv.html">ELV</a></li>
-                        </ul>
-                      </li>
-                      <li class="submenu">
-                        <a href="#" class="submenu-toggle">IT solutions</a>
-                        <ul class="submenu-menu">
-                          <li><a href="#">Cybersecurity</a></li>
-                          <li><a href="#">Network Visibility & Monitoring</a></li>
-                          <li><a href="#">Storage</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                
-                <li class="nav-menu-item"><a href="#">Services</a></li>
-                <li class="dropdown nav-menu-item">
-                  <a href="#" class="dropdown-toggle">Company</a>
+                  <a href="#" class="dropdown-toggle">Solutions</a>
                   <ul class="dropdown-menu">
                     <li class="submenu">
-                      <a href="#">About Us</a>
-                    </li>
-                    <li class="submenu">
-                      <a href="#">Careers</a>
-                    </li>
-                    <li class="submenu">
-                      <a href="#" class="submenu-toggle">Our Impact</a>
+                      <a href="#" class="submenu-toggle">Telecom & EDGE</a>
                       <ul class="submenu-menu">
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="in-building-system.html">In-Building Systems</a></li>
+                        <li><a href="edge-computing.html">EDGE Computing</a></li>
+                        <li><a href="wireless-solutions.html">Wireless Solutions</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu">
+                      <a href="#" class="submenu-toggle">Smart Solutions</a>
+                      <ul class="submenu-menu">
+                        <li><a href="#">IoT</a></li>
+                        <li><a href="smart-cities.html">Smart Cities</a></li>
+                        <li><a href="elv.html">ELV</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu">
+                      <a href="#" class="submenu-toggle">IT solutions</a>
+                      <ul class="submenu-menu">
+                        <li><a href="cyber-security.html">Cybersecurity</a></li>
+                        <li><a href="network-visibility-monitoring.html">Network Visibility & Monitoring</a></li>
+                        <li><a href="storage.html">Storage</a></li>
                       </ul>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-menu-item"><a href="#">Media</a></li>
+
+                <li class="nav-menu-item"><a href="services.html">Services</a></li>
+                <li class="dropdown nav-menu-item">
+                  <a href="#" class="dropdown-toggle">Company</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu">
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li class="submenu">
+                      <a href="careers.html">Careers</a>
+                    </li>
+                    <li class="submenu">
+                      <a href="partners.html">Partners</a>
+                    </li>
+                    <li class="submenu">
+                      <a href="#" class="submenu-toggle">Our Impact</a>
+                      <ul class="submenu-menu">
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-menu-item"><a href="media.html">Media</a></li>
                 <li class="nav-menu-item"><a href="contact.html">Contact Us</a></li>
               </ul>
             </div>
             <div class="wrap desc-btn">
-              <a class="lang-switch" href="ai-consulting-ar.html">
-                عربى
+              <a class="lang-switch" href="index-ar.html">
+                <span class="arb"> عربى </span>
+                <span class="devider"> | </span>
+                <span class="eng active">EN</span>
               </a>
             </div>
             <div class="wrap desc-btn">
               <a class="login-btn" href="#"> MBUZZ LABS </a>
             </div>
+            <!-- END desktop menu here -->
 
+
+            <!-- tab menu start here -->
             <div class="menu-outr">
               <div class="middle">
                 <a href="" class="menu-toggle two"><span></span></a>
@@ -139,104 +147,785 @@
               <div class="nav-container">
 
                 <nav class="menu">
-                  <div class="menu__item">
-                    <a href="index.html" class="menu__item-link">Home</a>
+                  <div class="nav-title">Main Menu</div>
+                  <div class="menu__item home-menu">
+                    <a href="index.html" class="menu__item-link active">
+                      <span class="menu-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M9.15722 20.7714V17.7047C9.1572 16.9246 9.79312 16.2908 10.581 16.2856H13.4671C14.2587 16.2856 14.9005 16.9209 14.9005 17.7047V20.7809C14.9003 21.4432 15.4343 21.9845 16.103 22H18.0271C19.9451 22 21.5 20.4607 21.5 18.5618V9.83784C21.4898 9.09083 21.1355 8.38935 20.538 7.93303L13.9577 2.6853C12.8049 1.77157 11.1662 1.77157 10.0134 2.6853L3.46203 7.94256C2.86226 8.39702 2.50739 9.09967 2.5 9.84736V18.5618C2.5 20.4607 4.05488 22 5.97291 22H7.89696C8.58235 22 9.13797 21.4499 9.13797 20.7714"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <span class="menu-text">Home</span>
+                      <span class="dropdown-icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </a>
                   </div>
                   <!-- DROPDOWN -->
                   <div class="menu__item dropdown">
-                    <a href="#" class="menu__item-link dropdown-toggle">Al</a>
+                    <a href="#" class="menu__item-link dropdown-toggle">
+                      <div class="menu-link-content">
+                        <span class="menu-text">Al</span>
+                        <span class="dropdown-icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </span>
+                      </div>
+                    </a>
                     <div class="dropdown-menu">
                       <div class="submenu">
-                        <a href="#" class="submenu-toggle">AI Services</a>
+                        <a href="#" class="submenu-toggle">
+                          <div class="menu-link-content">
+                            <span class="menu-text">AI Services</span>
+                            <span class="dropdown-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </span>
+                          </div>
+                        </a>
                         <div class="submenu-menu">
-                          <a href="ai-consulting.html">AI Consulting</a>
-                          <a href="HPC-infrastructure.html">AI & HPC infrastructure</a>
-                          <a href="#">AI Labs</a>
-                          <a href="ai-factory.html">AI Factory</a>
+                          <a href="ai-consulting.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            AI Consulting
+                          </a>
+                          <a href="HPC-infrastructure.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            AI & HPC infrastructure
+                          </a>
+                          <a href="#">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            AI Labs
+                          </a>
+                          <a href="ai-factory.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            AI Factory
+                          </a>
                         </div>
                       </div>
                       <div class="submenu">
-                        <a href="#" class="submenu-toggle">AI Solutions</a>
+                        <a href="#" class="submenu-toggle">
+                          <div class="menu-link-content">
+                            <span class="menu-text">AI Solutions</span>
+                            <span class="dropdown-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </span>
+                          </div>
+                        </a>
                         <div class="submenu-menu">
-                          <a href="sovereign-ai.html">Sovereign Ai</a>
-                          <a href="#">Computer Vision</a>
+                          <a href="sovereign-ai.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Sovereign Ai
+                          </a>
+                          <a href="#">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Computer Vision
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle">
+                      <div class="menu-link-content">
+                        <span class="menu-text">Solutions</span>
+                        <span class="dropdown-icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </span>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">
+                          <div class="menu-link-content">
+                            <span class="menu-text">Telecom & EDGE</span>
+                            <span class="dropdown-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </span>
+                          </div>
+                        </a>
+                        <div class="submenu-menu">
+                          <a href="in-building-system.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            In-Building Systems
+                          </a>
+                          <a href="edge-computing.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            EDGE Computing
+                          </a>
+                          <a href="wireless-solutions.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Wireless Solutions
+                          </a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">
+                          <div class="menu-link-content">
+                            <span class="menu-text">Smart Solutions</span>
+                            <span class="dropdown-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </span>
+                          </div>
+                        </a>
+                        <div class="submenu-menu">
+                          <a href="#">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            IoT
+                          </a>
+                          <a href="smart-cities.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Smart Cities
+                          </a>
+                          <a href="elv.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            ELV
+                          </a>
+                        </div>
+                      </div>
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">
+                          <div class="menu-link-content">
+                            <span class="menu-text">IT solutions</span>
+                            <span class="dropdown-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </span>
+                          </div>
+                        </a>
+                        <div class="submenu-menu">
+                          <a href="cyber-security.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Cybersecurity
+                          </a>
+                          <a href="network-visibility-monitoring.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Network Visibility & Monitoring
+                          </a>
+                          <a href="storage.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Storage
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="menu__item">
-                    <a href="#" class="menu__item-link">Solutions</a>
-                  </div>
-                  <div class="menu__item">
-                    <a href="#" class="menu__item-link">Services</a>
+                    <a href="services.html" class="menu__item-link">
+                      <div class="menu-link-content">
+                        <span class="menu-text">Services</span>
+                      </div>
+                    </a>
                   </div>
                   <!-- DROPDOWN -->
                   <div class="menu__item dropdown">
-                    <a href="#" class="menu__item-link dropdown-toggle">Company</a>
+                    <a href="#" class="menu__item-link dropdown-toggle">
+                      <div class="menu-link-content">
+                        <span class="menu-text">Company</span>
+                        <span class="dropdown-icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </span>
+                      </div>
+                    </a>
                     <div class="dropdown-menu">
                       <div>
-                        <a href="#" class="menu__item-link">About Us</a>
+                        <a href="about.html" class="menu__item-link">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          About Us
+                        </a>
                       </div>
                       <div>
-                        <a href="#" class="menu__item-link">Careers</a>
+                        <a href="careers.html" class="menu__item-link">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Careers
+                        </a>
+                      </div>
+                      <div>
+                        <a href="partners.html" class="menu__item-link">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Partners
+                        </a>
                       </div>
                       <div class="submenu">
-                        <a href="#" class="submenu-toggle">Our Impact</a>
+                        <a href="#" class="submenu-toggle">
+                          <div class="menu-link-content">
+                            <span class="menu-text">Our Impact</span>
+                            <span class="dropdown-icon">
+                              <i class="fas fa-chevron-down"></i>
+                            </span>
+                          </div>
+                        </a>
                         <div class="submenu-menu">
-                          <a href="#">Case Studies</a>
-                          <a href="#">Projects</a>
+                          <a href="case-studies.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Case Studies
+                          </a>
+                          <a href="projects.html">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                                stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                                stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            Projects
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="menu__item">
-                    <a href="#" class="menu__item-link">Media</a>
+                    <a href="media.html" class="menu__item-link">
+                      Media</a>
                   </div>
                   <div class="menu__item">
                     <a href="contact.html" class="menu__item-link">Contact Us</a>
                   </div>
                 </nav>
+                
                 <div class="wrap mob-btn">
                   <a class="login-btn" href="#"> MBUZZ LABS </a>
                 </div>
-                <!-- <div class="socials">
-                  <div class="social-links">
-                      <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2"/>
-                          <rect x="2" y="9" width="4" height="12" stroke-width="2"/>
-                          <circle cx="4" cy="4" r="2" stroke-width="2"/>
-                        </svg>
+              </div>
+            </div>
+            <!-- END tab menu here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile menu start here -->
+    <div class="main-header mob-header">
+      <div class="width-container">
+        <div class="main-header-in">
+
+          <div class="menu-outr">
+            <div class="middle">
+              <a href="" class="menu-toggle two"><span></span></a>
+            </div>
+            <div class="nav-container">
+              <nav class="menu">
+                <div class="nav-title">Main Menu</div>
+                <div class="menu__item home-menu">
+                  <a href="index.html" class="menu__item-link active">
+                    <span class="menu-icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                          d="M9.15722 20.7714V17.7047C9.1572 16.9246 9.79312 16.2908 10.581 16.2856H13.4671C14.2587 16.2856 14.9005 16.9209 14.9005 17.7047V20.7809C14.9003 21.4432 15.4343 21.9845 16.103 22H18.0271C19.9451 22 21.5 20.4607 21.5 18.5618V9.83784C21.4898 9.09083 21.1355 8.38935 20.538 7.93303L13.9577 2.6853C12.8049 1.77157 11.1662 1.77157 10.0134 2.6853L3.46203 7.94256C2.86226 8.39702 2.50739 9.09967 2.5 9.84736V18.5618C2.5 20.4607 4.05488 22 5.97291 22H7.89696C8.58235 22 9.13797 21.4499 9.13797 20.7714"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="menu-text">Home</span>
+                    <span class="dropdown-icon">
+                      <i class="fas fa-chevron-down"></i>
+                    </span>
+                  </a>
+                </div>
+                <!-- DROPDOWN -->
+                <div class="menu__item dropdown">
+                  <a href="#" class="menu__item-link dropdown-toggle">
+                    <div class="menu-link-content">
+                      <span class="menu-text">Al</span>
+                      <span class="dropdown-icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="submenu">
+                      <a href="#" class="submenu-toggle">
+                        <div class="menu-link-content">
+                          <span class="menu-text">AI Services</span>
+                          <span class="dropdown-icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </span>
+                        </div>
                       </a>
-                      <a href="#" target="_blank" class="social-link" aria-label="X">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.2l8.1-9.2L1 2h7l4.9 6.5L18.9 2z"/>
-                        </svg>
+                      <div class="submenu-menu">
+                        <a href="ai-consulting.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          AI Consulting
+                        </a>
+                        <a href="HPC-infrastructure.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          AI & HPC infrastructure
+                        </a>
+                        <a href="#">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          AI Labs
+                        </a>
+                        <a href="ai-factory.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          AI Factory
+                        </a>
+                      </div>
+                    </div>
+                    <div class="submenu">
+                      <a href="#" class="submenu-toggle">
+                        <div class="menu-link-content">
+                          <span class="menu-text">AI Solutions</span>
+                          <span class="dropdown-icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </span>
+                        </div>
                       </a>
-                      <a href="#" target="_blank" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/>
-                          <circle cx="12" cy="12" r="4" stroke-width="2"/>
-                          <circle cx="17.5" cy="6.5" r="1.5" stroke-width="2"/>
-                        </svg>
+                      <div class="submenu-menu">
+                        <a href="sovereign-ai.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Sovereign Ai
+                        </a>
+                        <a href="#">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Computer Vision
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__item dropdown">
+                  <a href="#" class="menu__item-link dropdown-toggle">
+                    <div class="menu-link-content">
+                      <span class="menu-text">Solutions</span>
+                      <span class="dropdown-icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="submenu">
+                      <a href="#" class="submenu-toggle">
+                        <div class="menu-link-content">
+                          <span class="menu-text">Telecom & EDGE</span>
+                          <span class="dropdown-icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </span>
+                        </div>
                       </a>
-                      <a href="#" target="_blank" class="social-link" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2"
+                      <div class="submenu-menu">
+                        <a href="in-building-system.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          In-Building Systems
+                        </a>
+                        <a href="edge-computing.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          EDGE Computing
+                        </a>
+                        <a href="wireless-solutions.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Wireless Solutions
+                        </a>
+                      </div>
+                    </div>
+                    <div class="submenu">
+                      <a href="#" class="submenu-toggle">
+                        <div class="menu-link-content">
+                          <span class="menu-text">Smart Solutions</span>
+                          <span class="dropdown-icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="submenu-menu">
+                        <a href="#">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          IoT
+                        </a>
+                        <a href="smart-cities.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Smart Cities
+                        </a>
+                        <a href="elv.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          ELV
+                        </a>
+                      </div>
+                    </div>
+                    <div class="submenu">
+                      <a href="#" class="submenu-toggle">
+                        <div class="menu-link-content">
+                          <span class="menu-text">IT solutions</span>
+                          <span class="dropdown-icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="submenu-menu">
+                        <a href="cybersecurity.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Cybersecurity
+                        </a>
+                        <a href="network-visibility-monitoring.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Network Visibility & Monitoring
+                        </a>
+                        <a href="storage.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Storage
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__item">
+                  <a href="services.html" class="menu__item-link">
+                    <div class="menu-link-content">
+                      <span class="menu-text">Services</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- DROPDOWN -->
+                <div class="menu__item dropdown">
+                  <a href="#" class="menu__item-link dropdown-toggle">
+                    <div class="menu-link-content">
+                      <span class="menu-text">Company</span>
+                      <span class="dropdown-icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div>
+                      <a href="about.html" class="menu__item-link">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8" stroke-width="1.48441"
                             stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                            stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                            stroke-linejoin="round" />
                         </svg>
+                        About Us
                       </a>
                     </div>
-                </div> -->
-              </div>
+                    <div>
+                      <a href="careers.html" class="menu__item-link">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8" stroke-width="1.48441"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                            stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        Careers
+                      </a>
+                    </div>
+                    <div>
+                      <a href="partners.html" class="menu__item-link">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8" stroke-width="1.48441"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                            stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        Partners
+                      </a>
+                    </div>
+                    <div class="submenu">
+                      <a href="#" class="submenu-toggle">
+                        <div class="menu-link-content">
+                          <span class="menu-text">Our Impact</span>
+                          <span class="dropdown-icon">
+                            <i class="fas fa-chevron-down"></i>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="submenu-menu">
+                        <a href="case-studies.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Case Studies
+                        </a>
+                        <a href="projects.html">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
+                              stroke-width="1.48441" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.54688 0.742188L8.35145 4.54676L4.54688 8.35133" stroke="white"
+                              stroke-opacity="0.8" stroke-width="1.48441" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                          Projects
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__item">
+                  <a href="media.html" class="menu__item-link">
+                    Media</a>
+                </div>
+                <div class="menu__item">
+                  <a href="contact.html" class="menu__item-link">Contact Us</a>
+                </div>
+              </nav>
+              <!-- <div class="wrap mob-btn">
+              <a class="login-btn" href="#"> MBUZZ LABS </a>
+            </div> -->
+            </div>
+          </div>
+
+          <!-- header logo-->
+          <div class="header-img">
+            <a href="index.html"><img src="assets/img/logo.webp" alt=""></a>
+          </div>
+
+          <div class="right-nav-top">
+            <div class="wrap desc-btn">
+              <a class="lang-switch" href="index-ar.html">
+                <span class="arb"> ع </span>
+                <span class="devider"> | </span>
+                <span class="eng active">E</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- END mobile menu here -->
   </header>
-
-
 
   <!-- ── HERO ── -->
   <section class="inner-banner">
@@ -614,203 +1303,198 @@
   </section>
 
   <!-- footer -->
-  <footer class="section-padding pb-0 main-footer">
-    <div class="colored-bg"></div>
-    <div class="width-container">
-      <div class="main-footer-in">
-        <div class="row justify-content-between">
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
-            <div class="left-footer">
-              <div class="footer-col footer-brand">
-                <img src="assets/img/logo.webp" class="img-fluid" alt="">
-                <div class="footer-brand-name"> قيادة الابتكار العالمي </div>
-                <p>Driving Global Innovation</p>
-              </div>
-              <div class="footer-subcribe">
-                <h4>Subscribe to our newsletter</h4>
-                <div class="newsletter-box">
-                  <input type="email" placeholder="Your Email Address">
-                  <button type="submit">
+<footer class="section-padding pb-0 main-footer">
+  <div class="colored-bg"></div>
+  <div class="width-container">
+    <div class="main-footer-in">
+      <div class="row justify-content-between">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+          <div class="left-footer">
+            <div class="footer-col footer-brand">
+              <img src="assets/img/logo.webp" class="img-fluid" alt="">
+              <div class="footer-brand-name"> قيادة الابتكار العالمي </div>
+              <p>Driving Global Innovation</p>
+            </div>
+            <div class="footer-subcribe">
+              <h4>Subscribe to our newsletter</h4>
+              <div class="newsletter-box">
+                <input type="email" placeholder="Your Email Address">
+                <button type="submit">
                     <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </button>
+              </div>
+              <p>
+                Your email address will remain confidential and will only be used to deliver our newsletter.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-8 col-xl-7">
+
+          <div class="ft-rght-sec ft-rght-desc">
+            <div class="row justify-content-end">
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-col">
+                  <h4>Explore</h4>
+                  <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-col">
+                  <h4>Publications</h4>
+                  <ul>
+                    <li><a href="media.html">News</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5">
+                <div class="footer-col footer-contact">
+                  <h4>Get in touch</h4>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
+                      <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
+                  </div>
+
+                  <h4 class="mb-2">Headquarters</h4>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                      Building CS-01, Al-Raidah <br>
+                      Digital City, Riyadh, KSA
+                    </p>
+                  </div>
+
+                  <h4 class="mb-2">Strategic Offices</h4>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                      Office A, 13th Floor, Al-Barghash <br> Tower, Prince Turkey Street, <br> Al-Kurnaish, Al Khobar, Saudi Arabia
+                    </p>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                      #313, Al Nazr Plaza, Dubai <br>
+                      United Arab Emirates
+                    </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ft-rght-sec ft-rght-mob">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="footer-col">
+                      <h4>Explore</h4>
+                    </div>
                   </button>
-                </div>
-                <p>
-                  Your email address will remain confidential and will only be used to deliver our newsletter.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-8 col-xl-7">
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
 
-            <div class="ft-rght-sec ft-rght-desc">
-              <div class="row justify-content-end">
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                  <div class="footer-col">
-                    <h4>Explore</h4>
-                    <ul>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">Projects</a></li>
-                      <li><a href="#">Contact us</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                  <div class="footer-col">
-                    <h4>Publications</h4>
-                    <ul>
-                      <li><a href="#">News</a></li>
-                      <li><a href="#">Case Studies</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5">
-                  <div class="footer-col footer-contact">
-                    <h4>Get in touch</h4>
-                    <div class="contact-item">
-                      <i class="fa-solid fa-envelope"></i>
-                      <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
-                    </div>
-                    <div class="contact-item">
-                      <i class="fa-solid fa-phone"></i>
-                      <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
-                        <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
-                    </div>
-
-                    <h4 class="mb-2">Headquarters</h4>
-                    <div class="contact-item">
-                      <i class="fa-solid fa-location-dot"></i>
-                      <p>
-                        Building CS-01, Al-Raidah <br>
-                        Digital City, Riyadh, KSA
-                      </p>
-                    </div>
-
-                    <h4 class="mb-2">Strategic Offices</h4>
-                    <div class="contact-item">
-                      <i class="fa-solid fa-location-dot"></i>
-                      <p>
-                        Office A, 13th Floor, Al-Barghash <br> Tower, Prince Turkey Street, <br> Al-Kurnaish, Al Khobar,
-                        Saudi Arabia
-                      </p>
-                    </div>
-                    <div class="contact-item">
-                      <i class="fa-solid fa-location-dot"></i>
-                      <p>
-                        #313, Al Nazr Plaza, Dubai <br>
-                        United Arab Emirates
-                      </p>
+                    <div class="footer-col">
+                      <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                      </ul>
                     </div>
 
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="ft-rght-sec ft-rght-mob">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <div class="footer-col">
-                        <h4>Explore</h4>
-                      </div>
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-
-                      <div class="footer-col">
-                        <ul>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Careers</a></li>
-                          <li><a href="#">Projects</a></li>
-                          <li><a href="#">Contact us</a></li>
-                        </ul>
-                      </div>
-
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="footer-col">
+                      <h4>Publications</h4>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="footer-col">
+                      <ul>
+                        <li><a href="media.html">News</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <div class="footer-col">
-                        <h4>Publications</h4>
-                      </div>
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="footer-col">
-                        <ul>
-                          <li><a href="#">News</a></li>
-                          <li><a href="#">Case Studies</a></li>
-                        </ul>
-                      </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="footer-col footer-contact">
+                      <h4>Get in touch</h4>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <div class="footer-col footer-contact">
-                        <h4>Get in touch</h4>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="footer-col footer-contact">
+                      <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
                       </div>
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="footer-col footer-contact">
-                        <div class="contact-item">
-                          <i class="fa-solid fa-envelope"></i>
-                          <p><a href="mailto:info@mbuzz.com.sa">info@mbuzz.com.sa</a></p>
-                        </div>
-                        <div class="contact-item">
-                          <i class="fa-solid fa-phone"></i>
-                          <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
-                            <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
-                        </div>
-                        <h4 class="mb-2">Headquarters</h4>
-                        <div class="contact-item">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <p>
-                            Building CS-01, Al-Raidah <br>
-                            Digital City, Riyadh, KSA
-                          </p>
-                        </div>
-                        <h4 class="mb-2">Strategic Offices</h4>
-                        <div class="contact-item">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <p>
-                            Office A, 13th Floor, Al-Barghash Tower, Prince Turkey Street,Al-Kurnaish, Al Khobar, Saudi
-                            Arabia
-                          </p>
-                        </div>
-                        <div class="contact-item">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <p>
-                            #313, Al Nazr Plaza, Dubai <br>
-                            United Arab Emirates
-                          </p>
-                        </div>
-
+                      <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><a href="tel:0112855300">Tel: 01128 553 00</a> <br>
+                          <a href="tel:+966558476630">Mob: +966 55 847 6630</a></p>
                       </div>
+                      <h4 class="mb-2">Headquarters</h4>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                          Building CS-01, Al-Raidah <br>
+                          Digital City, Riyadh, KSA
+                        </p>
+                      </div>
+                      <h4 class="mb-2">Strategic Offices</h4>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                          Office A, 13th Floor, Al-Barghash Tower, Prince Turkey Street,Al-Kurnaish, Al Khobar, Saudi Arabia
+                        </p>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                          #313, Al Nazr Plaza, Dubai <br>
+                          United Arab Emirates
+                        </p>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
-
-    <!-- copywrite start -->
+  </div>
+  
+  <!-- copywrite start -->
     <div class="copyrite">
       <div class="width-container">
         <div class="copyrite-in">
@@ -839,8 +1523,8 @@
       </div>
     </div>
     <!-- copywrite end -->
-  </footer>
-  <!-- footer end -->
+</footer>
+<!-- footer end -->
 
 
   <div class="r-scroll">
