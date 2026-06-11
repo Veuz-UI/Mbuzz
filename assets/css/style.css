@@ -2401,6 +2401,7 @@ section {
 @media (max-width: 600px) {
   .cta .core-card {
     padding: 30px 20px;
+    border-radius: 25px;
   }
 
   .cta .core-card h3 {
@@ -3065,7 +3066,7 @@ section {
 }
 
 .faq-header p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   color: #888888;
   margin-bottom: 0;
@@ -4848,6 +4849,7 @@ section {
   max-height: 550px;
   object-fit: cover;
   border-radius: 25px;
+  /* opacity: 0.9; */
 }
 
 .ai-real-world-impact .core-card h3 {
@@ -4946,17 +4948,6 @@ section {
     border-left: 2px solid #0db4f92e;
 }
 
-/* .ai-deployment-item:first-child .ai-deployment-type{
-  padding-left: 0;
-} */
-
-/* .ai-deployment .ai-deployment-item:nth-child(3) .ai-deployment-type,
-.ai-deployment .ai-deployment-item:nth-child(6) .ai-deployment-type,
-.ai-deployment .ai-deployment-item:nth-child(9) .ai-deployment-type,
-.ai-deployment .ai-deployment-item:nth-child(12) .ai-deployment-type {
-  border-right: 0;
-} */
-
 .ai-deployment .ai-deployment-item{
   margin-top: 25px;
 }
@@ -4967,7 +4958,7 @@ section {
 
 .ai-deployment .ai-deployment-type h3 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0;
   transition: .5s;
@@ -5460,7 +5451,7 @@ section {
 }
 
 .in-build-lifecycle .timeline-item h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   color: #fff;
@@ -5671,6 +5662,10 @@ section {
 @media (max-width: 600px) {
   .intelligent-ai .image-panel {
     padding: 15px;
+    border-radius: 20px;
+  }
+  .intelligent-ai .image-panel::before{
+    border-radius: 20px;
   }
 }
 
