@@ -3098,7 +3098,7 @@ section {
 
 
 .left-faq .accordion-button {
-  background: linear-gradient(123deg, #eceef500 0%, rgb(206 241 255 / 12%) 100%);
+  background: transparent;
   border: none;
   padding: 1.5rem 1.5rem .5rem;
   box-shadow: none;
