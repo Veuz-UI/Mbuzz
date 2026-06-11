@@ -185,6 +185,13 @@
 		z-index: 99;
 	}
 
+	header.fixed-to-top .main-header a.menu-toggle.active{
+		top: 40px;
+	}
+	html[dir="rtl"] header.fixed-to-top .main-header a.menu-toggle.active{
+		top: 60px;
+	}
+
 	a.menu-toggle.active span {
 		top: 0;
 		width: 13px;

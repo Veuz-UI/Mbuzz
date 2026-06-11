@@ -585,11 +585,6 @@ section {
 /* ------------------------------
 			Banner 
 ------------------------------ */
-/* .banner_slider .carousel-outr {
-  max-height: 100vh;
-  overflow: hidden;
-} */
-
 .banner_slider .carousel-outr .carousel-inner {
   height: 100%;
 }
@@ -964,6 +959,7 @@ section {
   font-size: 17px;
   margin-top: 4px;
 }
+
 
 .footer-contact p {
   font-size: 14px;
@@ -2091,7 +2087,7 @@ section {
 
 .project-work .proj-card-out {
   position: relative;
-  /* min-height: 466px; */
+  max-height: 466px;
   height: 100%;
   overflow: hidden;
 }
@@ -2749,7 +2745,7 @@ section {
 
 .nvidia-card img {
   max-width: 250px;
-  border-radius: 15px;
+  border-radius: 20px;
   border: 2px solid #fff;
 }
 
@@ -3091,7 +3087,7 @@ section {
   overflow: hidden;
   border-bottom: 1px solid #e3e3e329 !important;
   transition: all 0.1s ease;
-  background: linear-gradient(90deg, rgba(249, 252, 254, 1) 0%, rgba(249, 252, 254, 1) 100%);
+  background: linear-gradient(123deg, #eceef500 0%, rgb(206 241 255 / 27%) 100%);
 }
 
 .faq-white-bg .accordion-item:has(.accordion-collapse.show) {
@@ -3102,7 +3098,7 @@ section {
 
 
 .left-faq .accordion-button {
-  background: transparent;
+  background: linear-gradient(123deg, #eceef500 0%, rgb(206 241 255 / 12%) 100%);
   border: none;
   padding: 1.5rem 1.5rem .5rem;
   box-shadow: none;
@@ -4041,7 +4037,7 @@ section {
   position: relative;
   background-color: #00001c !important;
   overflow: hidden;
-  background: url(../img/ai-factory.webp) no-repeat right/contain;
+  background: url(../img/ai-factory-2.webp) no-repeat center/cover;
 }
 .ai-factory .heading {
   padding-right: initial;
@@ -4077,16 +4073,27 @@ section {
 .sovereign-ai-aleria-in {
   padding: 60px;
   border-radius: 30px;
-  background: url('../img/soverign-ai-operation.webp') no-repeat center/cover;
+  /* background: url('../img/soverign-ai-operation.webp') no-repeat center/cover; */
   position: relative;
   overflow: hidden;
-  /* border: 1px solid #0db4f945; */
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
 }
-.sovereign-ai-aleria-in::before {
+.sovereign-ai-aleria-in::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../img/soverign-ai-operation.webp') no-repeat center center/cover;
+    transition: transform 0.8s ease;
+    z-index: -1;
+}
+.sovereign-ai-aleria-in:hover::before{
+    transform: scale(1.1) translateY(-10px);
+}
+
+.sovereign-ai-aleria-in::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -4098,6 +4105,10 @@ section {
   mask-composite: exclude;
   pointer-events: none;
 }
+.sovereign-ai-aleria-in:hover::after {
+  background: linear-gradient(190deg, #587013, #005c8a);
+}
+
 .aleria-logo img{
   width: 200px;
 }
@@ -4109,7 +4120,7 @@ section {
 }
 
 .sovereign-ai-aleria .capabilities-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(255 255 255 / 18%);
   backdrop-filter: blur(1px);
   border-radius: 20px;
   padding: 30px 35px;
@@ -4184,11 +4195,6 @@ section {
   box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff82, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -2.2px #0d86f957;
 }
 
-.applied-ai .core-card * {
-  position: relative;
-  z-index: 2;
-}
-
 .applied-ai-card{
   padding: 0 8px;
   margin-top: 20px;
@@ -4239,12 +4245,28 @@ section {
   margin-bottom: 0;
 }
 
+.applied-ai-cs .core-card {
+  padding: 20px 20px 25px 20px;
+}
+.applied-ai-cs .card-icon img {
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.core-card-out{
+  padding: 0 7px;
+  margin-bottom: 15px;
+}
 .intelligent-ai .core-card h3 {
   font-size: 18px;
 }
 
 .intelligent-ai .core-card {
   padding: 20px 20px 40px 20px;
+}
+
+.professional-ai .core-card {
+    padding: 20px 20px 8px 20px;
 }
 
 @media (max-width: 600px) {
@@ -4726,30 +4748,9 @@ section {
   border-radius: 24px;
   border: 1px solid #0db4f957;
 }
-
-/* .ai-hero-wrapper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
-  z-index: 1;
+.nvidia-bg-img:hover {
+  border-color: var(--primary-color);
 }
-.ai-hero-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 24px;
-  padding: .5px;
-  background-size: 300% 300%;
-  animation: borderMove 6s linear infinite;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-  pointer-events: none;
-  z-index: 3;
-} */
 .ai-hero-content {
   position: absolute;
   top: 60px;
@@ -4794,6 +4795,10 @@ section {
 
 .ai-hero-content .heading{
   padding-right: 80px;
+}
+
+.ai-hero-content p{
+  text-align: justify;
 }
 
 @media (max-width: 992px) {
@@ -4865,7 +4870,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin-bottom: 40px;
 }
 
@@ -4882,7 +4887,7 @@ section {
 }
 
 .ai-real-world-impact .core-nav button:hover {
-  background: var(--primary-color);
+  background: var(--gradient);
   color: #fff;
 }
 
@@ -6432,14 +6437,16 @@ html[dir="rtl"] .news-events .card-content {
   padding-right: 20px;
 }
 
-@media (max-width: 600px) {
-  html[dir="rtl"] .news-events .card-content {
-    padding-right: initial;
-  }
-
+@media (max-width: 992px) {
   html[dir="rtl"] a.menu-toggle.active {
     right: auto;
     left: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  html[dir="rtl"] .news-events .card-content {
+    padding-right: initial;
   }
 }
 
