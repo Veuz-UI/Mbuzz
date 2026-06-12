@@ -177,7 +177,7 @@ a {
 
 header.fixed-to-top .main-header {
   position: fixed;
-  background: #000;
+  background: #00000082;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 8;
   top: 0;
@@ -225,6 +225,7 @@ header.fixed-to-top .main-header {
   border: 1px solid #0db4f93d;
   padding: 5px;
   border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .nav-desc-menu ul li {
@@ -652,7 +653,7 @@ section {
   margin-left: 0;
 } */
 
-.carousel-inner::after {
+/* .carousel-inner::after {
   background: rgb(0 0 0 / 25%);
   top: 0px;
   left: 0px;
@@ -660,13 +661,13 @@ section {
   content: "";
   height: 100%;
   width: 100%;
-}
+} */
 
 .banner_slider .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(1.2) contrast(1.2);
+  /* filter: brightness(1.2) contrast(1.2); */
 }
 
 .carousel-item.active img {
