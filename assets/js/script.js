@@ -481,7 +481,7 @@ $(document).ready(function () {
         margin: 15,
         nav: false,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },
