@@ -6877,46 +6877,8 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   margin-top: 4px;
 }
 
-.ab-counter-wrapper{
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: 1px solid #0db4f91a;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%) padding-box, linear-gradient(135deg, rgb(13 180 249 / 0%) 0%, rgb(13 180 249 / 0%) 50%, rgb(13 180 249 / 9%) 100%) border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.counter-brand-text{
-    font-size: 15px;
-    text-transform: uppercase;
-    color: #000;
-    margin: 0px;
-    font-weight: 500;
-    text-align: right;
-    width: 100%;
-}
-
-.counter-wrapp .counter{
-    font-size: 40px;
-    font-weight: 500;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    margin: 0px;
-    margin-left: 10px;
-}
-
 /* ── Responsive ── */
 @media (max-width: 780px) {
-  .section {
-    padding: 28px 20px 40px;
-  }
-
   .above-zone {
     height: 160px;
   }
@@ -6931,7 +6893,6 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 @media (max-width: 520px) {
-
   .above-zone,
   .dot-row,
   .slide-card,
@@ -6956,6 +6917,49 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
     opacity: 1;
   }
 }
+
+
+
+
+.about-conter-out{
+  background-color: white;
+}
+.ab-counter-wrapper{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #0db4f91a;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%) padding-box, linear-gradient(135deg, rgb(13 180 249 / 0%) 0%, rgb(13 180 249 / 0%) 50%, rgb(13 180 249 / 9%) 100%) border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.counter-brand-text{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0px;
+    font-weight: 500;
+    text-align: right;
+    width: 100%;
+}
+.counter-wrapp .counter{
+    font-size: 40px;
+    font-weight: 500;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+
+
+
+
 
 .vision-mission {
   position: relative;
