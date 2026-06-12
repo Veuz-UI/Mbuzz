@@ -954,6 +954,11 @@ section {
   margin-bottom: 15px;
 }
 
+.footer-contact .contact-item img{
+  width: 22px;
+  object-fit: contain;
+}
+
 .footer-contact svg {
   color: var(--primary-color);
   font-size: 17px;
