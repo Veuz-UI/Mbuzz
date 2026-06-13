@@ -14,40 +14,86 @@ window.addEventListener("load", function () {
 
 
 //// nav scroll
+// $(document).ready(function () {
+//   var docEl      = $(document),
+//       headerEl   = $('header'),
+//       headerWrapEl = $('.main-header-in'),
+//       navEl      = $('nav'),
+//       subnavEl   = $('.subnav-wrap'),
+//       linkScroll = $('.scroll');
+
+//   docEl.on('scroll', function () {
+//     if (docEl.scrollTop() > 60) {
+//       headerEl.addClass('fixed-to-top');
+//       headerWrapEl.addClass('fixed-to-top');
+//       navEl.addClass('fixed-to-top');
+
+//       // Push subnav down by the navbar height dynamically
+//       var navHeight = $('header').outerHeight();
+//       subnavEl.css('top', navHeight + 'px');
+
+//     } else {
+//       headerEl.removeClass('fixed-to-top');
+//       headerWrapEl.removeClass('fixed-to-top');
+//       navEl.removeClass('fixed-to-top');
+
+//       // Reset subnav top when navbar is not fixed
+//       subnavEl.css('top', '0px');
+//     }
+//   });
+
+//   linkScroll.click(function (e) {
+//     e.preventDefault();
+//     $('body, html').animate({
+//       scrollTop: $(this.hash).offset().top
+//     }, 500);
+//   });
+// });
+
+
 $(document).ready(function () {
-  var docEl      = $(document),
-      headerEl   = $('header'),
-      headerWrapEl = $('.main-header-in'),
-      navEl      = $('nav'),
-      subnavEl   = $('.subnav-wrap'),
-      linkScroll = $('.scroll');
 
-  docEl.on('scroll', function () {
-    if (docEl.scrollTop() > 60) {
-      headerEl.addClass('fixed-to-top');
-      headerWrapEl.addClass('fixed-to-top');
-      navEl.addClass('fixed-to-top');
+    var docEl = $(document),
+        headerEl = $('header'),
+        headerWrapEl = $('.main-header-in'),
+        navEl = $('nav'),
+        subnavEl = $('.subnav-wrap'),
+        lastScrollTop = 0;
 
-      // Push subnav down by the navbar height dynamically
-      var navHeight = $('header').outerHeight();
-      subnavEl.css('top', navHeight + 'px');
+    $(window).on('scroll', function () {
 
-    } else {
-      headerEl.removeClass('fixed-to-top');
-      headerWrapEl.removeClass('fixed-to-top');
-      navEl.removeClass('fixed-to-top');
+        var scrollTop = $(this).scrollTop();
 
-      // Reset subnav top when navbar is not fixed
-      subnavEl.css('top', '0px');
-    }
-  });
+        if (scrollTop > 60) {
 
-  linkScroll.click(function (e) {
-    e.preventDefault();
-    $('body, html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 500);
-  });
+            headerEl.addClass('fixed-to-top');
+            headerWrapEl.addClass('fixed-to-top');
+            navEl.addClass('fixed-to-top');
+
+            var navHeight = $('header').outerHeight();
+            subnavEl.css('top', navHeight + 'px');
+
+            // Hide on scroll down
+            if (scrollTop > lastScrollTop) {
+                headerEl.addClass('nav-hide');
+            }
+            // Show on scroll up
+            else {
+                headerEl.removeClass('nav-hide');
+            }
+
+        } else {
+
+            headerEl.removeClass('fixed-to-top nav-hide');
+            headerWrapEl.removeClass('fixed-to-top');
+            navEl.removeClass('fixed-to-top');
+
+            subnavEl.css('top', '0px');
+        }
+
+        lastScrollTop = scrollTop;
+    });
+
 });
 
 
