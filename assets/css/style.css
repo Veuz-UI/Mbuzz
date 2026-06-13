@@ -2935,8 +2935,7 @@ section {
 .ai-consulting-list-item .icon {
   width: 55px;
   height: 55px;
-  margin: 0 auto 12px;
-
+  margin: 0 auto 25px;
   font-size: 40px;
   color: var(--primary-color);
 }
@@ -5807,7 +5806,7 @@ section {
 
 .delivery-framework .timeline {
   border: 0;
-  background: linear-gradient(135deg, #eaf6ff, #efedf6);
+  background: linear-gradient(123deg, rgba(206, 241, 255, 0.5) 0%, #ECEEF5 100%);
 }
 
 .delivery-framework .timeline-item p {
