@@ -3969,9 +3969,9 @@ section {
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 500px;
-    height: 603px;
-    background: radial-gradient(circle, #51256770 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
+    width: 520px;
+    height: 750px;
+    background: radial-gradient(circle, #31248552 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
     filter: blur(50px);
     pointer-events: none;
     z-index: 1;
@@ -3989,6 +3989,7 @@ section {
   border: 1px solid #0db4f92e;
   transition: all 0.3s ease;
   margin-right: 30px;
+  box-shadow: rgb(97 47 144 / 25%) 0px 7px 29px 0px;
 }
 
 .ai-journey-card:hover {
@@ -4766,6 +4767,7 @@ section {
 
 .ai-infra .ai-card:hover {
   border: 1px solid var(--primary-color);
+  background: linear-gradient(269deg, #161822, #0db2f900);
 }
 
 .ai-infra .icon-wrapper{
@@ -4792,6 +4794,19 @@ section {
   margin-bottom: 15px;
 }
 
+.ai-infra .ai-card:hover h3{
+  color: var(--primary-color);
+}
+
+.ai-infra .ai-card:hover svg,
+.ai-infra .ai-card:hover i{
+  stroke: var(--primary-color) !important;
+}
+
+.ai-infra .ai-card:hover svg path{
+  stroke: var(--primary-color) !important;
+ }
+
 .ai-infra .video-box {
   position: relative;
   border-radius: 20px;
@@ -4802,7 +4817,7 @@ section {
 
 .ai-infra .video-box img {
   width: 100%;
-  min-height: 515px;
+  min-height: 473px;
   max-height: 515px;
   height: 100%;
   object-fit: cover;
