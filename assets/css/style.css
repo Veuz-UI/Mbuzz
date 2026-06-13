@@ -44,23 +44,23 @@ body {
 
 .bg-mesh-left {
   position: fixed;
-  left: -100px;
-  top: -20%;
+  left: -110px;
+  top: -24%;
   width: 400px;
   height: 500px;
-  background: radial-gradient(circle, rgb(11 112 175 / 41%) 0%, transparent 70%), radial-gradient(circle, rgb(6 43 72 / 8%) 20%, transparent 80%);
+  background: radial-gradient(circle, #1e92ff2b 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
   filter: blur(50px);
   pointer-events: none;
   z-index: 1;
 }
 .bg-mesh-right {
   position: fixed;
-  right: -100px;
-  top: 50%;
+  right: -22%;
+  top: 22%;
   transform: translateY(-50%);
-  width: 400px;
-  height: 75%;
-  background: radial-gradient(circle, rgb(11 112 175 / 33%) 0%, transparent 70%), radial-gradient(circle, rgb(5 25 44 / 0%) 20%, transparent 80%);
+  width: 700px;
+  height: 1000px;
+  background: radial-gradient(circle, #1e92ff2e 0%, transparent 70%), radial-gradient(circle, #00205366 20%, transparent 80%);
   filter: blur(50px);
   pointer-events: none;
   z-index: 1;
@@ -2507,6 +2507,10 @@ section {
   border-top: 1px solid #0db4f930;
 }
 
+.banner-sub-img {
+  position: relative;
+  z-index: 2;
+}
 .banner-sub-img img {
   height: 250px;
   object-fit: contain;
