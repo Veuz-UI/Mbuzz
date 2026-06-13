@@ -60,7 +60,7 @@ body {
   transform: translateY(-50%);
   width: 700px;
   height: 1000px;
-  background: radial-gradient(circle, #1e92ff21 0%, transparent 70%), radial-gradient(circle, #00205366 20%, transparent 80%);
+  background: radial-gradient(circle, #1e92ff00 0%, transparent 70%), radial-gradient(circle, #00205366 20%, transparent 80%);
   filter: blur(50px);
   pointer-events: none;
   z-index: 1;
