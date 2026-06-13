@@ -4297,8 +4297,18 @@ section {
   padding: 20px 20px 40px 20px;
 }
 
+.professional-ai .heading {
+  margin-bottom: 50px;
+}
+
 .professional-ai .core-card {
     padding: 20px 20px 8px 20px;
+}
+
+@media (max-width: 992px) {
+  .professional-ai .heading {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 600px) {
