@@ -2508,8 +2508,9 @@ section {
 }
 
 .banner-sub-img img {
-  height: 300px;
+  height: 250px;
   object-fit: contain;
+  margin: 10px 0;
 }
 
 @media (max-width: 1300px) {}
@@ -2759,6 +2760,7 @@ section {
 
 .nvidia-card img {
   margin-top: 100px;
+  height: 85px;
 }
 
 .nvidia-card img {
