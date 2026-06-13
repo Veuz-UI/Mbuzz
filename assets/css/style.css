@@ -6101,6 +6101,16 @@ section {
   border-color: #09427E;
 }
 
+.project-list .project-work .proj-body {
+  padding-right: 50px;
+}
+
+@media(max-width:992px) {
+  .project-list .project-work .proj-body {
+    padding-right: 25px;
+  }
+}
+
 @media(max-width:768px) {
   .project-list .clear-btn {
     justify-content: center;
