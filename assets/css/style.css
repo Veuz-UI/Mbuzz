@@ -3986,10 +3986,10 @@ section {
   background: rgb(0 0 0 / 46%);
   padding: 31px 50px;
   border-radius: 30px;
-  border: 1px solid #0db4f92e;
+  border: 1px solid #0db4f917;
   transition: all 0.3s ease;
   margin-right: 30px;
-  box-shadow: rgb(97 47 144 / 25%) 0px 7px 29px 0px;
+  box-shadow: rgb(47 60 144 / 15%) 26px 29px 29px 0px;
 }
 
 .ai-journey-card:hover {
@@ -5305,6 +5305,13 @@ section {
 .ai-factory-faq-item {
   position: relative;
   padding: 18px 0;
+}
+
+.left-ai-factory-faq-col {
+  padding-right: 50px;
+}
+.right-ai-factory-faq-col {
+  padding-left: 50px;
 }
 
 /* gradient border */
