@@ -425,6 +425,10 @@ section {
   position: relative;
 }
 
+.section-header{
+  margin-bottom: 50px;
+}
+
 .head-title img {
   width: 50px;
   margin-bottom: 10px;
@@ -2902,7 +2906,7 @@ section {
 
 /* ------------ ai-consulting ----------*/
 .ai-consulting-list-in {
-  padding: 0 15px 30px;
+  padding: 0 20px 40px;
 }
 
 .ai-consulting-list-item {
@@ -4510,9 +4514,7 @@ section {
 }
 
 .storage-portfolio .portfolio-card {
-  background: linear-gradient(135deg,
-      #eaf6ff,
-      #efedf6);
+  background: linear-gradient(123deg, rgba(206, 241, 255, 0.5) 0%, #cef1ff4a 100%);
   border-radius: 25px;
   padding: 50px;
   text-align: left;
@@ -4527,7 +4529,17 @@ section {
 .storage-portfolio .timeline-item {
   flex: 1;
   border-left: 2px solid #87d0ff;
-  padding: 20px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#enterprise .timeline-item {
+  padding: 10px 20px;
+}
+#enterprise .timeline-row .timeline-item:last-child {
+    border-right: 2px solid #87d0ff;
 }
 
 .storage-portfolio .timeline-item-logo img {
@@ -4550,17 +4562,16 @@ section {
   margin: 0;
 }
 
-/* #enterprise .timeline-row .timeline-item:last-child{
-  border-right:2px solid #87d0ff;
-} */
-
 @media(max-width:991px) {
   .storage-portfolio .timeline-row {
     flex-wrap: wrap;
+    gap: 15px;
   }
-
   .storage-portfolio .timeline-item {
     flex: 0 0 calc(50% - 15px);
+  }
+  .storage-portfolio .timeline-row .timeline-item:last-child {
+    border-right: none;
   }
 }
 
