@@ -66,6 +66,13 @@ body {
   z-index: 4;
 }
 
+@media (max-width: 992px) {
+  .bg-mesh-left,
+  .bg-mesh-right{
+    display: none;
+  }
+}
+
 /* header {
 	overflow: hidden;
 } */
@@ -1877,22 +1884,6 @@ section {
 .owl-stage-outer,
 .owl-item {
   display: flex !important;
-}
-
-/*client dark*/
-.cleint-dark-main{
-  
-}
-.cleint-dark-main .client-container:before,
-.cleint-dark-main .client-container:after{
-  display: none;
-}
-.cleint-dark-main .bs-slider .item img{
-  filter: brightness(0) invert(1);
-  opacity: 1;
-}
-.cleint-dark-main .bs-slider .item img:hover{
-  filter: brightness(0) invert(1);
 }
 
 @media (max-width: 768px) {
@@ -5209,7 +5200,7 @@ section {
 }
 
 .ai-deployment .ai-deployment-type h3 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0;
@@ -5315,12 +5306,13 @@ section {
   align-items: center;
   gap: 15px;
   padding: 30px;
-  background: #f5f5f7;
+  background: #fff;
   border: 1px solid #cfe7ff;
   border-radius: 20px;
   transition: all 0.3s ease;
   width: 95%;
   margin: 0 auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .elv-service-card:hover {
@@ -5464,6 +5456,10 @@ section {
 
 
 /* --------- AI Labs ----------- */
+.ai-partnership .ai-partnership-tabs-out{
+  width: 90%;
+  margin: 0 auto;
+}
 .ai-partnership .ai-partnership-tabs {
   display: flex;
   align-items: center;
@@ -5554,6 +5550,12 @@ section {
 
   .ai-partnership .content-text p {
     font-size: 16px;
+  }
+}
+
+@media(max-width: 992px) {
+  .ai-partnership .ai-partnership-tabs-out{
+    width: 100%;
   }
 }
 
