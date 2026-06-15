@@ -897,6 +897,15 @@ $(document).ready(function(){
 });
 
 
+// page refresh time show the page top
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+window.onload = function () {
+    window.scrollTo(0, 0);
+};
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab-btn");

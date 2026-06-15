@@ -98,9 +98,9 @@
 	}
 
 	.inner-subnav-wrap {
-		position: sticky;
-		top: 52px;
-		z-index: 7;
+		position: initial; /*sticky*/
+		/* top: 52px;
+		z-index: 7; */
 	}
 
 	.nav-desc-menu{
