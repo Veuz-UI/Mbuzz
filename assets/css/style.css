@@ -1548,17 +1548,6 @@ section {
     zoomInOut 4s ease-in-out infinite alternate; */
 }
 
-/* Zoom */
-/* @keyframes zoomInOut {
-  from{
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.08);
-  }
-} */
-
 @media (max-width: 992px) {
   .ai-about {
     padding: 80px 0 0px 0 !important;
@@ -6087,8 +6076,9 @@ section {
 .service-workforce .service-item h5 {
   color: #fff;
   font-size: 13px;
-  margin-bottom: 8px;
   font-weight: 400;
+  margin-bottom: 0px;
+  line-height: 1.5;
 }
 
 .service-workforce .service-item p {
@@ -6130,8 +6120,8 @@ section {
 
 
 /* ------------- careers ---------------- */
-.left-career-about {
-  padding-right: 10px;
+.logo-card{
+  padding-left: 30px;
 }
 
 .logo-card img {
@@ -6154,7 +6144,7 @@ section {
 .career-life .life-card {
   min-height: 250px;
   background: #fff;
-  border: 1px solid #AEC3D8;
+  position: relative;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -6163,6 +6153,18 @@ section {
   text-align: center;
   padding: 30px;
   transition: all 0.3s ease;
+}
+.career-life .life-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    padding: 1px;
+    background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 
 .career-life .life-card:hover {
@@ -7720,7 +7722,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   box-shadow: none;
 }
 .ai-consulting-list-white .ai-consulting-list-item::before {
-  background: linear-gradient(89deg, #518ca896, #0fb3fa6e);
+  background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
 }
 
 .ai-consulting-list-white .ai-consulting-list-item h4 {
