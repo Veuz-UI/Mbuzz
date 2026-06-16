@@ -194,10 +194,10 @@ header.fixed-to-top .main-header {
 }
 
 header{
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 header.nav-hide{
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 /*logo*/
@@ -2506,8 +2506,8 @@ section {
 }
 
 .inner-banner .breadcrumb .sep {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.25);
+  font-size: 15px;
+  color: var(--primary-color);
 }
 
 .inner-banner .breadcrumb .current {
