@@ -5065,9 +5065,6 @@ section {
   padding-right: 80px;
 }
 
-.ai-hero-content p{
-  text-align: justify;
-}
 
 @media (max-width: 992px) {
   .nvidia-bg-img {
