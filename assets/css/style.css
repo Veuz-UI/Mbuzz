@@ -1993,10 +1993,12 @@ section {
 
 .all-works .tab-panel {
   display: none;
+  min-height: 480px;
 }
 
 .all-works .tab-panel.active {
   display: block;
+  min-height: 480px;
 }
 
 /* CASE STUDIES grid */
@@ -2207,6 +2209,13 @@ section {
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
   font-family: "Manrope", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .all-works .tab-panel,
+  .all-works .tab-panel.active {
+    min-height: 450px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3447,10 +3456,10 @@ section {
   font-weight: 500;
   letter-spacing: 0.07em;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   line-height: 1.35;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  /* writing-mode: vertical-rl;
+  transform: rotate(180deg); */
   min-height: auto;
 }
 
