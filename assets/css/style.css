@@ -923,7 +923,7 @@ section {
   font-weight: 400;
   color: #fff;
   font-family: "Noto Kufi Arabic", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer-brand p {
@@ -972,6 +972,7 @@ section {
 /* CONTACT */
 .footer-contact .contact-item {
   display: flex;
+  align-items: self-start;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -1993,13 +1994,32 @@ section {
 
 .all-works .tab-panel {
   display: none;
-  min-height: 480px;
+  /* min-height: 480px; */
 }
 
 .all-works .tab-panel.active {
   display: block;
-  min-height: 480px;
+  /* min-height: 480px; */
 }
+
+
+.all-works .tab-panel {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  /* transform: translateY(1px);
+  transition: all 0.5s ease; */
+}
+
+.all-works .tab-panel.active {
+  visibility: visible;
+  opacity: 1;
+  max-height: 500px;
+  /* transform: translateY(0); */
+}
+
 
 /* CASE STUDIES grid */
 .case-study-in .owl-stage-outer,
@@ -2209,13 +2229,6 @@ section {
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
   font-family: "Manrope", sans-serif;
-}
-
-@media (max-width: 992px) {
-  .all-works .tab-panel,
-  .all-works .tab-panel.active {
-    min-height: 450px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -4637,7 +4650,7 @@ section {
 
 .left-contact label {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: var(--white);
   margin-bottom: 8px;
@@ -4661,7 +4674,7 @@ section {
 
 .floating-label input::placeholder,
 .left-contact textarea::placeholder {
-  color: #fff;
+  color: #ffffffb2;
   opacity: 1;
 }
 
