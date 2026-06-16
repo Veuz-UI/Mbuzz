@@ -1852,11 +1852,13 @@ section {
 }
 
 .client-container .bs-slider .item img {
-  height: 100px;
+  width: 80%;
+  height: 50px;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0);
+  margin: 0 auto;
+  /* filter: grayscale(100%) brightness(0); */
   transition: 0.4s ease;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .client-container .bs-slider .item img:hover {
@@ -2932,7 +2934,7 @@ section {
 
 .ai-consulting-list-item {
   position: relative;
-  padding: 39px 57px;
+  padding: 41px 57px;
   border-radius: 30px;
   color: #fff;
   text-align: center;
@@ -2942,6 +2944,7 @@ section {
   background: linear-gradient(-65deg, #ffffff00 0%, #ffffff17 100%);
   /* transition: 0.4s ease; */
   height: 100%;
+  border: 1px solid transparent;
 }
 
 .ai-consulting-list-item::before {
@@ -4507,6 +4510,10 @@ section {
   width: 650px;
 }
 
+.storage-portfolio .portfolio-card-head h3{
+  font-weight: 400;
+}
+
 .storage-portfolio .portfolio-tabs {
   background-color: #E0E0E0;
   padding: 6px 1px;
@@ -5222,7 +5229,7 @@ section {
 }
 
 .ai-deployment .ai-deployment-type h3 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0;
@@ -5231,7 +5238,7 @@ section {
 }
 
 .ai-deployment .ai-deployment-type p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
@@ -5527,6 +5534,7 @@ section {
 
 .ai-partnership .tab-content {
   display: none;
+  padding: 0 30px;
 }
 
 .ai-partnership .tab-content.active {
@@ -6048,10 +6056,6 @@ section {
   margin-bottom: 0;
   margin-top: 2px;
 }
-
-
-
-
 
 .service-workforce .workforce-image {
   height: 100%;
@@ -7571,12 +7575,16 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   background: linear-gradient(rgb(244, 247, 250), rgb(244, 247, 250)) padding-box padding-box, linear-gradient(90deg, rgb(134 228 255 / 44%), rgb(178 178 178 / 28%)) border-box border-box;
   padding: 5px 10px;
   margin: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .partner-box img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 100px;
+  height: 75px;
   object-fit: contain;
   margin: auto;
   display: block;
