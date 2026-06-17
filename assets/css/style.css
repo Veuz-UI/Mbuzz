@@ -4241,7 +4241,7 @@ section {
   position: relative;
   background-color: #00001c !important;
   overflow: hidden;
-  background: url(../img/ai-factory-2.webp) no-repeat center/cover;
+  background: url(../img/ai-factory-2.png) no-repeat center/cover;
 }
 
 .ai-factory .heading {
@@ -4287,13 +4287,14 @@ section {
   margin: 0 auto;
   width: 100%;
 }
-.sovereign-ai-aleria-in::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('../img/soverign-ai-operation.webp') no-repeat center center/cover;
-    transition: transform 0.8s ease;
-    z-index: -1;
+.sovereign-ai-aleria-in::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../img/soverign-ai-operation.webp') no-repeat center center/cover;
+  transition: transform 0.8s ease;
+  z-index: -1;
+  opacity: 0.3;
 }
 .sovereign-ai-aleria-in:hover::before{
     transform: scale(1.1) translateY(-10px);
