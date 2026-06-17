@@ -186,9 +186,10 @@ a {
 
 header.fixed-to-top .main-header {
   position: fixed; /* fixed */
-  background: #00000082;
+  /* background: #00000082; */
+  background: #000000d1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 8;
+  z-index: 9; /*z-index: 8;*/
   top: 0;
   transition: transform 0.4s ease;
 }
@@ -1394,6 +1395,7 @@ section {
   border: 1px solid transparent;
   color: #fff;
   background: linear-gradient(123deg, rgb(255 255 255 / 8%) 0%, rgb(255 255 255 / 0%) 100%);
+  box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -1405,9 +1407,9 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 35px;
+  border-radius: 33px;
   padding: 1px;
-  background: linear-gradient(269deg, #215670, #0db2f900);
+  background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -1595,10 +1597,21 @@ section {
   padding: 10px 50px;
   border-radius: 50px;
   background: linear-gradient(90deg, #6c757d26 0%, #213a7021 100%);
-  border: 1px solid rgb(13 180 249 / 20%);
   transition: background 0.4s ease, border-color 0.4s ease;
   position: relative;
   z-index: 5;
+}
+.innovation-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 1px;
+  background: linear-gradient(89deg, #162845, #0F4566);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .innovation-box:hover {
@@ -1618,6 +1631,9 @@ section {
 @media (max-width: 768px) {
   .innovation-box {
     padding: 30px;
+    border-radius: 30px;
+  }
+  .innovation-box::before{
     border-radius: 30px;
   }
 
@@ -1853,12 +1869,12 @@ section {
 
 .client-container .bs-slider .item img {
   width: 100%;
-  height: 70px;
+  height: 80px;
   object-fit: contain;
   margin: 0 auto;
   /* filter: grayscale(100%) brightness(0); */
   transition: 0.4s ease;
-  opacity: 0.4;
+  /* opacity: 0.6; */
 }
 
 .client-container .bs-slider .item img:hover {
@@ -2621,7 +2637,7 @@ section {
 
 .inner-subnav-links li a {
   display: block;
-  padding: 25px;
+  padding: 22px 25px;
   font-size: 12px;
   font-weight: 300;
   color: white;
@@ -2772,6 +2788,11 @@ section {
 }
 
 /* ------------ ai-overview ----------*/
+.ai-overview .heading{
+  width: 70%;
+  margin: 0 auto 30px;
+}
+
 .ai-overview-in {
   width: 75%;
   margin: 0 auto;
@@ -2957,9 +2978,9 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 30px;
+  border-radius: 28px;
   padding: 1px;
-  background: linear-gradient(269deg, #215670, #0db2f900);
+  background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -3238,7 +3259,10 @@ section {
   box-shadow: none;
 }
 
-
+/* .iot-faq .right-faq-img img {
+  min-height: 600px;
+  max-height: 600px;
+} */
 /* .faq-latest .right-faq-img img {
     max-height: 635px;
     min-height: 635px;
@@ -3331,7 +3355,18 @@ section {
   background: linear-gradient(123deg, rgb(255 255 255 / 4%) 0%, rgba(255, 255, 255, 4%) 100%);
   padding: 80px;
   border-radius: 20px;
-  border: 1px solid #0db4f91f;
+}
+.infrastructure-wrapper-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(89deg, #162845, #0F4566);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .infrastructure-wrapper {
@@ -4260,7 +4295,7 @@ section {
 
 .ai-factory-journey-card {
   backdrop-filter: blur(13.899999618530273px);
-  background: rgb(0 0 0 / 46%);
+  background: rgb(0 0 0 / 39%);
   padding: 31px 50px;
   border-radius: 30px;
   border: 1px solid #0db4f92e;
@@ -4824,7 +4859,6 @@ section {
   padding: 53px 25px;
   min-height: 215px;
   transition: all 0.4s ease;
-  border: 1px solid rgb(2 84 113 / 36%);
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -4840,7 +4874,7 @@ section {
   inset: 0;
   border-radius: 30px;
   padding: 1px;
-  background: linear-gradient(269deg, #215670, #0db2f900);
+  background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -4893,7 +4927,6 @@ section {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgb(2 84 113 / 36%);
   height: 100%;
 }
 
@@ -4912,7 +4945,7 @@ section {
   inset: 0;
   border-radius: 20px;
   padding: 1px;
-  background: linear-gradient(269deg, #0db2f900, #0899f9fa);
+  background: linear-gradient(269deg, #083e73bd, #0899f9fa);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -4967,7 +5000,7 @@ section {
   inset: 0;
   border-radius: 14px;
   padding: 1px;
-  background: linear-gradient(269deg, #215670, #0db2f900);
+  background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -5021,8 +5054,20 @@ section {
   display: block;
   filter: brightness(0.75);
   border-radius: 24px;
-  border: 1px solid #0db4f957;
 }
+.ai-hero-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  padding: 1px;
+  background: linear-gradient(89deg, #165b83, #062a3f);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 .nvidia-bg-img:hover {
   border-color: var(--primary-color);
 }
@@ -5036,7 +5081,6 @@ section {
   border-radius: 20px;
   background: rgb(0 0 0 / 72%);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 2;
   transition: transform 0.3s ease;
   color: var(--white);
@@ -5050,6 +5094,19 @@ section {
   box-shadow: 0 0 40px rgba(0, 255, 200, 0.15);
   opacity: 0.6;
   animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.ai-hero-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(89deg, #162845, #0F4566);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 @keyframes pulseGlow {
@@ -5625,8 +5682,8 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
 }
-
 
 /* nvidia ai stack section */
 .nvidia-stack-section .nvidia-stack-card {
@@ -7587,8 +7644,8 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .partner-box img {
-  width: 100px;
-  height: 75px;
+  width: 100%;
+  height: 80px;
   object-fit: contain;
   margin: auto;
   display: block;
@@ -7616,7 +7673,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   display: flex;
   align-items: center;
   border: 1px solid transparent;
-  background: linear-gradient(#020b1e, #020b1e) padding-box, linear-gradient(89deg, rgb(13 180 249) 0%, rgba(13, 180, 249, 1) 50%, rgb(13 180 249 / 0%) 100%) border-box;
+  background: linear-gradient(#020b1e, #020b1e) padding-box, linear-gradient(89deg, rgb(13 180 249) 0%, rgba(13, 180, 249, 1) 50%, rgb(13 180 249 / 18%) 100%) border-box;
   margin: 0px 70px;
   border-radius: 50px;
 }
