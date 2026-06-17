@@ -1741,7 +1741,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin-bottom: 40px;
 }
 
@@ -5711,10 +5711,10 @@ section {
 .in-build-lifecycle .timeline {
   display: flex;
   gap: 0;
-  padding: 60px 40px;
+  padding: 75px 50px;
   position: relative;
   border-radius: 30px;
-  background: rgb(99 99 99 / 14%) 0px 3px 15px 0px;
+  background: linear-gradient(-65deg, #ffffff00 0%, #ffffff17 100%);
 }
 .in-build-lifecycle .timeline::before {
     content: "";
@@ -5722,7 +5722,7 @@ section {
     inset: 0;
     border-radius: 30px;
     padding: 1px;
-    background: linear-gradient(269deg, #215670, #0db2f900);
+    background: linear-gradient(89deg, #162845, #0F4566);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -5745,7 +5745,7 @@ section {
 
 .in-build-lifecycle .timeline-item {
   position: relative;
-  padding-top: 35px;
+  padding-top: 55px;
 }
 
 .in-build-lifecycle .step {
