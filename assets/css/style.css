@@ -1852,13 +1852,13 @@ section {
 }
 
 .client-container .bs-slider .item img {
-  width: 80%;
-  height: 50px;
+  width: 100%;
+  height: 70px;
   object-fit: contain;
   margin: 0 auto;
   /* filter: grayscale(100%) brightness(0); */
   transition: 0.4s ease;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .client-container .bs-slider .item img:hover {
@@ -2818,6 +2818,12 @@ section {
   line-height: 1.4;
   text-align: center;
   color: #fff;
+}
+
+.ai-factory-about .nvidia-card img{
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 @media (max-width: 992px) {
@@ -4294,7 +4300,7 @@ section {
   background: url('../img/soverign-ai-operation.webp') no-repeat center center/cover;
   transition: transform 0.8s ease;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .sovereign-ai-aleria-in:hover::before{
     transform: scale(1.1) translateY(-10px);
