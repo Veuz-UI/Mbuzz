@@ -549,10 +549,12 @@ section {
   font-family: "Manrope", sans-serif;
 }
 
-.login-btn:hover {
+.login-btn:hover,
+.login-btn.active {
   background: var(--gradient);
   border-color: transparent;
   box-shadow: 0 5px 20px rgba(1, 73, 116, 0.51);
+  border: 0;
 }
 
 .login-btn img {
@@ -3055,10 +3057,13 @@ section {
   color: #fff;
 }
 
-@media (max-width: 1500px) {
-  /* .ai-consulting-list-item {
-    padding: 30px 50px;
-  } */
+@media (max-width: 1200px) {
+  .ai-consulting-list-in {
+    padding: 0 7px 15px;
+  }
+  .ai-consulting-list-item {
+    padding: 41px 15px;
+  }
 }
 
 @media (max-width: 768px) {
