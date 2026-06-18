@@ -4171,15 +4171,12 @@ section {
 
 
 /* ------- ai-enterprises ------------- */
-
 .ai-enterprises {
   background-color: white;
 }
-
 .enterprises-card-out {
   margin-top: 30px;
 }
-
 .ai-enterprises .enterprises-card {
   position: relative;
   border-radius: 30px;
@@ -4188,12 +4185,10 @@ section {
   margin: 0 3px;
   cursor: pointer;
 }
-
 .enterprises-card .enterprises-icon {
   position: absolute;
   inset: 0;
 }
-
 .enterprises-card .enterprises-icon img {
   width: 100%;
   height: 100%;
@@ -4201,11 +4196,9 @@ section {
   display: block;
   transition: transform 0.55s ease;
 }
-
 .enterprises-card:hover .enterprises-icon img {
   transform: scale(1.06);
 }
-
 .enterprises-card::before {
   content: '';
   position: absolute;
@@ -4214,7 +4207,6 @@ section {
   border-radius: 20px;
   transition: background 0.4s ease;
 }
-
 .enterprises-card .enterprises-num {
   position: absolute;
   top: 16px;
@@ -4225,7 +4217,6 @@ section {
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.06em;
 }
-
 .enterprises-card .enterprises-cont {
   position: absolute;
   bottom: 0;
@@ -4234,7 +4225,6 @@ section {
   z-index: 2;
   padding: 18px 18px 30px;
 }
-
 .enterprises-card h3 {
   font-size: 24px;
   font-weight: 300;
@@ -4244,11 +4234,9 @@ section {
   margin-bottom: 0;
   transition: margin-bottom 0.35s ease;
 }
-
 .enterprises-card:hover h3 {
   margin-bottom: 10px;
 }
-
 .enterprises-card p {
   font-size: 14px;
   font-weight: 300;
@@ -4263,7 +4251,6 @@ section {
     opacity 0.35s ease,
     transform 0.35s ease;
 }
-
 .enterprises-card:hover p {
   max-height: 150px;
   opacity: 1;
@@ -4274,11 +4261,9 @@ section {
   .ai-enterprises .enterprises-card {
     height: 300px;
   }
-
   .enterprises-card h3 {
     font-size: 20px;
   }
-
   .enterprises-card p {
     font-size: 13px;
   }
@@ -4838,6 +4823,13 @@ section {
 .map-box iframe {
   border: 10px solid #abcd !important;
   border-radius: 30px;
+}
+
+.map-box iframe{
+    width: 100%;
+    height: 450px;
+    border: 0;
+    filter: grayscale(1) invert(1) contrast(1.2);
 }
 
 @media (max-width: 600px) {
@@ -6735,6 +6727,132 @@ section {
     height: 25px;
   }
 }
+
+
+/* ------- mbuzz-labs-what-we ------------- */
+.mbuzz-labs-what-we .mbuzz-labs-what-we-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 450px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.mbuzz-labs-what-we-card .mbuzz-labs-what-we-icon {
+  position: absolute;
+  inset: 0;
+}
+
+.mbuzz-labs-what-we-card .mbuzz-labs-what-we-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.mbuzz-labs-what-we-card:hover .mbuzz-labs-what-we-icon img {
+  transform: scale(1.06);
+}
+
+.mbuzz-labs-what-we-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 20px;
+  transition: background 0.4s ease;
+}
+
+.mbuzz-labs-what-we-card .mbuzz-labs-what-we-num {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.06em;
+}
+
+.mbuzz-labs-what-we-card .mbuzz-labs-what-we-cont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 18px 18px 30px;
+}
+
+.mbuzz-labs-what-we-card h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  transition: margin-bottom 0.35s ease;
+}
+
+.mbuzz-labs-what-we-card:hover h3 {
+  margin-bottom: 10px;
+}
+
+.mbuzz-labs-what-we-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: max-height 0.4s ease,
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.mbuzz-labs-what-we-card:hover p {
+  max-height: 150px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1500px) {
+  .mbuzz-labs-what-we .mbuzz-labs-what-we-card {
+    height: 360px;
+  }
+
+  .mbuzz-labs-what-we-card h3 {
+    font-size: 20px;
+  }
+
+  .mbuzz-labs-what-we-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mbuzz-labs-what-we-card h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mbuzz-labs-what-we-card-out{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+    .mbuzz-labs-what-we .mbuzz-labs-what-we-card {
+        height: 300px;
+    }
+}
+
+/* --------- END  ----------- */
 
 
 /* -----------------------------------------
