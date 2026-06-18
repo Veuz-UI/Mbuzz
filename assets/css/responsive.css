@@ -95,7 +95,7 @@
 	}
 
 	.inner-subnav-wrap {
-		position: initial; /*sticky*/
+		position: relative; /*sticky*/
 		/* top: 52px;
 		z-index: 7; */
 	}
