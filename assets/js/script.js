@@ -527,7 +527,7 @@ $(document).ready(function () {
         margin: 15,
         nav: false,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 700,
         responsive: {
             0: { items: 1 },

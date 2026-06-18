@@ -44,10 +44,10 @@ body {
 
 .bg-mesh-left {
   position: fixed;
-  left: -117px;
-  top: -44%;
-  width: 600px;
-  height: 500px;
+  left: -250px;
+  top: -27%;
+  width: 800px;
+  height: 550px;
   background: radial-gradient(circle, #1e92ff4a 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
   filter: blur(50px);
   pointer-events: none;
@@ -487,8 +487,8 @@ section {
 }
 
 .heading {
-  font-size: 33px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 400;
   margin-bottom: 25px;
   color: #0396d3;
   font-family: "Manrope", sans-serif;
@@ -2283,7 +2283,7 @@ section {
   font-weight: 400;
   line-height: 20px;
   border-radius: 50px;
-  padding: 11px 10px;
+  padding: 11px 15px;
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
   font-family: "Manrope", sans-serif;
@@ -2582,7 +2582,7 @@ section {
 }
 
 .banner-inner-wrapper {
-  margin-top: 130px;
+  margin-top: 120px;
   display: flex;
   justify-content: space-between;
   min-height: 260px;
@@ -2703,7 +2703,7 @@ section {
   bottom: 0;
   left: 22px;
   right: 22px;
-  height: 4px;
+  height: 2px;
   background: var(--gradient);
   transform: scaleX(0);
   transform-origin: left;
@@ -2861,7 +2861,7 @@ section {
 
 .nvidia-card img {
   margin-top: 100px;
-  height: 85px;
+  height: 75px;
 }
 
 .nvidia-card img {
@@ -2950,9 +2950,13 @@ section {
 .ai-approach-in {
   border-radius: 50px;
   padding: 50px;
-  backdrop-filter: blur(70px);
-  box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
-  background: linear-gradient(123deg, rgba(206, 241, 255, 0.5) 0%, #cef1ff4a 100%);
+  background: linear-gradient(86deg,
+      rgba(206, 241, 255, 0.50) 11.14%,
+      rgba(206, 241, 255, 0.04) 113.29%);
+  box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+   transition: background 0.6s ease;
 }
 
 .ai-approach-in:hover {
@@ -3009,29 +3013,32 @@ section {
 
 /* ------------ ai-consulting ----------*/
 .ai-consulting-list-in {
-  padding: 0 20px 40px;
+  padding: 0 10px 40px;
 }
 
 .ai-consulting-list-item {
   position: relative;
-  padding: 41px 57px;
+  padding: 15px 40px;
   border-radius: 30px;
   color: #fff;
   text-align: center;
   overflow: hidden;
-  backdrop-filter: blur(70px);
-  box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
-  background: linear-gradient(-65deg, #ffffff00 0%, #ffffff17 100%);
+  background: linear-gradient(86deg,
+      rgba(255, 255, 255, 0.08) 11.14%,
+      rgba(255, 255, 255, 0.01) 113.29%);
+  box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
   /* transition: 0.4s ease; */
   height: 100%;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 }
 
 .ai-consulting-list-item::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 28px;
+  border-radius: 30px;
   padding: 1px;
   background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -3076,7 +3083,7 @@ section {
 }
 
 .ai-consulting-list-item h4 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 16px;
@@ -3092,7 +3099,6 @@ section {
   font-weight: 400;
   color: #b6b6b6;
   line-height: 1.5;
-  margin-bottom: 0;
 }
 
 .ai-consulting-list-item p span {
@@ -3243,8 +3249,8 @@ section {
 }
 
 .left-faq .accordion-button .accrd-head {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   color: #081226;
   font-family: Manrope, sans-serif;
 }
@@ -3282,8 +3288,8 @@ section {
 
 .left-faq .accordion-body {
   font-size: 13px;
-  font-weight: 200;
-  line-height: 25px;
+  font-weight: 300;
+  line-height: 1.5;
   padding: 0 1.5rem 1.5rem;
   background: transparent;
   color: #1b2538;
@@ -3388,7 +3394,7 @@ section {
 }
 
 .faq-third-outer .faq-third-item h6 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #fff;
   margin-bottom: 0;
@@ -3407,17 +3413,23 @@ section {
 /* ------------- AI Infrastructure ------------- */
 
 .infrastructure-wrapper-main {
-  backdrop-filter: blur(70px);
+  /* backdrop-filter: blur(70px);
   box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
-  background: linear-gradient(123deg, rgb(255 255 255 / 4%) 0%, rgba(255, 255, 255, 4%) 100%);
-  padding: 80px;
-  border-radius: 20px;
+  background: linear-gradient(123deg, rgb(255 255 255 / 4%) 0%, rgba(255, 255, 255, 4%) 100%); */
+  padding: 70px;
+  border-radius: 40px;
+  background: linear-gradient(86deg,
+      rgba(255, 255, 255, 0.08) 11.14%,
+      rgba(255, 255, 255, 0.01) 113.29%);
+  box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
 }
 .infrastructure-wrapper-main::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 20px;
+  border-radius: 40px;
   padding: 1px;
   background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -3440,7 +3452,7 @@ section {
 
 .infrastructure-wrapper__panel {
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
   transition: flex 0.65s cubic-bezier(0.77, 0, 0.18, 1);
@@ -3614,13 +3626,33 @@ section {
   position: relative;
   background-blend-mode: normal;
   --f2w-order: 1;
-  background-image: linear-gradient(#0d0c12 0%, #0d111d 100%);
-  box-shadow: inset 0 -1.2px 13.2px #29b52e33, inset 0 -36.5px 14.6px -1.2px #29b52e26, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -12.2px #3229b580, inset 0 -85.8px 57px -40.2px #29b52e;
+  background: linear-gradient(
+        180deg,
+        #0D0C12 0%,
+        #0D111D 100%
+    );
+
+    box-shadow:
+        inset 0 -1.218px 13.156px rgba(41, 181, 46, 0.20),
+        inset 0 -36.544px 14.618px -1.218px rgba(41, 181, 46, 0.15),
+        inset 0 -29.235px 20.343px -10.963px rgba(255, 255, 255, 0.64),
+        inset 0 -41.417px 32.524px -12.181px rgba(50, 41, 181, 0.50),
+        inset 0 -121.814px 57.009px -40.199px #29B52E;
 }
 
 .infrastructure-wrapper__panel--1 {
-  background-image: linear-gradient(#0d0c12 0%, #0d111d 100%);
-  box-shadow: inset 0 -1.2px 13.2px #29b52e33, inset 0 -36.5px 14.6px -1.2px #29b52e26, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -12.2px #3229b580, inset 0 -85.8px 57px -40.2px #29b52e;
+  background: linear-gradient(
+        180deg,
+        #0D0C12 0%,
+        #0D111D 100%
+    );
+
+    box-shadow:
+        inset 0 -1.218px 13.156px rgba(41, 181, 46, 0.20),
+        inset 0 -36.544px 14.618px -1.218px rgba(41, 181, 46, 0.15),
+        inset 0 -29.235px 20.343px -10.963px rgba(255, 255, 255, 0.64),
+        inset 0 -41.417px 32.524px -12.181px rgba(50, 41, 181, 0.50),
+        inset 0 -121.814px 57.009px -40.199px #29B52E;
 }
 
 .infrastructure-wrapper__panel--1 .infrastructure-wrapper__bg-glow {
@@ -4222,7 +4254,7 @@ section {
 }
 .ai-enterprises .enterprises-card {
   position: relative;
-  border-radius: 30px;
+  border-radius: 40px;
   overflow: hidden;
   height: 320px;
   margin: 0 3px;
@@ -4338,7 +4370,7 @@ section {
 .ai-factory-journey-card {
   backdrop-filter: blur(13.899999618530273px);
   background: rgb(0 0 0 / 39%);
-  padding: 31px 50px;
+  padding: 40px 50px;
   border-radius: 30px;
   border: 1px solid #0db4f92e;
   transition: all 0.3s ease;
@@ -4443,7 +4475,7 @@ section {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .sovereign-ai-aleria .check-icon {
@@ -4477,8 +4509,14 @@ section {
   color: #fff;
   overflow: hidden;
   background-blend-mode: normal;
-  background-image: linear-gradient(#0d0c12 0%, #0d111d 100%);
-  box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff26, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -12.2px #0db4f980;
+  background: linear-gradient(180deg,
+      #0D0C12 0%,
+      #0D111D 100%);
+  box-shadow:
+    inset 0 -0.954px 10.299px rgba(102, 148, 255, 0.20),
+    inset 0 -28.608px 11.443px -0.954px rgba(35, 101, 255, 0.15),
+    inset 0 -22.886px 15.925px -8.582px rgba(255, 255, 255, 0.64),
+    inset 0 -32.422px 25.461px -9.536px rgba(13, 180, 249, 0.50);
 }
 
 /* .applied-ai .core-card:hover {
@@ -4510,14 +4548,14 @@ section {
 }
 
 .applied-ai .core-card h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
   font-family: "Manrope", sans-serif;
 }
 
 .applied-ai .core-card p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 1.5;
   color: #FFFFFF;
@@ -4561,7 +4599,7 @@ section {
 }
 
 .professional-ai .core-card {
-    padding: 20px 20px 8px 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 @media (max-width: 992px) {
@@ -4843,6 +4881,7 @@ section {
 .right-contact svg {
   width: 20px;
   color: var(--primary-color);
+  margin-top: 4px;
 }
 
 .right-contact p {
@@ -4901,10 +4940,13 @@ section {
 
 /* --------- Benefits of an AI Factory ----------- */
 .ai-infra .ai-card {
-  backdrop-filter: blur(70px);
-  box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
-  background: linear-gradient(-65deg, #ffffff00 0%, #ffffff17 100%);
-  border-radius: 30px;
+  background: linear-gradient(86deg,
+      rgba(255, 255, 255, 0.08) 11.14%,
+      rgba(255, 255, 255, 0.01) 113.29%);
+  box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  border-radius: 40px;
   padding: 53px 25px;
   min-height: 215px;
   transition: all 0.4s ease;
@@ -4921,7 +4963,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 1px;
   background: linear-gradient(89deg, #162845, #0F4566);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -5029,7 +5071,7 @@ section {
 }
 
 .ai-infra .video-caption {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 200;
   color: #fff;
   backdrop-filter: blur(70px);
@@ -5122,11 +5164,11 @@ section {
 }
 .ai-hero-content {
   position: absolute;
-  top: 60px;
+  top: 50px;
   left: 60px;
   max-width: 740px;
   width: 100%;
-  padding: 28px;
+  padding: 40px;
   border-radius: 20px;
   background: rgb(0 0 0 / 72%);
   backdrop-filter: blur(16px);
@@ -5139,7 +5181,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 0 40px rgba(0, 255, 200, 0.15);
   opacity: 0.6;
   animation: pulseGlow 3s ease-in-out infinite;
@@ -5216,7 +5258,7 @@ section {
 }
 
 .ai-real-world-impact .card-icon {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .ai-real-world-impact .card-icon img {
@@ -5239,7 +5281,7 @@ section {
 
 .ai-real-world-impact .core-card p {
   font-size: 13px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
   color: var(--black);
   margin-bottom: 0;
@@ -5340,7 +5382,7 @@ section {
 
 .ai-deployment .ai-deployment-type h3 {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   margin-bottom: 0;
   transition: .5s;
@@ -5349,7 +5391,7 @@ section {
 
 .ai-deployment .ai-deployment-type p {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0;
   transition: .5s;
@@ -5457,6 +5499,7 @@ section {
 .elv-service-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(123deg, rgb(13 163 231 / 14%) 0%, rgb(255 255 255 / 0%) 100%);
 }
 
 .elv-service-icon {
@@ -5478,7 +5521,7 @@ section {
 
 .elv-service-content h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   color: #1d2433;
@@ -5556,7 +5599,7 @@ section {
 }
 
 .ai-factory-faq-body {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   max-height: 0;
   overflow: hidden;
@@ -5569,7 +5612,7 @@ section {
   max-height: 200px;
   opacity: 0.8;
   margin-top: 2px;
-  color: var(--white);
+  color: #ffffffa6;
 }
 
 .ai-factory-faq-item.active .ai-factory-faq-icon {
@@ -5726,7 +5769,7 @@ section {
 
 /* edge computing */
 .edge-computing-arch-in img {
-  border-radius: 30px;
+  border-radius: 40px;
   border: 1px solid #0db4f957;
   width: 100%;
   height: 100%;
@@ -5827,7 +5870,11 @@ section {
   padding: 75px 50px;
   position: relative;
   border-radius: 30px;
-  background: linear-gradient(-65deg, #ffffff00 0%, #ffffff17 100%);
+  background: linear-gradient(86deg,
+      rgba(255, 255, 255, 0.08) 11.14%,
+      rgba(255, 255, 255, 0.01) 113.29%);
+  box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
+  backdrop-filter: blur(35px);
 }
 .in-build-lifecycle .timeline::before {
     content: "";
@@ -5876,7 +5923,7 @@ section {
 }
 
 .in-build-lifecycle .timeline-item h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   color: #fff;
@@ -5987,9 +6034,14 @@ section {
   flex-direction: column;
   gap: 18px;
   padding: 30px;
-  background: linear-gradient(-65deg, #ffffff00 0%, #ffffff17 100%);
   border-radius: 30px;
   position: relative;
+  background: linear-gradient(86deg,
+      rgba(255, 255, 255, 0.08) 11.14%,
+      rgba(255, 255, 255, 0.01) 113.29%);
+  box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
 }
 .intelligent-ai .image-panel::before {
   content: "";
@@ -6143,7 +6195,7 @@ section {
 
 /* --------- service page ----------- */
 .service-page .core-card {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .delivery-framework {
@@ -6175,7 +6227,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 40px;
   display: block;
   max-height: 500px;
   overflow: hidden;
@@ -6268,7 +6320,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 30px;
+  border-radius: 40px;
 }
 
 .career-life {
@@ -6329,7 +6381,7 @@ section {
 }
 
 .career-life .life-card h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
@@ -7807,7 +7859,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 
 .partner-box {
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 15px;
   background: linear-gradient(rgb(244, 247, 250), rgb(244, 247, 250)) padding-box padding-box, linear-gradient(90deg, rgb(134 228 255 / 44%), rgb(178 178 178 / 28%)) border-box border-box;
   padding: 5px 10px;
   margin: 5px;
