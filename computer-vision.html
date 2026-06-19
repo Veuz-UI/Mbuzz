@@ -19,6 +19,7 @@
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -48,7 +49,7 @@
             <div class="nav-desc-menu">
               <ul>
                 <li class="nav-menu-item"><a href="index.html">Home</a></li>
-                <li class="dropdown nav-menu-item">
+                <li class="dropdown nav-menu-item active-menu">
                   <a href="#" class="dropdown-toggle">Al</a>
                   <ul class="dropdown-menu">
                     <li class="submenu">
@@ -56,7 +57,7 @@
                       <ul class="submenu-menu">
                         <li><a href="ai-consulting.html">AI Consulting</a></li>
                         <li><a href="HPC-infrastructure.html">AI & HPC infrastructure</a></li>
-                        <li><a href="#">AI Labs</a></li>
+                        <li><a href="ai-labs.html">AI Labs</a></li>
                         <li><a href="ai-factory.html">AI Factory</a></li>
                       </ul>
                     </li>
@@ -65,7 +66,7 @@
 
                       <ul class="submenu-menu">
                         <li><a href="sovereign-ai.html">Sovereign Ai</a></li>
-                        <li><a href="#">Computer Vision</a></li>
+                        <li><a href="computer-vision.html">Computer Vision</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -146,7 +147,7 @@
               </a>
             </div>
             <div class="wrap desc-btn">
-              <a class="login-btn active" href="mbuzz-labs.html"> MBUZZ LABS </a>
+              <a class="login-btn" href="mbuzz-labs.html"> MBUZZ LABS </a>
             </div>
             <!-- END desktop menu here -->
 
@@ -218,7 +219,7 @@
                             </svg>
                             AI & HPC infrastructure
                           </a>
-                          <a href="#">
+                          <a href="ai-labs.html">
                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
@@ -263,7 +264,7 @@
                             </svg>
                             Sovereign Ai
                           </a>
-                          <a href="#">
+                          <a href="computer-vision.html">
                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
@@ -425,7 +426,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="menu__item dropdown">
                   <a href="#" class="menu__item-link dropdown-toggle">
                     <div class="menu-link-content">
@@ -559,7 +560,7 @@
                 </nav>
                 
                 <div class="wrap mob-btn">
-                  <a class="login-btn active" href="mbuzz-labs.html"> MBUZZ LABS </a>
+                  <a class="login-btn" href="mbuzz-labs.html"> MBUZZ LABS </a>
                 </div>
               </div>
             </div>
@@ -639,7 +640,7 @@
                           </svg>
                           AI & HPC infrastructure
                         </a>
-                        <a href="#">
+                        <a href="ai-labs.html">
                           <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
@@ -684,7 +685,7 @@
                           </svg>
                           Sovereign Ai
                         </a>
-                        <a href="#">
+                        <a href="computer-vision.html">
                           <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.742188 4.54688H8.35133" stroke="white" stroke-opacity="0.8"
@@ -846,7 +847,7 @@
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="menu__item dropdown">
                   <a href="#" class="menu__item-link dropdown-toggle">
                     <div class="menu-link-content">
@@ -883,7 +884,7 @@
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- DROPDOWN -->
                 <div class="menu__item dropdown">
                   <a href="#" class="menu__item-link dropdown-toggle">
@@ -1001,23 +1002,28 @@
     <!-- END mobile menu here -->
   </header>
 
+
   <!-- ── HERO ── -->
   <section class="inner-banner">
     <div class="width-container">
-        <div class="banner-inner-wrapper">
-          <div class="banner-text">
-            <nav class="breadcrumb">
-              <a href="#">Home</a>
-              <span class="sep">-</span>
-              <a href="#">MBUZZ LABS</a>
-              <span class="sep">-</span>
-              <span class="current">MBUZZ LABS</span>
-            </nav>
-            <h1>MBUZZ LABS</h1>
-          </div>
+      <div class="banner-inner-wrapper">
+        <div class="banner-text">
+          <nav class="breadcrumb">
+            <a href="#">Home</a>
+            <span class="sep">-</span>
+            <a href="#">AI</a>
+            <span class="sep">-</span>
+            <span class="current">Computer Vision</span>
+          </nav>
+          <h1>Computer Vision</h1>
         </div>
+        <div class="banner-sub-img">
+          <img src="assets/img/ai-consulting-banner.webp" alt="">
+        </div>
+      </div>
     </div>
   </section>
+
 
   <!-- ── STICKY SUB-NAV ── -->
   <div class="inner-subnav-wrap">
@@ -1026,16 +1032,14 @@
         <nav class="inner-subnav">
           <ul class="inner-subnav-links">
             <li><a href="#overview" class="active">Overview</a></li>
-            <li><a href="#whatwedo ">What We Do </a></li>
-            <li><a href="#integrationsolutions ">Integration Solutions</a></li>
-            <li><a href="#integrationcenters">Integration Centers </a></li>
-            <li><a href="#supplierpartners">Supplier Partners</a></li>
-            <li><a href="#certificationsquality">Certifications & Quality</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#usecases">Use Cases</a></li>
+            <li><a href="#whymbuzz">Why MBUZZ</a></li>
           </ul>
         </nav>
       </div>
     </div>
-
     <div class="subnav-mob">
         <div class="subnav-dropdown">
           <button class="subnav-toggle">
@@ -1044,172 +1048,266 @@
           </button>
           <ul class="inner-subnav-links">
             <li><a href="#overview" class="active">Overview</a></li>
-            <li><a href="#whatwedo ">What We Do </a></li>
-            <li><a href="#integrationsolutions ">Integration Solutions</a></li>
-            <li><a href="#integrationcenters">Integration Centers </a></li>
-            <li><a href="#supplierpartners">Supplier Partners</a></li>
-            <li><a href="#certificationsquality">Certifications & Quality</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#usecases">Use Cases</a></li>
+            <li><a href="#whymbuzz">Why MBUZZ</a></li>
           </ul>
         </div>
       </div>
   </div>
 
   <!-- ai-overview -->
-  <section class="section-padding pb-0 ai-overview" id="overview">
+  <section class="section-padding my-4 ai-overview" id="overview">
     <div class="width-container">
       <div class="ai-overview-in">
         <div class="ai-tag">Overview</div>
-        <h2 class="heading text-white">Build the hardware that <br> suits your workflow.</h2>
-        <p class="description mb-0">
-          MBUZZ Labs is a division of MBUZZ Distribution focused on providing complete solutions by partnering with top
-          brands like ASUS, NVIDIA, AMD and Intel. Ranging from Custom Workstations to Large GPU Cluster and
-          Professional Services, MBUZZ Labs offers you what best suits your workflow.
+        <h2 class="heading text-white">Intelligent Vision That Turns Video into Insight</h2>
+        <p class="description mb-3">
+          MBUZZ delivers Computer Vision solutions that transform video into real-time, actionable intelligence. 
+          By combining advanced video capture, management, and AI-driven analytics in a single ecosystem, we enable 
+          organizations to move from passive monitoring to proactive, data-led decision-making. 
+        </p>
+        <p class="description mb-3">
+          Our Computer Vision solutions treat video as a continuous data stream, turning cameras into intelligent sensors that enhance security, 
+          situational awareness, and operational efficiency.
+        </p>
+
+        <div class="computer-overview">
+          <div class="computer-overview-item">
+            <div class="computer-overview-logo">
+              <img src="assets/img/edge-01.png" class="img-fluid" alt="">
+            </div>
+            <h6>Edge AI Integration with 5G Networks</h6>
+          </div>
+          <div class="computer-overview-item">
+            <div class="nvd-logo">
+              <img src="assets/img/nvidia-logo.webp" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="computer-overview-item">
+            <div class="computer-overview-logo">
+              <img src="assets/img/edge-02.png" class="img-fluid" alt="">
+            </div>
+            <h6>GPU-Accelerated Deep Learning Frameworks</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ai deployment -->
+  <section class="section-padding ai-deployment computer-ai" id="technology">
+    <div class="width-container">
+      <div class="text-center mb-5">
+        <div class="ai-tag">Technology</div>
+        <h2 class="heading text-dark">The Ultimate Stack</h2>
+        <p class="description text-dark mb-3">
+          Advanced AI platforms that power real-time, scalable, and production-ready <br> Computer Vision solutions. 
         </p>
       </div>
+      <div class="ai-deployment-types-in">
+        <div class="row g-0">
+          <div class="col-md-4 ai-deployment-item">
+            <div class="ai-deployment-type">
+              <div class="nvidia-logo-2">
+                <img src="assets/img/nvdia-logo-2.png" class="img-fluid" alt="NVIDIA">
+              </div>
+              <p class="text-dark">
+                A toolkit for building high-performance video AI pipelines. We integrate DeepStream to create production-ready computer vision solutions at scale. 
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 ai-deployment-item">
+            <div class="ai-deployment-type">
+              <div class="nvidia-logo-2">
+                <img src="assets/img/nvdia-logo-3.png" class="img-fluid" alt="NVIDIA">
+              </div>
+              <p class="text-dark">
+                A platform for smart city applications. We deploy Metropolis-based video analytics and VLM systems for urban intelligence, public safety, and city operations. 
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 ai-deployment-item">
+            <div class="ai-deployment-type">
+              <div class="nvidia-logo-2">
+                <img src="assets/img/nvdia-logo-4.png" class="img-fluid" alt="NVIDIA">
+              </div>
+              <p class="text-dark">
+                A flexible AI inference server that optimizes real-time AI deployment. We use Triton to ensure fast, scalable, and intelligent video inference applications. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ai-enterprises -->
-  <section class="section-padding mbuzz-labs-what-we" id="">
+  <!-- intelligent ai -->
+  <section class="section-padding applied-ai computer-vision-ai" id="solutions">
     <div class="width-container">
-      <div class="header-in-out mb-5">
-        <div class="ai-tag">What We Do</div>
-        <h3 class="heading text-white mb-3">Purpose-built computing solutions</h3>
-        <p class="description">We design and deliver systems tailored to specific workloads and environments.</p>
+      <div class="mb-2">
+        <div class="ai-tag mb-4">Solutions</div>
+        <h3 class="heading text-white">Intelligent Video & Surveillance Systems</h3>
+        <p class="description">
+          MBUZZ designs and deploys end-to-end intelligent video systems that serve as the 
+          foundation for modern computer vision applications.
+        </p>
       </div>
-
-      <div class="mbuzz-labs-what-we-in">
-        <div class="row">
-
-          <div class="col-sm-6 col-md-6 col-lg-4 mbuzz-labs-what-we-card-out">
-            <div class="mbuzz-labs-what-we-card">
-              <div class="mbuzz-labs-what-we-icon">
-                <img src="assets/img/mbuzz-labs-what-we-01.webp" class="img-fluid" alt="" />
+      
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 applied-ai-card">
+            <div class="core-card">
+              <div class="card-icon">
+                <img src="assets/img/computer-v-01.webp" class="img-fluid" alt="">
               </div>
-              <span class="mbuzz-labs-what-we-num">01</span>
-              <div class="mbuzz-labs-what-we-cont">
-                <h3>Gaming & Streaming <br> Systems</h3>
-                <p>
-                  High-performance builds optimized for smooth gameplay and streaming. 
-                </p>
-              </div>
+              <h3>Large Scale Computer Vision </h3>
+              <p>
+                Deploy high-performance computer vision systems that can handle multiple locations and large volumes of video. 
+              </p>
             </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4 mbuzz-labs-what-we-card-out">
-            <div class="mbuzz-labs-what-we-card">
-              <div class="mbuzz-labs-what-we-icon">
-                <img src="assets/img/mbuzz-labs-what-we-02.webp" class="img-fluid" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 applied-ai-card">
+            <div class="core-card">
+              <div class="card-icon">
+                <img src="assets/img/computer-v-02.webp" class="img-fluid" alt="">
               </div>
-              <span class="mbuzz-labs-what-we-num">02</span>
-              <div class="mbuzz-labs-what-we-cont">
-                <h3>Advanced <br> Workstations</h3>
-                <p>
-                  Reliable systems for creative professionals, engineering, and data-intensive workflows.
-                </p>
-              </div>
+              <h3>Automated Surveillance</h3>
+              <p>
+                Enhance security by enabling automated detection and real-time activity analysis across multiple environments. 
+              </p>
             </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4 mbuzz-labs-what-we-card-out">
-            <div class="mbuzz-labs-what-we-card">
-              <div class="mbuzz-labs-what-we-icon">
-                <img src="assets/img/mbuzz-labs-what-we-03.webp" class="img-fluid" alt="" />
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 applied-ai-card">
+            <div class="core-card">
+              <div class="card-icon">
+                <img src="assets/img/computer-v-03.webp" class="img-fluid" alt="">
               </div>
-              <span class="mbuzz-labs-what-we-num">03</span>
-              <div class="mbuzz-labs-what-we-cont">
-                <h3>Scientific & <br> High-Performance <br> Computing</h3>
-                <p>
-                  GPU clusters and HPC solutions for research, analytics, and demanding compute environments. 
-                </p>
-              </div>
+              <h3>Real-Time Analytics</h3>
+              <p>
+                Extract insights from live video streams and recordings to support faster, smarter decision-making. 
+              </p>
             </div>
-          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 applied-ai-card">
+            <div class="core-card">
+              <div class="card-icon">
+                <img src="assets/img/computer-v-04.webp" class="img-fluid" alt="">
+              </div>
+              <h3>Smart Infrastructure</h3>
+              <p>
+                Enable smart city initiatives and connected environments using advanced computer vision.
+              </p>
+            </div>
+        </div>
+      </div> 
+    </div>
+  </section>
 
+  <!-- ai real world impact -->
+  <section class="section-padding ai-real-world-impact" id="usecases">
+    <div class="core-offering-in">
+      <div class="core-header">
+        <div class="core-header-in">
+          <div class="ai-tag">Use Cases</div>
+          <h2 class="heading text-dark mb-0">AI-Powered Vision Applications</h2>
+        </div>
+        <div class="core-nav">
+          <button class="core-prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="core-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="owlslider owl-carousel owl-theme ai-real-world-impact-slider">
+        <div target="1" class="item">
+          <div class="core-card card-blue">
+            <div class="card-icon">
+              <img src="assets/img/Computervision-ai-power-01.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Facial Recognition & Identity Verification</h3>
+          </div>
+        </div>
+        <div target="2" class="item">
+          <div class="core-card card-red">
+            <div class="card-icon">
+              <img src="assets/img/Computervision-ai-power-02.webp" class="img-fluid" alt="">
+            </div>
+            <h3>License Plate Recognition (LPR)</h3>
+          </div>
+        </div>
+        <div target="3" class="item">
+          <div class="core-card card-meroon">
+            <div class="card-icon">
+              <img src="assets/img/Computervision-ai-power-03.webp" class="img-fluid" alt="">
+            </div>
+            <h3>People Counting & Crowd Analytics</h3>
+          </div>
+        </div>
+        <div target="4" class="item">
+          <div class="core-card card-green">
+            <div class="card-icon">
+              <img src="assets/img/Computervision-ai-power-04.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Object Detection & Tracking</h3>
+          </div>
+        </div>
+        <div target="5" class="item">
+          <div class="core-card card-green">
+            <div class="card-icon">
+              <img src="assets/img/Computervision-ai-power-05.webp" class="img-fluid" alt="">
+            </div>
+            <h3>Anomaly Detection & Situational Awareness</h3>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="section-padding career-life">
-  <div class="width-container">
-        <div class="inner-page-heading mb-5">
-          <div class="ai-tag">Integration Solutions</div>
-          <h2 class="heading mb-3 text-dark text-center">From Configuration to Deployment</h2>
-          <p class="description text-dark text-center mb-0">
-            We manage the full integration lifecycle including configuration, assembly, testing, and deployment to deliver standardized, production-ready systems. 
-          </p>
-        </div>
-
-        <div class="life-grid">
-
-            <div class="life-card">
-                <div class="icon">
-                  <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_2355_7141)">
-                      <path
-                        d="M13.3359 44.6796C13.3359 36.2729 23.3359 37.9551 23.3359 34.5929C23.4477 33.399 23.1241 32.2048 22.4248 31.2307C21.6273 30.4745 20.9991 29.558 20.5816 28.5414C20.1641 27.5248 19.9668 26.4313 20.0026 25.3329C19.8941 23.4492 20.5335 21.5988 21.7819 20.1839C23.0303 18.7691 24.7867 17.9042 26.6693 17.7773C28.5518 17.9042 30.3082 18.7691 31.5566 20.1839C32.805 21.5988 33.4444 23.4492 33.3359 25.3329C33.3759 26.4345 33.1772 27.5318 32.7533 28.5494C32.3295 29.567 31.6906 30.4809 30.8804 31.2285C30.2092 32.2155 29.8992 33.4038 30.0026 34.5929C30.0026 37.9551 40.0026 36.2751 40.0026 44.6818C40.0026 44.6818 37.347 46.6685 26.6693 46.6685C15.9915 46.6685 13.3359 44.6796 13.3359 44.6796Z"
-                        stroke="#09427E" stroke-miterlimit="10" />
-                      <path
-                        d="M12.1876 35.4835C10.9232 35.4257 9.80764 35.3391 8.82764 35.2302C6.52739 35.1845 4.26756 34.6169 2.21875 33.5702C2.21875 25.1635 12.2188 26.8457 12.2188 23.4835C12.3305 22.2896 12.0069 21.0955 11.3076 20.1213C10.5101 19.3652 9.88194 18.4486 9.46443 17.432C9.04691 16.4154 8.84958 15.3219 8.88542 14.2235C8.77691 12.3398 9.41635 10.4894 10.6647 9.07455C11.9131 7.65972 13.6695 6.79485 15.5521 6.66797C17.4347 6.79485 19.1911 7.65972 20.4394 9.07455C21.6878 10.4894 22.3273 12.3398 22.2188 14.2235"
-                        stroke="#09427E" stroke-miterlimit="10" />
-                      <path
-                        d="M41.1445 35.4835C42.409 35.4257 43.5245 35.3391 44.5045 35.2302C46.8048 35.1845 49.0646 34.6169 51.1134 33.5702C51.1134 25.1635 41.1134 26.8457 41.1134 23.4835C41.0017 22.2896 41.3252 21.0955 42.0245 20.1213C42.822 19.3652 43.4502 18.4486 43.8677 17.432C44.2853 16.4154 44.4826 15.3219 44.4468 14.2235C44.5553 12.3398 43.9158 10.4894 42.6674 9.07455C41.4191 7.65972 39.6627 6.79485 37.7801 6.66797C35.8975 6.79485 34.1411 7.65972 32.8927 9.07455C31.6444 10.4894 31.0049 12.3398 31.1134 14.2235"
-                        stroke="#09427E" stroke-miterlimit="10" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2355_7141">
-                        <rect width="53.3333" height="53.3333" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-                <h4>Team collaboration &<br>innovation</h4>
-            </div>
-
-            <div class="life-card">
-                <div class="icon">
-                  <svg width="47" height="42" viewBox="0 0 47 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M23.5 16.8556V41.3889M23.5 41.3889L28.0765 38.3381C29.225 37.5722 29.7994 37.1893 30.4207 36.9182C30.9722 36.6772 31.55 36.5024 32.1426 36.3969C32.8099 36.2778 33.5001 36.2778 34.8807 36.2778H42.4111C43.8425 36.2778 44.558 36.2778 45.1047 35.9992C45.5856 35.7541 45.9764 35.3634 46.2214 34.8824C46.5 34.3358 46.5 33.6203 46.5 32.1889V4.58889C46.5 3.15765 46.5 2.44202 46.2214 1.89536C45.9764 1.41451 45.5856 1.02356 45.1047 0.77853C44.558 0.5 43.8425 0.5 42.4111 0.5H39.8556C34.1306 0.5 31.2681 0.5 29.0813 1.61415C27.158 2.5942 25.5943 4.158 24.6142 6.08144C23.5 8.2681 23.5 11.1306 23.5 16.8556C23.5 11.1306 23.5 8.2681 22.3858 6.08144C21.4057 4.158 19.842 2.5942 17.9186 1.61415C15.7319 0.5 12.8694 0.5 7.14444 0.5H4.58889C3.15765 0.5 2.44202 0.5 1.89536 0.77853C1.41451 1.02356 1.02356 1.41451 0.77853 1.89536C0.5 2.44202 0.5 3.15765 0.5 4.58889V32.1889C0.5 33.6203 0.5 34.3358 0.77853 34.8824C1.02356 35.3634 1.41451 35.7541 1.89536 35.9992C2.44202 36.2778 3.15765 36.2778 4.58889 36.2778H12.1193C13.4998 36.2778 14.19 36.2778 14.8575 36.3969C15.4499 36.5024 16.0278 36.6772 16.5793 36.9182C17.2007 37.1893 17.775 37.5722 18.9235 38.3381L23.5 41.3889Z"
-                      stroke="#09427E" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <h4>Learning culture<br>(training, certifications, exposure)</h4>
-            </div>
-
-            <div class="life-card">
-                <div class="icon">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M8 24H6V16C6 13.7909 7.79086 12 10 12H18M8 24V36C8 38.2092 9.79086 40 12 40H36C38.2092 40 40 38.2092 40 36V24M8 24H20M18 12V10C18 7.79086 19.7909 6 22 6H26C28.2092 6 30 7.79086 30 10V12M18 12H30M40 24H42V16C42 13.7909 40.2092 12 38 12H30M40 24H28M20 24V20H28V24M20 24V28H28V24"
-                      stroke="#09427E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <h4>Work environment<br>(flexibility, project diversity)</h4>
-            </div>
-
-        </div>
-    </div>
-</section>
 
   
+  <!-- faq -->
+  <section class="section-padding pb-0 faq-third-outer" id="whymbuzz">
+    <div class="width-container">
+      <div class="row">
 
+        <div class="col-lg-6 col-xl-7 left-faq">
+          <div class="faq-header">
+            <div class="ai-tag">Why <span>MBUZZ</span></div>
+            <h3 class="heading text-white">Engineered for Real-World Intelligence</h3>
+          </div>
 
+          <div class="faq-third-item-out">
+            <div class="faq-third-item">
+              <h6>Proven experience delivering large-scale video and AI solutions</h6>
+            </div>
+            <div class="faq-third-item">
+              <h6>Deep expertise in computer vision, surveillance, and analytics platforms</h6>
+            </div>
+            <div class="faq-third-item">
+              <h6>Vendor-agnostic approach using best-of-breed technologies</h6>
+            </div>
+            <div class="faq-third-item">
+              <h6>Strong local execution supported by global technology partners</h6>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-lg-6 col-xl-5 right-faq">
+          <div class="right-faq-img">
+            <img src="assets/img/real-world-intelligence-2.webp" class="img-fluid" alt="">
+          </div>
+        </div>
 
-
-
-
+      </div>
+    </div>
+  </section>
 
   <!-- CTA -->
   <section class="section-padding pb-3 cta">
     <div class="width-container">
       <div class="core-card card-blue">
         <div class="core-card-in">
-          <h3>Ready to Enhance Indoor Connectivity? </h3>
+          <h3>Ready to Unlock the Power of Computer Vision?</h3>
           <p>
-            Let’s tailor an in-building solution for your venue. 
+            Discover how intelligent video analytics can enhance security, efficiency, and decision-making. 
           </p>
           <div class="main-btn-out mt-3 text-center">
             <a href="contact.html" class="main-btn">Get in Touch <i class="fa-solid fa-arrow-right-long"></i></a>
@@ -1218,7 +1316,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- footer -->
   <footer class="section-padding pb-0 main-footer">
@@ -1320,8 +1417,8 @@
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                      aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <div class="footer-col">
                         <h4>Explore</h4>
                       </div>
@@ -1473,8 +1570,27 @@
     AOS.init();
   </script>
 
- 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
 
 </body>
+
+
+
+
+<script>
+  const tabs = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+      tab.classList.add("active");
+      document
+        .getElementById(tab.dataset.tab)
+        .classList.add("active");
+    });
+  });
+</script>
 
 </html>
