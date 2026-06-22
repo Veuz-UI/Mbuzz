@@ -6366,13 +6366,11 @@ section {
 .career-life {
   background: #f8f8f8;
 }
-
 .career-life .life-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
 .career-life .life-card {
   min-height: 250px;
   background: #fff;
@@ -6388,24 +6386,22 @@ section {
   transition: all 0.3s ease;
 }
 .career-life .life-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 25px;
-    padding: 1px;
-    background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  padding: 1px;
+  background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
-
 .career-life .life-card:hover {
   transform: translateY(-8px);
   border-color: #AEE1F9;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
 .career-life .icon {
   width: 35px;
   height: 25px;
@@ -6414,13 +6410,11 @@ section {
   align-items: center;
   justify-content: center;
 }
-
 .career-life .icon svg,
 .career-life .icon i {
   width: 40px;
   height: 40px;
 }
-
 .career-life .life-card h4 {
   font-size: 16px;
   font-weight: 700;
@@ -6439,7 +6433,6 @@ section {
   .career-life .life-grid {
     grid-template-columns: 1fr;
   }
-
   .career-life .life-card {
     min-height: 220px;
   }
@@ -7307,9 +7300,6 @@ section {
   .mbuzz-labs-stand .timeline-item-logo img {
     width: 50px;
   }
-  /* .mbuzz-labs-stand .timeline-row .timeline-item:last-child {
-    border-right: none;
-  } */
   .mbuzz-aleria .process-item {
     width: 30.3%;
     gap: 6px;
@@ -7323,9 +7313,6 @@ section {
   .mbuzz-aleria .process-item {
     width: 48%;
   }
-  /* .mbuzz-labs-stand .mbuzz-labs-stand-card {
-    padding: 30px 20px;
-  } */
 }
 
 @media(max-width:600px) {
@@ -7349,6 +7336,85 @@ section {
     padding: 18px;
     margin: 0 15px;
   }
+}
+
+
+.mbuzz-life {
+  background: #f8f8f8;
+}
+.mbuzz-life .life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.mbuzz-life .life-card {
+  /* min-height: 250px; */
+  background: #fff;
+  position: relative;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 55px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.3s ease;
+}
+.mbuzz-life .life-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  padding: 1px;
+  background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.mbuzz-life .life-card:hover {
+  transform: translateY(-8px);
+  border-color: #AEE1F9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.mbuzz-life .icon {
+  width: 35px;
+  height: 25px;
+  margin: 25px 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mbuzz-life .icon svg,
+.mbuzz-life .icon i {
+  width: 40px;
+  height: 40px;
+}
+.mbuzz-life .life-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family: "Manrope", sans-serif;
+}
+.mbuzz-life p{
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .mbuzz-life .life-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .mbuzz-life .life-grid {
+    grid-template-columns: 1fr;
+  }
+  /* .mbuzz-life .life-card {
+    min-height: 220px;
+  } */
 }
 
 /* --------- END Mbuzz labs  ----------- */
