@@ -347,6 +347,7 @@
 	}
 	.menu a {
         font-size: 14px;
+		font-weight: 300;
 		color: #fff;
 		display: block !important;
 		padding: 13px;
@@ -706,8 +707,7 @@
 	}
 
 	.description {
-		font-size: 14px;
-		line-height: 25px;
+		font-size: 13px;
 	}
 
 	.right-faq .accordion-button {

@@ -2965,7 +2965,7 @@ section {
   box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
   backdrop-filter: blur(35px);
   -webkit-backdrop-filter: blur(35px);
-   transition: background 0.6s ease;
+  transition: background 0.6s ease;
 }
 
 .ai-approach-in:hover {
@@ -2991,6 +2991,10 @@ section {
   height: 100%;
   object-fit: contain;
   border-radius: 40px;
+}
+
+.ai-labs .left-ai-approach p span{
+  font-weight: 600;
 }
 
 @media (max-width: 1400px) {
@@ -5446,10 +5450,11 @@ section {
 .ai-labs-deployment .ai-deployment-type-num {
   font-size: 20px;
   font-weight: 600;
-  padding: 8px 14px;
+  padding: 2px 5px;
   background: var(--gradient);
   height: fit-content;
   border-radius: 10px;
+  font-family: "Manrope", sans-serif;
 }
 
 .nvidia-logo-2 img {
@@ -6869,6 +6874,10 @@ section {
   cursor: pointer;
 }
 
+.mbuzz-labs-what-we .mbuzz-labs-what-we-card-out{
+  padding: 0 6px;
+}
+
 .mbuzz-labs-what-we-card .mbuzz-labs-what-we-icon {
   position: absolute;
   inset: 0;
@@ -6971,8 +6980,8 @@ section {
 }
 
 @media (max-width: 992px) {
-  .mbuzz-labs-what-we-card-out{
-    margin-top: 30px;
+  .mbuzz-labs-what-we .mbuzz-labs-what-we-card-out{
+    margin-top: 20px;
   }
 }
 
@@ -6990,7 +6999,7 @@ section {
   background-color: #00001c !important;
   overflow: hidden;
   padding: 160px 0;
-  background: url(../img/mbuzz-lab-global.webp) no-repeat right / cover;
+  background: url(../img/mbuzz-lab-global.webp) no-repeat center / cover;
 }
 .mbuzz-labs-global .ai-factory-journey-card {
   border: 1px solid #121f5870;
@@ -7076,7 +7085,7 @@ section {
 
 @media(max-width:767px) {
   .mbuzz-labs-integn .mbuzz-labs-integn-card {
-    padding: 30px 20px;
+    padding: 30px 15px;
   }
 }
 
@@ -7092,8 +7101,17 @@ section {
 }
 
 @media(max-width:500px) {
+  .mbuzz-labs-integn .timeline-row {
+    gap: 3px;
+  }
   .mbuzz-labs-integn .timeline-item {
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
+    border: 0;
+    padding: 3px;
+    text-align: center;
+  }
+  .mbuzz-labs-integn .timeline-item-logo img {
+    width: 50px;
   }
 }
 
@@ -7141,6 +7159,13 @@ section {
   max-width: 650px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .mbuzz-aleria-in{
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -7154,6 +7179,7 @@ section {
 .mbuzz-aleria .process-bar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 18px 35px;
   margin: 0 35px;
@@ -7162,10 +7188,12 @@ section {
   overflow: hidden;
   box-shadow: 0 96px 89px 0 rgba(0, 0, 0, 0.09), 0 41px 41px 0 rgba(0, 0, 0, 0.07), 0 21px 21px 0 rgba(0, 0, 0, 0.06), 0 14px 11px 0 rgba(0, 0, 0, 0.05), 0 5px 5px 0 rgba(0, 0, 0, 0.04), 0 3px 3px 0 rgba(0, 0, 0, 0.03);
   background: rgba(235, 245, 255, 0.2);
+  gap: 10px;
 }
 .mbuzz-aleria .process-item {
   display: flex;
   align-items: center;
+  width: 23.3%;
   gap: 10px;
   position: relative;
   z-index: 2;
@@ -7186,7 +7214,9 @@ section {
 .mbuzz-aleria .process-item .text {
   font-size: 12px;
   font-weight: 300;
+  line-height: 1.4;
   color: #fff;
+  text-align: left;
   font-family: "Manrope", sans-serif;
 }
 
@@ -7267,27 +7297,37 @@ section {
 @media(max-width:991px) {
   .mbuzz-labs-stand .timeline-row {
     flex-wrap: wrap;
-    gap: 15px;
   }
   .mbuzz-labs-stand .timeline-item {
     flex: 0 0 calc(50% - 15px);
+    padding: 15px;
+    margin: 15px 0;
   }
-  .mbuzz-labs-stand .timeline-row .timeline-item:last-child {
+  .mbuzz-labs-stand .timeline-item-logo img {
+    width: 50px;
+  }
+  /* .mbuzz-labs-stand .timeline-row .timeline-item:last-child {
     border-right: none;
+  } */
+  .mbuzz-aleria .process-item {
+    width: 30.3%;
+    gap: 6px;
   }
 }
 
 @media(max-width:767px) {
-  .mbuzz-labs-stand .mbuzz-labs-stand-card {
-    padding: 30px 20px;
+  .mbuzz-labs-stand .timeline-row {
+    grid-template-columns: repeat(2, 1fr);
   }
+  .mbuzz-aleria .process-item {
+    width: 48%;
+  }
+  /* .mbuzz-labs-stand .mbuzz-labs-stand-card {
+    padding: 30px 20px;
+  } */
 }
 
 @media(max-width:600px) {
-  .mbuzz-labs-stand .timeline-row {
-    gap: 10px;
-  }
-
   .mbuzz-labs-stand .timeline-item {
     padding: 10px;
     flex: 0 0 calc(50% - 5px);
@@ -7295,8 +7335,18 @@ section {
 }
 
 @media(max-width:500px) {
+  .mbuzz-labs-stand .timeline-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .mbuzz-labs-stand .timeline-item {
     flex: 0 0 100%;
+  }
+  .mbuzz-aleria .process-item {
+    width: 100%;
+  }
+  .mbuzz-aleria .process-bar {
+    padding: 18px;
+    margin: 0 15px;
   }
 }
 
