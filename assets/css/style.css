@@ -7338,7 +7338,7 @@ section {
   }
 }
 
-
+/*mbuzz life*/
 .mbuzz-life {
   background: #f8f8f8;
 }
@@ -7348,7 +7348,6 @@ section {
   gap: 30px;
 }
 .mbuzz-life .life-card {
-  /* min-height: 250px; */
   background: #fff;
   position: relative;
   border-radius: 25px;
@@ -7412,9 +7411,6 @@ section {
   .mbuzz-life .life-grid {
     grid-template-columns: 1fr;
   }
-  /* .mbuzz-life .life-card {
-    min-height: 220px;
-  } */
 }
 
 /* --------- END Mbuzz labs  ----------- */
