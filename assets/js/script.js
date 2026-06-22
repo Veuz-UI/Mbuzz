@@ -154,48 +154,38 @@ t1.staggerFrom(
   "-=0.4"
 );
 t1.reverse();
+// $(".menu-toggle").click(function () {
+//   $(this).toggleClass("active"); // hamburger animation
+//   t1.reversed(!t1.reversed()); // popup open close
+//   return false;
+// });
 $(".menu-toggle").click(function () {
-  $(this).toggleClass("active"); // hamburger animation
-  t1.reversed(!t1.reversed()); // popup open close
+  $(this).toggleClass("active");
+
+  if (t1.reversed()) {
+    // Open Menu
+    $("body").css({
+      overflow: "hidden",
+      height: "100vh"
+    });
+  } else {
+    // Close Menu
+    $("body").css({
+      overflow: "",
+      height: ""
+    });
+  }
+
+  t1.reversed(!t1.reversed());
+
   return false;
 });
 
 
-  // tab button amooth moving
-//   document.addEventListener('DOMContentLoaded', function () {
 
-//   function moveIndicator(activeBtn) {
-//     const indicator = document.querySelector('.tab-indicator');
-//     const tabs = document.querySelector('.all-works .tabs');
 
-//     if (!indicator || !tabs || !activeBtn) return;
-
-//     const tabsRect = tabs.getBoundingClientRect();
-//     const btnRect = activeBtn.getBoundingClientRect();
-
-//     indicator.style.width = btnRect.width + 'px';
-//     indicator.style.transform =
-//       'translateX(' + (btnRect.left - tabsRect.left) + 'px)';
-//   }
-
-//   // ✅ Init on load (ONLY ONCE)
-//   const activeBtn = document.querySelector('.all-works .tab-btn.active');
-//   if (activeBtn) moveIndicator(activeBtn);
-
-//   // ✅ On click
-//   document.querySelectorAll('.all-works .tab-btn').forEach(function (btn) {
-//     btn.addEventListener('click', function () {
-//       document
-//         .querySelectorAll('.all-works .tab-btn')
-//         .forEach(b => b.classList.remove('active'));
-
-//       btn.classList.add('active');
-//       moveIndicator(btn);
-//     });
-//   });
-// });
+// tab button amooth moving
 document.addEventListener('DOMContentLoaded', function () {
-
   function moveIndicator(activeBtn) {
     const indicator = document.querySelector('.tab-indicator');
     const tabs = document.querySelector('.all-works .tabs');
