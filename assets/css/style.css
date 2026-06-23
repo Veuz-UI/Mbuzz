@@ -3035,6 +3035,7 @@ section {
 .ai-consulting-list-item {
   position: relative;
   padding: 15px 40px;
+  margin: 0 5px;
   border-radius: 30px;
   color: #fff;
   text-align: center;
@@ -3047,7 +3048,7 @@ section {
   -webkit-backdrop-filter: blur(35px);
   /* transition: 0.4s ease; */
   height: 100%;
-  /* border: 1px solid transparent; */
+  border: 1px solid transparent;
 }
 .ai-consulting-list-item::before {
   content: "";
@@ -3113,7 +3114,7 @@ section {
 
 @media (max-width: 1200px) {
   .ai-consulting-list-in {
-    padding: 0 7px 15px;
+    padding: 0 7px 25px;
   }
   .ai-consulting-list-item {
     padding: 41px 15px;
@@ -3259,6 +3260,7 @@ section {
 .left-faq .accordion-button .accrd-head {
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
   color: #081226;
   font-family: Manrope, sans-serif;
 }
@@ -3381,6 +3383,9 @@ section {
   .right-faq-img img {
     height: 300px;
     border-radius: 20px;
+  }
+  .left-faq .accordion-button::after {
+    font-size: 1.5rem;
   }
 }
 
@@ -4148,7 +4153,7 @@ section {
 
 @media (max-width: 600px) {
   .prof-services .core-header {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .prof-services .core-card h3 {
@@ -4711,14 +4716,17 @@ section {
 
 .storage-portfolio .timeline-row {
   display: flex;
-  justify-content: space-between;
-  gap: 3px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* gap: 3px; */
 }
 
 .storage-portfolio .timeline-item {
   flex: 1;
-  border-left: 2px solid #87d0ff;
+  border-left: 1px solid #0db4f92e;
+  border-right: 1px solid #0db4f92e;
   padding: 0 30px;
+  margin: 6px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -4727,9 +4735,9 @@ section {
 #enterprise .timeline-item {
   padding: 10px 20px;
 }
-#enterprise .timeline-row .timeline-item:last-child {
+/* #enterprise .timeline-row .timeline-item:last-child {
     border-right: 2px solid #87d0ff;
-}
+} */
 
 .storage-portfolio .timeline-item-logo img {
   width: 70px;
@@ -4752,16 +4760,15 @@ section {
 }
 
 @media(max-width:991px) {
-  .storage-portfolio .timeline-row {
+  /* .storage-portfolio .timeline-row {
     flex-wrap: wrap;
-    gap: 15px;
-  }
-  .storage-portfolio .timeline-item {
+  } */
+  /* .storage-portfolio .timeline-item {
     flex: 0 0 calc(50% - 15px);
-  }
-  .storage-portfolio .timeline-row .timeline-item:last-child {
+  } */
+  /* .storage-portfolio .timeline-row .timeline-item:last-child {
     border-right: none;
-  }
+  } */
 }
 
 @media(max-width:767px) {
@@ -4780,9 +4787,9 @@ section {
     margin-top: 10px;
   }
 
-  .storage-portfolio .timeline-row {
+  /* .storage-portfolio .timeline-row {
     gap: 10px;
-  }
+  } */
 
   .storage-portfolio .timeline-item {
     padding: 10px;
@@ -4792,7 +4799,9 @@ section {
 
 @media(max-width:500px) {
   .storage-portfolio .timeline-item {
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
+    border: 0;
+    padding: 10px 5px !important;
   }
 }
 
@@ -8579,28 +8588,20 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 
 
 @media (max-width: 767px) {
-
-  .transformation-card {
-    padding: 10px;
-  }
-
   .transformation-section .transformation-container {
     padding: 10px;
   }
-
   .transformation-card {
     padding: 20px;
     border-radius: 20px;
+    background: rgb(0 0 0 / 70%);
   }
-
   .transformation-card h2 {
     font-size: 30px;
   }
-
   .transformation-card p {
     font-size: 13px;
   }
-
   .transformation-section {
     margin: 0px 10px;
   }
@@ -8613,19 +8614,10 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 
-
-
-/* network-service-section */
+/* ------ network-service-section ---------- */
 .network-service-section {
   background-color: #fff;
 }
-
-/* .ai-consulting-list-white .ai-consulting-list-item {
-  background: var(--white);
-  height: auto;
-  min-height: 290px;
-} */
-
 .ai-consulting-list-white .ai-consulting-list-item {
   padding: 25px 40px;
   box-shadow: none;
@@ -8633,7 +8625,6 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 .ai-consulting-list-white .ai-consulting-list-item::before {
   background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
 }
-
 .ai-consulting-list-white .ai-consulting-list-item h4 {
   color: var(--black);
   font-weight: 700;
@@ -8642,42 +8633,37 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   transition: .5s;
 
 }
-
 .ai-consulting-list-white .ai-consulting-list-item p {
   color: rgba(0, 0, 0, 0.8);
 }
-
 .ai-consulting-list-white .ai-consulting-list-item .icon svg path {
   stroke: rgba(9, 66, 126, 1);
   transition: stroke 0.5s ease;
 }
-
 .ai-consulting-list-white .ai-consulting-list-item:hover .icon svg path {
   stroke: var(--primary-color);
 }
-
 .ai-consulting-list-white .ai-consulting-list-in {
   padding: 0px;
 }
-
 .ai-consulting-list-white .ai-consulting-list-item .icon {
   height: 40px;
   width: 40px;
   margin-bottom: 30px;
 }
-
 .ai-consulting-list-white .ai-consulting-list-item:hover {
   border: none;
 }
-
 .ai-consulting-list-white .ai-consulting-list-item:hover h4 {
   color: var(--primary-color);
   transition: color 0.5s ease;
 }
 
-
-
-
+@media (max-width: 600px) {
+  .ai-consulting-list-white .ai-consulting-list-item {
+    padding: 20px;
+  }
+}
 
 
 
