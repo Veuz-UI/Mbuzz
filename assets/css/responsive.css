@@ -27,13 +27,6 @@
 	.nav-desc-menu ul li {
         padding: 3px 10px;
     }
-	.nav-desc-menu ul .nav-menu-item.active-menu {
-		padding: 10px 15px;
-	}
-
-	.faq-header h3 {
-  		font-size: 50px;
-	}
 
 	/* return scroll */
 	#scroll {
@@ -62,10 +55,6 @@
 	.login-btn {
   		padding: 10px 10px;
 	}	
-
-	.faq-header h3 {
-		font-size: 35px;
-	}
 
 }
 
@@ -558,6 +547,7 @@
 	}
 	.lang-switch .devider{
 		color: #605e5e;
+		padding: 0;
 	}
 
 	.main-heading {
@@ -697,7 +687,6 @@
 
 	.faq-header h3 {
 		font-size: 20px;
-		line-height: 30px;
 		margin-bottom: 10px !important;
 	}
 	.faq-header h6 {
