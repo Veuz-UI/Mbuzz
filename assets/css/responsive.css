@@ -101,6 +101,9 @@
 	.main-header-in {
 		padding: 10px 0;
 	}
+	.middle{
+		width: 50px;
+	}
 
 	a.menu-toggle {
 		width: 30px;
@@ -431,7 +434,7 @@
         justify-content: center;
     }
 	a.menu-toggle span:before, a.menu-toggle span:after {
-        height: 1px;
+        height: 2px;
 	}
 	/* a.menu-toggle span:before{
 		width: 20px;
@@ -440,7 +443,7 @@
 		width: 10px;
 	}
 	a.menu-toggle span {
-        height: 1px;
+        height: 2px;
 	}
 	.wrap.mob-btn{
 		padding: 10px 6vw;
@@ -525,7 +528,7 @@
 		transition: color 0.3s ease, transform 0.3s ease;
 	}
 	.header-img {
-		width: 130px;
+		width: 100px;
 	}
 
 	.lang-switch {
@@ -538,13 +541,17 @@
 	.lang-switch .arb,
 	.lang-switch .eng{
 		font-size: 15px;
-		width: 30px;
-		height: 30px;
+		font-weight: 300;
+		width: 25px;
+		height: 25px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50px;
-		background: rgba(255, 255, 255, 0.08);
+		background: #ffffff0d;
+	}
+	.lang-switch .arb span{
+		margin-top: -6px;
 	}
 	.lang-switch .devider{
 		color: rgba(255, 255, 255, 0.2);
@@ -657,13 +664,13 @@
 		display: block;
 		top: 10px;
 		border-radius: 50px;
-		background: linear-gradient(90deg, #131c2196, #11111169, #12131373);
+		background: linear-gradient(90deg, #0db4f912, #09427e14);
 		width: 95%;
 		margin: 0 10px;
 	}
 	header.fixed-to-top .main-header{
 		border-radius: 0;
-		background: linear-gradient(90deg, #131c2196, #11111169, #12131373);
+		background: linear-gradient(90deg, #000000b3, #00142ad9);
 		width: 100%;
 		margin: 0;
 	}

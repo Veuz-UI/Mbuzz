@@ -1806,8 +1806,6 @@ section {
   background-image: linear-gradient(#0d0c12 0%, #0d111d 100%);
   position: relative;
   overflow: hidden;
-  /* box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff26, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -2.2px #0d86f9c4; */
-
   background: linear-gradient(180deg,
       #0D0C12 0%,
       #0D111D 100%);
@@ -1817,16 +1815,20 @@ section {
     0 -29.235px 20.343px -10.963px rgba(255, 255, 255, 0.64) inset,
     0 -41.417px 32.524px -12.181px rgba(13, 180, 249, 0.50) inset,
     0 -121.814px 57.009px -40.199px #1B3777 inset;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
 }
 
 .core-offering .core-card:hover {
-  background: linear-gradient(180deg,
-      #0D0C12 0%,
-      #0D111D 100%);
+  background: linear-gradient(
+    180deg,
+    #0D0C12 0%,
+    #0D111D 100%
+  );
+
   box-shadow:
-    0 -36.544px 14.618px -1.218px rgba(13, 180, 249, 0.15) inset,
-    0 -41.417px 32.524px -12.181px rgba(13, 180, 249, 0.50) inset,
-    0 -121.814px 57.009px -40.199px #1B3777 inset;
+    inset 0 -36.544px 14.618px -1.218px rgba(13, 180, 249, 0.15),
+    inset 0 -41.417px 32.524px -12.181px rgba(13, 180, 249, 0.50),
+    inset 0 -121.814px 57.009px -40.199px #1B3777;
 }
 
 .core-card-shade {
@@ -2172,7 +2174,7 @@ section {
 .all-works .tab-panel.active {
   visibility: visible;
   opacity: 1;
-  max-height: 500px;
+  max-height: 600px;
   /* transform: translateY(0); */
 }
 
@@ -3069,7 +3071,7 @@ section {
   /* padding-right: 160px; */
 }
 .ai-approach-in .description {
-  padding-right: 45px;
+  padding-right: 36px;
 }
 .right-ai-approach img {
   width: 100%;
@@ -4179,11 +4181,15 @@ section {
 
 .prof-services .card-icon img {
   width: 100%;
-  min-height: 190px;
+  /* min-height: 190px; */
   max-height: 190px;
   height: 100%;
   object-fit: cover;
   border-radius: 25px;
+  transition: max-height 0.4s ease-in-out;
+}
+.prof-services .core-card:hover .card-icon img {
+  max-height: 150px;
 }
 
 .prof-services .core-card h3 {
@@ -4638,7 +4644,23 @@ section {
     inset 0 -28.608px 11.443px -0.954px rgba(35, 101, 255, 0.15),
     inset 0 -22.886px 15.925px -8.582px rgba(255, 255, 255, 0.64),
     inset 0 -32.422px 25.461px -9.536px rgba(13, 180, 249, 0.50);
+  min-height: 375px;
 }
+.applied-ai .core-card:hover {
+  background: linear-gradient(
+        180deg,
+        #0D0C12 0%,
+        #0D111D 100%
+    );
+
+    box-shadow:
+        0 -1.038px 11.205px 0 rgba(13, 180, 249, 0.20) inset,
+        0 -31.126px 12.45px -1.038px rgba(13, 180, 249, 0.15) inset,
+        0 -24.901px 17.327px -9.338px rgba(255, 255, 255, 0.64) inset,
+        0 -35.276px 27.702px -10.375px rgba(13, 180, 249, 0.50) inset,
+        0 -103.752px 48.556px -34.238px #1B3777 inset;
+}
+
 
 .applied-ai-card{
   padding: 0 8px;
@@ -4657,11 +4679,17 @@ section {
   border-radius: 20px;
   /* min-height: 200px; */
   max-height: 200px;
+  transition: max-height 0.4s ease-in-out;
+}
+.applied-ai .core-card:hover .card-icon img {
+    max-height: 150px;
 }
 
 .edge-card-icon img {
-  min-height: 250px !important;
   max-height: 250px !important;
+}
+.applied-ai .core-card:hover .edge-card-icon img {
+  max-height: 200px !important;
 }
 
 .applied-ai .core-card h3 {
@@ -4693,10 +4721,13 @@ section {
 
 .applied-ai-cs .core-card {
   padding: 20px 20px 25px 20px;
+  min-height: 420px;
 }
 .applied-ai-cs .card-icon img {
-  min-height: 250px;
   max-height: 250px;
+}
+.applied-ai-cs .core-card:hover .card-icon img {
+  max-height: 200px;
 }
 
 .core-card-out{
@@ -4709,6 +4740,7 @@ section {
 
 .intelligent-ai .core-card {
   padding: 20px 20px 40px 20px;
+  min-height: 428px;
 }
 
 .professional-ai .heading {
@@ -4717,6 +4749,7 @@ section {
 .professional-ai .core-card {
   padding: 20px 20px 10px 20px;
 }
+
 .computer-vision-ai .core-card {
   padding: 20px 20px 25px 20px;
 }
