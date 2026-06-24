@@ -168,7 +168,7 @@
 
 	a.menu-toggle.active span {
 		top: 0;
-		width: 13px;
+		width: 11px;
 		background-color: transparent;
 	}
 
@@ -329,7 +329,8 @@
 		font-size: 16px;
 		font-weight: 300;
 		color: #b9bbc1;
-		padding: 0 4vw 10px 4vw;
+		padding: 0 4vw 20px 4vw;
+		text-transform: uppercase;
 	}
 
 	.menu{
@@ -353,7 +354,7 @@
 			bottom: 0;
 			width: 100%;
 			height: 1px !important;
-			background: linear-gradient(30deg, rgb(48 47 47 / 36%) 50%, rgb(48 47 47 / 20%) 100%);
+			background: linear-gradient(30deg, rgb(48 47 47 / 43%) 20%, rgb(48 47 47 / 0%) 100%);
 			border-top: 0;
 	}
 	.home-menu a{
@@ -427,8 +428,8 @@
 	a.menu-toggle.active {
         position: absolute;
         right: 0px;
-		border: 1px solid #fff;
-		border-radius: 5px;
+		border: 1px solid #ffffff8c;
+		border-radius: 7px;
 		display: flex;
         align-items: center;
         justify-content: center;
@@ -509,6 +510,7 @@
 
 	a.menu-toggle {
         width: 25px;
+		height: 25px;
 	}
 	/* a.menu-toggle span {
         width: 25px;
@@ -565,6 +567,13 @@
 	.right-nav-top .mob-btn{
 		display: block;
 		padding: 16px 6vw;
+	}
+
+	a.menu-toggle span {
+        height: 1px;
+    }
+	a.menu-toggle span:before, a.menu-toggle span:after {
+        height: 1px;
 	}
 
 
@@ -673,6 +682,13 @@
 		background: linear-gradient(90deg, #000000b3, #00142ad9);
 		width: 100%;
 		margin: 0;
+	}
+
+	.mob-header .width-container {
+    	width: 93%;
+	}
+	header.fixed-to-top .main-header .width-container {
+    	width: 91%;
 	}
 	/*a.menu-toggle.active {
         position: absolute;

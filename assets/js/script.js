@@ -355,7 +355,7 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         smartSpeed: 2000,
         responsive: {
-            0: { items: 1 },
+            0: { items: 1.1 },
             450: { items: 1.3 },
             600: { items: 1.5 },
             700: { items: 2 },
@@ -435,7 +435,7 @@ $(document).ready(function () {
         smartSpeed: 1000,
         margin: 15,
         responsive: {
-            0: { items: 1 },
+            0: { items: 1.1 },
             500: { items: 1.5 },
             600: { items: 1 },
             768: { items: 1.2 },
@@ -478,7 +478,7 @@ $(document).ready(function () {
         autoplay: false,
         smartSpeed: 700,
         responsive: {
-            0: { items: 1 },
+            0: { items: 1.1 },
             450: { items: 1.5 },
             600: { items: 2 },
             768: { items: 2.5 },
@@ -520,7 +520,7 @@ $(document).ready(function () {
         autoplay: true,
         smartSpeed: 700,
         responsive: {
-            0: { items: 1 },
+            0: { items: 1.1 },
             500: { items: 1.2 },
             700: { items: 1.5 },
             800: { items: 2 },
