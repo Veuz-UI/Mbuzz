@@ -4644,7 +4644,7 @@ section {
     inset 0 -28.608px 11.443px -0.954px rgba(35, 101, 255, 0.15),
     inset 0 -22.886px 15.925px -8.582px rgba(255, 255, 255, 0.64),
     inset 0 -32.422px 25.461px -9.536px rgba(13, 180, 249, 0.50);
-  min-height: 375px;
+  min-height: 393px;
 }
 .applied-ai .core-card:hover {
   background: linear-gradient(
