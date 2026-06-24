@@ -589,6 +589,7 @@ section {
   transition: all 0.3s ease;
   border: 1px solid var(--primary-color);
   font-family: "Manrope", sans-serif;
+  transition: opacity 0.4s ease;
 }
 
 .login-btn:hover,
@@ -698,7 +699,7 @@ section {
 .banner_slider .carousel-caption p {
   font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.5;
   color: #FFFFFF;
   margin-bottom: 30px;
 }
@@ -829,7 +830,9 @@ section {
 
   .banner_slider .carousel-caption p {
     font-size: 14px;
-    line-height: 25px;
+  }
+  .banner_slider .carousel-caption p {
+    margin-bottom: 35px;
   }
 }
 
@@ -894,6 +897,12 @@ section {
   }
   .right-slider-footer{
     display: none;
+  }
+
+  .banner_slider .carousel-caption .main-btn,
+  .main-btn {
+    font-size: 12px;
+    padding: 15px 20px;
   }
 }
 
@@ -1702,6 +1711,10 @@ section {
     padding: 50px 0 0 !important;
   }
 
+  .right-ai-right{
+    order: -1;
+  }
+
   .ai-about .logo-card {
     padding: 0;
     text-align: center;
@@ -1709,8 +1722,9 @@ section {
   }
 
   .ai-about .logo-card img {
-    height: 200px;
+    height: 275px;
     object-fit: contain;
+    margin-bottom: 25px;
   }
 
   .ai-left p {
@@ -1782,7 +1796,7 @@ section {
 
 @media (max-width: 600px) {
   .innovation-box {
-    padding: 15px;
+    padding: 25px;
   }
 
   .innovation-content {
@@ -1792,6 +1806,7 @@ section {
 
   .innovation-img {
     text-align: center;
+    margin-bottom: 25px;
   }
 
   .innovation-img img {
@@ -1954,6 +1969,9 @@ section {
 }
 
 @media (max-width: 600px) {
+  .core-offering .core-header{
+    align-items: center;
+  }
   .core-offering .core-card {
     min-height: 300px;
   }
@@ -1972,8 +1990,11 @@ section {
   }
 
   .core-offering .core-nav button {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+  .core-offering .core-nav button svg {
+    font-size: 12px;
   }
 }
 
@@ -3189,7 +3210,7 @@ section {
 }
 .ai-consulting-list-item h4 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 22px;
   margin-bottom: 16px;
   font-family: "Manrope", sans-serif;
@@ -4617,7 +4638,7 @@ section {
   min-width: 20px;
   height: 20px;
   background: #22c55e;
-  color: #fff;
+  color: #000;
   font-size: 12px;
   border-radius: 50%;
   display: flex;
@@ -4708,7 +4729,7 @@ section {
 
 .applied-ai .core-card h3 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
   font-family: "Manrope", sans-serif;
 }
@@ -5466,7 +5487,7 @@ section {
 
 .ai-real-world-impact .core-card h3 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black);
   margin-bottom: 10px;
   font-family: "Manrope", sans-serif;
@@ -5599,7 +5620,7 @@ section {
 
 .ai-deployment .ai-deployment-type h3 {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.5;
   margin-bottom: 0;
   transition: .5s;
@@ -5612,7 +5633,7 @@ section {
   line-height: 1.5;
   margin: 0;
   transition: .5s;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .ai-deployment .ai-deployment-type:hover {
