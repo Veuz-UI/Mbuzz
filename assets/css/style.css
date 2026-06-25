@@ -751,7 +751,7 @@ section {
   /* filter: brightness(1.2) contrast(1.2); */
 }
 
-.carousel-item.active img {
+/* .carousel-item.active img {
   animation: zoomInOut 10s ease-in-out infinite;
 }
 
@@ -767,7 +767,7 @@ section {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .slider-footer {
   display: flex;
@@ -4773,7 +4773,7 @@ section {
 
 .applied-ai .core-card p {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #FFFFFF;
 }
@@ -4934,14 +4934,16 @@ section {
   font-weight: 700;
   margin-bottom: 12px;
   color: #222;
+  font-size: 18px;
   font-family: "Manrope", sans-serif;
 }
 
 .storage-portfolio .timeline-item p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
-  color: #555;
+  color: #000000ce;
   margin: 0;
+  font-weight: 400;
 }
 
 @media(max-width:991px) {
@@ -6237,7 +6239,7 @@ section {
   right: 0px;
   top: 20px;
   height: 2px;
-  background: #007fd445;
+  background: var(--gradient);
 }
 
 .in-build-lifecycle .timeline-item {
@@ -6261,7 +6263,7 @@ section {
 
 .in-build-lifecycle .timeline-item h4 {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.5;
   color: #fff;
   margin-bottom: 0;
@@ -6272,6 +6274,7 @@ section {
   color: #c9d0e0;
   line-height: 1.5;
   font-size: 15px;
+  font-weight: 400;
 }
 
 @media (max-width: 600px) {
@@ -6626,6 +6629,7 @@ section {
   color: #b7c2d0;
   line-height: 1.5;
   margin: 0;
+  font-weight: 400;
 }
 
 @media(max-width:991px) {
