@@ -621,6 +621,7 @@ section {
   border: 1px solid var(--primary-color);
   font-family: "Manrope", sans-serif;
   transition: opacity 0.4s ease;
+  line-height: 30px;
 }
 
 .login-btn:hover,
