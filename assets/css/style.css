@@ -203,21 +203,29 @@ a {
   border-radius: 0;
 }
 
-header.fixed-to-top .main-header {
-  position: fixed; /* fixed */
-  /* background: #00000082; */
-  background: #11141f;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 9; /*z-index: 8;*/
-  top: 0;
-  transition: transform 0.4s ease;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateY(0);
+    opacity: 1;
 }
 
-header{
-  transition: transform 0.4s ease;
+header.fixed-to-top .main-header {
+    background: #11141f;
+    top: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition:  .5s ease, box-shadow .5s ease;
 }
-header.nav-hide{
-  transform: translateY(-100%);
+
+header.nav-hide {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
 }
 
 /*logo*/
@@ -272,6 +280,7 @@ header.nav-hide{
   color: #cfd8dc;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid #ffffff00;
 }
 
 .nav-desc-menu ul li a {
@@ -281,6 +290,7 @@ header.nav-hide{
   cursor: pointer;
   font-family: "Manrope", sans-serif;
   letter-spacing: 1px;
+  line-height: 30px;
 }
 
 /* .nav-desc-menu ul li .dropdown-toggle::after {
@@ -308,18 +318,35 @@ header.nav-hide{
 .nav-desc-menu ul .nav-menu-item.active-menu {
   color: var(--white);
   background: var(--gradient);
+  transition: background .5s ease, color .5s ease, transform .5s ease, border-color .5s ease;
   /* transform: scale(1.02); */
   /* border: 1px solid rgba(255, 255, 255, 0.33); */
   /* padding: 8px 19px; */
   position: relative;
 }
-.nav-desc-menu ul .nav-menu-item.active-menu::before {
+.nav-desc-menu ul .nav-menu-item:hover {
+  color: var(--white);
+  background: transparent;
+  transition: background .5s ease, color .5s ease, transform .5s ease, border-color .5s ease;
+  position: relative;
+  border: 1px solid var(--primary-color);
+}
+.nav-desc-menu ul .nav-menu-item.active-menu:hover {
+  background: var(--gradient);
+  /* border: 1px solid rgba(255, 255, 255, 0.33); */
+}
+.nav-desc-menu ul .nav-menu-item.active-menu::before,
+.nav-desc-menu ul .nav-menu-item:hover::before {
   content: "";
   position: absolute;
   inset: 0px;
   border-radius: 50px;
-  border: 1px solid #ffffff33;
+  
   pointer-events: none;
+  transition: border-color 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.nav-desc-menu ul .nav-menu-item.active-menu:hover::before {
+  border-color: transparent;
 }
 
 header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
@@ -343,6 +370,10 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   color: #fff;
 }
 
+.lang-switch span a{
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
 /* parent dropdown */
 .right-nav-top .dropdown-menu {
   position: absolute;
@@ -354,14 +385,14 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   min-width: 220px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
   display: block;
   border: 1px solid #0db4f90f;
   background: rgb(4 7 17 / 92%);
 }
 
-.right-nav-top .dropdown.active .dropdown-menu {
-  display: block;
+.right-nav-top .dropdown.active .dropdown-menu,
+.right-nav-top .dropdown.hover-active .dropdown-menu {
   opacity: 1;
   visibility: visible;
   padding: 10px 15px;
@@ -1247,7 +1278,8 @@ section {
 @media (max-width:767px) {
   .copy-right-item {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    padding-top: 5px;
   }
 
   .footer-icons {
@@ -2440,8 +2472,8 @@ section {
   }
 
   .project-work .proj-card-out {
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 400px;
+    max-height: 400px;
   }
 
   .project-work h5 {
@@ -2456,18 +2488,18 @@ section {
 
 @media (max-width: 450px) {
   .top-proj-card {
-    padding: 10px;
+    padding: 20px;
   }
 
   .project-work .proj-body {
-    padding: 10px;
+    padding: 20px;
   }
 }
 
 @media (max-width: 400px) {
   .project-work .proj-card-out {
-    min-height: 300px;
-    max-height: 300px;
+    min-height: 400px;
+    max-height: 400px;
   }
 }
 
@@ -3060,7 +3092,7 @@ section {
 @media (max-width: 600px) {
   .ai-tag {
     padding: 7px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .computer-overview {
     display: block;
@@ -3071,9 +3103,9 @@ section {
     margin: 15px 0;
   }
   .nvidia-card img {
-    max-width: 150px;
-    height: 55px;
-    border-radius: 7px;
+    max-width: 170px;
+    height: auto;
+    border-radius: 15px;
     border: 1px solid #fff;
   }
 }
@@ -3291,14 +3323,19 @@ section {
 
 @media (max-width: 992px) {
   .execution-ai-in {
-    padding: 30px;
+    padding: 75px 20px !important;
   }
   .execution-ai-card {
     position: relative;
     max-width: 100%;
     padding: 30px 20px;
-    border: 1px solid rgb(0 0 0);
-    background: linear-gradient(0deg, rgb(0 0 0 / 87%) 0%, rgb(0 0 0 / 87%) 100%);
+    border: 1px solid #0db4f945;
+    border-radius: 25px !important;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.632) 0%, rgba(0, 0, 0, 0.664) 100%);
+  }
+  .execution-ai-in{
+    border-radius: 0px;
+    padding: 30px;
   }
 
   .execution-ai-card .description {
@@ -3308,7 +3345,6 @@ section {
 
 @media (max-width: 600px) {
   .execution-ai-in {
-    padding: 0px;
     border: 0;
     min-height: auto;
   }
@@ -3419,7 +3455,7 @@ section {
   line-height: 1.5;
   padding: 0 1.5rem 1.5rem;
   background: transparent;
-  color: #1b2538;
+  color: #556482;
 }
 
 .accrd-head {
@@ -3498,7 +3534,8 @@ section {
 
 @media (max-width: 600px) {
   .right-faq-img img {
-    height: 300px;
+    height: auto;
+    width: 100%;
     border-radius: 20px;
   }
   .left-faq .accordion-button::after {
@@ -8793,6 +8830,10 @@ html[dir="rtl"] .accordion-button::after {
   margin-right: auto;
 }
 
+html[dir="rtl"] .ai-approach-in .right-ai-approach img{
+  transform: none;
+}
+
 /*inner banner arabic*/
 html[dir="rtl"] .banner-sub-img img {
   right: initial;
@@ -8866,3 +8907,4 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   margin-right: auto;
   margin-left: 0;
 }
+

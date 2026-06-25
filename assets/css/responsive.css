@@ -12,8 +12,11 @@
 	.right-nav-top {
 		gap: 25px;
 	}
-	.nav-desc-menu ul li {
+	/* .nav-desc-menu ul li {
 		padding: 3px 18px;
+	} */
+	.nav-desc-menu ul li {
+		padding: 1px 18px;
 	}
 }
 
@@ -466,8 +469,20 @@
         padding-right: 10px;
 		text-align: justify;
 	}
-	
-
+	.news-events .main-btn-out{
+		text-align: left !important;
+		margin-top: 20px !important;
+	}
+	.ai-overview{
+		padding-top: 80px !important;
+		padding-bottom: 70px !important;
+	}
+	.ai-overview .heading{
+		font-size: 25px;
+	}
+	.mobile-remove-container{
+		width: 100%;
+	}
 
 }
 

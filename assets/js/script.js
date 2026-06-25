@@ -64,7 +64,7 @@ $(document).ready(function () {
 
         var scrollTop = $(this).scrollTop();
 
-        if (scrollTop > 60) {
+        if (scrollTop > 0) {
 
             headerEl.addClass('fixed-to-top');
             headerWrapEl.addClass('fixed-to-top');
@@ -73,12 +73,12 @@ $(document).ready(function () {
             var navHeight = $('header').outerHeight();
             subnavEl.css('top', navHeight + 'px');
 
-            // Hide on scroll down
-            if (scrollTop > lastScrollTop) {
+            // Hide on scroll down only after the header is already visible and user has scrolled enough
+            if (scrollTop > lastScrollTop && scrollTop > 80) {
                 headerEl.addClass('nav-hide');
             }
             // Show on scroll up
-            else {
+            else if (scrollTop < lastScrollTop) {
                 headerEl.removeClass('nav-hide');
             }
 
@@ -103,9 +103,20 @@ $('.dropdown-toggle').click(function (e) {
     e.preventDefault();
     let parent = $(this).parent();
 
-    $('.dropdown').not(parent).removeClass('active');
-    parent.toggleClass('active');
+    $('.dropdown').not(parent).removeClass('active hover-active');
+    parent.removeClass('hover-active').toggleClass('active');
 });
+
+// dropdown hover should show hovered menu and replace any active menu
+$('.right-nav-top .dropdown').hover(
+    function () {
+        $('.right-nav-top .dropdown').not(this).removeClass('active hover-active');
+        $(this).removeClass('active').addClass('hover-active');
+    },
+    function () {
+        $(this).removeClass('hover-active');
+    }
+);
 
 // submenu click
 $('.submenu-toggle').click(function (e) {
@@ -119,7 +130,7 @@ $('.submenu-toggle').click(function (e) {
 // click outside close
 $(document).click(function (e) {
     if (!$(e.target).closest('.dropdown').length) {
-        $('.dropdown, .submenu').removeClass('active');
+        $('.dropdown, .submenu').removeClass('active hover-active');
     }
 });
 
