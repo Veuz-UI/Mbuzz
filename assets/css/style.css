@@ -689,6 +689,10 @@ section {
 /* ------------------------------
 			Banner 
 ------------------------------ */
+.slider-banner{
+  position: relative;
+  z-index: 5;
+}
 .banner_slider .carousel-outr .carousel-inner {
   height: 100%;
 }
