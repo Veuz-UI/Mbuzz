@@ -2039,20 +2039,20 @@ section {
   .core-offering .core-card {
     min-height: 400px;
   }
-
+  .core-offering .card-icon {
+    width: 40px;
+    height: 40px;
+  }
   .core-offering .core-card h3 {
     font-size: 20px;
   }
-
   .core-offering .core-card p {
     font-size: 14px;
   }
-
   .core-offering .core-offering-in {
     width: 93%;
     margin: 0 auto;
   }
-
   .core-offering .core-nav button {
     width: 30px;
     height: 30px;
@@ -5727,6 +5727,12 @@ section {
   transition: .5s;
 }
 
+.ai-factory-deployment .section-header p{
+  max-width: 645px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* ai labs */
 .ai-lab-value .ai-deployment-type-lab {
   border-left: 1px solid #0db4f92e !important;
@@ -6709,6 +6715,12 @@ section {
 
 
 /* ------------- careers ---------------- */
+.about-intelligent p{
+  width: 100%;
+  max-width: 575px;
+  margin: 0 auto;
+}
+
 .logo-card{
   padding-left: 30px;
 }

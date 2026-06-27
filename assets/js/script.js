@@ -845,45 +845,33 @@ $(document).ready(function () {
         autoplay: false,
         nav: false,
         dots: false,
-        responsive: {
+         responsive: {
             0: {
                 items: 1
             },
             420: {
-                items: 1.3
+                items: 1
             },
             600: {
-                items: 1.5
+                items: 1
             },
             700: {
                 items: 2
             },
-            800: {
-                items: 2.2
-            },
-            900: {
-                items: 2.5
-            },
             1000: {
                 items: 3
             },
-            1200: {
-                items: 3.5
-            },
             1300: {
-                items: 4
-            },
-            1500: {
                 items: 4
             }
         }
     });
-    $('.core-next').click(function () {
-        owl.trigger('next.owl.carousel');
-    });
-    $('.core-prev').click(function () {
-        owl.trigger('prev.owl.carousel');
-    });
+    // $('.core-next').click(function () {
+    //     owl.trigger('next.owl.carousel');
+    // });
+    // $('.core-prev').click(function () {
+    //     owl.trigger('prev.owl.carousel');
+    // });
 });
 
 
