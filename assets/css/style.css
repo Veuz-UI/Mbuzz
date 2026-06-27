@@ -2037,11 +2037,11 @@ section {
     align-items: center;
   }
   .core-offering .core-card {
-    min-height: 300px;
+    min-height: 400px;
   }
 
   .core-offering .core-card h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .core-offering .core-card p {
