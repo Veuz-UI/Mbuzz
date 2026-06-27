@@ -916,6 +916,10 @@ section {
 }
 
 @media (max-width:600px) {
+  .slider-banner{
+    background: #000;
+  }
+  
   .banner_slider .carousel-item img {
     height: 370px;
   }
