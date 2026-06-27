@@ -134,28 +134,101 @@ $(document).click(function (e) {
     }
 });
 
-// nav mobile 
+// // nav mobile 
+// var t1 = new TimelineMax({
+//     paused: true
+// });
+// t1.to(".nav-container", 1, {
+//     left: 0,
+//     ease: Expo.easeInOut
+// });
+// t1.staggerFrom(
+//     ".menu > div",
+//     0.8, {
+//         y: 100,
+//         opacity: 0,
+//         ease: Expo.easeOut
+//     },
+//     0.1,
+//     "-=0.4"
+// );
+// // animate buttons
+// t1.staggerFrom(
+//     ".mob-btn",
+//     0.8, {
+//         y: 80,
+//         opacity: 0,
+//         ease: Expo.easeOut
+//     },
+//     0.2,
+//     "-=0.4"
+// );
+// t1.reverse();
+// $(".menu-toggle").click(function () {
+//     $(this).toggleClass("active");
+
+//     if (t1.reversed()) {
+//         // Open Menu
+//         $("body").css({
+//             overflow: "hidden",
+//             height: "100vh"
+//         });
+//     } else {
+//         // Close Menu
+//         $("body").css({
+//             overflow: "",
+//             height: ""
+//         });
+//     }
+
+//     t1.reversed(!t1.reversed());
+
+//     return false;
+// });
+
 var t1 = new TimelineMax({
-    paused: true
+    paused: true,
+    reversed: true,
+
+    onReverseComplete: function () {
+        $("body").css({
+            overflow: "",
+            height: ""
+        });
+    }
 });
-t1.to(".nav-container", 1, {
+
+t1.to(".nav-container", 0.4, {
     left: 0,
-    ease: Expo.easeInOut
-});
-t1.staggerFrom(
+    ease: Power2.easeOut
+})
+.staggerFrom(
     ".menu > div",
-    0.8, {
-        y: 100,
-        opacity: 0,
-        ease: Expo.easeOut
+    0.3,
+    {
+        y: 20,
+        opacity: 0
     },
-    0.1,
-    "-=0.4"
+    0.03,
+    "-=0.15"
 );
-// animate buttons
+
+// t1.staggerFrom(
+//     ".menu > div",
+//     0.8,
+//     {
+//         y: 100,
+//         opacity: 0,
+//         ease: Expo.easeOut
+//     },
+//     0.1,
+//     "-=0.4"
+// );
+
 t1.staggerFrom(
     ".mob-btn",
-    0.8, {
+    0.8,
+    {
         y: 80,
         opacity: 0,
         ease: Expo.easeOut
@@ -163,30 +236,21 @@ t1.staggerFrom(
     0.2,
     "-=0.4"
 );
-t1.reverse();
-// $(".menu-toggle").click(function () {
-//   $(this).toggleClass("active"); // hamburger animation
-//   t1.reversed(!t1.reversed()); // popup open close
-//   return false;
-// });
+
 $(".menu-toggle").click(function () {
+
     $(this).toggleClass("active");
 
     if (t1.reversed()) {
-        // Open Menu
         $("body").css({
             overflow: "hidden",
             height: "100vh"
         });
-    } else {
-        // Close Menu
-        $("body").css({
-            overflow: "",
-            height: ""
-        });
-    }
 
-    t1.reversed(!t1.reversed());
+        t1.play();
+    } else {
+        t1.reverse();
+    }
 
     return false;
 });

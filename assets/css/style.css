@@ -127,11 +127,11 @@ a {
 }
 
 /* Loader Inner */
-.loader-inner {
+/* .loader-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Icon */
 .loader-icon {
@@ -1397,6 +1397,7 @@ section {
 
   .newsletter-box input {
     height: 45px;
+    padding: 0 50px 0 15px;
   }
 
   .newsletter-box button {
@@ -2110,12 +2111,12 @@ section {
   margin-bottom: 30px;
 }
 
-.owl-carousel,
+/* .owl-carousel,
 .owl-stage,
 .owl-stage-outer,
 .owl-item {
   display: flex !important;
-}
+} */
 
 @media (max-width: 768px) {
 
@@ -2722,6 +2723,7 @@ section {
 .inner-banner .breadcrumb a,
 .inner-banner .breadcrumb span {
   font-size: 13px;
+  color: var(--primary-color);
   font-family: "Manrope", sans-serif;
 }
 
@@ -2820,9 +2822,13 @@ section {
     padding: 48px 0px 15px;
   }
 
-  /* .banner-sub-img img {
-    display: none;
-  } */
+  /*about banner*/
+  .about-banner{
+    min-height: 220px;
+  }
+  .about-banner .banner-inner-wrapper{
+    min-height: 130px;
+  }
 }
 
 /* --------- ai consulting --------------- */
@@ -5770,11 +5776,9 @@ section {
   .ai-deployment .ai-deployment-type {
     padding: 20px 10px;
   }
-
   .nvidia-logo-2 img {
-    max-width: 80px;
+    max-width: 120px;
   }
-
   .ai-deployment .ai-deployment-type h3 {
     font-size: 14px;
   }
@@ -6109,6 +6113,13 @@ section {
   }
   .ai-partnership .tab-content{
     padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-partnership .image-box {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -7193,7 +7204,6 @@ section {
   overflow: hidden;
   height: 450px;
   margin: 0 3px;
-  cursor: pointer;
 }
 
 .mbuzz-labs-what-we .mbuzz-labs-what-we-card-out{
@@ -7322,14 +7332,35 @@ section {
   overflow: hidden;
   padding: 160px 0;
   background: url(../img/mbuzz-lab-global.webp) no-repeat center / cover;
+  height: 600px;
+}
+.mbuzz-labs-global .ai-factory-journey{
+  height: 100%;
+}
+.mbuzz-labs-global .width-container{
+  height: 100%;
+}
+.mbuzz-labs-global .ai-journey-card-in{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .mbuzz-labs-global .ai-factory-journey-card {
   border: 1px solid #121f5870;
+  width: 500px;
 }
 
 @media (max-width: 1500px) {
   .mbuzz-labs-global {
     padding: 65px 0;
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mbuzz-labs-global {
+    height: 400px;
   }
 }
 

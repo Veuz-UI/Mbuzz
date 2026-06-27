@@ -725,7 +725,9 @@
 	} */
 
 
-
+	.about-intelligent{
+		padding-top: 0 !important;
+	}
 
 
 
@@ -753,6 +755,17 @@
 	.footer-nav{
 		margin-top: 20px;
 	}
+
+	.owl-carousel,
+	.owl-stage,
+	.owl-stage-outer,
+	.owl-item {
+	display: block !important;
+	}
+
+
+
+	
 
 }
 
