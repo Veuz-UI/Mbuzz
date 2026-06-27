@@ -5648,10 +5648,14 @@ section {
     min-height: 400px;
     max-height: 400px;
   }
-  .ai-real-world-impact .core-nav button{
+  /* .ai-real-world-impact .core-nav button{
     width: 35px;
     height: 35px;
-  }
+  } */
+  /* .ai-real-world-impact .core-nav button svg{
+    width: 15px;
+    height: 15px;
+  } */
 }
 
 @media (max-width: 400px) {
