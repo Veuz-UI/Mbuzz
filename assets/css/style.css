@@ -573,6 +573,10 @@ section {
   line-height: 1.5;
 }
 
+.text-dark{
+  color: #000 !important;
+}
+
 /* main btn */
 .req-brochure-btn {
   display: flex;
@@ -667,6 +671,24 @@ section {
 .owl-item {
   display: flex !important;
 }
+
+/* .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+.owl-item {
+    display: flex;
+}
+.owl-item .item {
+    width: 100%;
+    height: 100%;
+}
+.core-offer-slider,
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+    overflow: visible;
+} */
 
 @media (max-width: 992px) {
   .heading {
@@ -4258,9 +4280,10 @@ section {
   box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff26, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -35.4px 19.5px -12.2px #0db4f980;
 }
 
-/* .prof-services .core-card:hover {
-  box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff82, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -2.2px #0d86f957;
-} */
+.prof-services .core-card:hover {
+  background: linear-gradient(180deg, #0D0C12 0%, #0D111D 100%);
+  box-shadow: 0 -1.038px 11.205px 0 rgba(13, 180, 249, 0.20) inset, 0 -31.126px 12.45px -1.038px rgba(13, 180, 249, 0.15) inset, 0 -24.901px 17.327px -9.338px rgba(255, 255, 255, 0.64) inset, 0 -35.276px 27.702px -10.375px rgba(13, 180, 249, 0.50) inset, 0 -103.752px 48.556px -34.238px #1B3777 inset;
+}
 
 .prof-services .card-icon {
   margin-bottom: 15px;
@@ -4881,6 +4904,19 @@ section {
   font-weight: 400;
 }
 
+.storage-portfolio .portfolio-card-head h4{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  font-family: "Manrope", sans-serif;
+}
+
+.storage-portfolio .footer-timeline p{
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
 .storage-portfolio .portfolio-tabs {
   background-color: #E0E0E0;
   padding: 6px 1px;
@@ -4918,8 +4954,6 @@ section {
 .storage-portfolio .timeline-row {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
-  /* gap: 3px; */
 }
 
 .storage-portfolio .timeline-item {
@@ -4963,15 +4997,7 @@ section {
 }
 
 @media(max-width:991px) {
-  /* .storage-portfolio .timeline-row {
-    flex-wrap: wrap;
-  } */
-  /* .storage-portfolio .timeline-item {
-    flex: 0 0 calc(50% - 15px);
-  } */
-  /* .storage-portfolio .timeline-row .timeline-item:last-child {
-    border-right: none;
-  } */
+
 }
 
 @media(max-width:767px) {
@@ -4985,15 +5011,9 @@ section {
     display: block;
     background-color: transparent;
   }
-
   .storage-portfolio .portfolio-tabs .nav-item {
     margin-top: 10px;
   }
-
-  /* .storage-portfolio .timeline-row {
-    gap: 10px;
-  } */
-
   .storage-portfolio .timeline-item {
     padding: 10px;
     flex: 0 0 calc(50% - 5px);
@@ -5002,9 +5022,11 @@ section {
 
 @media(max-width:500px) {
   .storage-portfolio .timeline-item {
-    /* flex: 0 0 100%; */
     border: 0;
     padding: 10px 5px !important;
+  }
+  .storage-portfolio .timeline-row{
+    display: block;
   }
 }
 
@@ -5675,7 +5697,7 @@ section {
 
 .ai-deployment .ai-deployment-type h3 {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0;
   transition: .5s;
@@ -6558,6 +6580,9 @@ section {
 /* .wireless-approach .left-ai-approach .heading {
   padding-right: 0 !important;
 } */
+.wireless-approach .left-ai-approach p{
+  color: #000;
+}
 
 .wireless-solutions-built .core-card {
   padding-bottom: 60px;
@@ -6698,6 +6723,11 @@ section {
 .career-life {
   background: #f8f8f8;
 }
+
+.career-life .inner-page-heading p{
+  font-weight: 400;
+}
+
 .career-life .life-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6735,8 +6765,8 @@ section {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 .career-life .icon {
-  width: 35px;
-  height: 25px;
+  width: 50px;
+  height: 30px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -6744,8 +6774,8 @@ section {
 }
 .career-life .icon svg,
 .career-life .icon i {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .career-life .life-card h4 {
   font-size: 16px;
@@ -6787,7 +6817,11 @@ section {
   position: relative;
   background-color: #00001c !important;
   overflow: hidden;
-  background: url(../img/career-journey.webp) no-repeat right / cover;
+  background: url(../img/career-journey.png) no-repeat right / cover;
+}
+
+.career-workforce .service-item h5 {
+  font-weight: 600;
 }
 
 
@@ -6970,7 +7004,7 @@ section {
 
 .case-study-dtls-head h2 {
   font-size: 33px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
   font-family: "Manrope", sans-serif;
 }
@@ -7087,11 +7121,11 @@ section {
 
 @media (max-width: 600px) {
   .case-study-dtls-in h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .case-study-dtls-cont h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .case-study-dtls-cont ul li::before {
     width: 10px;
