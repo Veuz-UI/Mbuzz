@@ -506,7 +506,7 @@ $(document).ready(function () {
         rtl: isRTL,
         nav: false,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 700,
         responsive: {
             0: { items: 1.1 },
@@ -866,12 +866,12 @@ $(document).ready(function () {
             }
         }
     });
-    // $('.core-next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // });
-    // $('.core-prev').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // });
+    $('.core-next').click(function () {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.core-prev').click(function () {
+        owl.trigger('prev.owl.carousel');
+    });
 });
 
 

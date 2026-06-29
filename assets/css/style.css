@@ -1116,6 +1116,7 @@ section {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
   margin-bottom: 0;
+  max-width: 75%;
   font-family: "Manrope", sans-serif;
 }
 
@@ -1451,6 +1452,10 @@ section {
 
   .ft-rght-mob {
     display: block;
+  }
+
+  .ft-rght-mob .accordion-item {
+    margin-top: 0;
   }
 
   .ft-rght-sec .accordion-item button,
@@ -1888,9 +1893,9 @@ section {
   margin-left: auto;
 }
 
-/* .core-offer-slider-ar{
-  direction: ltr;
-} */
+.core-offering .item{
+  width: 100%;
+}
 
 .core-offering .core-card {
   padding: 69px 35px 50px 35px;
@@ -3973,7 +3978,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     padding: 1px;
     background: linear-gradient(-87deg, #005c8a, #587013);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -3995,7 +4000,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     padding: 1px;
     background: linear-gradient(269deg, #0db2f900, #840d0c);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -4017,7 +4022,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     padding: 1px;
     background: linear-gradient(269deg, #0db2f900, #7f11a5);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -4039,7 +4044,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     padding: 1px;
     background: linear-gradient(269deg, #0db2f900, #0e59ae);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -4088,7 +4093,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     padding: 1px;
     background: linear-gradient(269deg, #0db2f900, #d4a70f);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -4867,6 +4872,10 @@ section {
 
 .computer-vision-ai .core-card {
   padding: 20px 20px 25px 20px;
+}
+
+.inbuild-solution .core-card{
+  min-height: 350px;
 }
 
 @media (max-width: 992px) {
