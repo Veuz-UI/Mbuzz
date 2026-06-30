@@ -3398,17 +3398,9 @@ section {
   stroke: #fff;
   transition: 0.3s ease;
 }
-<<<<<<< Updated upstream
 /* .ai-consulting-list-item:hover .icon svg {
   stroke: var(--primary-color) !important;
 } */
-=======
-
-.ai-consulting-list-item:hover .icon svg {
-  stroke: var(--primary-color) !important;
-}
-
->>>>>>> Stashed changes
 .ai-consulting-list-item .icon svg path {
   stroke: #fff;
   transition: stroke 0.3s ease;
@@ -4115,7 +4107,6 @@ section {
 
 /* color */
 .infrastructure-wrapper__panel--1 .infrastructure-wrapper__img-placeholder::before {
-<<<<<<< Updated upstream
     content: "";
     position: absolute;
     inset: 0;
@@ -4126,18 +4117,6 @@ section {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-=======
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 15px 0 0 15px;
-  padding: 1px;
-  background: linear-gradient(-87deg, #005c8a, #587013);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
->>>>>>> Stashed changes
 }
 
 .infrastructure-wrapper__panel--1 .infrastructure-wrapper__panel-color {
@@ -4151,7 +4130,6 @@ section {
 }
 
 .infrastructure-wrapper__panel--2 .infrastructure-wrapper__img-placeholder::before {
-<<<<<<< Updated upstream
     content: "";
     position: absolute;
     inset: 0;
@@ -4162,18 +4140,6 @@ section {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-=======
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 15px 0 0 15px;
-  padding: 1px;
-  background: linear-gradient(269deg, #0db2f900, #840d0c);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
->>>>>>> Stashed changes
 }
 
 .infrastructure-wrapper__panel--2 .infrastructure-wrapper__panel-color {
@@ -4187,7 +4153,6 @@ section {
 }
 
 .infrastructure-wrapper__panel--3 .infrastructure-wrapper__img-placeholder::before {
-<<<<<<< Updated upstream
     content: "";
     position: absolute;
     inset: 0;
@@ -4198,18 +4163,6 @@ section {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-=======
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 15px 0 0 15px;
-  padding: 1px;
-  background: linear-gradient(269deg, #0db2f900, #7f11a5);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
->>>>>>> Stashed changes
 }
 
 .infrastructure-wrapper__panel--3 .infrastructure-wrapper__panel-color {
@@ -4223,7 +4176,6 @@ section {
 }
 
 .infrastructure-wrapper__panel--4 .infrastructure-wrapper__img-placeholder::before {
-<<<<<<< Updated upstream
     content: "";
     position: absolute;
     inset: 0;
@@ -4234,18 +4186,6 @@ section {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-=======
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 15px 0 0 15px;
-  padding: 1px;
-  background: linear-gradient(269deg, #0db2f900, #0e59ae);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
->>>>>>> Stashed changes
 }
 
 .infrastructure-wrapper__panel--4 .infrastructure-wrapper__panel-color {
@@ -4286,7 +4226,6 @@ section {
 }
 
 .infrastructure-wrapper__panel--5 .infrastructure-wrapper__img-placeholder::before {
-<<<<<<< Updated upstream
     content: "";
     position: absolute;
     inset: 0;
@@ -4297,18 +4236,6 @@ section {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
-=======
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 15px 0 0 15px;
-  padding: 1px;
-  background: linear-gradient(269deg, #0db2f900, #d4a70f);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
->>>>>>> Stashed changes
 }
 
 .infrastructure-wrapper__panel--5 .infrastructure-wrapper__panel-color {
