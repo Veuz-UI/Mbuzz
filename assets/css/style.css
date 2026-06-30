@@ -3240,6 +3240,9 @@ section {
   .ai-overview-in {
     width: 100%;
   }
+  .computer-overview-item h6{
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3255,7 +3258,7 @@ section {
 
   .computer-overview-item {
     max-width: 100%;
-    margin: 15px 0;
+    margin: 25px 0;
   }
 
   .nvidia-card img {
@@ -9269,6 +9272,14 @@ html[dir="rtl"] .newsletter-box button svg {
 html[dir="rtl"] .newsletter-box button:hover svg {
   transform: rotate(40deg);
   transition: transform 0.4s ease;
+}
+
+html[dir="rtl"] .news-events .read-more{
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+html[dir="rtl"] .footer-col ul li a{
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 
