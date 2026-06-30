@@ -2869,6 +2869,18 @@ section {
   .about-banner .banner-inner-wrapper{
     min-height: 130px;
   }
+
+  .inner-banner .breadcrumb {
+    gap: 2px;
+    font-size: 13px;
+  }
+  .inner-banner .breadcrumb a, .inner-banner .breadcrumb span {
+    font-size: 12px;
+  }
+
+  .inner-banner h1 {
+    font-size: 25px;
+  }
 }
 
 /* --------- ai consulting --------------- */
@@ -3282,9 +3294,9 @@ section {
   stroke: #fff;
   transition: 0.3s ease;
 }
-.ai-consulting-list-item:hover .icon svg {
+/* .ai-consulting-list-item:hover .icon svg {
   stroke: var(--primary-color) !important;
-}
+} */
 .ai-consulting-list-item .icon svg path {
   stroke: #fff;
   transition: stroke 0.3s ease;
@@ -7050,6 +7062,7 @@ section {
   object-fit: cover;
   border-radius: 20px;
   max-height: 450px;
+  object-position: top center;
 }
 
 .case-study-dtls-in .date {
@@ -8334,7 +8347,18 @@ section {
     width: 70px;
     margin-top: 20px;
   }
+}
 
+@media(max-width:600px) {
+  .mission-vision-wrapper-main .vision-mission-top {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .mission-vision-wrapper-main .vision-box p,
+  .mission-vision-wrapper-main .mission-box p {
+    margin-bottom: 0;
+  }
 }
 
 /* Partners */
@@ -8558,7 +8582,9 @@ section {
 
 
 
-
+.iti .iti__selected-dial-code{
+    color: white;
+}
 
 
 
