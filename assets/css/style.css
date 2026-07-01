@@ -778,7 +778,8 @@ section {
 }
 
 .banner_slider .carousel-caption .main-btn {
-  padding: 10px 25px;
+  padding: 15px 25px;
+  font-weight: 200;
 }
 
 .banner_slider .carousel-caption .main-btn:hover {
@@ -4972,7 +4973,7 @@ section {
 }
 
 .applied-ai .core-card:hover .card-icon img {
-  max-height: 150px;
+  max-height: 190px;
 }
 
 .edge-card-icon img {
@@ -9547,17 +9548,17 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .career-job-content h3 {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 400;
-  color: #12284c;
+  color: #000;
   margin-bottom: 5px;
 }
 
 .career-job-content p {
-  color: #6b7280;
-  font-size: 15px;
-  line-height: 1.8;
+  color: #303233;
+  font-size: 14px;
   margin-bottom: 25px;
+  width: 80%;
 }
 
 /* Bottom */
@@ -9586,9 +9587,9 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   font-size: 14px;
 }
 
-.career-job-info i {
-  color: #2695ff;
-  font-size: 14px;
+.career-job-info svg {
+  color: #0DB4F9;
+  font-size: 21px;
 }
 
 /* Buttons */
@@ -9598,10 +9599,13 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   gap: 12px;
 }
 
-.btn-job-outline,
-.btn-job-fill {
+.career-job-buttons .main-btn{
+  padding: 15px 25px;
+}
+
+.btn-job-outline {
   min-width: 150px;
-  height: 46px;
+  padding: 15px 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9611,6 +9615,9 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   font-size: 14px;
   font-weight: 600;
   transition: .35s;
+  color: #000 !important;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .btn-job-outline {
@@ -9624,10 +9631,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   color: #fff;
 }
 
-.btn-job-fill {
-  background: linear-gradient(90deg, #28a5ff, #0667d0);
-  color: #fff;
-}
+
 
 .btn-job-fill:hover {
   transform: translateY(-2px);
