@@ -9432,7 +9432,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   border-radius: 18px;
   padding: 17px;
   position: sticky;
-  top: 100px;
+  top: 70px;
   border: 1px solid #edf1f7;
   z-index: 1;
 }
@@ -9533,18 +9533,20 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .career-job-item:hover {
-  transform: translateY(-4px);
-  border-color: #d7e8ff;
   box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+  background: linear-gradient(90deg, rgb(249, 252, 254) 0%, rgb(229, 247, 255) 100%) !important;
 }
 
 .career-post-time {
   position: absolute;
   right: 30px;
-  top: 22px;
-  color: #4fa8ff;
+  top: 30px;
+  color: var(--primary-color);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 300;
+  background: #D0F1FF;
+  padding: 5px 10px;
+  border-radius: 8px;
 }
 
 .career-job-content h3 {
@@ -9623,23 +9625,17 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 .btn-job-outline {
   border: 1.5px solid #2196f3;
   color: #2196f3;
-  background: #fff;
+  background: transparent;
 }
 
 .btn-job-outline:hover {
-  background: #2196f3;
+  background: var(--primary-color);
   color: #fff;
+  transform: translateY(-5px);
+  box-shadow: rgba(39, 39, 39, 0.35) 0px 12px 30px;
 }
 
 
-
-.btn-job-fill:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(20, 124, 255, .35);
-  color: #fff;
-}
-
-.btn-job-fill i,
 .btn-job-outline i {
   font-size: 12px;
 }
