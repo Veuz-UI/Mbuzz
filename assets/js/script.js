@@ -994,3 +994,6 @@ function setStep(i) {
     document.querySelectorAll('.cap-slide').forEach((c, idx) => c.classList.toggle('active', idx === i));
 }
 // });
+
+
+
