@@ -9528,7 +9528,6 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 .career-job-item:not(.is-hidden) {
   opacity: 1;
   transform: translateY(0) scale(1);
-  max-height: 400px;
   visibility: visible;
 }
 
@@ -9635,6 +9634,19 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   box-shadow: rgba(39, 39, 39, 0.35) 0px 12px 30px;
 }
 
+.career-grid{
+  display: flex;
+  gap: 30px;
+}
+
+.career-grid-30{
+  width: 27%;
+}
+
+.career-grid-70{
+  width: 73%;
+}
+
 
 .btn-job-outline i {
   font-size: 12px;
@@ -9644,20 +9656,192 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
     transition:.35s ease;
 }
 
+.career-job-item:last-child{
+  margin-bottom: 0px;
+}
+
 .career-job-item.hide{
     display:none;
 }
 
+.career-inner-data{
+  margin-bottom: 40px;
+}
+
+.career-inner-data ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.career-inner-data ul li{
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 5px;
+}
+
+.career-inner-data ul li::before{
+    content: "\f178";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #0d6efd;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    transform: rotate(-45deg);
+    color: var(--primary-color);
+}
+
+.inner-job-catogeries{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.career-inner-data .inner-job-catogery{
+  font-size: 14px;
+  background: #DEE4EA;
+  padding: 5px 15px;
+  color: rgba(9, 66, 126, 1);
+  border-radius: 8px;
+}
+
+.career-inner-data h6{
+  font-size: 23px;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.career-inner-data p{
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.career-share-links{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.career-share-links h6{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.career-overview-box{
+  padding: 30px;
+  background: #F4F7FA;
+  border-radius: 8px;
+}
+
+.career-overview-box h6{
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.career-share-links svg{
+  font-size: 20px;
+  color: var(--black);
+}
+
+.career-overview-data h6{
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 5px;
+  font-weight: 400 !important;
+}
+
+.career-overview-data p{
+  font-size: 14px;
+  color: #6C757D;
+  font-weight: 400;
+}
+
+.career-overview-data{
+  display: flex;
+  align-items: self-start;
+  gap: 10px;
+}
+
+.career-inner-padding{
+  padding:  30px 50px;
+}
+
+.career-form{
+  padding: 40px;
+  background: #F4F7FA;
+  border-radius: 8px;
+}
+
+.career-form .left-contact label{
+  color: #000;
+}
+
+.career-form .left-contact input, .left-contact textarea{
+  color: #000;
+}
+
+.career-form .left-contact input::placeholder, .left-contact textarea::placeholder{
+  color: #626262;
+}
+
+.upload-your-cv-button{
+  background: #fff;
+  padding: 0px 15px;
+  color: #000;
+  font-size: 13px;
+  width: fit-content;
+  border: none !important;
+  height: 55px;
+  box-shadow: none !important;
+  min-width: 150px;
+}
+
+.upload-info-btn{
+  display: flex;
+  gap: 10px;
+  align-items: self-start;
+}
 /*==============================
     Responsive
 ===============================*/
 
 @media(max-width:991px) {
+  .upload-info-btn{
+    flex-direction: column;
+  }
 
   .career-filter-box {
     margin-bottom: 30px;
     position: static;
   }
+  .career-grid-30{
+    width: 100%;
+  }
+
+  .career-grid-70{
+    width: 100%;
+  }
+  .career-inner-padding{
+    padding:  25px 0px;
+    padding-bottom: 0px;
+  }
+
+  .career-overview-box{
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .career-inner-data h6{
+    font-size: 20px;
+  }
+
 
   .career-job-item {
     padding: 25px;
@@ -9675,19 +9859,14 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   .career-job-buttons {
     width: 100%;
   }
-
-  .btn-job-outline,
-  .btn-job-fill {
-    flex: 1;
+  .career-grid{
+    flex-direction: column;
+    gap: 0px;
   }
 
 }
 
 @media(max-width:767px) {
-
-  .career-inner-datas {
-    padding: 40px 0;
-  }
 
   .career-job-item {
     padding: 20px;
@@ -9699,6 +9878,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
     right: 0;
     display: block;
     margin-bottom: 10px;
+    width: fit-content;
   }
 
   .career-job-content h3 {
@@ -9710,12 +9890,4 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
     gap: 12px;
   }
 
-  .career-job-buttons {
-    flex-direction: column;
-  }
-
-  .btn-job-outline,
-  .btn-job-fill {
-    width: 100%;
-  }
 }
