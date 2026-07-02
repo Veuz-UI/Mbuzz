@@ -5116,10 +5116,10 @@ section {
 }
 
 .storage-portfolio .portfolio-tabs .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   border-radius: 50px;
-  padding: 10px 25px;
+  padding: 10px 15px;
   color: #666;
   background: #fff;
   border: none;
@@ -5137,7 +5137,7 @@ section {
 .storage-portfolio .portfolio-card {
   background: linear-gradient(123deg, rgba(206, 241, 255, 0.5) 0%, #cef1ff4a 100%);
   border-radius: 25px;
-  padding: 65px;
+  padding: 75px;
   text-align: left;
 }
 
@@ -5156,9 +5156,9 @@ section {
   flex-direction: column;
 }
 
-.storage-portfolio .timeline-item:last-child {
+/* .storage-portfolio .timeline-item:last-child {
   border-right: 3px solid #0db2f976;
-}
+} */
 
 #enterprise .timeline-item {
   padding: 20px 20px;
@@ -5169,7 +5169,7 @@ section {
 } */
 
 .storage-portfolio .timeline-item-logo img {
-  width: 70px;
+  width: 100px;
   margin-bottom: 15px;
 }
 
@@ -5185,9 +5185,8 @@ section {
 .storage-portfolio .timeline-item p {
   font-size: 14px;
   font-weight: 300;
-  color: #000000ce;
+  color: #000000d4;
   margin: 0;
-  font-weight: 400;
 }
 
 @media(max-width:991px) {
@@ -7023,17 +7022,29 @@ section {
   inset: 0;
   border-radius: 25px;
   padding: 1px;
-  background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(89deg, #3F51B5, #0fb3fa6e);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+
+  opacity: 0.4;
+  transition: opacity 0.5s ease;
 }
 
-.career-life .life-card:hover {
-  transform: translateY(-8px);
-  border-color: #AEE1F9;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+.career-life .life-card:hover::before {
+  opacity: 1;
+}
+
+
+.career-life .life-card:hover svg path {
+  stroke: var(--primary-color);
+  transition: .5s;
+}
+
+.career-life .life-card:hover .life-card::before {
+  background: linear-gradient(89deg, #0fb3fa6e, #518ca859);
 }
 
 .career-life .icon {
@@ -8063,7 +8074,7 @@ section {
   text-align: center;
   padding: 30px 55px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  transition: all 0.5s ease;
+  transition: 0.5s;
 }
 
 .mbuzz-life .life-card::before {
@@ -8079,14 +8090,11 @@ section {
   pointer-events: none;
 }
 
-.mbuzz-life .life-card:hover {
-  transform: translateY(-8px);
-  border-color: #AEE1F9;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
+
 
 .mbuzz-life .life-card:hover .icon svg path {
   stroke: var(--primary-color);
+  transition: 0.5s;
 }
 
 .mbuzz-life .life-card:hover h4 {
@@ -9175,13 +9183,57 @@ html[dir="rtl"] .news-events .card-content {
 @media (max-width: 992px) {
   html[dir="rtl"] a.menu-toggle.active {
     right: auto;
-    left: 10px;
+    left: -14px;
+    top: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 43px;
+  }
+}
+
+@media (max-width: 850px) {
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 22px;
   }
 }
 
 @media (max-width: 600px) {
   html[dir="rtl"] .news-events .card-content {
     padding-right: initial;
+  }
+
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 25px;
+  }
+}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 450px) {
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 24px;
+    left: -5px;
+  }
+}
+
+@media (max-width: 370px) {
+  html[dir="rtl"] a.menu-toggle.active {
+    top: 19px;
   }
 }
 
@@ -9486,7 +9538,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   border-bottom: 0px;
 }
 
-.career-category-list a:hover{
+.career-category-list a:hover {
   color: #000;
   margin-left: 5px;
   transition: .5s;
@@ -9600,7 +9652,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   gap: 12px;
 }
 
-.career-job-buttons .main-btn{
+.career-job-buttons .main-btn {
   padding: 15px 25px;
 }
 
@@ -9634,16 +9686,16 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   box-shadow: rgba(39, 39, 39, 0.35) 0px 12px 30px;
 }
 
-.career-grid{
+.career-grid {
   display: flex;
   gap: 30px;
 }
 
-.career-grid-30{
+.career-grid-30 {
   width: 27%;
 }
 
-.career-grid-70{
+.career-grid-70 {
   width: 73%;
 }
 
@@ -9652,54 +9704,54 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   font-size: 12px;
 }
 
-.career-job-item{
-    transition:.35s ease;
+.career-job-item {
+  transition: .35s ease;
 }
 
-.career-job-item:last-child{
+.career-job-item:last-child {
   margin-bottom: 0px;
 }
 
-.career-job-item.hide{
-    display:none;
+.career-job-item.hide {
+  display: none;
 }
 
-.career-inner-data{
+.career-inner-data {
   margin-bottom: 40px;
 }
 
-.career-inner-data ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.career-inner-data ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.career-inner-data ul li{
-    position: relative;
-    padding-left: 28px;
-    margin-bottom: 5px;
+.career-inner-data ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 5px;
 }
 
-.career-inner-data ul li::before{
-    content: "\f178";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #0d6efd;
-    position: absolute;
-    left: 0;
-    top: 2px;
-    transform: rotate(-45deg);
-    color: var(--primary-color);
+.career-inner-data ul li::before {
+  content: "\f178";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #0d6efd;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  transform: rotate(-45deg);
+  color: var(--primary-color);
 }
 
-.inner-job-catogeries{
+.inner-job-catogeries {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.career-inner-data .inner-job-catogery{
+.career-inner-data .inner-job-catogery {
   font-size: 14px;
   background: #DEE4EA;
   padding: 5px 15px;
@@ -9707,91 +9759,93 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   border-radius: 8px;
 }
 
-.career-inner-data h6{
+.career-inner-data h6 {
   font-size: 23px;
   color: #000;
   font-weight: 300;
   margin-bottom: 15px;
 }
 
-.career-inner-data p{
+.career-inner-data p {
   color: #000;
   font-size: 14px;
   margin-bottom: 25px;
 }
 
-.career-share-links{
+.career-share-links {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-.career-share-links h6{
+.career-share-links h6 {
   font-size: 20px;
   font-weight: 400;
   margin: 0;
   margin-right: 15px;
 }
 
-.career-overview-box{
+.career-overview-box {
   padding: 30px;
   background: #F4F7FA;
   border-radius: 8px;
 }
 
-.career-overview-box h6{
+.career-overview-box h6 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: 300;
 }
 
-.career-share-links svg{
+.career-share-links svg {
   font-size: 20px;
   color: var(--black);
 }
 
-.career-overview-data h6{
+.career-overview-data h6 {
   font-size: 16px;
   color: var(--black);
   margin-bottom: 5px;
   font-weight: 400 !important;
 }
 
-.career-overview-data p{
+.career-overview-data p {
   font-size: 14px;
   color: #6C757D;
   font-weight: 400;
 }
 
-.career-overview-data{
+.career-overview-data {
   display: flex;
   align-items: self-start;
   gap: 10px;
 }
 
-.career-inner-padding{
-  padding:  30px 50px;
+.career-inner-padding {
+  padding: 30px 50px;
 }
 
-.career-form{
+.career-form {
   padding: 40px;
   background: #F4F7FA;
   border-radius: 8px;
 }
 
-.career-form .left-contact label{
+.career-form .left-contact label {
   color: #000;
 }
 
-.career-form .left-contact input, .left-contact textarea{
+.career-form .left-contact input,
+.left-contact textarea {
   color: #000;
 }
 
-.career-form .left-contact input::placeholder, .left-contact textarea::placeholder{
+.career-form .left-contact input::placeholder,
+.left-contact textarea::placeholder {
   color: #626262;
 }
 
-.upload-your-cv-button{
+.upload-your-cv-button {
   background: #fff;
   padding: 0px 15px;
   color: #000;
@@ -9803,17 +9857,18 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   min-width: 150px;
 }
 
-.upload-info-btn{
+.upload-info-btn {
   display: flex;
   gap: 10px;
   align-items: self-start;
 }
+
 /*==============================
     Responsive
 ===============================*/
 
 @media(max-width:991px) {
-  .upload-info-btn{
+  .upload-info-btn {
     flex-direction: column;
   }
 
@@ -9821,24 +9876,26 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
     margin-bottom: 30px;
     position: static;
   }
-  .career-grid-30{
+
+  .career-grid-30 {
     width: 100%;
   }
 
-  .career-grid-70{
+  .career-grid-70 {
     width: 100%;
   }
-  .career-inner-padding{
-    padding:  25px 0px;
+
+  .career-inner-padding {
+    padding: 25px 0px;
     padding-bottom: 0px;
   }
 
-  .career-overview-box{
+  .career-overview-box {
     padding: 20px;
     margin-top: 15px;
   }
 
-  .career-inner-data h6{
+  .career-inner-data h6 {
     font-size: 20px;
   }
 
@@ -9859,7 +9916,8 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   .career-job-buttons {
     width: 100%;
   }
-  .career-grid{
+
+  .career-grid {
     flex-direction: column;
     gap: 0px;
   }
