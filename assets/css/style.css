@@ -5140,6 +5140,7 @@ section {
   border-radius: 25px;
   padding: 75px;
   text-align: left;
+  box-shadow: 0 12px 40px rgb(0 0 0 / 6%);
 }
 
 .storage-portfolio .timeline-row {
@@ -5157,9 +5158,9 @@ section {
   flex-direction: column;
 }
 
-/* .storage-portfolio .timeline-item:last-child {
+.timeline-item-last:last-child {
   border-right: 3px solid #0db2f976;
-} */
+}
 
 #enterprise .timeline-item {
   padding: 20px 20px;
@@ -5185,8 +5186,8 @@ section {
 
 .storage-portfolio .timeline-item p {
   font-size: 14px;
-  font-weight: 300;
-  color: #000000d4;
+  font-weight: 400;
+  color: #000000;
   margin: 0;
 }
 
