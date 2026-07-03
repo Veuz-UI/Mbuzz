@@ -50,7 +50,7 @@ body {
   top: -27%;
   width: 800px;
   height: 550px;
-  background: radial-gradient(circle, #1e92ff4a 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
+    background: radial-gradient(circle, #1e92ff21 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
   filter: blur(50px);
   pointer-events: none;
   z-index: 1;
@@ -276,7 +276,7 @@ header.nav-hide {
   border: 1px solid #0db4f93d;
   padding: 5px;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.015);
 }
 
 .nav-desc-menu ul li {
@@ -372,7 +372,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 .lang-switch .devider {
@@ -458,7 +458,7 @@ header.fixed-to-top .main-header .nav-desc-menu ul .nav-menu-item.active-menu {
   left: 110%;
   padding: 15px;
   border-radius: 20px;
-  min-width: 240px;
+  min-width: 250px;
   opacity: 0;
   visibility: hidden;
   transform: translateX(10px);
@@ -562,7 +562,7 @@ section {
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 33px;
   font-weight: 400;
   margin-bottom: 25px;
   color: #0396d3;
@@ -579,8 +579,8 @@ section {
 
 .description {
   font-size: 14px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.80);
   line-height: 1.5;
 }
 
@@ -600,7 +600,7 @@ section {
   background-position: left;
   display: inline-block;
   color: var(--white);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   border: none;
   border-radius: 100px;
@@ -628,7 +628,7 @@ section {
 
 /* login */
 .login-btn {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.015);
   color: var(--white);
   font-size: 12px;
   font-weight: 300;
@@ -752,12 +752,12 @@ section {
 }
 
 .carousel-caption-in {
-  max-width: 34%;
+  max-width: 45%;
 }
 
 .banner_slider .carousel-caption h5 {
-  font-size: 46px;
-  font-weight: 300;
+  font-size: 48px;
+  font-weight: 400;
   /* line-height: normal; */
   color: var(--white-color);
   margin-bottom: 38px;
@@ -771,11 +771,11 @@ section {
 }
 
 .banner_slider .carousel-caption p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .banner_slider .carousel-caption .main-btn {
@@ -877,7 +877,7 @@ section {
 
 @media (max-width: 1500px) {
   .banner_slider .carousel-caption-in {
-    max-width: 37%;
+    max-width: 40%;
   }
 }
 
@@ -1052,7 +1052,7 @@ section {
 }
 
 .footer-brand img {
-  max-width: 170px;
+  max-width: 185px;
   margin-bottom: 5px;
 }
 
@@ -1060,7 +1060,7 @@ section {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
   margin-bottom: 5px;
 }
 
@@ -1071,7 +1071,7 @@ section {
 }
 
 .footer-col h4 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   color: #FFFFFF;
   margin-bottom: 20px !important;
@@ -1095,9 +1095,9 @@ section {
 }
 
 .footer-col ul li a {
-  font-size: 13px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 13.5px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.95);
   transition: 0.3s;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -1129,9 +1129,9 @@ section {
 
 
 .footer-contact p {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 200;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.95);
   line-height: 1.5;
   margin-bottom: 0;
   max-width: 75%;
@@ -1139,22 +1139,22 @@ section {
 }
 
 .footer-contact p a {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 200;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.95);
   word-break: break-all;
   font-family: "Montserrat", sans-serif;
 }
 
 .footer-subcribe {
-  width: 240px;
+  width: 290px;
   max-width: 100%;
   margin-top: 100px;
 }
 
 .footer-subcribe h4 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 19.5px;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
@@ -1174,8 +1174,8 @@ section {
 }
 
 .newsletter-box input {
-  width: 100%;
-  height: 40px;
+  width: 95%;
+  height: 50px;
   background: transparent;
   border: 1px solid var(--primary-color);
   border-radius: 50px;
@@ -1193,10 +1193,10 @@ section {
 .newsletter-box button {
   position: absolute;
   top: 50%;
-  right: 6px;
+  right: 20px;
   transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   background: var(--gradient);
@@ -1671,7 +1671,7 @@ section {
 }
 
 .stats-section .stat-top p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
@@ -1694,7 +1694,7 @@ section {
 .stats-section .stat-icon img {
   width: 29px;
   height: 29px;
-  transition: transform 0.5s ease;
+  transition: transform .2s ease;
 }
 
 .stats-section .stat-card:hover .stat-icon {
@@ -1702,7 +1702,7 @@ section {
 }
 
 .stats-section .stat-card:hover .stat-icon img {
-  transform: scale(1.2);
+  transform: rotate(50deg)
 }
 
 .stats-section .stat-card:hover .stat-bottom h3 {
@@ -1715,7 +1715,7 @@ section {
 }
 
 .stats-section .stat-bottom h3 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 500;
   margin: 0;
 }
@@ -1787,14 +1787,14 @@ section {
   text-align: justify;
 }
 
-.ai-about .logo-card {
-  padding-left: 58px;
-}
+/* .ai-about .logo-card {
+  padding-left: 0px;
+} */
 
 .ai-about .logo-card img {
   animation: rotateImage 15s linear infinite;
   filter: brightness(1.2) contrast(1.2);
-  max-height: 500px;
+  max-height: 510px;
   /* animation:
     rotateImage 15s linear infinite,
     zoomInOut 4s ease-in-out infinite alternate; */
@@ -2055,8 +2055,8 @@ section {
 }
 
 .core-offering .core-card h3 {
-  font-size: 26px;
-  font-weight: 300;
+  font-size: 28px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -2174,6 +2174,9 @@ section {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .client-container:before,
@@ -2304,7 +2307,7 @@ section {
   gap: 12px;
   padding: 6px 15px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   cursor: pointer;
   border: none;
@@ -2421,7 +2424,7 @@ section {
 }
 
 .case-study-in .cs-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
   margin-bottom: 12px;
@@ -2429,7 +2432,7 @@ section {
 }
 
 .case-study-in .card-date {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 300;
   color: rgb(219 214 214 / 50%);
   margin-bottom: 12px;
@@ -2437,15 +2440,15 @@ section {
 }
 
 .case-study-in .cs-desc {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 200;
-  color: rgb(222 222 222);
+  color: rgb(255, 255, 255);
   line-height: 1.6;
   margin-bottom: 12px;
 }
 
 .case-study-in .cs-read {
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 400;
   color: #4db8ff;
   letter-spacing: 0.04em;
@@ -2681,7 +2684,7 @@ section {
 
 .news-events .card-title {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   line-height: 1.35;
   margin-bottom: 12px;
@@ -2697,7 +2700,7 @@ section {
 }
 
 .news-events .card-desc {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 300;
   line-height: 1.6;
   color: rgb(255 255 255 / 80%);
@@ -2759,18 +2762,22 @@ section {
 /* ------------ END news-events ---------- */
 
 /* --- cta -----*/
+
+.cta{
+  padding-top: 140px;
+}
 .cta .core-card {
   background-blend-mode: normal;
   --f2w-order: 0;
   background-image: linear-gradient(#0d0c12 0%, #0d111d 100%);
   border-radius: 46.3px;
-  padding: 55px 35px;
+  padding: 50px 35px;
   position: relative;
   overflow: hidden;
   box-shadow: inset 0 -1.2px 13.2px #6694ff33, inset 0 -36.5px 14.6px -1.2px #2365ff26, inset 0 -29.2px 20.3px -11px #ffffffa3, inset 0 -41.4px 32.5px -12.2px #0db4f980;
   text-align: center;
   position: relative;
-  z-index: 3;
+  z-index: 10;
 }
 
 /* .cta .core-card:hover {
@@ -2779,7 +2786,7 @@ section {
 
 .cta .core-card h3 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
@@ -2790,7 +2797,7 @@ section {
   font-weight: 300;
   line-height: 1.5;
   color: #c7c7c7;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -2844,9 +2851,10 @@ section {
 
 .inner-banner .breadcrumb a,
 .inner-banner .breadcrumb span {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .inner-banner .breadcrumb a {
@@ -2870,7 +2878,7 @@ section {
 
 .inner-banner h1 {
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   letter-spacing: -0.5px;
   line-height: 1.15;
@@ -2883,7 +2891,7 @@ section {
   justify-content: space-between;
   min-height: 260px;
   align-items: center;
-  border-top: 1px solid #0db4f930;
+  /* border-top: 1px solid #0db4f930; */
 }
 
 .banner-sub-img {
@@ -2892,7 +2900,7 @@ section {
 }
 
 .banner-sub-img img {
-  height: 250px;
+  height: 240px;
   object-fit: contain;
   margin: 10px 0;
 }
@@ -3004,7 +3012,7 @@ section {
 
 .inner-subnav-links li a {
   display: block;
-  padding: 22px 25px;
+  padding: 20px 25px;
   font-size: 12px;
   font-weight: 300;
   color: white;
@@ -3156,7 +3164,7 @@ section {
 
 /* ------------ ai-overview ----------*/
 .ai-overview .heading {
-  width: 70%;
+  width: 80%;
   margin: 0 auto 30px;
 }
 
@@ -3167,19 +3175,19 @@ section {
 }
 
 .ai-tag {
-  font-size: 13px;
+  font-size: 13.5px;
   display: inline-block;
-  padding: 10px 30px;
-  background: rgba(13, 180, 249, 0.1);
+  padding: 10px 27px;
+  background: rgba(13, 178, 249, 0.116);
   color: #0DB4F9;
   border-radius: 100px;
-  margin-bottom: 30px;
-  font-weight: 500;
+  margin-bottom: 35px;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
 
 .nvidia-card img {
-  margin-top: 100px;
+  margin-top: 135px;
   height: 75px;
 }
 
@@ -3194,7 +3202,7 @@ section {
   justify-content: space-between;
   align-items: center;
   max-width: 90%;
-  margin: 50px auto 0 auto;
+  margin: 60px auto 0 auto;
   gap: 35px;
 }
 
@@ -3216,7 +3224,7 @@ section {
 }
 
 .computer-overview-logo img {
-  width: 40px;
+  width: 50px;
   margin-bottom: 10px;
 }
 
@@ -3224,6 +3232,10 @@ section {
   border: 0;
   border-radius: 0;
   object-fit: contain;
+}
+
+.ai-factory-about .description {
+  font-size: 13.5px;
 }
 
 @media (max-width: 992px) {
@@ -3292,12 +3304,16 @@ section {
 }
 
 .ai-approach-in:hover {
-  background: linear-gradient(-123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 23%) 100%);
+   box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.227);
   transition: 1s;
 }
 
 .left-ai-approach {
   padding-right: 15px;
+}
+
+.left-ai-approach .heading{
+  margin-bottom: 20px;
 }
 
 .ai-approach-in .heading {
@@ -3308,6 +3324,7 @@ section {
 
 .ai-approach-in .description {
   padding-right: 36px;
+  font-weight: 400;
 }
 
 .right-ai-approach img {
@@ -3318,7 +3335,7 @@ section {
 }
 
 .ai-labs .left-ai-approach p span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media (max-width: 1400px) {
@@ -3387,7 +3404,8 @@ section {
 
 .ai-consulting-list-item:hover {
   /* transform: translateY(-10px); */
-  border: 1px solid var(--primary-color);
+  border: 1px solid #0db2f987;
+  transition: .5s;
   /* background: linear-gradient(123deg, rgb(255 255 255 / 0%) 0%, rgb(13 163 231 / 23%) 100%); */
 }
 
@@ -3434,7 +3452,7 @@ section {
 .ai-consulting-list-item p {
   font-size: 13px;
   font-weight: 400;
-  color: #b6b6b6;
+  color: #d1d1d1;
   line-height: 1.5;
 }
 
@@ -3502,6 +3520,7 @@ section {
 
 .execution-ai-card .description {
   text-align: justify;
+  font-weight: 400;
 }
 
 @media (max-width: 992px) {
@@ -3541,6 +3560,11 @@ section {
 .faq-sec-outer {
   position: relative;
   background: #FFF;
+  padding: 130px 0px;
+}
+
+.accordion-item:not(:first-of-type){
+  border: none !important;
 }
 
 .faq-header {
@@ -3560,6 +3584,8 @@ section {
 
 .left-faq {
   padding-right: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .accordion {
@@ -3587,7 +3613,7 @@ section {
 .left-faq .accordion-button {
   background: transparent;
   border: none;
-  padding: 1.5rem 1.5rem .7rem;
+  padding: 1.7rem 1.5rem 1.3rem;
   box-shadow: none;
   border-radius: 15px !important;
   position: relative;
@@ -3596,15 +3622,20 @@ section {
 }
 
 .left-faq .accordion-button .accrd-head {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 16.5px;
+  font-weight: 300;
   line-height: 1.5;
   color: #081226;
-  font-family: Manrope, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .left-faq .accordion-button.collapsed {
   padding: 1.5rem 1.5rem 1.5rem;
+}
+
+.faq-white-bg .accordion-button.collapsed{
+  background: rgb(245 251 255 / 34%)!important;
+  border: 1px solid #00000005;
 }
 
 .left-faq .accordion-button:focus {
@@ -3612,9 +3643,13 @@ section {
   border: none;
 }
 
+.accordion-button:hover{
+  z-index: 1 !important;
+}
+
 .left-faq .accordion-button::after {
   content: '+';
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 200;
   background: none;
   border: none;
@@ -3635,10 +3670,10 @@ section {
 }
 
 .left-faq .accordion-body {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 300;
   line-height: 1.5;
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.8rem;
   background: transparent;
   color: #556482;
 }
@@ -3782,7 +3817,7 @@ section {
   /* backdrop-filter: blur(70px);
   box-shadow: 0 1px 30px 0 rgba(69, 42, 124, 0.1);
   background: linear-gradient(123deg, rgb(255 255 255 / 4%) 0%, rgba(255, 255, 255, 4%) 100%); */
-  padding: 70px;
+  padding: 120px;
   border-radius: 40px;
   background: linear-gradient(86deg,
       rgba(255, 255, 255, 0.08) 11.14%,
@@ -3790,6 +3825,7 @@ section {
   box-shadow: 0 1.197px 29.915px 0 rgba(69, 42, 124, 0.10);
   backdrop-filter: blur(35px);
   -webkit-backdrop-filter: blur(35px);
+  margin-top: 50px;
 }
 
 .infrastructure-wrapper-main::before {
@@ -4532,7 +4568,7 @@ section {
 
 /* ------------- ai-journey -------------- */
 .ai-journey {
-  padding: 100px 0;
+  padding: 60px 0;
   position: relative;
   background: radial-gradient(circle at 30% 50%, #000000 0%, #000000 60%);
   overflow: hidden;
@@ -4570,20 +4606,20 @@ section {
 
 .ai-journey-card {
   backdrop-filter: blur(13.899999618530273px);
-  background: rgb(0 0 0 / 46%);
-  padding: 31px 50px;
+  background: rgb(0 0 0 / 30%);
+  padding: 27px 50px;
   border-radius: 30px;
   border: 1px solid #1a1e5b6e;
   transition: all 0.3s ease;
-  margin-right: 30px;
+  position: relative;
+  z-index: 1;
   /* box-shadow: rgb(47 60 144 / 15%) 26px 29px 29px 0px; */
 }
 
 
 .ai-journey-card:hover {
-  border-color: var(--primary-color);
-  background: rgb(0, 0, 0);
-  transform: translateY(-2px);
+  border-color: #02507199;
+  /* background: rgba(0, 0, 0, 0.182); */
 }
 
 .ai-journey-card-img {
@@ -4591,13 +4627,16 @@ section {
 }
 
 .ai-journey-card-img img {
-  height: 500px;
+  height: 490px;
   object-fit: contain;
   filter: brightness(1.2) contrast(1.2);
 }
 
 .ai-journey-card .heading {
   padding-right: 240px;
+  font-size: 32px;
+  line-height: 1.5;
+  margin-top: -15px;
 }
 
 @media (max-width: 1350px) {
@@ -4776,11 +4815,11 @@ section {
 }
 
 .ai-factory-journey-card {
-  backdrop-filter: blur(13.899999618530273px);
-  background: rgb(0 0 0 / 39%);
-  padding: 40px 50px;
+  /* backdrop-filter: blur(13.899999618530273px); */
+  background: rgba(8, 4, 19, 0.64);
+  padding: 40px 30px;
   border-radius: 30px;
-  border: 1px solid #ffffff17;
+  border: 1px solid #09142317;
   transition: all 0.3s ease;
   max-width: 100%;
   width: 610px;
@@ -4806,7 +4845,7 @@ section {
   position: relative;
   overflow: hidden;
   text-align: center;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
 }
@@ -4843,7 +4882,7 @@ section {
 }
 
 .aleria-logo img {
-  width: 200px;
+  width: 250px;
 }
 
 .sovereign-ai-aleria-card {
@@ -4856,7 +4895,7 @@ section {
   background: rgb(255 255 255 / 18%);
   backdrop-filter: blur(1px);
   border-radius: 20px;
-  padding: 30px 35px;
+  padding: 40px 35px;
   color: #fff;
   max-width: 700px;
   width: 100%;
@@ -4886,7 +4925,7 @@ section {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sovereign-ai-aleria .check-icon {
@@ -4931,11 +4970,7 @@ section {
   background: linear-gradient(180deg,
       #0D0C12 0%,
       #0D111D 100%);
-  box-shadow:
-    inset 0 -0.954px 10.299px rgba(102, 148, 255, 0.20),
-    inset 0 -28.608px 11.443px -0.954px rgba(35, 101, 255, 0.15),
-    inset 0 -22.886px 15.925px -8.582px rgba(255, 255, 255, 0.64),
-    inset 0 -32.422px 25.461px -9.536px rgba(13, 180, 249, 0.50);
+  box-shadow:inset 0 -0.954px 10.299px rgba(102, 148, 255, 0.20), inset 0 -28.608px 11.443px -0.954px rgba(35, 101, 255, 0.15), inset 0 -22.886px 15.925px -8.582px rgba(255, 255, 255, 0.64), inset 0 -32.422px 25.461px -9.536px rgb(11 170 235 / 50%);
   min-height: 393px;
 }
 
@@ -4986,17 +5021,17 @@ section {
 }
 
 .applied-ai .core-card h3 {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
 }
 
 .applied-ai .core-card p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffffdd;
 }
 
 .applied-ai .core-header {
@@ -5023,6 +5058,10 @@ section {
 
 .applied-ai-cs .core-card:hover .card-icon img {
   max-height: 200px;
+}
+
+.applied-ai-cs .core-card:hover .card-icon img{
+  max-height: 240px;
 }
 
 .core-card-out {
@@ -5460,17 +5499,29 @@ section {
   position: absolute;
   inset: 0;
   border-radius: 40px;
-  padding: 1px;
-  background: linear-gradient(89deg, #162845, #0F4566);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  padding: .8px;
+  background: linear-gradient(89deg, #162845, #009eff);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+  opacity: .2;
+  will-change: opacity;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ai-infra .ai-card:hover::before {
+  opacity: 1;
 }
 
 .ai-infra .ai-card:hover {
-  border: 1px solid var(--primary-color);
-  background: linear-gradient(269deg, #161822, #0db2f900);
+  background: linear-gradient(
+    266deg,
+    rgba(0, 0, 0, 0) 11.14%,
+    rgba(255, 255, 255, 0.01) 113.29%
+  );
 }
 
 .ai-infra .icon-wrapper {
@@ -5479,22 +5530,26 @@ section {
 
 .ai-infra .icon-wrapper svg,
 .ai-infra .icon-wrapper i {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
 }
 
 .ai-infra .ai-card h3 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 15px 0;
 }
 
 .ai-infra .ai-card p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
-  opacity: 0.7;
+  opacity: 0.75;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 15px;
+}
+
+.ai-hero-padding-reduce{
+  padding-top: 100px;
 }
 
 .ai-infra .ai-card:hover h3 {
@@ -5569,7 +5624,7 @@ section {
 }
 
 .ai-infra .video-caption {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   color: #fff;
   backdrop-filter: blur(70px);
@@ -5651,7 +5706,7 @@ section {
   inset: 0;
   border-radius: 25px;
   padding: 1px;
-  background: linear-gradient(89deg, #165b83, #062a3f);
+  background: linear-gradient(89deg, #1c8fd1d8, #046dab);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -5664,8 +5719,8 @@ section {
 
 .ai-hero-content {
   position: absolute;
-  top: 50px;
-  left: 60px;
+  top: 70px;
+  left: 70px;
   max-width: 740px;
   width: 100%;
   padding: 40px;
@@ -5682,7 +5737,7 @@ section {
   position: absolute;
   inset: 0;
   border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0, 255, 200, 0.15);
+  /* box-shadow: 0 0 40px rgba(0, 255, 200, 0.15); */
   opacity: 0.6;
   animation: pulseGlow 3s ease-in-out infinite;
 }
@@ -5758,6 +5813,14 @@ section {
   background-color: var(--white);
 }
 
+.ai-real-world-impact .ai-tag{
+  margin-bottom: 25px;
+}
+
+.ai-real-world-impact .description {
+  font-weight: 400;
+}
+
 .ai-real-world-impact .core-offering-in {
   width: calc(100% - ((100% - min(1500px, 93%)) / 2));
   margin-left: auto;
@@ -5784,7 +5847,7 @@ section {
 }
 
 .ai-real-world-impact .core-card h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--black);
   margin-bottom: 10px;
@@ -5792,8 +5855,8 @@ section {
 }
 
 .ai-real-world-impact .core-card p {
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 13.5px;
+  font-weight: 400;
   line-height: 1.6;
   color: var(--black);
   margin-bottom: 0;
@@ -5898,8 +5961,20 @@ section {
 
 
 /* --------- deploy ai factory ----------- */
+.ai-deployment-types-in{
+  margin-top: 20px;
+}
+
+.ai-factory-deployment .ai-deployment-item .ai-deployment-type{
+  padding: 10px 60px !important;
+}
+
+.bg-white .ai-deployment .ai-deployment-type h3{
+  font-weight: 600;
+}
+
 .ai-deployment .ai-deployment-type {
-  padding: 25px 50px;
+  padding: 10px 35px;
   position: relative;
   color: #fff;
   border-right: 1px solid #0db4f92e;
@@ -5908,6 +5983,26 @@ section {
   align-items: self-start;
   flex-direction: column;
   gap: 15px;
+}
+
+.bg-white .ai-deployment-type{
+  border-left: 1px solid #0db4f9a8;
+}
+
+.bg-white .ai-deployment-types-in{
+  margin-top: 15px;
+}
+
+.bg-white .ai-deployment-item:nth-child(3n+1) .ai-deployment-type{
+  border: none;
+}
+
+.bg-white .ai-deployment-type:last-child{
+  border: none;
+}
+
+.bg-white .ai-deployment-type{
+  padding: 10px 86px !important;
 }
 
 .ai-deployment .ai-deployment-type.ai-deployment-type-lab {
@@ -5926,9 +6021,13 @@ section {
   padding: 0 10px;
 }
 
+.ai-factory-faq{
+  padding: 100px 0px;
+}
+
 .ai-deployment .ai-deployment-type h3 {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin-bottom: 0;
   transition: .5s;
@@ -5937,7 +6036,7 @@ section {
 
 .ai-deployment .ai-deployment-type p {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
   transition: .5s;
@@ -5987,8 +6086,7 @@ section {
 
 .nvidia-logo-2 img {
   width: 100%;
-  height: 75px;
-  ;
+  height: 85px;
   object-fit: contain;
 }
 
@@ -5996,15 +6094,20 @@ section {
   background-color: white;
 }
 
+.computer-ai .ai-deployment-type{
+  padding: 10px 75px;
+  border-right: 1px solid rgb(13 180 249 / 82%);
+}
+
 .computer-ai .ai-deployment-item:last-child .ai-deployment-type:last-child {
   border: 0;
 }
 
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
   .ai-deployment .ai-deployment-type.ai-deployment-type-lab {
     padding: 25px 15px;
   }
-}
+} */
 
 @media (max-width: 1300px) {
   .ai-deployment .ai-deployment-type {
@@ -6075,9 +6178,9 @@ section {
 }
 
 .elv-service-card:hover {
-  transform: translateY(-3px);
+  /* transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  background: linear-gradient(123deg, rgb(13 163 231 / 14%) 0%, rgb(255 255 255 / 0%) 100%);
+  background: linear-gradient(123deg, rgb(13 163 231 / 14%) 0%, rgb(255 255 255 / 0%) 100%); */
 }
 
 .elv-service-icon {
@@ -6201,13 +6304,13 @@ section {
 }
 
 .ai-factory-faq-icon {
-  font-size: 25px;
+  font-size: 35px;
   transition: transform 0.3s ease;
   color: var(--white);
 }
 
 .ai-factory-faq-body {
-  font-size: 13px;
+  font-size: 13.5px;
   line-height: 1.5;
   max-height: 0;
   overflow: hidden;
@@ -6218,9 +6321,9 @@ section {
 
 .ai-factory-faq-item.active .ai-factory-faq-body {
   max-height: 200px;
-  opacity: 0.8;
+  opacity: 1;
   margin-top: 2px;
-  color: #ffffffa6;
+  color: #fff;
 }
 
 .ai-factory-faq-item.active .ai-factory-faq-icon {
@@ -6270,6 +6373,7 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 30px;
   gap: 50px;
+  margin-top: 75px;
 }
 
 .ai-partnership .tab-btn {
@@ -6419,7 +6523,7 @@ section {
 /* nvidia ai stack section */
 .nvidia-stack-section .nvidia-stack-card {
   position: relative;
-  max-width: 1100px;
+  max-width: 1050px;
   margin: auto;
   border-radius: 30px;
   overflow: hidden;
@@ -6450,16 +6554,14 @@ section {
 .nvidia-stack-section .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center,
-      rgba(0, 163, 255, 0.12),
-      transparent 70%);
+  background: radial-gradient(circle at center, rgb(0 163 255 / 6%), transparent 70%);
 }
 
 .nvidia-stack-section .stack-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 800px;
+  max-width: 680px;
   width: 100%;
   margin: auto;
 }
@@ -8899,12 +9001,12 @@ section {
 
 .ai-consulting-list-white .ai-consulting-list-item {
   padding: 25px 40px;
-  box-shadow: none;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 3%);
   border: none;
 }
 
 .ai-consulting-list-white .ai-consulting-list-item::before {
-  background: linear-gradient(89deg, #518ca859, #0fb3fa6e);
+  background: linear-gradient(89deg, #190e2b59, #0fb3fa59);
 }
 
 .ai-consulting-list-white .ai-consulting-list-item h4 {
@@ -8983,7 +9085,7 @@ section {
 
 
 html[dir="rtl"] body {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .dropdown-toggle::after {
@@ -8997,15 +9099,15 @@ html[dir="rtl"] .right-nav-top .dropdown-menu li::after {
 }
 
 html[dir="rtl"] .nav-desc-menu ul li a {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .login-btn {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .menu a {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 
@@ -9033,7 +9135,7 @@ html[dir="rtl"] .banner_slider .carousel-caption {
 }
 
 html[dir="rtl"] .banner_slider .carousel-caption h5 {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 /* html[dir="rtl"] .banner_slider .carousel-control-prev, 
@@ -9042,7 +9144,7 @@ html[dir="rtl"] .banner_slider .carousel-control-next{
 } */
 
 html[dir="rtl"] .heading {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .carousel-caption-in {
@@ -9346,11 +9448,19 @@ html[dir="rtl"] .newsletter-box button:hover svg {
 }
 
 html[dir="rtl"] .news-events .read-more {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .footer-col ul li a {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
+}
+
+html[dir="rtl"] .applied-ai .core-card h3{
+  font-family: 'FuturaArabic';
+}
+
+html[dir="rtl"] .left-faq .accordion-button .accrd-head{
+  font-family: 'FuturaArabic';
 }
 
 
@@ -9372,31 +9482,32 @@ html[dir="rtl"] .inner-subnav-links li a::after {
 
 html[dir="rtl"] .inner-banner .breadcrumb a,
 html[dir="rtl"] .inner-banner .breadcrumb span {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .ai-tag {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .inner-banner h1 {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .inner-subnav-links li a {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .ai-consulting-list-item h4 {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .prof-services .core-card h3 {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .cta .core-card h3 {
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: 'FuturaArabic';
+  font-weight: 500;
 }
 
 html[dir="rtl"] .accordion-button::after {
