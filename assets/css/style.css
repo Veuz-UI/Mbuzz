@@ -47,13 +47,13 @@ body {
 .bg-mesh-left {
   position: fixed;
   left: -250px;
-  top: -27%;
+  top: -47%;
   width: 800px;
   height: 550px;
     background: radial-gradient(circle, #1e92ff21 0%, transparent 70%), radial-gradient(circle, #0db4f912 20%, transparent 80%);
   filter: blur(50px);
   pointer-events: none;
-  z-index: 1;
+  z-index: 4;
 }
 
 .bg-mesh-right {
@@ -1057,7 +1057,7 @@ section {
 }
 
 .footer-brand-name {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   font-family: 'FuturaArabic';
@@ -3318,7 +3318,7 @@ section {
 
 .ai-approach-in .heading {
   color: #000 !important;
-  font-weight: 400;
+  font-weight: 500;
   /* padding-right: 160px; */
 }
 
@@ -6163,27 +6163,81 @@ section {
   margin-bottom: 25px;
 }
 
-.elv-service-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 30px;
-  background: #fff;
-  border: 1px solid #cfe7ff;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  width: 95%;
-  margin: 0 auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+.elv-service-card{
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 40px;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: rgb(99 99 99 / 10%) 0px 2px 8px 0px;
+    transition: all 0.3s ease;  
 }
 
-.elv-service-card:hover {
-  /* transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  background: linear-gradient(123deg, rgb(13 163 231 / 14%) 0%, rgb(255 255 255 / 0%) 100%); */
+.elv-service-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(50deg, rgba(9, 66, 126, 1) 0%, rgba(13, 180, 249, 1) 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: .4;
+    transition: opacity .35s ease, background .35s ease;
+    pointer-events: none;
+}
+
+/* Background Gradient */
+.elv-service-card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: -1;
+    background: linear-gradient(
+        120deg,
+        rgba(0,158,255,.08) 0%,
+        rgba(206,241,255,.04) 45%,
+        rgba(255,255,255,0) 100%
+    );
+    opacity: .1;
+    transition: opacity .35s ease;
+}
+
+/* Hover Effect */
+.elv-service-card:hover::before{
+    /* background: linear-gradient(225deg, rgb(45 141 255) 0%, rgb(64 112 189 / 97%) 100%); */
+    background: linear-gradient(50deg, rgba(9, 66, 126, 1) 0%, rgba(13, 180, 249, 1) 100%);
+    opacity: 1;
+}
+
+.elv-service-card:hover::after{
+    background: linear-gradient(
+        120deg,
+        rgba(0,158,255,.18) 0%,
+        rgba(206,241,255,.35) 45%,
+        rgba(255,255,255,.08) 100%
+    );
+    opacity: 1;
+}
+
+.elv-service-card:hover .elv-service-icon{
+  transform: rotate(10deg);
+  transition: .5s;
 }
 
 .elv-service-icon {
+  transition: .5s;
   width: 56px;
   height: 56px;
   flex-shrink: 0;
@@ -6377,7 +6431,7 @@ section {
 }
 
 .ai-partnership .tab-btn {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 300;
   border: none;
   color: rgba(255, 255, 255, 0.45);
@@ -6426,9 +6480,9 @@ section {
 }
 
 .ai-partnership .image-box {
-  width: 250px;
-  min-width: 250px;
-  height: 185px;
+  width: 310px;
+  min-width: 310px;
+  height: 230px;
   overflow: hidden;
 }
 
@@ -6444,11 +6498,12 @@ section {
 }
 
 .ai-partnership .content-text p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
   margin: 0;
+  margin-left: 15px;
 }
 
 @media(max-width:1200px) {
@@ -6458,6 +6513,7 @@ section {
 
   .ai-partnership .content-text p {
     font-size: 14px;
+    margin-left: 0px;
   }
 }
 
@@ -6641,7 +6697,7 @@ section {
   left: 0px;
   right: 0px;
   top: 20px;
-  height: 2px;
+  height: 1px;
   background: var(--gradient);
 }
 
@@ -6665,7 +6721,7 @@ section {
 }
 
 .in-build-lifecycle .timeline-item h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
@@ -6700,38 +6756,46 @@ section {
 
 /* LEFT STEP LIST */
 .intelligent-ai .step-list {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border-left: 2px solid #0db4f92b;
-  max-height: 500px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: #0db4f9 #081526;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-left: 2px solid #0db4f92b;
+    max-height: 500px;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    scrollbar-width: none; 
+    transition: all 0.3s ease;
 }
 
-/* Chrome, Edge, Safari */
+/* Show scrollbar on hover */
+.intelligent-ai .step-list:hover {
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #0db4f9 #081526;
+}
+
 .intelligent-ai .step-list::-webkit-scrollbar {
-  width: 8px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+/* Show scrollbar on hover */
+.intelligent-ai .step-list:hover::-webkit-scrollbar {
+    width: 8px;
 }
 
 .intelligent-ai .step-list::-webkit-scrollbar-track {
-  background: #081526;
-  border-radius: 20px;
+    background: #081526;
+    border-radius: 20px;
 }
 
 .intelligent-ai .step-list::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg,
-      #0db4f9,
-      #0077ff);
-  border-radius: 20px;
+    background: linear-gradient(180deg, #0db4f9, #0077ff);
+    border-radius: 20px;
 }
 
 .intelligent-ai .step-list::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg,
-      #32c4ff,
-      #0db4f9);
+    background: linear-gradient(180deg, #32c4ff, #0db4f9);
 }
 
 .intelligent-ai .step-row {
@@ -6752,16 +6816,22 @@ section {
 }
 
 .intelligent-ai .step-num {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 500;
   color: #0db4f970;
-  line-height: 1.5;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  background: #050C17;
+  line-height: 30px;
   transition: color 0.25s;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 5px;
 }
 
 .intelligent-ai .step-row.active .step-num {
   color: #38bdf8;
+  background: #0db4f912;
 }
 
 .intelligent-ai .step-title {
@@ -6840,7 +6910,7 @@ section {
 }
 
 .intelligent-ai .caption-title {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 400;
   color: #e2e8f0;
   margin-bottom: 6px;
@@ -6848,7 +6918,7 @@ section {
 }
 
 .intelligent-ai .caption-desc {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   color: #fff;
   line-height: 1.5;
@@ -9138,6 +9208,10 @@ html[dir="rtl"] .banner_slider .carousel-caption h5 {
   font-family: 'FuturaArabic';
 }
 
+.lang-switch span a {
+  font-family: 'FuturaArabic';
+}
+
 /* html[dir="rtl"] .banner_slider .carousel-control-prev, 
 html[dir="rtl"] .banner_slider .carousel-control-next{
   rotate: 180deg;
@@ -10072,4 +10146,11 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
     gap: 12px;
   }
 
+}
+
+
+/* Custom css */
+
+.custom-mb-5{
+  margin-bottom: 70px !important;
 }
