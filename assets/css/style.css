@@ -9428,6 +9428,15 @@ html[dir="rtl"] .banner_slider .carousel-control-next{
 
 html[dir="rtl"] .heading {
   font-family: 'FuturaArabic';
+  font-weight: 500;
+}
+
+html[dir="rtl"] .right-top-proj-card-item{
+  font-family: 'FuturaArabic';
+}
+
+html[dir="rtl"] .left-top-proj-card-item a{
+  font-family: 'FuturaArabic';
 }
 
 html[dir="rtl"] .carousel-caption-in {
