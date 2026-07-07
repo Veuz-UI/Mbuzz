@@ -7999,14 +7999,15 @@ section {
 }
 
 .mbuzz-labs-integn .mbuzz-labs-integn-card-head h3 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .mbuzz-labs-integn .mbuzz-labs-integn-card {
   background: linear-gradient(123deg, rgba(206, 241, 255, 0.5) 0%, #cef1ff4a 100%);
   border-radius: 25px;
-  padding: 50px;
+  padding: 70px;
   text-align: left;
+      box-shadow: 0 10px 30px rgb(0 0 0 / 7%);
 }
 
 .mbuzz-labs-integn .timeline-row {
@@ -8041,7 +8042,7 @@ section {
 }
 
 .mbuzz-labs-integn .timeline-item p {
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 500;
   color: var(--black);
   margin: 0;
