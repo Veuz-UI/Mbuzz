@@ -9524,6 +9524,10 @@ html[dir="rtl"] .stats-section .stat-card-out:last-child {
   padding-right: 3px;
 }
 
+html[dir="rtl"] .project-work h5{
+  font-family: 'FuturaArabic';
+}
+
 @media (max-width: 1200px) {
   html[dir="rtl"] .stats-section .stat-card-out:nth-child(even) {
     padding-left: 15px;
