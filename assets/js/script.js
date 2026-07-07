@@ -735,7 +735,7 @@ $(document).ready(function () {
     // ENGLISH
     $('.ai-real-world-impact-slider').owlCarousel({
         loop: true,
-        margin: 25,
+        margin: 35,
         autoplay: true,
         rtl: false,
         nav: false,
@@ -759,7 +759,7 @@ $(document).ready(function () {
                 items: 3.5
             },
             1500: {
-                items: 4
+                items: 3.5
             }
         }
     });
