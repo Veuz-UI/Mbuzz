@@ -9978,6 +9978,7 @@ html[dir="rtl"] .inner-subnav-links li a {
 
 html[dir="rtl"] .ai-consulting-list-item h4 {
   font-family: 'FuturaArabic';
+  font-weight: 500;
 }
 
 html[dir="rtl"] .prof-services .core-card h3 {
