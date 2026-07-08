@@ -3481,6 +3481,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .ai-consulting .ai-consulting-list-in .ai-consulting-list-item .icon{
@@ -5349,13 +5350,13 @@ section {
   font-size: 12px;
   font-weight: 300;
   color: var(--white);
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   letter-spacing: 0.01em;
 }
 
 .left-contact input,
 .left-contact textarea {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: var(--white);
   width: 100%;
@@ -7932,6 +7933,9 @@ section {
   .mbuzz-labs-what-we .mbuzz-labs-what-we-card-out {
     margin-top: 20px;
   }
+  .ai-partnership .ai-partnership-tabs {
+    margin-top: 35px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -8555,6 +8559,38 @@ section {
   margin-left: 10px;
 }
 
+.timeline-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timeline-nav-controls {
+  display: flex;
+  gap: 15px;
+}
+
+.timeline-nav-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-nav-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
 .timeline-wrapper-main .timeline-wrapper {
   position: relative;
   display: flex;
@@ -8568,7 +8604,6 @@ section {
   scrollbar-color: var(--primary-color) #1a1a1a;
   padding-bottom: 30px;
   -webkit-overflow-scrolling: touch;
-  /* Required for iOS Safari */
 }
 
 .timeline-wrapper-main .timeline-wrapper::-webkit-scrollbar {
@@ -8717,6 +8752,11 @@ section {
   border-radius: 30px;
 }
 
+.about-counter-wrpper-main .ab-counter-wrapper:hover .elv-service-icon{
+  transform: rotate(10deg);
+  transition: .5s;
+}
+
 
 @media(max-width:1250px) {
   .about-counter-wrpper-main .counter-main-wrapper {
@@ -8746,6 +8786,12 @@ section {
 
   .timeline-wrapper-main .timeline-year {
     padding-left: 10px;
+  }
+
+  .timeline-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 
 }
@@ -8844,6 +8890,18 @@ section {
   .about-counter-wrpper-main .counter-wrapp .counter {
     font-size: 30px;
   }
+
+  .timeline-header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .timeline-nav-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
 }
 
 
@@ -8939,6 +8997,7 @@ section {
   position: absolute;
   left: 15px;
   top: -15px;
+  background: #040711;
 }
 
 .mission-vision-wrapper-main .visionary-image img {
@@ -9966,7 +10025,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   border-bottom: 2px solid #DFF2FA;
   transition: .3s;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 
@@ -10042,14 +10101,14 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 
 .career-job-content h3 {
   font-size: 23px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   margin-bottom: 5px;
 }
 
 .career-job-content p {
-  color: #303233;
-  font-size: 14px;
+  color: #000000;
+  font-size: 13px;
   margin-bottom: 25px;
   width: 80%;
 }
@@ -10076,7 +10135,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #64748b;
+  color: rgb(60 73 93);
   font-size: 14px;
 }
 
@@ -10170,6 +10229,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   position: relative;
   padding-left: 28px;
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .career-inner-data ul li::before {
@@ -10200,9 +10260,9 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .career-inner-data h6 {
-  font-size: 23px;
+  font-size: 20px;
   color: #000;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
@@ -10210,6 +10270,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   color: #000;
   font-size: 14px;
   margin-bottom: 25px;
+  font-weight: 400;
 }
 
 .career-share-links {
@@ -10219,7 +10280,7 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .career-share-links h6 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   margin-right: 15px;
@@ -10232,9 +10293,9 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .career-overview-box h6 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 15px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .career-share-links svg {
@@ -10243,22 +10304,22 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 }
 
 .career-overview-data h6 {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--black);
   margin-bottom: 5px;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 
 .career-overview-data p {
   font-size: 14px;
   color: #6C757D;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .career-overview-data {
   display: flex;
   align-items: self-start;
-  gap: 10px;
+  gap: 20px;
 }
 
 .career-inner-padding {
@@ -10273,11 +10334,21 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 
 .career-form .left-contact label {
   color: #000;
+  font-weight: 500;
+}
+
+.career-form p{
+  font-size: 13.5px;
 }
 
 .career-form .left-contact input,
 .left-contact textarea {
   color: #000;
+  font-weight: 500;
+}
+
+.career-form .left-contact{
+  margin-top: 50px;
 }
 
 .career-form .left-contact input::placeholder,
