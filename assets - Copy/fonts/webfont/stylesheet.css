@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Bold.woff2') format('woff2'),
+        url('FuturaArabic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Extrabold.woff2') format('woff2'),
+        url('FuturaArabic-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Light.woff2') format('woff2'),
+        url('FuturaArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Medium.woff2') format('woff2'),
+        url('FuturaArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Regular.woff2') format('woff2'),
+        url('FuturaArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Light_1.woff2') format('woff2'),
+        url('FuturaArabic-Light_1.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Medium_1.woff2') format('woff2'),
+        url('FuturaArabic-Medium_1.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaArabic';
+    src: url('FuturaArabic-Regular_1.woff2') format('woff2'),
+        url('FuturaArabic-Regular_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

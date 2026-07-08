@@ -258,8 +258,37 @@ $(".menu-toggle").click(function () {
 
 
 
-// tab button amooth moving
 document.addEventListener('DOMContentLoaded', function () {
+    const mediaVideoPlay = document.getElementById('mediaVideoPlay');
+    const mediaVideoPreview = document.getElementById('mediaVideoPreview');
+    const mediaVideoFrame = document.getElementById('mediaVideoFrame');
+    const mediaVideoShell = document.getElementById('mediaVideoShell');
+
+    if (mediaVideoPlay && mediaVideoPreview && mediaVideoFrame && mediaVideoShell) {
+        const videoUrl = mediaVideoShell.getAttribute('data-video-url') || '';
+
+        const getEmbedUrl = (url) => {
+            if (!url) return '';
+
+            const youtubeUrl = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+            if (youtubeUrl && youtubeUrl[1]) {
+                const videoId = youtubeUrl[1];
+                const startMatch = url.match(/[?&]t=(\d+)/);
+                const startTime = startMatch ? startMatch[1] : '10';
+                return `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`;
+            }
+
+            return url;
+        };
+
+        mediaVideoPlay.addEventListener('click', function () {
+            mediaVideoFrame.src = getEmbedUrl(videoUrl);
+            mediaVideoShell.classList.add('is-active');
+            mediaVideoPreview.classList.add('is-hidden');
+        });
+    }
+
+    // tab button amooth moving
     function moveIndicator(activeBtn) {
         const indicator = document.querySelector('.tab-indicator');
         const tabs = document.querySelector('.all-works .tabs');
@@ -995,5 +1024,34 @@ function setStep(i) {
 }
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
 
+ const mediaVideoPlay = document.getElementById("mediaVideoPlay");
+    const mediaVideoPreview = document.getElementById("mediaVideoPreview");
+    const mediaVideoFrame = document.getElementById("mediaVideoFrame");
+    const mediaVideoShell = document.getElementById("mediaVideoShell");
 
+    if (mediaVideoPlay && mediaVideoPreview && mediaVideoFrame && mediaVideoShell) {
+      const videoUrl = mediaVideoShell.getAttribute("data-video-url") || "";
+      const getEmbedUrl = (url) => {
+        if (!url) return "";
+
+        const youtubeUrl = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+        if (youtubeUrl && youtubeUrl[1]) {
+          const videoId = youtubeUrl[1];
+          const startMatch = url.match(/[?&]t=(\d+)/);
+          const startTime = startMatch ? startMatch[1] : "10";
+          return `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`;
+        }
+
+        return url;
+      };
+
+      mediaVideoPlay.addEventListener("click", function () {
+        mediaVideoFrame.src = getEmbedUrl(videoUrl);
+        mediaVideoShell.classList.add("is-active");
+        mediaVideoPreview.classList.add("is-hidden");
+      });
+    }
+    
+});
