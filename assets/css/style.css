@@ -9606,6 +9606,11 @@ html[dir="rtl"] .carousel-caption-in {
   max-width: 45%;
 }
 
+html[dir="rtl"] .footer-subcribe h4{
+  font-family: 'FuturaArabic';
+}
+
+
 @media (max-width: 1600px) {
   html[dir="rtl"] .carousel-caption-in {
     max-width: 50%;
@@ -9723,6 +9728,25 @@ html[dir="rtl"] .footer-subcribe p{
 
 html[dir="rtl"] .newsletter-box input {
   padding: 0 22px 0 50px;
+  font-family: 'FuturaArabic';
+}
+
+html[dir="rtl"] .copy-right-item p{
+  font-family: 'FuturaArabic';
+}
+
+html[dir="rtl"] .footer-col ul li a span svg{
+  transform: scaleX(-1);
+}
+
+
+html[dir="rtl"] .footer-col ul li a span {
+  margin-left: 6px;
+  margin-right: 0px;
+}
+
+html[dir="rtl"] .footer-contact p span{
+  font-family: 'FuturaArabic';
 }
 
 /* html[dir="rtl"] .core-offering .core-nav button {
