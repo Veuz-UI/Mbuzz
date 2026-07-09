@@ -2092,9 +2092,21 @@ section {
   border: 1px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color);
-  margin-left: 10px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.core-nav{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ .core-prev,
+ .core-next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .core-offering .core-nav button:hover {
@@ -3706,9 +3718,9 @@ section {
   padding-right: 25px;
 }
 
-.right-faq-img {
+/* .right-faq-img {
   height: 100%;
-}
+} */
 
 .right-faq-img img {
   width: 100%;
@@ -3813,6 +3825,7 @@ section {
   line-height: 1.5;
   color: #fff;
   margin-bottom: 0;
+  display: flex;
 }
 
 .faq-third-outer .faq-third-item h6 span {
@@ -4556,7 +4569,7 @@ section {
   border: 1px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color);
-  margin-left: 10px;
+  /* margin-left: 10px; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -5955,7 +5968,7 @@ section {
   border: 1px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color);
-  margin-left: 10px;
+  /* margin-left: 10px; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -8659,15 +8672,61 @@ section {
 }
 
 .about-counter-wrpper-main .ab-counter-wrapper {
-  padding: 10px 15px;
-  border-radius: 20px;
-  border: 1px solid #9797971a;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%) padding-box, linear-gradient(135deg, rgb(13 180 249 / 0%) 0%, rgb(13 180 249 / 0%) 50%, rgb(13 180 249 / 9%) 100%) border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+/* Gradient Border */
+.about-counter-wrpper-main .ab-counter-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: .5px;
+    border-radius: inherit;
+    background: linear-gradient(88deg, rgb(17 51 86 / 33%) 0%, rgb(0 169 255 / 36%) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: .1;
+    transition: opacity .35s ease, background .35s ease;
+    pointer-events: none;
+}
+
+/* Hover Gradient Background */
+.about-counter-wrpper-main .ab-counter-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: -1;
+    background: linear-gradient(120deg, rgba(0, 158, 255, .08) 0%, rgba(206, 241, 255, .04) 45%, rgba(255, 255, 255, 0) 100%);
+    opacity: .1;
+    transition: opacity .35s ease;
+}
+
+.about-counter-wrpper-main .ab-counter-wrapper:hover::after {
+    opacity: 1;
+    background-position: 0 0;
+}
+
+/* Animate Border Gradient */
+.about-counter-wrpper-main .ab-counter-wrapper:hover::before {
+    
+    opacity: .8;
+}
+
+/* Keep content above pseudo-elements */
+.about-counter-wrpper-main .ab-counter-wrapper > * {
+    position: relative;
+    z-index: 2;
 }
 
 .about-counter-wrpper-main .counter-brand-text {
@@ -9876,16 +9935,17 @@ html[dir="rtl"] .news-events .card-content {
 }
 
 html[dir="rtl"] .news-events .read-more svg {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
-html[dir="rtl"] .core-nav {
+html[dir="rtl"] .core-offering .core-nav {
   display: flex;
   gap: 10px;
+  flex-direction: row-reverse;
 }
 
-html[dir="rtl"] .core-next {
-  order: -1;
+html[dir="rtl"] .core-offering .core-nav button i {
+  transform: rotate(180deg);
 }
 
 html[dir="rtl"] .stats-section .stat-card:hover {

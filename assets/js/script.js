@@ -471,13 +471,21 @@ $(document).ready(function () {
 
 
     // NEXT BUTTON
-    $('.core-next').click(function () {
-        $('.core-offer-slider').trigger('next.owl.carousel');
+    $('.core-offering .core-next').click(function () {
+        if (isRTL) {
+            $('.core-offer-slider').trigger('prev.owl.carousel');
+        } else {
+            $('.core-offer-slider').trigger('next.owl.carousel');
+        }
     });
 
     // PREV BUTTON
-    $('.core-prev').click(function () {
-        $('.core-offer-slider').trigger('prev.owl.carousel');
+    $('.core-offering .core-prev').click(function () {
+        if (isRTL) {
+            $('.core-offer-slider').trigger('next.owl.carousel');
+        } else {
+            $('.core-offer-slider').trigger('prev.owl.carousel');
+        }
     });
 
 
@@ -699,10 +707,10 @@ $(document).ready(function () {
             }
         }
     });
-    $('.core-next').click(function () {
+    $('.prof-services .core-next').click(function () {
         owl.trigger('next.owl.carousel');
     });
-    $('.core-prev').click(function () {
+    $('.prof-services .core-prev').click(function () {
         owl.trigger('prev.owl.carousel');
     });
 });
@@ -749,10 +757,10 @@ $(document).ready(function () {
             }
         }
     });
-    $('.core-next').click(function () {
+    $('.prof-services .core-next').click(function () {
         owl.trigger('next.owl.carousel');
     });
-    $('.core-prev').click(function () {
+    $('.prof-services .core-prev').click(function () {
         owl.trigger('prev.owl.carousel');
     });
 });
@@ -826,12 +834,12 @@ $(document).ready(function () {
     });
 
     // NEXT BUTTON
-    $('.core-next').click(function () {
+    $('.ai-real-world-impact .core-next').click(function () {
         $('.ai-real-world-impact-slider').trigger('next.owl.carousel');
     });
 
     // PREV BUTTON
-    $('.core-prev').click(function () {
+    $('.ai-real-world-impact .core-prev').click(function () {
         $('.ai-real-world-impact-slider').trigger('prev.owl.carousel');
     });
 
@@ -895,10 +903,10 @@ $(document).ready(function () {
             }
         }
     });
-    $('.core-next').click(function () {
+    $('.in-build-lifecycle .core-next').click(function () {
         owl.trigger('next.owl.carousel');
     });
-    $('.core-prev').click(function () {
+    $('.in-build-lifecycle .core-prev').click(function () {
         owl.trigger('prev.owl.carousel');
     });
 });
