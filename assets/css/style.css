@@ -1208,6 +1208,9 @@ section {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.3s ease;
 }
 
@@ -1983,6 +1986,11 @@ section {
   z-index: 0;
   width: 200px;
   height: 200px;
+}
+
+html[dir="rtl"] .core-card-shade {
+  right: auto;
+  left: 0;
 }
 
 .card-sm-scroll {
@@ -3323,7 +3331,7 @@ section {
   padding-right: 15px;
 }
 
-.left-ai-approach .heading{
+.left-ai-approach .heading {
   margin-bottom: 20px;
 }
 
@@ -3336,6 +3344,11 @@ section {
 .ai-approach-in .description {
   padding-right: 36px;
   font-weight: 400;
+}
+
+html[dir="rtl"] .ai-approach-in .description {
+  padding-right: 0;
+  padding-left: 36px;
 }
 
 .right-ai-approach img {
@@ -3459,7 +3472,7 @@ section {
 }
 
 .ai-consulting-list-item h4 {
-  font-size: 19px;
+  font-size: 17.5px;
   font-weight: 600;
   line-height: 22px;
   margin-top: 10px;
@@ -3472,7 +3485,7 @@ section {
 }
 
 .ai-consulting-list-item p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #d1d1d1;
   line-height: 1.5;
@@ -5039,6 +5052,12 @@ section {
   padding: 0 8px;
   margin-top: 20px;
 }
+
+.applied-ai .core-header {
+  margin-bottom: 50px;
+}
+
+
 
 .applied-ai .card-icon {
   margin-bottom: 20px;
@@ -8177,6 +8196,11 @@ section {
   min-height: 150px;
 }
 
+html[dir="rtl"] .mbuzz-labs-integn .timeline-item {
+  border-left: none;
+  border-right: 2px solid #87d0ff4f;
+}
+
 .mbuzz-labs-integn .timeline-item {
   padding: 10px 20px;
 }
@@ -8616,7 +8640,7 @@ section {
 }
 
 .mbuzz-life .life-card h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -8796,6 +8820,13 @@ section {
   scrollbar-color: var(--primary-color) #1a1a1a;
   padding-bottom: 30px;
   -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  touch-action: none;
+}
+
+.timeline-wrapper-main .timeline-wrapper.is-dragging {
+  cursor: grabbing;
+  user-select: none;
 }
 
 .timeline-wrapper-main .timeline-wrapper::-webkit-scrollbar {
@@ -9944,7 +9975,7 @@ html[dir="rtl"] .core-offering .core-nav {
   flex-direction: row-reverse;
 }
 
-html[dir="rtl"] .core-offering .core-nav button i {
+html[dir="rtl"] .core-nav button svg, html[dir="rtl"] .core-nav button i {
   transform: rotate(180deg);
 }
 
@@ -10041,6 +10072,7 @@ html[dir="rtl"] .newsletter-box button:hover svg {
 
 html[dir="rtl"] .news-events .read-more {
   font-family: 'FuturaArabic';
+  font-weight: 500;
 }
 
 html[dir="rtl"] .footer-col ul li a {
@@ -10684,4 +10716,41 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
 
 .custom-mb-5{
   margin-bottom: 70px !important;
+}
+
+/* RTL Layout Enhancements */
+html[dir="rtl"] .banner_slider .carousel-caption,
+html[dir="rtl"] .storage-portfolio .portfolio-card,
+html[dir="rtl"] .mbuzz-labs-integn .mbuzz-labs-integn-card,
+html[dir="rtl"] .mbuzz-aleria .process-item .text,
+html[dir="rtl"] .mbuzz-aleria .process-item h4 {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .banner_slider .carousel-caption {
+  right: auto;
+  left: auto;
+}
+
+/* Force LTR visual order for all grids in RTL mode */
+html[dir="rtl"] .row {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .timeline-row,
+html[dir="rtl"] .life-grid {
+  direction: ltr;
+}
+
+html[dir="rtl"] .timeline-item,
+html[dir="rtl"] .life-card {
+  direction: rtl;
+}
+
+/* Force wrapping for description texts to prevent horizontal overflow in Arabic */
+html[dir="rtl"] .description,
+html[dir="rtl"] .description * {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: anywhere !important;
 }

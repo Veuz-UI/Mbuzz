@@ -674,6 +674,7 @@ $(document).ready(function () {
         autoplay: true,
         nav: false,
         dots: false,
+        rtl: $('html').attr('dir') === 'rtl',
         responsive: {
             0: {
                 items: 1
@@ -774,7 +775,7 @@ $(document).ready(function () {
         loop: true,
         margin: 35,
         autoplay: true,
-        rtl: false,
+        rtl: $('html').attr('dir') === 'rtl',
         nav: false,
         dots: false,
         autoplayTimeout: 3000,
@@ -882,6 +883,7 @@ $(document).ready(function () {
         autoplay: false,
         nav: false,
         dots: false,
+        rtl: $('html').attr('dir') === 'rtl',
          responsive: {
             0: {
                 items: 1

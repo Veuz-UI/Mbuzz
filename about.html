@@ -1739,71 +1739,7 @@
     </div>
   </section>
 
-<script>
 
-function updateTimelineLine() {
-    const wrapper = document.querySelector(".timeline-wrapper");
-    const line = document.querySelector(".timeline-line");
-    const dots = document.querySelectorAll(".timeline-dot");
-
-    if (!dots.length) return;
-
-    const wrapperRect = wrapper.getBoundingClientRect();
-    const lastDot = dots[dots.length - 1].getBoundingClientRect();
-
-    const width = lastDot.right - wrapperRect.left;
-
-    line.style.width = width + "px";
-}
-
-// Timeline scroll functionality
-function initTimelineScroll() {
-    const wrapper = document.querySelector(".timeline-wrapper");
-    const prevBtn = document.getElementById("timelineScrollPrev");
-    const nextBtn = document.getElementById("timelineScrollNext");
-    
-    if (!wrapper || !prevBtn || !nextBtn) return;
-    
-    const scrollDistance = 400; // Distance to scroll per click
-    
-    prevBtn.addEventListener("click", function() {
-        wrapper.scrollBy({
-            left: -scrollDistance,
-            behavior: "smooth"
-        });
-    });
-    
-    nextBtn.addEventListener("click", function() {
-        wrapper.scrollBy({
-            left: scrollDistance,
-            behavior: "smooth"
-        });
-    });
-    
-    // Update button states based on scroll position
-    function updateButtonStates() {
-        const isAtStart = wrapper.scrollLeft === 0;
-        const isAtEnd = wrapper.scrollLeft >= wrapper.scrollWidth - wrapper.clientWidth - 10;
-        
-        prevBtn.disabled = isAtStart;
-        nextBtn.disabled = isAtEnd;
-        
-        prevBtn.style.opacity = isAtStart ? "0.5" : "1";
-        nextBtn.style.opacity = isAtEnd ? "0.5" : "1";
-    }
-    
-    wrapper.addEventListener("scroll", updateButtonStates);
-    window.addEventListener("load", updateButtonStates);
-    window.addEventListener("resize", updateButtonStates);
-    
-    // Initial state
-    updateButtonStates();
-}
-
-window.addEventListener("load", updateTimelineLine);
-window.addEventListener("resize", updateTimelineLine);
-window.addEventListener("load", initTimelineScroll);
-</script>
 
   <!-- clients -->
   <section class="section-padding cleint-main">
@@ -2331,6 +2267,137 @@ window.addEventListener("load", initTimelineScroll);
       observer.observe(counter);
     });
   });
+</script>
+
+<script>
+function updateTimelineLine() {
+    const wrapper = document.querySelector(".timeline-wrapper");
+    const line = document.querySelector(".timeline-line");
+    const dots = document.querySelectorAll(".timeline-dot");
+
+    if (!dots.length) return;
+
+    const wrapperRect = wrapper.getBoundingClientRect();
+    const lastDot = dots[dots.length - 1].getBoundingClientRect();
+
+    const width = lastDot.right - wrapperRect.left;
+
+    line.style.width = width + "px";
+}
+
+// Timeline scroll functionality
+function initTimelineScroll() {
+    const wrapper = document.querySelector(".timeline-wrapper");
+    const prevBtn = document.getElementById("timelineScrollPrev");
+    const nextBtn = document.getElementById("timelineScrollNext");
+    
+    if (!wrapper || !prevBtn || !nextBtn) return;
+    
+    const scrollDistance = 400; // Distance to scroll per click
+    let isDragging = false;
+    let startX = 0;
+    let startScrollLeft = 0;
+    let lastMoveX = 0;
+    let velocityX = 0;
+    let inertiaFrame = null;
+    
+    prevBtn.addEventListener("click", function() {
+        wrapper.scrollBy({
+            left: -scrollDistance,
+            behavior: "smooth"
+        });
+    });
+    
+    nextBtn.addEventListener("click", function() {
+        wrapper.scrollBy({
+            left: scrollDistance,
+            behavior: "smooth"
+        });
+    });
+
+    function startDragging(event) {
+        if (event.button !== undefined && event.button !== 0) return;
+
+        isDragging = true;
+        startX = event.pageX || event.clientX;
+        startScrollLeft = wrapper.scrollLeft;
+        lastMoveX = startX;
+        velocityX = 0;
+
+        if (inertiaFrame) {
+            cancelAnimationFrame(inertiaFrame);
+            inertiaFrame = null;
+        }
+
+        wrapper.classList.add("is-dragging");
+        wrapper.style.cursor = "grabbing";
+        wrapper.style.userSelect = "none";
+        wrapper.setPointerCapture?.(event.pointerId);
+    }
+
+    function dragTimeline(event) {
+        if (!isDragging) return;
+
+        const currentX = event.pageX || event.clientX;
+        const deltaX = currentX - startX;
+        const moveDelta = currentX - lastMoveX;
+        lastMoveX = currentX;
+        velocityX = moveDelta * 0.9;
+        wrapper.scrollLeft = startScrollLeft - deltaX;
+    }
+
+    function stopDragging(event) {
+        if (!isDragging) return;
+
+        isDragging = false;
+        wrapper.classList.remove("is-dragging");
+        wrapper.style.cursor = "grab";
+        wrapper.style.userSelect = "";
+        wrapper.releasePointerCapture?.(event.pointerId);
+
+        const applyInertia = () => {
+            if (Math.abs(velocityX) < 0.1) return;
+
+            wrapper.scrollLeft += velocityX;
+            velocityX *= 0.92;
+            inertiaFrame = requestAnimationFrame(applyInertia);
+        };
+
+        if (inertiaFrame) {
+            cancelAnimationFrame(inertiaFrame);
+        }
+
+        inertiaFrame = requestAnimationFrame(applyInertia);
+    }
+    
+    // Update button states based on scroll position
+    function updateButtonStates() {
+        const isAtStart = wrapper.scrollLeft === 0;
+        const isAtEnd = wrapper.scrollLeft >= wrapper.scrollWidth - wrapper.clientWidth - 10;
+        
+        prevBtn.disabled = isAtStart;
+        nextBtn.disabled = isAtEnd;
+        
+        prevBtn.style.opacity = isAtStart ? "0.5" : "1";
+        nextBtn.style.opacity = isAtEnd ? "0.5" : "1";
+    }
+    
+    wrapper.addEventListener("pointerdown", startDragging);
+    wrapper.addEventListener("pointermove", dragTimeline);
+    wrapper.addEventListener("pointerup", stopDragging);
+    wrapper.addEventListener("pointerleave", stopDragging);
+    wrapper.addEventListener("pointercancel", stopDragging);
+    wrapper.addEventListener("scroll", updateButtonStates);
+    window.addEventListener("load", updateButtonStates);
+    window.addEventListener("resize", updateButtonStates);
+    
+    // Initial state
+    updateButtonStates();
+}
+
+window.addEventListener("load", updateTimelineLine);
+window.addEventListener("resize", updateTimelineLine);
+window.addEventListener("load", initTimelineScroll);
 </script>
 
 </html>
