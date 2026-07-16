@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBUZZ</title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/fonts/webfont/stylesheet.css">
+
+</head>
+
+<body>
+  <!-- <div class="bg bg-mesh"></div> -->
+   <div class="bg-mesh-left"></div>
+   <div class="bg-mesh-right"></div>
+
+    <div class="wrap desc-btn comingsoon-head">
+              <span class="lang-switch" >
+                <span class="arb "> عربى </span>
+                <span class="devider"> | </span>
+                <span class="eng active"><a href="coming-soon.html">EN</a></span>
+              </span>
+            </div>
+
+   <div class="coming-soon-wrapper">
+    <video
+        class="coming-soon-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        disablePictureInPicture
+    >
+        <source src="assets/img/coming-soon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div>
+        <h2 class="launching-text">قريبًا...</h2>
+
+      <div class="ai-factory-journey-card coming-soon-box">
+        <h3>تجربتنا الرقمية الجديدة على وشك الانطلاق.</h3>
+        <p>نعمل على تطوير منصة رقمية أكثر ذكاءً لاستعراض حلول
+MBUZZ وابتكاراتها وخبراتها في تجربة رقمية متكاملة.</p>
+          <div class="coming-soon-input-wrap">
+        <input type="text" placeholder="البريد الإلكتروني">
+        <button type="button" class="main-btn">أشعرني عند الإطلاق</button>
+      </div>
+      <p>احصل على آخر المستجدات وأحدث الرؤى التقنية من MBUZZ.
+
+بالاشتراك، فإنك توافق على سياسة الخصوصية والشروط والأحكام.</p>
+      </div>
+      
+    </div>
+</div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    AOS.init();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('cookieModal');
+      const acceptBtn = document.getElementById('cookieAccept');
+      const closeBtn = document.getElementById('cookieClose');
+
+      if (!modal || !acceptBtn || !closeBtn) return;
+
+      setTimeout(function () {
+        modal.classList.add('show');
+      }, 3000);
+
+      acceptBtn.addEventListener('click', function () {
+        modal.classList.remove('show');
+      });
+
+      closeBtn.addEventListener('click', function () {
+        modal.classList.remove('show');
+      });
+
+      modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+    });
+  </script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+
+  <!-- counter -->
+   <script>
+      function startCounting() {
+          let counter = document.querySelectorAll(".counter");
+          counter.forEach((item) => {
+              let count = 0;
+              let stop = setInterval(() => {
+                  count++;
+                  item.innerHTML = count;
+                  if (count >= item.dataset.number) {
+                      clearInterval(stop);
+                  }
+              }, item.dataset.speed);
+          });
+      }
+
+      window.onload = startCounting;
+  </script>
+
+
+
+</body>
+
+</html>

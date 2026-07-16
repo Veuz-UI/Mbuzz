@@ -33,6 +33,22 @@
     </div>
   </div>
 
+  <div class="cookie-modal-overlay" id="cookieModal" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+    <div class="cookie-modal">
+      <button type="button" class="cookie-close" id="cookieClose" aria-label="Close cookie popup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="cookie-actions">
+        <p>احصل على تمويل شخصي يلبي احتياجاتك بعدة خيارات.</p>
+        <div class="cookie-buttons">
+          <button type="button" class="main-btn" id="cookieAccept">Accept all</button>
+          <button type="button" class="main-btn" id="cookieAccept">Reject all</button>
+          <button type="button" class="main-btn" id="cookieAccept">Customize </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header>
     <!-- nav header -->
     <div class="main-header desc-header">
@@ -2594,8 +2610,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script>
+ <script>
     AOS.init();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('cookieModal');
+      const acceptBtn = document.getElementById('cookieAccept');
+      const closeBtn = document.getElementById('cookieClose');
+
+      if (!modal || !acceptBtn || !closeBtn) return;
+
+      setTimeout(function () {
+        modal.classList.add('show');
+      }, 3000);
+
+      acceptBtn.addEventListener('click', function () {
+        modal.classList.remove('show');
+      });
+
+      closeBtn.addEventListener('click', function () {
+        modal.classList.remove('show');
+      });
+
+      modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+    });
   </script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
