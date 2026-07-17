@@ -9685,6 +9685,15 @@ html[dir="rtl"] .mbuzz-labs-integn .timeline-item {
     gap: 10px;
   }
 
+  .cookie-buttons .main-btn{
+    border: .5px solid var(--primary-color);
+    background: transparent;
+  }
+
+  .cookie-buttons .main-btn:hover{
+    background: var(--gradient);
+  }
+
   .cookie-btn {
     border: 0;
     border-radius: 999px;
@@ -9695,10 +9704,15 @@ html[dir="rtl"] .mbuzz-labs-integn .timeline-item {
     color: #fff;
   }
 
-  .cookie-buttons .main-btn:nth-child(2){
-    background: transparent;
-    border: 1px solid var(--primary-color);
-  }
+
+@media (max-width: 1024px) {
+    .cookie-actions {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+}
+
 
 /* Cookies */
 
