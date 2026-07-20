@@ -9798,6 +9798,21 @@ html[dir="rtl"] .mbuzz-labs-integn .timeline-item {
   z-index: 5;
 }
 
+.coming-soon-logo{
+  width: 180px;
+  margin: auto;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 10px;
+}
+
+.coming-soon-copyright{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 
 .launching-text{
   position: relative;
@@ -9856,6 +9871,7 @@ html[dir="rtl"] .coming-soon-box h3{
   }
   .coming-soon-box{
     padding: 15px;
+    margin-bottom: 60px;
   }
   .coming-soon-box h3 {
     font-size: 18px;
@@ -10161,6 +10177,19 @@ html[dir="rtl"] .newsletter-box input {
   font-family: 'FuturaArabic';
 }
 
+html[dir="rtl"] .copyrite-in .col-md-9 .copy-right-item{
+  justify-content: end;
+}
+
+html[dir="rtl"] .copyrite-in .col-md-3 .copy-right-item .footer-icons{
+  text-align: start;
+}
+
+html[dir="rtl"] .copy-right-item p span{
+  padding-right: 0px;
+  padding-left: 10px;
+}
+
 html[dir="rtl"] .copy-right-item p{
   font-family: 'FuturaArabic';
 }
@@ -10225,6 +10254,7 @@ html[dir="rtl"] .news-events .card-content {
     left: -14px;
     top: 50px;
   }
+  
 }
 
 @media (max-width: 900px) {
@@ -10992,6 +11022,9 @@ html[dir="rtl"] .ai-real-world-impact .core-offering-in {
   .career-grid {
     flex-direction: column;
     gap: 0px;
+  }
+  .copyrite-in .col-md-3 .copy-right-item .footer-icons {
+    text-align: center !important;
   }
 
 }
