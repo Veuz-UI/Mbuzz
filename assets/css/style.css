@@ -2761,44 +2761,44 @@ html[dir="rtl"] .core-card-shade {
 
 
 .news-events-slider .owl-stage {
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 .news-events-slider .owl-item {
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 .news-events-slider .item,
-.news-events-slider .item > a,
+.news-events-slider .item>a,
 .news-events-slider .item .wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
 }
 
 .news-events-slider .article-card {
-    display: flex;
-    flex: 1;
-    height: 100%;
+  display: flex;
+  flex: 1;
+  height: 100%;
 }
 
 .news-events-slider .article-card .card-img-wrap {
-    height: 220px;
-    flex-shrink: 0;
-    margin-bottom: 15px;
+  height: 220px;
+  flex-shrink: 0;
+  margin-bottom: 15px;
 }
 
 .news-events-slider .article-card .card-content {
-    display: flex;
-    flex: 1;
-    padding-left: 0;
+  display: flex;
+  flex: 1;
+  padding-left: 0;
 }
 
-.news-events-slider .article-card .card-content > a:last-child {
-    margin-top: auto;
+.news-events-slider .article-card .card-content>a:last-child {
+  margin-top: auto;
 }
 
 @media (max-width: 600px) {
@@ -9798,7 +9798,7 @@ html[dir="rtl"] .mbuzz-labs-integn .timeline-item {
   text-transform: lowercase;
 }
 
-.coming-soon-box p::first-letter{
+.coming-soon-box p::first-letter {
   text-transform: uppercase !important;
 }
 
@@ -11296,22 +11296,23 @@ html[dir="rtl"] .description * {
     padding-top: 40px;
     padding-bottom: 60px;
   }
-  
+
   .terms-content {
     padding: 30px 20px;
   }
-  
+
   .terms-content h2 {
     font-size: 22px;
     margin-top: 40px;
   }
-  
+
   .terms-content h3 {
     font-size: 18px;
     margin-top: 30px;
   }
-  
-  .terms-content p, .terms-content ul li {
+
+  .terms-content p,
+  .terms-content ul li {
     font-size: 15px;
   }
 }
@@ -11342,4 +11343,33 @@ html[dir="rtl"] .description * {
 .terms-content .table td {
   padding: 15px;
   vertical-align: middle;
+}
+
+/* RTL Support for Terms Content */
+[dir="rtl"] .terms-content h2::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .terms-content ul {
+  padding-left: inherit;
+  padding-right: 0;
+}
+
+[dir="rtl"] .terms-content ul li {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+[dir="rtl"] .terms-content ul li::before {
+  left: auto;
+  right: 5px;
+}
+
+[dir="rtl"] .terms-content h2 {
+  font-weight: 500;
+}
+
+[dir="rtl"] .terms-content strong {
+  font-weight: 500;
 }
