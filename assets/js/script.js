@@ -513,7 +513,7 @@ $(document).ready(function () {
         rtl: isRTL,
         nav: false,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         smartSpeed: 1000,
         margin: 15,
