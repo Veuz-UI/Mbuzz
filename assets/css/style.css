@@ -11174,8 +11174,8 @@ html[dir="rtl"] .description * {
 
 /* terms css */
 /* ==========================================================================
-   Terms of Use Styles
-   ========================================================================== */
+    Terms of Use Styles
+    ========================================================================== */
 
 .terms-section {
   padding-top: 60px;
@@ -11289,6 +11289,15 @@ html[dir="rtl"] .description * {
 .terms-content a:hover {
   color: var(--white);
   border-bottom-color: var(--white);
+}
+
+.privacy-head-remove-line {
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.privacy-head-remove-line::after {
+  display: none;
 }
 
 @media (max-width: 768px) {
